@@ -1,0 +1,21 @@
+## YAML Library
+
+*On common shelves.*
+
+Schematic Representation was defined in Attributes Dynamics as representation through structured, field-based records, valued chiefly for what it can store and accumulate without collapsing into disorder. That definition describes a shape, not a file format — the same schema could, in principle, be written in any serialization syntax. In practice, within EIT, that shape gets written in YAML, and a collection of records built this way is what we'll call a **YAML Library**: a structured, growing set of schematic entries — sharing a consistent set of fields, cross-referenced by stable identifiers — that accumulates instances of some kind (definitions, symbols, cases, relationships) into something that stays organized as it grows.
+
+The choice of YAML over an alternative like JSON is itself an intrinsic judgment, not a neutral default, and it's worth stating plainly why it was made. JSON is precise and universally parseable, but it is written for machines first: no comments, heavy punctuation, and a syntax that resists being read casually by a person. YAML holds the same structural information — the same fields, the same relationships — while staying legible without a parser: comments are native, nesting is visible through indentation rather than braces, and a human can scan an entry the way they'd scan a table. Since a YAML Library is meant to serve both an AI reading it programmatically and a person reading it directly, as described in AI Assistance, the format that keeps both audiences native rather than favoring one over the other is the correct intrinsic choice for the job.
+
+A YAML Library is not a single file with one fixed purpose — it's a pattern that can be instantiated for more than one kind of content. Several instances have come up over the course of developing EIT, at different stages of readiness:
+
+- **A term and symbol glossary** — every defined concept and its notation, held as a single source of truth. This is the instance already built, covered in full in YAML Glossary next.
+
+- **A case library** — structured records of real-world cases read through Attributes Dynamics, each stating its jurisdiction, the attribute pairs involved, and the analyst's positions on them, with mandatory pairs enforced as complete rather than left half-argued. Described as a discipline in AI Assistance; not yet built as its own library. Operational Status (Part 5) is a first piece of the vocabulary such a record could use for the Operation pair specifically — tagging a case's Proceptivity or Fronterization reading as, say, Supra- or Hyper-, rather than leaving the degree and functional/dysfunctional status of an accentuation unstated.
+
+- **Diagram metadata** — structured descriptions of a diagram's nodes and relationships, sitting alongside the image files under `diagrams/`, so a diagram's content becomes queryable rather than only visible. Deliberately deferred for now, noted as a placeholder rather than built.
+
+- **A typed knowledge graph** — an extension of the glossary's simple `related` lists into labeled relationships (a term *accentuated into* another, one attribute *concatenated with* another to *yield* a third, one longing *predisposing* a given pole) that would let a derivation path be traced step by step instead of only noted as "related." Discussed as a possible direction, not yet designed.
+
+- **A formal operator grammar** — rules stating what counts as a well-formed attribute pair, a legal concatenation, a valid accentuation — that would let a new equation's validity be checked rather than judged by eye. Also discussed as a possible direction, not yet built.
+
+Each of these would follow the same underlying discipline as the glossary: stable ids, explicit fields, entries that stay short enough to scan and structured enough to check. None of them require inventing a new representation type — Schematic Representation already covers all of them. What a YAML Library adds is the specific, concrete decision of how to write that representation down, and the working habit of treating each new kind of accumulating content as a candidate for its own instance rather than folding it into prose where it will be harder to maintain and harder for an AI to use reliably.
