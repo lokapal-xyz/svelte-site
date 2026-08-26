@@ -21,13 +21,11 @@ You can think of concatenation like this: Element A is **IN THE PRESENCE OF** El
 
 Now we can analyze these terms by their semantic meaning to bridge them for practical use.
 
-**NOTICE:** These next four terms are an intermediate step. Therefore, we decided to use metaphors to show their qualities instead of an extended analysis.
+**NOTICE:** These next four terms are an intermediate step. Therefore, we decided to use metaphors to show their qualities instead of an extended analysis. We'll keep the same four birds — blue jay, sparrow, dove, and crow — across all four metaphors, each behaving true to its own nature rather than serving as an arbitrary stand-in.
 
 ### Discernibility
 
-We can better *discern* aspects of Reality when a phenomenon is still. It's like watching a blue jay resting on our rooftop to examine its plumage. Then, years pass and we encounter the same bird. But now its plumage changed, so we explore the color shifts. Our ability to discern blue jays' plumage expanded by waiting for the bird to sit still, and be mindful of the years' succession.
-
-From this analogy we can reinforce that, in our model, **Discernibility** is the intersection between **Stillness** and **Successiveness**. Its EIC equation is:
+Blue jays are creatures of habit: the same bird tends to return, year after year, to a yard or rooftop it has claimed. Picture one resting on yours, plumage held still enough to study. Years pass, and the same jay returns—its plumage now shifted with age and season. Neither moment alone would tell you much: stillness without succession gives you detail but nothing to compare it against; succession without stillness gives you change too restless to read at all. **Discernibility** needs both: a phenomenon held still long enough to be read, read again across a succession of such moments. Its EIC equation is:
 
 - Pro-Stillness ^ Pro-Successiveness = Discernibility
 
@@ -35,15 +33,15 @@ And the proper symbolic form for this quadrant is: `pQ ^ pSu = D`. For the follo
 
 ### Observability
 
-A sparrow tries to catch an insect mid-flight. We *observe* its movements as our clumsy friend keeps trying. Finally, the sparrow is successful. This hunting activity was only detected by witnessing the bird's constant attempts. And from these elements we infer that **Observability** is the intersection between **Successiveness** and **Movement**. 
+A fledgling sparrow makes its first attempt at flight: a clumsy flutter that barely clears the nest's edge. Any single attempt looks like failure, or luck, or nothing at all. It's only the succession of attempts—each flutter a little steadier, a little farther, than the one before—that lets us read the movement as *learning to fly* rather than random flailing. **Observability** is the intersection between **Successiveness** and **Movement**: movement becomes legible as a pattern only once it repeats.
 
 ### Resolutivity
 
-In order to *resolve* an issue we must reach a resting state in which all relevant elements are considered simultaneously. Just like doves handle the threat of urban predators—they flock together and sit still on a wire. This reminds us that **Resolutivity** is the intersection between **Stillness** and **Simultaneity**.
+A dove alone, sitting still, is just resting. But when a whole dule of doves goes still on a wire at the same instant—settling together the moment a hawk's shadow crosses the street—that shared, simultaneous stillness is what resolves the threat: safety in numbers, achieved in a single held beat. **Resolutivity** is the intersection between **Stillness** and **Simultaneity**: a challenge is resolved not by one element holding still, but by every relevant element holding still together.
 
 ### Operativity
 
-Crows migrate during the winter to avoid the cold—they can't wait for the summer's return. A murder of crows must *operate* within the restrictions of the seasons and move together to a warmer setting. From this we can establish that **Operativity** is the intersection between **Simultaneity** and **Movement**.
+One crow flying south means nothing in particular. A murder of crows lifting off together, all moving the same direction as the cold sets in, is a migration—a coordinated operation no single bird could perform alone. **Operativity** is the intersection between **Simultaneity** and **Movement**: motion becomes an operation only once it's shared, at the same moment, across everyone taking part.
 
 ---
 

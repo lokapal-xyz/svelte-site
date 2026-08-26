@@ -7,21 +7,10 @@ At this point, we need to bridge unification and conciliation synthesis to conce
 - Unification leads to **Centralization**.
 - Conciliation leads to **Decentralization**.
 
-We briefly mention these concepts on the "Attribute Position" section, when we described interstitial and intrinsic attributes:
-
-**Trajectory of Attributes Dynamics**
-
-| **ATTRIBUTE POSITION (Beginning)** | **ATTRIBUTE DISPOSITION (End)** |
-|-------------------------------|------------------------------|
-| Intrinsic Attributes          | Centralization / Decentralization |
-| Interstitial Attributes       | Unification / Conciliation |
-
-Now we are indeed at the end of our EIC trajectory. Therefore, we should assemble these elements together:
-
 | **STATUS RECIPROCITY** | **Dysfunctional Status** | **Functional Status** |
 |----|---|---|
-| **Intrinsic Attributes** | Centralization | Decentralization |
 | **Interstitial Attributes** | Unification | Conciliation |
+| **Intrinsic Attributes** | Centralization | Decentralization |
 
 From now on, every time that we see a *centralized system* we can assume that it has a unification synthesis status underneath. The same is true between *decentralized systems* and conciliation synthesis. This status reciprocity gives us a methodology to apply our EIC knowledge systematically. We can tackle this type of questions:
 

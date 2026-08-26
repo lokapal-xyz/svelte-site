@@ -6,14 +6,16 @@ Ossification arises from a fracture in the interaction between inventive parcels
 
 - **INVENTIVE CONCILIATION**: The restoration of functional processes in inventive edification.
 
-This restoration may take many forms, depending on the context and the nature of the ossification. One such process is what we call the **Parcels Council**—a structured method for facilitating conciliation:
+This restoration may take many forms, depending on the context and the nature of the ossification. One such process is what we call the **Parcels Council**, standing on a **constitution** rather than a checklist: not a sequence to run start to finish, but a set of **articles**, each one invocable on its own whenever the situation calls for it, and none retired once followed.
 
-1. **Identify** which inventive parcel corresponds to the ossified intervention. Use the associated fields and ideologies to help pinpoint its identity.
-2. **Explore** how the edification's outcome interacts with the other parcels. A valid outcome must be systemically congruent with how each parcel engages Behavior Dynamics.
-3. **Observe** friction and disagreements. These are natural and should be noted. But when the outcome of a parcel is blatantly incongruent with the others, that is a strong sign of ossification.
-4. **Revise** the edification outcome until sufficient integration is reached. Full harmony isn't required—as long as no parcel is invalidated, the process can move forward.
-5. **Maintain** your inventive **focus**, but stay aware of the **periphery**. You can examine the trees through the window, while still holding the forest in mind.
-6. **Refine** your inventive **method**, but integrate the rest of the **toolset**. Be the best hammer you can be—while making space for the right tools when you’re not facing a nail.
+- **Article 1: Identify** which inventive parcel corresponds to the ossified intervention. Use the associated fields and ideologies to help pinpoint its identity.
+- **Article 2: Explore** how the edification’s outcome interacts with the other parcels. A valid outcome must be systemically congruent with how each parcel engages Behavior Dynamics.
+- **Article 3: Observe** friction and disagreements. These are natural and should be noted. But when the outcome of a parcel is blatantly incongruent with the others, that is a strong sign of ossification.
+- **Article 4: Revise** the edification outcome until sufficient integration is reached. Full harmony isn’t required—as long as no parcel is invalidated, the process can move forward.
+- **Article 5: Maintain** your inventive **focus**, but stay aware of the **periphery**. You can examine the trees through the window, while still holding the forest in mind.
+- **Article 6: Refine** your inventive **method**, but integrate the rest of the **toolset**. Be the best hammer you can be—while making space for the right tools when you’re not facing a nail.
+
+Because these are articles and not steps, developing one further is a matter of adding subsections beneath it—Article 2.1, Article 2.2, and so on—not renumbering the articles around it.
 
 ![Diagram showing the cycle between Ossified Intrinsic Contemplation, Inventive Conciliation and Edified Intrinsic Contemplation](../../diagrams/png/inventive-conciliation.png)
 

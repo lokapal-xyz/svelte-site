@@ -76,7 +76,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **INVENTIVE CONCILIATION**: The restoration of functional processes in inventive edification.
 
-- **PARCELS COUNCIL**: A structured method for facilitating conciliation.
+- **PARCELS COUNCIL**: A standing method for facilitating conciliation, structured as a constitution of individually-invocable articles rather than a sequential procedure.
 
 ---
 
@@ -97,8 +97,6 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 ---
 
 - **ATTRIBUTE POSITION**: Focus of systemic attributes. The two main attributes positions are *intrinsic attributes* and *interstitial attributes*.
-
-- **ATTRIBUTE DISPOSITION**: The resulting outcome of the entire EIC journey. Only its trajectory is stated at introduction; fully resolved at the close of Part 5 (see Status Reciprocity).
 
 - **ATTRIBUTE PAIR**: The fundamental systemic unit in EIC, used instead of isolated attributes. Inherently contains Side A, Side B, and the dynamic relationship between them — held in *symmetry* if both sides carry equal importance, *asymmetry* if one is prioritized.
 
@@ -325,7 +323,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **CONCILIATION PATHWAY**: Iterated Imperdurable Functionality.
 
-- **STATUS RECIPROCITY**: Correlation between attribute position and attribute disposition, influenced by mixed synthesis.
+- **STATUS RECIPROCITY**: Correlation between interstitial and intrinsic attributes, modulated by mixed synthesis.
 
 - **CENTRALIZATION**: Intrinsic-attribute correlate of Unification Synthesis; the dysfunctional-status pole of Status Reciprocity.
 
