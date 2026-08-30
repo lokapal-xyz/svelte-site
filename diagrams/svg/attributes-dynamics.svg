@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 9 655.83 197"
+     width="655.83" height="197"
+     role="img"
+     aria-label="ATTRIBUTES DYNAMICS flowchart">
+  <title>ATTRIBUTES DYNAMICS</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="9" width="655.83" height="197" fill="#171719" stroke="none"/>
+
+  <text x="327.91" y="25"
+        fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+        font-size="14" font-weight="700" text-anchor="middle">ATTRIBUTES DYNAMICS</text>
+
+  <path d="M155.7664 105.5L207.7372 84.4429Q217.4688 80.5 227.9688 80.5L238.4688 80.5"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M155.7664 150.5L203.0018 169.6384Q217.4688 175.5 233.0781 175.5L248.6875 175.5"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M419.2344 80.5L431.7344 80.5Q444.2344 80.5 455.7773 85.297L500.6969 103.9649"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M409.0156 175.5L426.625 175.5Q444.2344 175.5 460.4954 168.7422L500.6969 152.0351"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A">
+    <rect x="8" y="105.5" width="184.47" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="100.23" y="133"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Attributes Regulation</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="242.47" y="58" width="176.77" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="330.85" y="85.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Attributes Structure</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="252.69" y="153" width="156.33" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="330.85" y="180.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Attributes Status</text>
+  </g>
+
+  <g id="node-D">
+    <rect x="469.23" y="105.5" width="178.59" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="558.53" y="133"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Attributes Synthesis</text>
+  </g>
+
+</svg>

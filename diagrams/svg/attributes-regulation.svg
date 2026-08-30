@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 631.89 156"
+     width="631.89" height="156"
+     role="img"
+     aria-label="Attributes Regulation flowchart">
+  <title>Attributes Regulation</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="631.89" height="156" fill="#171719" stroke="none"/>
+
+  <path d="M210.8984375,50.84335775955888L95.56890033617981,76.28062054545552Q87.7734375,78 87.7734375,85.98282572395077L87.7734375,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M303.1328125,53L303.1328125,78L303.1328125,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M395.3671875,49.701020338286654L523.5464434805581,76.38491667334772Q531.3046875,78 531.3046875,85.92457219143319L531.3046875,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A">
+    <rect x="210.9" y="8" width="184.47" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="303.13" y="35.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Attributes Regulation</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="8" y="103" width="159.55" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="87.77" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Attribute Position</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="217.55" y="103" width="171.17" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="303.13" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Attribute Operators</text>
+  </g>
+
+  <g id="node-D">
+    <rect x="438.72" y="103" width="185.17" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="531.3" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Attribute Jurisdiction</text>
+  </g>
+
+</svg>

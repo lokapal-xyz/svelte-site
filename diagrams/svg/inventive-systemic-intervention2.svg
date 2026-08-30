@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 9 434.64 292"
+     width="434.64" height="292"
+     role="img"
+     aria-label="INVENTIVE SYSTEMIC INTERVENTION flowchart">
+  <title>INVENTIVE SYSTEMIC INTERVENTION</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="9" width="434.64" height="292" fill="#171719" stroke="none"/>
+
+  <text x="217.32" y="25"
+        fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+        font-size="14" font-weight="700" text-anchor="middle">INVENTIVE SYSTEMIC INTERVENTION</text>
+
+  <path d="M69.9057 149.7535L113.3444 89.3999Q119.75 80.5 130.7154 80.5L144.75 80.5L169.75 80.5L190.75 80.5"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M293.3906 80.5L307.5545 80.5Q318.3906 80.5 324.6126 89.3718L366.9393 149.7251"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-dasharray="2 3"
+        marker-end="url(#arrow)"/>
+
+  <path d="M98.75 175.5L119.75 175.5L144.75 175.5L169.75 175.5L191.0938 175.5"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M293.0469 175.5L318.3906 175.5L339.3906 175.5"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-dasharray="2 3"
+        marker-end="url(#arrow)"/>
+
+  <path d="M67.5691 198L113.3444 261.6001Q119.75 270.5 130.7154 270.5L144.75 270.5L169.75 270.5L191.0938 270.5"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="3.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M293.0469 270.5L307.5545 270.5Q318.3906 270.5 324.6126 261.6282L366.9393 201.2749"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="3.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A">
+    <rect x="8" y="153" width="86.75" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="51.38" y="180.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Member</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="194.75" y="58" width="98.64" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="244.07" y="85.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Medium A</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="343.39" y="153" width="83.25" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="385.02" y="180.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">System</text>
+  </g>
+
+  <g id="node-D">
+    <rect x="195.09" y="153" width="97.95" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="244.07" y="180.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Medium B</text>
+  </g>
+
+  <g id="node-E">
+    <rect x="195.09" y="248" width="97.95" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="244.07" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Medium C</text>
+  </g>
+
+</svg>

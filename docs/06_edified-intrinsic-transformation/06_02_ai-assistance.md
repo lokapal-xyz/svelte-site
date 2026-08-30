@@ -1,4 +1,4 @@
-## AI Assistance
+# AI Assistance
 
 *On new interveners.*
 

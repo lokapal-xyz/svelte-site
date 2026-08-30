@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 616.91 251"
+     width="616.91" height="251"
+     role="img"
+     aria-label="Attributes Synthesis flowchart">
+  <title>Attributes Synthesis</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="616.91" height="251" fill="#171719" stroke="none"/>
+
+  <path d="M198.578125,51.56483277721735L94.35652724334157,76.15035750603256Q86.515625,78 86.515625,86.05611105590836L86.515625,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M287.875,53L287.875,78L287.875,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M377.171875,49.61169388904534L502.03662511875154,76.33577445515381Q509.8125,78 509.8125,85.95197314085938L509.8125,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M232.29296875,148L178.82740787570268,169.64323779857705Q170.53515625,173 170.53515625,181.94590909303633L170.53515625,194"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M343.45703125,148L396.92259212429735,169.64323779857705Q405.21484375,173 405.21484375,181.94590909303633L405.21484375,194"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A">
+    <rect x="198.58" y="8" width="178.59" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="287.88" y="35.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Attributes Synthesis</text>
+  </g>
+
+  <g id="node-B" data-id="organic-synthesis">
+    <rect x="8" y="103" width="157.03" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="86.52" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Organic Synthesis</text>
+  </g>
+
+  <g id="node-C" data-id="mixed-synthesis">
+    <rect x="215.03" y="103" width="145.69" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="287.88" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Mixed Synthesis</text>
+  </g>
+
+  <g id="node-D" data-id="instrumental-synthesis">
+    <rect x="410.72" y="103" width="198.19" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="509.81" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Instrumental Synthesis</text>
+  </g>
+
+  <g id="node-E" data-id="unification-synthesis">
+    <rect x="79.77" y="198" width="181.53" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="170.54" y="225.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Unification Synthesis</text>
+  </g>
+
+  <g id="node-F" data-id="conciliation-synthesis">
+    <rect x="311.3" y="198" width="187.83" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="405.21" y="225.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Conciliation Synthesis</text>
+  </g>
+
+</svg>

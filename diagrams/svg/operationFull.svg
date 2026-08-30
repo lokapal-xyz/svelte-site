@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="92.029869mm" height="53.874817mm"
+     viewBox="0 0 92.029867 53.874817"
+     version="1.1"
+     role="img"
+     aria-label="Operation Full diagram">
+  <title>Operation Full</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="1.6" markerHeight="1.6" orient="auto"
+            markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="92.03" height="53.87"
+        fill="#171719" stroke="none"/>
+
+  <g id="layer1" transform="translate(20.57148,1.996732)">
+    <path d="M 38.853311,38.514994 11.119141,12.335783" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 40.041165,10.807546 10.14396,38.616184" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="-3.5082579" cy="41.30344" rx="15.597914" ry="5.0122876"
+             fill="none" stroke="#ffffff" stroke-width="0.6"/>
+    <rect x="38.858387" y="37.461189" width="29.721283" height="7.5114737"
+          fill="none" stroke="#ffffff" stroke-width="0.6"/>
+    <ellipse cx="54.294415" cy="8.7716427" rx="15.597914" ry="5.0122876"
+             fill="none" stroke="#ffffff" stroke-width="0.6"/>
+    <rect x="-18.602142" y="4.8243098" width="29.721283" height="7.5114737"
+          fill="none" stroke="#ffffff" stroke-width="0.6"/>
+    <g data-id="navigation">
+    <text x="-16.323116" y="10.474708"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Navigation</text>
+    </g>
+    <g data-id="proceptivity">
+    <text x="12.118346" y="3.1791549"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Proceptivity</text>
+    </g>
+    <g data-id="individual">
+    <text x="42.936924" y="10.746087"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Individual</text>
+    </g>
+    <g data-id="permeability">
+    <text x="-15.74422" y="26.360046"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Permeability</text>
+    </g>
+    <g data-id="fronterization">
+    <text x="35.053684" y="27.051918"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Fronterization</text>
+    </g>
+    <g data-id="community">
+    <text x="-16.944092" y="42.542751"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Community</text>
+    </g>
+    <g data-id="receptivity">
+    <text x="12.117993" y="49.416134"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Receptivity</text>
+    </g>
+    <g data-id="orientation">
+    <text x="40.365459" y="43.071476"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Orientation</text>
+    </g>
+  </g>
+</svg>

@@ -1,4 +1,4 @@
-## Systemic Diplomacy
+# Systemic Diplomacy
 
 *On good neighbors.*
 

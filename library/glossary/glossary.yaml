@@ -1,0 +1,1412 @@
+# =============================================================================
+# CONCILIATORICS — GLOSSARY
+# Single source of truth for every defined term and symbol in the treatise.
+# Merges the former 06_02 (definitions) and 06_03 (symbols) glossaries.
+#
+# Field reference:
+#   id          kebab-case unique identifier (stable — used for cross-refs / future URLs)
+#   term        display name
+#   symbol      notational symbol, if one exists (string, may contain unicode operators)
+#   part        source chapter (folder name under docs/)
+#   jurisdiction  the attribute jurisdiction this concept belongs to, if applicable
+#   pair        the other half of this concept's attribute pair, if it has one (by id)
+#   equation    the origin equation/derivation, if one exists, using glossary ids or symbols
+#   definition  the definition itself
+#   notes       clarifying notes, caveats, or "not yet developed" flags
+#   related     list of related term ids
+#   status      "stable" (default) | "flagged" (unresolved notational/conceptual issue — see notes) | "undeveloped"
+# =============================================================================
+
+terms:
+
+  # ---------------------------------------------------------------------------
+  # PART 1 — INTRODUCTION TO CONCILIATORICS
+  # ---------------------------------------------------------------------------
+
+  - id: meta-discipline
+    term: Meta-Discipline
+    part: 01_introduction
+    definition: A discipline that deals with, or transcends, other disciplines.
+
+  - id: systemics
+    term: Systemics
+    part: 01_introduction
+    definition: A meta-discipline that groups different perspectives on the study of systems.
+    related: [conciliatorics, meta-discipline]
+
+  - id: conciliatorics
+    term: Conciliatorics
+    part: 01_introduction
+    definition: A perspective within Systemics that seeks to reconcile the inventive aspect of Systemic Intervention.
+    related: [systemics, inventive-conciliation]
+
+  - id: behavior-dynamics
+    term: Behavior Dynamics
+    part: 01_introduction
+    definition: >
+      A model containing one main systemic phenomenon (Behavior) and three main systemic
+      entities (System, Member, Medium).
+    related: [behavior, system, member, medium]
+
+  - id: behavior
+    term: Behavior
+    part: 01_introduction
+    jurisdiction: Behavior Dynamics
+    definition: The transformation of a medium by system members.
+
+  - id: system
+    term: System
+    part: 01_introduction
+    jurisdiction: Behavior Dynamics
+    definition: An environment where interrelated members express behavior.
+
+  - id: member
+    term: Member
+    part: 01_introduction
+    jurisdiction: Behavior Dynamics
+    definition: A unit that expresses behavior within a system.
+
+  - id: medium
+    term: Medium
+    part: 01_introduction
+    jurisdiction: Behavior Dynamics
+    definition: Components of a system transformed by its members to express their behavior.
+
+  - id: systemic-intervention
+    term: Systemic Intervention
+    part: 01_introduction
+    definition: Action performed by a member that seeks to influence the behavior of a system.
+    related: [intervener, inventive-systemic-intervention]
+
+  - id: intervener
+    term: Intervener
+    part: 01_introduction
+    definition: Member who intervenes in a system.
+    notes: Does not preclude the member from holding other interaction labels simultaneously.
+
+  - id: inventive-systemic-intervention
+    term: Inventive Systemic Intervention
+    symbol: null
+    part: 01_introduction
+    definition: Exploration of a system's medium that seeks to influence its behavior.
+    notes: Referred to for short as "Inventive Intervention." Its complement is Non-Inventive Systemic Intervention (not developed further).
+
+  - id: inventive-parcellation
+    term: Inventive Parcellation
+    part: 01_introduction
+    definition: Primary structure of inventive intervention.
+    related: [inventive-approach, inventive-position, inventive-parcels]
+
+  - id: inventive-approach
+    term: Inventive Approach
+    part: 01_introduction
+    definition: Method of inventive intervention.
+    related: [contemplation, transformation]
+
+  - id: inventive-position
+    term: Inventive Position
+    part: 01_introduction
+    definition: Focus of inventive intervention.
+    related: [intrinsicality, interstitiality]
+
+  - id: contemplation
+    term: Contemplation
+    part: 01_introduction
+    jurisdiction: Inventive Approach
+    definition: Inventive approach with emphasis on the intervener. Relates to knowledge building and judgement.
+    pair: transformation
+
+  - id: transformation
+    term: Transformation
+    part: 01_introduction
+    jurisdiction: Inventive Approach
+    definition: Inventive approach with emphasis on the system. Relates to concrete change and performance.
+    pair: contemplation
+
+  - id: intrinsicality
+    term: Intrinsicality
+    part: 01_introduction
+    jurisdiction: Inventive Position
+    definition: Inventive position with emphasis on the intervenable. Relates to direct engagement and inherent properties.
+    pair: interstitiality
+
+  - id: interstitiality
+    term: Interstitiality
+    part: 01_introduction
+    jurisdiction: Inventive Position
+    definition: Inventive position with emphasis on the systemic. Relates to intangible outcomes and relational properties.
+    pair: intrinsicality
+
+  - id: inventive-parcels
+    term: Inventive Parcels
+    part: 01_introduction
+    definition: >
+      Main configurations of inventive parcellation: Intrinsic Contemplation, Intrinsic
+      Transformation, Interstitial Contemplation, and Interstitial Transformation.
+    related: [edified-intrinsic-contemplation, edified-intrinsic-transformation,
+              edified-interstitial-contemplation, edified-interstitial-transformation]
+
+  - id: inventive-edification
+    term: Inventive Edification
+    part: 01_introduction
+    definition: Continuous and expansive development of inventive parcels.
+    related: [inventive-ossification, inventive-conciliation]
+
+  - id: edified-intrinsic-contemplation
+    term: Edified Intrinsic Contemplation
+    symbol: (cS)
+    part: 01_introduction
+    jurisdiction: Inventive Edification
+    definition: Contemplation × Intrinsicality, edified. Field association — Sciences.
+
+  - id: edified-intrinsic-transformation
+    term: Edified Intrinsic Transformation
+    symbol: (tS)
+    part: 01_introduction
+    jurisdiction: Inventive Edification
+    definition: >
+      Transformation × Intrinsicality, edified. Field association — Technology. This is the
+      parcel developed, beginning in Part 6, as EIT — the treatise's implementation work,
+      engaging the inherent properties of concrete tools and cases rather than the relational
+      properties EIC deliberately set aside (see attribute-position).
+    notes: >
+      Acronym: EIT, spelled out on first use per chapter rather than via a fixed disambiguation
+      rule — its "I" (Intrinsic) and EIC's "I" (Interstitial) are not the same letter meaning
+      the same thing, so the two acronyms should not be assumed to share a naming convention.
+      The remaining two parcels, Edified Intrinsic Contemplation (Sciences) and Edified
+      Interstitial Transformation (Arts), are deliberately not being developed and are not
+      given working acronyms for that reason.
+    related: [systemic-diplomacy, yaml-library, ai-assistance, edified-interstitial-contemplation]
+
+  - id: edified-interstitial-contemplation
+    term: Edified Interstitial Contemplation
+    symbol: )cS(
+    part: 01_introduction
+    jurisdiction: Inventive Edification
+    definition: >
+      Contemplation × Interstitiality, edified. Field association — Philosophy. This is the
+      parcel developed in depth as EIC (Parts 2-5 of the treatise).
+    related: [attributes-dynamics, edified-intrinsic-transformation]
+
+  - id: edified-interstitial-transformation
+    term: Edified Interstitial Transformation
+    symbol: )tS(
+    part: 01_introduction
+    jurisdiction: Inventive Edification
+    definition: Transformation × Interstitiality, edified. Field association — The Arts.
+
+  - id: inventive-ossification
+    term: Inventive Ossification
+    part: 01_introduction
+    definition: The manifestation of dysfunctional processes in inventive edification.
+    notes: >
+      Occurs when interveners prioritize the edification itself over the system it serves.
+      Symbolized by inverting the Contemplation/Transformation lowercase↔uppercase convention
+      and replacing parentheses with brackets.
+    related: [inventive-conciliation]
+
+  - id: ossified-intrinsic-contemplation
+    term: Ossified Intrinsic Contemplation
+    symbol: "[Cs]"
+    part: 01_introduction
+    jurisdiction: Inventive Ossification
+    definition: Ossified form of Edified Intrinsic Contemplation. Associated ideology — Scientism.
+
+  - id: ossified-intrinsic-transformation
+    term: Ossified Intrinsic Transformation
+    symbol: "[Ts]"
+    part: 01_introduction
+    jurisdiction: Inventive Ossification
+    definition: Ossified form of Edified Intrinsic Transformation. Associated ideology — Technologism.
+
+  - id: ossified-interstitial-contemplation
+    term: Ossified Interstitial Contemplation
+    symbol: "]Cs["
+    part: 01_introduction
+    jurisdiction: Inventive Ossification
+    definition: Ossified form of Edified Interstitial Contemplation. Associated ideology — Philosophism.
+
+  - id: ossified-interstitial-transformation
+    term: Ossified Interstitial Transformation
+    symbol: "]Ts["
+    part: 01_introduction
+    jurisdiction: Inventive Ossification
+    definition: Ossified form of Edified Interstitial Transformation. Associated ideology — Aestheticism.
+
+  - id: inventive-conciliation
+    term: Inventive Conciliation
+    part: 01_introduction
+    definition: The restoration of functional processes in inventive edification.
+    related: [parcels-council]
+
+  - id: parcels-council
+    term: Parcels Council
+    part: 01_introduction
+    definition: >
+      A standing method for facilitating conciliation, structured as a constitution of
+      individually-invocable articles rather than a sequential procedure.
+    notes: "Six articles: Identify, Explore, Observe, Revise, Maintain (focus/periphery), Refine (method/toolset). Each article can be extended with subsections (e.g. Article 2.1) without renumbering the others."
+
+  # ---------------------------------------------------------------------------
+  # PART 2 — ATTRIBUTES DYNAMICS (EIC overview)
+  # ---------------------------------------------------------------------------
+
+  - id: attribute
+    term: Attribute
+    part: 02_attributes-dynamics
+    definition: >
+      Specific quality of a system, member, or medium. Not a passive trait but a dynamic
+      component interacting with behavior, structure, and purpose.
+
+  - id: attributes-dynamics
+    term: Attributes Dynamics
+    part: 02_attributes-dynamics
+    definition: An EIC model designed to promote analytical exploration and integration of attributes.
+    related: [attributes-regulation, attributes-structure, attributes-status, attributes-synthesis]
+
+  - id: attributes-regulation
+    term: Attributes Regulation
+    part: 02_attributes-dynamics
+    definition: EIC step that provides the rule set to explore the attributes structure and status.
+    notes: The "opening anchor" of the EIC journey.
+
+  - id: attributes-structure
+    term: Attributes Structure
+    part: 02_attributes-dynamics
+    definition: EIC step that explores the interstitial anatomy components of Behavior Dynamics.
+
+  - id: attributes-status
+    term: Attributes Status
+    part: 02_attributes-dynamics
+    definition: EIC step that studies the interstitial physiology processes of Behavior Dynamics.
+
+  - id: attributes-synthesis
+    term: Attributes Synthesis
+    part: 02_attributes-dynamics
+    definition: EIC step that integrates the exploration of attributes structure and status.
+    notes: The "closing anchor" of the EIC journey.
+
+  - id: attribute-position
+    term: Attribute Position
+    part: 02_attributes-dynamics
+    definition: >
+      Focus of systemic attributes. The two main attribute positions are intrinsic attributes
+      and interstitial attributes. EIC maintains focus on interstitial attributes.
+    related: [attribute-disposition]
+
+  - id: attribute-disposition
+    term: Attribute Disposition
+    part: 02_attributes-dynamics
+    status: undeveloped
+    definition: The resulting outcome of the entire EIC journey.
+    notes: >
+      Explicitly not developed at introduction — only its trajectory is stated: Intrinsic
+      Attributes → Centralization/Decentralization; Interstitial Attributes → Unification/
+      Conciliation. Fully resolved in Part 5 (see status-reciprocity).
+    related: [centralization, decentralization, unification-synthesis, conciliation-synthesis]
+
+  - id: attribute-pair
+    term: Attribute Pair
+    part: 02_attributes-dynamics
+    definition: >
+      The fundamental systemic unit in EIC (used instead of isolated attributes). Inherently
+      contains Side A, Side B, and the dynamic relationship between them. A pair is in
+      "symmetry" if both sides are held with equal importance, "asymmetry" if one is prioritized.
+    related: [symmetry, asymmetry]
+
+  - id: symmetry
+    term: Symmetry
+    symbol: "≡"
+    part: 02_attributes-dynamics
+    definition: Balanced, mutually-interdependent relationship between the sides of an attribute pair.
+    pair: asymmetry
+
+  - id: asymmetry
+    term: Asymmetry
+    symbol: "≢"
+    part: 02_attributes-dynamics
+    definition: Directional prioritization within an attribute pair; broken symmetry.
+    pair: symmetry
+
+  - id: concatenation
+    term: Concatenation
+    symbol: "^"
+    part: 02_attributes-dynamics
+    definition: Interaction between different attribute pairs, or between attributes of different paired sets.
+
+  - id: accentuation
+    term: Accentuation
+    symbol: "←"
+    part: 02_attributes-dynamics
+    definition: Focus on one attribute of a paired set, or on one element of a compounded interaction.
+
+  - id: modulation
+    term: Modulation
+    symbol: "→"
+    part: 02_attributes-dynamics
+    definition: The concrete effect of one attribute element or compound over another; alters internal dynamics.
+
+  - id: systemic-jurisdiction
+    term: Systemic Jurisdiction
+    part: 02_attributes-dynamics
+    definition: The bounded environment that contains Conciliatorics components.
+    related: [attribute-jurisdiction]
+
+  - id: attribute-jurisdiction
+    term: Attribute Jurisdiction
+    part: 02_attributes-dynamics
+    definition: The bounded environment that contains Attributes Dynamics components.
+    related: [jurisdictional-differentiation, jurisdictional-dissociation, jurisdictional-dissolution]
+
+  - id: jurisdictional-overreach
+    term: Jurisdictional Overreach
+    part: 02_attributes-dynamics
+    definition: The process by which one jurisdiction breaks boundaries to exert control over others.
+
+  - id: jurisdictional-differentiation
+    term: Jurisdictional Differentiation
+    part: 02_attributes-dynamics
+    definition: >
+      Process/state in which boundaries are properly maintained; the jurisdiction is aware of
+      its distinct role while cultivating healthy interactions. Promotes systemic diplomacy.
+    related: [systemic-diplomacy]
+
+  - id: jurisdictional-dissociation
+    term: Jurisdictional Dissociation
+    part: 02_attributes-dynamics
+    definition: Process/state in which boundaries fracture; the jurisdiction isolates itself, forming a systemic silo.
+
+  - id: jurisdictional-dissolution
+    term: Jurisdictional Dissolution
+    part: 02_attributes-dynamics
+    definition: Process/state in which boundaries merge; the jurisdiction fuses into others, forming a systemic amalgam.
+
+  - id: primary-jurisdiction
+    term: Primary Jurisdiction
+    part: 02_attributes-dynamics
+    definition: The initial environment of attribute pairs within Attributes Dynamics.
+    notes: Contains Stillness/Movement and Simultaneity/Successiveness.
+    related: [stillness, movement, simultaneity, successiveness]
+
+  - id: stillness
+    term: Stillness
+    symbol: Q
+    part: 02_attributes-dynamics
+    jurisdiction: Primary
+    pair: movement
+    definition: Primary attribute; spatial pole of rest.
+
+  - id: movement
+    term: Movement
+    symbol: M
+    part: 02_attributes-dynamics
+    jurisdiction: Primary
+    pair: stillness
+    definition: Primary attribute; spatial pole of motion.
+
+  - id: simultaneity
+    term: Simultaneity
+    symbol: Si
+    part: 02_attributes-dynamics
+    jurisdiction: Primary
+    pair: successiveness
+    definition: Primary attribute; temporal pole of co-occurrence.
+
+  - id: successiveness
+    term: Successiveness
+    symbol: Su
+    part: 02_attributes-dynamics
+    jurisdiction: Primary
+    pair: simultaneity
+    definition: Primary attribute; temporal pole of sequence.
+
+  - id: representation-type
+    term: Representation Type
+    part: 02_attributes-dynamics
+    definition: >
+      One of four distinct mediums used throughout Conciliatorics to express and hold concepts,
+      chosen because a single medium (traditionally prose alone) cannot fully capture material
+      as dense and self-referential as Attributes Dynamics. The four types compensate for one
+      another's weaknesses rather than duplicating the same content in different clothes.
+    related: [discursive-representation, symbolic-representation, graphic-representation,
+              schematic-representation]
+
+  - id: discursive-representation
+    term: Discursive Representation
+    part: 02_attributes-dynamics
+    jurisdiction: Representation Type
+    definition: >
+      Representation through written or spoken language. The traditional medium of
+      philosophical discourse; carries argument, nuance, and context — everything requiring
+      connective reasoning to be understood.
+    related: [representation-type]
+
+  - id: symbolic-representation
+    term: Symbolic Representation
+    part: 02_attributes-dynamics
+    jurisdiction: Representation Type
+    definition: >
+      Representation through compact notation — the operators, letters, and equations used
+      throughout Attributes Dynamics. Holds dense relationships in a single, precise, reusable
+      form that prose would need paragraphs to restate each time.
+    related: [representation-type]
+
+  - id: graphic-representation
+    term: Graphic Representation
+    part: 02_attributes-dynamics
+    jurisdiction: Representation Type
+    definition: >
+      Representation through diagrams and images. Exploits spatial and visual relationships —
+      position, proximity, symmetry — to make a structure legible at a glance.
+    related: [representation-type]
+
+  - id: schematic-representation
+    term: Schematic Representation
+    part: 02_attributes-dynamics
+    jurisdiction: Representation Type
+    definition: >
+      Representation through structured, field-based records rather than free-flowing prose.
+      Its principal value is storage: unlike a discursive account (rewritten at real cost each
+      time) or a diagram (clear for one instance, unwieldy for many), a schematic record can be
+      filled in quickly, compared against others of its kind, and accumulated into a queryable
+      library — of definitions, symbols, or worked case studies — without collapsing into
+      disorder as it grows. Also the representation type most directly legible to AI systems,
+      which makes it the natural interface for AI assistance with the material.
+    related: [representation-type, ai-assistance, yaml-library]
+    notes: >
+      Storage/accumulation is the primary rationale for this representation type; its
+      AI-legibility is a secondary, compounding benefit rather than the reason it exists.
+
+  # ---------------------------------------------------------------------------
+  # PART 3 — ATTRIBUTES STRUCTURE (interstitial anatomy)
+  # ---------------------------------------------------------------------------
+
+  - id: attribute-accentuation
+
+    term: Attribute Accentuation
+    part: 03_attributes-structure
+    definition: Temporary focus on one member of an attribute pair, without dismissing the other side.
+
+  - id: pro-stillness
+    term: Pro-Stillness
+    symbol: pQ
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "Q ← M"
+    pair: pro-movement
+    definition: Accentuation of Stillness within the Stillness/Movement pair.
+
+  - id: pro-movement
+    term: Pro-Movement
+    symbol: pM
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "M ← Q"
+    pair: pro-stillness
+    definition: Accentuation of Movement within the Stillness/Movement pair.
+
+  - id: pro-simultaneity
+    term: Pro-Simultaneity
+    symbol: pSi
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "Si ← Su"
+    pair: pro-successiveness
+    definition: Accentuation of Simultaneity within the Simultaneity/Successiveness pair.
+
+  - id: pro-successiveness
+    term: Pro-Successiveness
+    symbol: pSu
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "Su ← Si"
+    pair: pro-simultaneity
+    definition: Accentuation of Successiveness within the Simultaneity/Successiveness pair.
+
+  - id: structure-quadrant
+    term: Structure Quadrant
+    part: 03_attributes-structure
+    definition: Concatenation of two attribute accentuations, creating a potential interstitial state.
+    related: [discernibility, observability, resolutivity, operativity]
+
+  - id: structure-quadrants-set
+    term: Structure Quadrants Set
+    symbol: "{D ≡ O ≡ R ≡ E}"
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    definition: The full set of the four structure quadrants held in symmetry.
+
+  - id: discernibility
+    term: Discernibility
+    symbol: D
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "pQ ^ pSu"
+    definition: Potential state — intersection of Stillness and Successiveness. "To Discern."
+    related: [discernment]
+
+  - id: observability
+    term: Observability
+    symbol: O
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "pM ^ pSu"
+    definition: Potential state — intersection of Successiveness and Movement. "To Observe."
+    related: [observation]
+
+  - id: resolutivity
+    term: Resolutivity
+    symbol: R
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "pQ ^ pSi"
+    definition: Potential state — intersection of Stillness and Simultaneity. "To Resolve."
+    related: [resolution]
+
+  - id: operativity
+    term: Operativity
+    symbol: E
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "pM ^ pSi"
+    definition: Potential state — intersection of Simultaneity and Movement. "To Operate."
+    related: [operation]
+
+  - id: interstitial-anatomy
+    term: Interstitial Anatomy
+    part: 03_attributes-structure
+    definition: Set of concrete interstitial actions, composed of structure-quadrant accentuations.
+    related: [discernment, observation, resolution, operation]
+
+  - id: interstitial-anatomy-set
+    term: Interstitial Anatomy Set
+    symbol: "{iD ≡ iO ≡ iR ≡ iE}"
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    definition: The full set of the four interstitial anatomy actions held in symmetry.
+
+  - id: discernment
+    term: Discernment
+    symbol: iD
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "{D ← (O ≡ R ≡ E)}"
+    definition: Concrete action — accent on Discernibility. General context term — Interstitial Discernment.
+
+  - id: observation
+    term: Observation
+    symbol: iO
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "{O ← (D ≡ R ≡ E)}"
+    definition: Concrete action — accent on Observability. General context term — Interstitial Observation.
+
+  - id: resolution
+    term: Resolution
+    symbol: iR
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "{R ← (D ≡ O ≡ E)}"
+    definition: Concrete action — accent on Resolutivity. General context term — Interstitial Resolution.
+
+  - id: operation
+    term: Operation
+    symbol: iE
+    part: 03_attributes-structure
+    jurisdiction: Attributes Structure
+    equation: "{E ← (D ≡ O ≡ R)}"
+    definition: >
+      Concrete action — accent on Operativity. General context term — Interstitial Operation.
+      Originally named "the Compass."
+    related: [compass]
+
+  - id: bounded-discernment-observation
+    term: Bounded Discernment / Observation
+    part: 03_attributes-structure
+    definition: Quadrant depending on the member's perspective.
+
+  - id: non-bounded-discernment-observation
+    term: Non-Bounded Discernment / Observation
+    part: 03_attributes-structure
+    definition: Quadrant detached from the member's presence.
+
+  - id: compass
+    term: Compass
+    part: 03_attributes-structure
+    definition: >
+      The original, informal name for Operation, from the shape of its diagram — still used
+      today, especially alongside the diagram, but not interchangeable with "Operation" when
+      referring to the full Interstitial Anatomy context (i.e., alongside Discernment,
+      Observation, and Resolution).
+    related: [operation]
+
+  # -- Discernment sub-components --
+
+  - id: objectivity
+    term: Objectivity
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: subjectivity
+    definition: Non-bounded discernment.
+
+  - id: subjectivity
+    term: Subjectivity
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: objectivity
+    definition: Bounded discernment.
+
+  - id: assertion
+    term: Assertion
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: arrangement
+    definition: Assertive discernment — states facts and perspectives on the world.
+
+  - id: arrangement
+    term: Arrangement
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: assertion
+    definition: Arranging discernment — organizes aspects of a phenomenon to enhance its comprehension.
+
+  - id: veracity
+    term: Veracity
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    definition: Discernment ascendancy (parent) formed by Objective Assertion.
+    notes: >
+      "Discernment ascendancy" and "discernment parent" name the same four intersections
+      (Veracity, Congruence, Appreciation, Evaluation) — the treatise introduces "parent" only
+      as a simpler alias for "ascendancy," not a distinct concept. No operator symbol is given
+      for this intersection in the prose (unlike the Discernment Children below, which are
+      explicit ← / ^ equations), so no equation field is set here.
+    related: [property, formation, interaction]
+
+  - id: congruence
+    term: Congruence
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    definition: Discernment ascendancy (parent) formed by Objective Arrangement.
+    related: [property, formation, interaction]
+
+  - id: appreciation
+    term: Appreciation
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    definition: Discernment ascendancy (parent) formed by Subjective Assertion.
+    related: [preference, standard, criterion]
+
+  - id: evaluation
+    term: Evaluation
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    definition: Discernment ascendancy (parent) formed by Subjective Arrangement.
+    related: [preference, standard, criterion]
+
+  - id: property
+    term: Property
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Veracity ← Congruence"
+    definition: Discernment child formed when Veracity has authority over Congruence.
+
+  - id: formation
+    term: Formation
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Congruence ← Veracity"
+    definition: Discernment child formed when Congruence has authority over Veracity.
+
+  - id: interaction
+    term: Interaction
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Veracity ^ Congruence"
+    definition: Discernment child formed when Veracity and Congruence hold equal authority.
+
+  - id: preference
+    term: Preference
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Appreciation ← Evaluation"
+    definition: Discernment child formed when Appreciation has authority over Evaluation.
+
+  - id: standard
+    term: Standard
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Evaluation ← Appreciation"
+    definition: Discernment child formed when Evaluation has authority over Appreciation.
+
+  - id: criterion
+    term: Criterion
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Appreciation ^ Evaluation"
+    definition: Discernment child formed when Appreciation and Evaluation hold equal authority.
+
+  # -- Observation sub-components --
+
+  - id: judgement
+    term: Judgement
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: attention
+    definition: Bounded observation — attaching one's own perspectives, priorities, and biases to the act of observing.
+
+  - id: attention
+    term: Attention
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: judgement
+    definition: Non-bounded observation — attending to the world without the observer's own judgement.
+
+  - id: assessment
+    term: Assessment
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    definition: Observation form combining a top-down perspective with judgement — placing oneself as judge of the world.
+    related: [acceptance]
+
+  - id: awareness
+    term: Awareness
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    definition: Observation form combining a top-down perspective with attention — contemplating the landscape without judgement.
+    related: [acceptance]
+
+  - id: relevance
+    term: Relevance
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    definition: Observation form combining a bottom-up perspective with judgement — assigning a priority order to the world's manifestations.
+    related: [alertness]
+
+  - id: concentration
+    term: Concentration
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    definition: Observation form combining a bottom-up perspective with attention — focusing on one aspect of the world outside immediate judgement.
+    related: [alertness]
+
+  - id: acceptance
+    term: Acceptance
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Assessment ^ Awareness"
+    definition: Integration of Assessment and Awareness; the state of holistic attention and appropriate judgement.
+    related: [presence]
+
+  - id: alertness
+    term: Alertness
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Relevance ^ Concentration"
+    definition: Integration of Relevance and Concentration; the state of open concentration and available relevance.
+    related: [presence]
+
+  - id: presence
+    term: Presence
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Acceptance ^ Alertness"
+    definition: >
+      Integration of Acceptance and Alertness; the state of fullness observation. Treated as a
+      resting point to return to rather than a final destination.
+
+  # -- Resolution sub-components --
+
+  - id: friction
+    term: Friction
+    symbol: f
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: conflict
+    definition: Structural challenge dimension in Resolution.
+
+  - id: conflict
+    term: Conflict
+    symbol: k
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: friction
+    definition: Behavioral challenge dimension in Resolution.
+
+  - id: chaos
+    term: Chaos
+    symbol: Ch
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: order
+    definition: One pole of the main challenge duality in Resolution. Does not imply wrongness.
+
+  - id: order
+    term: Order
+    symbol: Or
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: chaos
+    definition: One pole of the main challenge duality in Resolution. Does not imply rightness.
+
+  - id: potential
+    term: Potential
+    symbol: "π"
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "f ^ Ch"
+    definition: Friction concatenated with Chaos.
+    related: [temperance]
+
+  - id: stability
+    term: Stability
+    symbol: "ε"
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "f ^ Or"
+    definition: Friction concatenated with Order.
+    related: [temperance]
+
+  - id: suffering
+    term: Suffering
+    symbol: "ſ"
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "k ^ Ch"
+    definition: Conflict concatenated with Chaos.
+    related: [sacrifice]
+
+  - id: satisfaction
+    term: Satisfaction
+    symbol: "Ʒ"
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "k ^ Or"
+    definition: Conflict concatenated with Order.
+    related: [sacrifice]
+
+  - id: temperance
+    term: Temperance
+    symbol: "τ"
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "π ^ ε"
+    definition: Potential concatenated with Stability. Forward-facing, dynamic regulation.
+    related: [viability]
+
+  - id: sacrifice
+    term: Sacrifice
+    symbol: "ẞ"
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "ſ ^ Ʒ"
+    definition: Suffering concatenated with Satisfaction. Temporally-aware, delayed gratification.
+    related: [viability]
+
+  - id: viability
+    term: Viability
+    symbol: V
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "τ ^ ẞ"
+    definition: Temperance concatenated with Sacrifice. Final synthesis of Resolution.
+
+  # -- Operation sub-components --
+
+  - id: proceptivity
+    term: Proceptivity
+    symbol: Pr
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: receptivity
+    definition: North cardinal point of the Operation compass; active engagement.
+
+  - id: receptivity
+    term: Receptivity
+    symbol: Re
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: proceptivity
+    definition: South cardinal point of the Operation compass; environmental attunement.
+
+  - id: fronterization
+    term: Fronterization
+    symbol: Fr
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: permeability
+    definition: East cardinal point of the Operation compass; boundaries of the sense of self.
+
+  - id: permeability
+    term: Permeability
+    symbol: Pe
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    pair: fronterization
+    definition: West cardinal point of the Operation compass; adaptability to the world's flow.
+
+  - id: individual
+    term: Individual
+    symbol: i
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Pr ^ Fr"
+    definition: North-East hemisphere of the Operation compass.
+
+  - id: community
+    term: Community
+    symbol: c
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Re ^ Pe"
+    definition: South-West hemisphere of the Operation compass.
+
+  - id: orientation
+    term: Orientation
+    symbol: o
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Fr ^ Re"
+    definition: South-East hemisphere of the Operation compass.
+
+  - id: navigation
+    term: Navigation
+    symbol: n
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Pr ^ Pe"
+    definition: North-West hemisphere of the Operation compass.
+
+  - id: identity-axis
+    term: Identity Axis
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Pe ^ Fr"
+    definition: Horizontal axis of the Operation compass; concatenation of Permeability and Fronterization.
+
+  - id: participation-axis
+    term: Participation Axis
+    part: 03_attributes-structure
+    jurisdiction: Interstitial Anatomy
+    equation: "Pr ^ Re"
+    definition: Vertical axis of the Operation compass; concatenation of Proceptivity and Receptivity.
+
+  # ---------------------------------------------------------------------------
+  # PART 4 — ATTRIBUTES STATUS (interstitial physiology)
+  # ---------------------------------------------------------------------------
+
+  - id: attribute-concatenation
+    term: Attribute Concatenation
+    part: 04_attributes-status
+    definition: Crossed interaction between attribute pairs from the primary jurisdiction.
+
+  - id: consistency
+    term: Consistency
+    symbol: C
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "Q ^ Si"
+    notes: Reinforcing pair (with Impermanence).
+    definition: Stillness concatenated with Simultaneity.
+    pair: impermanence
+
+  - id: impermanence
+    term: Impermanence
+    symbol: I
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "M ^ Su"
+    notes: Reinforcing pair (with Consistency).
+    definition: Movement concatenated with Successiveness.
+    pair: consistency
+
+  - id: balance
+    term: Balance
+    symbol: B
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "Q ^ Su"
+    notes: Canceling pair (with Imbalance). Does not imply superiority over Imbalance.
+    definition: Stillness concatenated with Successiveness.
+    pair: imbalance
+
+  - id: imbalance
+    term: Imbalance
+    symbol: b
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "M ^ Si"
+    notes: Canceling pair (with Balance).
+    definition: Movement concatenated with Simultaneity.
+    pair: balance
+
+  - id: status-dichotomies
+    term: Status Dichotomies
+    part: 04_attributes-status
+    definition: Concatenation between the reinforcing (Consistency/Impermanence) and canceling (Balance/Imbalance) pairs.
+    related: [functionality, dysfunctionality, imperdurability, perdurability]
+
+  - id: functionality
+    term: Functionality
+    symbol: "C≡"
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "(C ← I) ^ (b ≡ B)"
+    definition: Consistency accentuated over Impermanence, under symmetrical (available) status. Desirable.
+    pair: dysfunctionality
+
+  - id: dysfunctionality
+    term: Dysfunctionality
+    symbol: "C≢"
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "(C ← I) ^ (b ≢ B)"
+    definition: Consistency accentuated over Impermanence, under asymmetrical (detrimental) status. Harmful.
+    pair: functionality
+
+  - id: imperdurability
+    term: Imperdurability
+    symbol: "I≡"
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "(I ← C) ^ (b ≡ B)"
+    definition: Impermanence accentuated over Consistency, under symmetrical status. Counterintuitively desirable.
+    pair: perdurability
+
+  - id: perdurability
+    term: Perdurability
+    symbol: "I≢"
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "(I ← C) ^ (b ≢ B)"
+    definition: Impermanence accentuated over Consistency, under asymmetrical status. Counterintuitively detrimental.
+    pair: imperdurability
+
+  - id: interstitial-longing
+    term: Interstitial Longing
+    part: 04_attributes-status
+    definition: Survival and performance drive.
+    related: [perdurability-longing, functionality-longing]
+
+  - id: perdurability-longing
+    term: Perdurability Longing
+    symbol: "I≢L"
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    definition: The survival drive of biological systems.
+    related: [organic-physiology]
+
+  - id: functionality-longing
+    term: Functionality Longing
+    symbol: "C≡L"
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    definition: The performance ambition of artificial systems.
+    related: [instrumental-physiology]
+
+  - id: interstitial-physiology
+    term: Interstitial Physiology
+    part: 04_attributes-status
+    definition: Set of interactions between interstitial longings and status dichotomies.
+    related: [organic-physiology, instrumental-physiology, mixed-physiology]
+
+  - id: organic-physiology
+    term: Organic Physiology
+    symbol: oP
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "I≢L → (I≡ ^ I≢)"
+    definition: >
+      Interaction between the perdurability longing and the Imperdurability/Perdurability
+      dichotomy. Self-contained — no access to the Functional/Dysfunctional dichotomy.
+
+  - id: instrumental-physiology
+    term: Instrumental Physiology
+    symbol: iP
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "C≡L → (C≡ ^ C≢)"
+    definition: >
+      Interaction between the functionality longing and the Functional/Dysfunctional
+      dichotomy. Self-contained — no access to the Imperdurability/Perdurability dichotomy.
+
+  - id: mixed-physiology
+    term: Mixed Physiology
+    symbol: mP
+    part: 04_attributes-status
+    jurisdiction: Attributes Status
+    equation: "oP ^ iP"
+    definition: >
+      Simultaneous interaction between both interstitial longings and status dichotomies.
+      Example: Humanity.
+
+  - id: incompatibility-axiom
+    term: Incompatibility Axiom
+    part: 04_attributes-status
+    definition: Functionality and Perdurability are not compatible in a mixed physiology system.
+    notes: >
+      The most contentious claim in Conciliatorics. Functionality Longing predisposes
+      Imperdurability (C≡L → (I≡^I≢) = I≡); Perdurability Longing predisposes Dysfunctionality
+      (I≢L → (C≡^C≢) = C≢). The author explicitly acknowledges readers may reasonably disagree.
+
+  - id: status-decay
+    term: Status Decay
+    part: 04_attributes-status
+    definition: Interstitial process of physiological deterioration, leading eventually to an end state.
+    decay_table:
+      organic: { healthy: Perdurable, intermediate: Physiological Sickness, end: Dead System }
+      instrumental: { healthy: Functional, intermediate: Physiological Breakage, end: Destroyed System }
+      mixed: { healthy: Conciliation, intermediate: Physiological Crisis, end: Dissolved System }
+    notes: Mixed systems are most vulnerable to decay but are the only ones with a pathway to transcend their end state (see conciliation-pathway).
+
+  # ---------------------------------------------------------------------------
+  # PART 5 — ATTRIBUTES SYNTHESIS
+  # ---------------------------------------------------------------------------
+
+  - id: organic-synthesis
+    term: Organic Synthesis
+    symbol: "oΣ"
+    part: 05_attributes-synthesis
+    jurisdiction: Attributes Synthesis
+    equation: "[I≢L → (I≡ ^ I≢)] → {iD ≡ iO ≡ iR ≡ iE}"
+    definition: Modulation of interstitial anatomy by organic physiology.
+    notes: "Simplified form example: Organic Discernment = I≢L → iD."
+
+  - id: instrumental-synthesis
+    term: Instrumental Synthesis
+    symbol: "iΣ"
+    part: 05_attributes-synthesis
+    jurisdiction: Attributes Synthesis
+    equation: "[C≡L → (C≡ ^ C≢)] → {iD ≡ iO ≡ iR ≡ iE}"
+    definition: Modulation of interstitial anatomy by instrumental physiology.
+    notes: "Simplified form example: Instrumental Observation = C≡L → iO."
+
+  - id: mixed-synthesis
+    term: Mixed Synthesis (Raw form)
+    symbol: "mΣ"
+    part: 05_attributes-synthesis
+    jurisdiction: Attributes Synthesis
+    equation: "{[I≢L → (I≡ ^ I≢)] ^ [C≡L → (C≡ ^ C≢)]} → {iD ≡ iO ≡ iR ≡ iE}"
+    definition: >
+      Modulation of interstitial anatomy by mixed physiology. Represents an interstitial
+      potential awaiting a dominant longing before bifurcating into Unification or
+      Conciliation Synthesis.
+    related: [unification-synthesis, conciliation-synthesis]
+
+  - id: unification-synthesis
+    term: Unification Synthesis
+    symbol: "uΣ"
+    part: 05_attributes-synthesis
+    jurisdiction: Attributes Synthesis
+    equation: "(C≢ ^ I≢) → {iD ≡ iO ≡ iR ≡ iE}"
+    definition: >
+      Modulation of interstitial anatomy by perdurable dysfunctionality. Centralizes authority
+      to preserve durability, at the cost of representation. Example: empire.
+    related: [centralization]
+
+  - id: conciliation-synthesis
+    term: Conciliation Synthesis
+    symbol: "cΣ"
+    part: 05_attributes-synthesis
+    jurisdiction: Attributes Synthesis
+    equation: "(I≡ ^ C≡) → {iD ≡ iO ≡ iR ≡ iE}"
+    definition: >
+      Modulation of interstitial anatomy by imperdurable functionality. Favors responsive
+      representation, accepting temporal limits. Example: presidential term. Ethically the
+      preferable model, though practically challenged by its own imperdurability.
+    related: [decentralization, conciliation-pathway]
+
+  - id: conciliation-pathway
+    term: Conciliation Pathway
+    part: 05_attributes-synthesis
+    definition: Iterated Imperdurable Functionality.
+    notes: >
+      The proposed answer to the imperdurability dilemma, framed as a scalability problem
+      (cf. a cell's role within a persisting tissue). Requires accepting imperdurability while
+      embracing iteration as a systemic requirement.
+
+  - id: status-reciprocity
+    term: Status Reciprocity
+    part: 05_attributes-synthesis
+    definition: Correlation between attribute position and attribute disposition, influenced by mixed synthesis.
+    notes: >
+      Unification Synthesis <-> Centralization (dysfunctional/intrinsic).
+      Conciliation Synthesis <-> Decentralization (functional/intrinsic).
+    related: [attribute-disposition, centralization, decentralization]
+
+  - id: centralization
+    term: Centralization
+    part: 05_attributes-synthesis
+    definition: Intrinsic-attribute correlate of Unification Synthesis; the dysfunctional-status pole.
+    pair: decentralization
+    related: [unification-synthesis]
+
+  - id: decentralization
+    term: Decentralization
+    part: 05_attributes-synthesis
+    definition: Intrinsic-attribute correlate of Conciliation Synthesis; the functional-status pole.
+    pair: centralization
+    related: [conciliation-synthesis]
+    notes: Discussed via applied examples — blockchain/DAO governance, local organizations.
+
+  - id: core-eic
+    term: Core EIC
+    part: 05_attributes-synthesis
+    definition: >
+      The foundational, integrated development of EIC, running from Attributes Dynamics through
+      the close of Attributes Synthesis (Parts 2-5) — bounded by the Attributes Regulation
+      opening anchor and the Attributes Synthesis closing anchor. Checked for coherence across
+      its full span; comparatively stable.
+    related: [edge-eic, attributes-dynamics, attributes-synthesis]
+
+  - id: edge-eic
+    term: Edge EIC
+    part: 05_attributes-synthesis
+    definition: >
+      Additional EIC development extending beyond Core EIC into specific, still-evolving
+      methods. Individual Edge EIC concepts don't need to cover every Core EIC component
+      symmetrically, and can grow independently of one another.
+    notes: Operational Status is the first developed Edge EIC concept.
+    related: [core-eic, operational-status]
+
+  - id: operational-status
+    term: Operational Status
+    part: 05_attributes-synthesis
+    jurisdiction: Edge EIC
+    definition: >
+      The first developed Edge EIC concept: a deliberate combination of Operation (Attributes
+      Structure) and the functional/dysfunctional framing of Status (Attributes Status), applied
+      to the Operation compass's four cardinal directions (Proceptivity, Receptivity,
+      Fronterization, Permeability).
+    notes: >
+      Sub/Supra (s/S) mark a functional accentuation that preserves complementarity with a
+      direction's pair, paralleling Symmetry (≡). Hypo/Hyper (h/H) mark a dysfunctional
+      accentuation that has broken complementarity into opposition, paralleling Asymmetry (≢) —
+      not an "Anti-" framing (see attribute-accentuation), since they describe a dysfunctional
+      degree of the same direction rather than opposition to it. Currently developed only for
+      Operation, not yet for Discernment, Observation, or Resolution. Source prose (05_07) is
+      still an author-marked draft, pending polish — no notational or conceptual issue is open,
+      hence default "stable" status here.
+    related: [operation, edge-eic, symmetry, asymmetry, functionality, dysfunctionality]
+
+  - id: sub
+    term: Sub
+    symbol: s
+    part: 05_attributes-synthesis
+    jurisdiction: Operational Status
+    pair: supra
+    definition: >
+      Functional accentuation modulator marking reduced emphasis on an Operation direction,
+      preserving complementarity with its pair.
+
+  - id: supra
+    term: Supra
+    symbol: S
+    part: 05_attributes-synthesis
+    jurisdiction: Operational Status
+    pair: sub
+    definition: >
+      Functional accentuation modulator marking heightened emphasis on an Operation direction,
+      preserving complementarity with its pair.
+    notes: >
+      Symbol S is a prefix here, a different symbolic role from the core "S" for System used in
+      Inventive Edification/Ossification symbols (e.g. (cS), [Cs]) — position within an
+      expression disambiguates the two rather than colliding (see attribute-operators).
+
+  - id: hypo
+    term: Hypo
+    symbol: h
+    part: 05_attributes-synthesis
+    jurisdiction: Operational Status
+    pair: hyper
+    definition: >
+      Dysfunctional accentuation modulator marking a direction whose reduced emphasis has
+      broken complementarity with its pair.
+
+  - id: hyper
+    term: Hyper
+    symbol: H
+    part: 05_attributes-synthesis
+    jurisdiction: Operational Status
+    pair: hypo
+    definition: >
+      Dysfunctional accentuation modulator marking a direction whose heightened emphasis has
+      broken complementarity with its pair.
+
+  # ---------------------------------------------------------------------------
+  # PART 6 — EDIFIED INTRINSIC TRANSFORMATION (EIT)
+  # ---------------------------------------------------------------------------
+
+  - id: systemic-diplomacy
+    term: Systemic Diplomacy
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      What Jurisdictional Differentiation promotes: a jurisdiction aware of its own distinct
+      role, cultivating healthy interaction with neighboring jurisdictions rather than
+      isolating itself (Dissociation) or merging into them (Dissolution). Originally coined
+      in Attribute Jurisdiction (Part 2); given a worked example in Part 6, where it names the
+      intended relationship between EIC and EIT — EIC supplying relational structure, EIT
+      supplying concrete engagement, neither absorbing the other.
+    notes: >
+      The three failure modes to watch for in the EIC/EIT relationship specifically: Overreach
+      (EIC's theory revised to suit implementation convenience, or EIT dictating what a term
+      is allowed to mean), Dissociation (EIT drifting from EIC's vocabulary until it is just a
+      schema tool), Dissolution (the line between theoretical claim and implementation choice
+      blurring past recognition).
+    related: [jurisdictional-differentiation, jurisdictional-dissociation, jurisdictional-dissolution,
+              edified-intrinsic-transformation]
+
+  - id: ai-assistance
+    term: AI Assistance
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      The use of AI systems to support work with Conciliatorics — maintaining terminological
+      and notational consistency, structuring applied case readings, translating a concept or
+      case between representation types on request, and traversing an accumulated case library
+      for patterns across cases.
+    notes: >
+      Interpretive judgment — deciding which jurisdiction, pair, and attributes a real-world
+      case falls under — remains Contemplation, and is not performed by an AI or automated
+      away; assistance operates only on judgment a human has already supplied. A derivation
+      engine (a program that mechanically checks/derives conclusions from a completed schematic
+      reading) is named as a possible future direction, not a built or promised capability.
+      Originally introduced in Attributes Synthesis (Part 5); relocated to Part 6 once EIT
+      became its own developed parcel.
+    related: [schematic-representation, contemplation, yaml-library, systemic-diplomacy]
+
+  - id: yaml-library
+    term: YAML Library
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      A structured, growing set of Schematic Representation entries, written in YAML, sharing
+      a consistent set of fields and cross-referenced by stable identifiers — the concrete,
+      intrinsic form Schematic Representation takes within EIT. Not a single file with one
+      fixed purpose but a repeatable pattern, instantiable for different kinds of accumulating
+      content.
+    notes: >
+      YAML was chosen over an alternative like JSON as an intrinsic judgment about the format
+      itself: it holds the same structural information while staying legible to a human reader
+      without a parser (native comments, indentation over braces), serving both an AI's and a
+      person's native reading at once. Known or discussed instances: a term/symbol glossary
+      (built — see yaml-glossary), a case library of real-world readings (discipline described
+      in ai-assistance, not yet built as its own library), diagram metadata (deliberately
+      deferred), a typed knowledge graph and a formal operator grammar (both discussed as
+      possible directions, not yet designed).
+    related: [schematic-representation, yaml-glossary, ai-assistance]
+
+  - id: yaml-glossary
+    term: YAML Glossary
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      The treatise's term-and-symbol glossary (glossary.yaml), and the first built instance of
+      a YAML Library. Replaced two separate, drifting prose glossaries (definitions and
+      symbols) with a single set of structured entries — id, term, symbol, part, jurisdiction,
+      pair, equation, definition, notes, related — serving as the treatise's single source of
+      truth for defined terms and notation.
+    notes: >
+      Concrete value already demonstrated, not just organizational: laying every symbol side
+      by side surfaced the (cS)/cS collision between edified-intrinsic-contemplation and the
+      original (pre-Sigma) Conciliation Synthesis symbol — an error invisible from within
+      either chapter alone. Intended as a template for future YAML Library instances (see
+      yaml-library) rather than a singular, closed artifact.
+    related: [yaml-library, schematic-representation, ai-assistance]

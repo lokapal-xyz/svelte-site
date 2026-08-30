@@ -1,4 +1,4 @@
-## YAML Glossary
+# YAML Glossary
 
 *On a working example.*
 

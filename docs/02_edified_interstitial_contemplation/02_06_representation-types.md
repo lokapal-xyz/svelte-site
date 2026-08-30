@@ -1,4 +1,4 @@
-## Representation Types
+# Representation Types
 
 *On different eyes.*
 

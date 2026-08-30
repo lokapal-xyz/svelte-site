@@ -1,4 +1,4 @@
-## YAML Library
+# YAML Library
 
 *On common shelves.*
 

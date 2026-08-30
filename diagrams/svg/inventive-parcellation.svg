@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 697.78 251"
+     width="697.78" height="251"
+     role="img"
+     aria-label="Inventive Parcellation flowchart">
+  <title>Inventive Parcellation</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="697.78" height="251" fill="#171719" stroke="none"/>
+
+  <path d="M263.40707236842104,53L175.99542167136832,75.92369031392687Q168.078125,78 168.078125,86.18502587014488L168.078125,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M436.62376644736844,53L525.8544806883872,75.96586981269924Q533.7578125,78 533.7578125,86.1609030960635L533.7578125,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M123.93667763157895,148L83.4174404936419,168.65366882953197Q74.890625,173 74.890625,182.57064141559977L74.890625,194"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M212.21957236842104,148L252.7388095063581,168.65366882953197Q261.265625,173 261.265625,182.57064141559977L261.265625,194"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M491.24095394736844,148L452.5666294189778,168.46652390396162Q444,173 444,182.6922414907723L444,194"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M576.2746710526316,148L614.9489955810222,168.46652390396162Q623.515625,173 623.515625,182.6922414907723L623.515625,194"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A">
+    <rect x="255.36" y="8" width="187.69" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="349.2" y="35.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Inventive Parcellation</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="84.03" y="103" width="168.09" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="168.08" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Inventive Approach</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="453.14" y="103" width="161.23" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="533.76" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" font-style="italic" text-anchor="middle">Inventive Position</text>
+  </g>
+
+  <g id="node-D">
+    <rect x="8" y="198" width="133.78" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="74.89" y="225.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Contemplation</text>
+  </g>
+
+  <g id="node-E">
+    <rect x="191.78" y="198" width="138.97" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="261.27" y="225.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Transformation</text>
+  </g>
+
+  <g id="node-F">
+    <rect x="380.75" y="198" width="126.5" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="444" y="225.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Intrinsicality</text>
+  </g>
+
+  <g id="node-G">
+    <rect x="557.25" y="198" width="132.53" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="623.52" y="225.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Interstitiality</text>
+  </g>
+
+</svg>
