@@ -1,54 +1,37 @@
 <script lang="ts">
 	import { asset, resolve } from '$app/paths';
-	import type { PageProps } from './$types';
+	import { getFlock } from '$lib/birds/flock.svelte';
+	import { sections } from '$lib/nav';
 
-	let { data }: PageProps = $props();
+	const flock = getFlock();
 
-	const parts = $derived.by(() => {
-		const grouped: { title: string; chapters: typeof data.chapters }[] = [];
-		for (const chapter of data.chapters) {
-			const last = grouped.at(-1);
-			if (last && last.title === chapter.partTitle) {
-				last.chapters.push(chapter);
-			} else {
-				grouped.push({ title: chapter.partTitle, chapters: [chapter] });
-			}
-		}
-		return grouped;
-	});
+	function scare(event: PointerEvent | MouseEvent) {
+		if ('button' in event && event.button !== 0) return;
+		flock.scatter();
+	}
 </script>
 
 <svelte:head>
-	<title>Conciliatorics</title>
+	<title>Lokapal</title>
 </svelte:head>
 
 <main class="home">
-	<img
-		class="hero"
-		src={asset('/illustrations/hero.jpg')}
-		alt="Four cartoon birds — a white dove, brown sparrow, blue jay, and black crow — on a mossy log over a stream, ink and watercolor."
-		width="1248"
-		height="832"
-	/>
+	<img class="emblem" src={asset('/lokapal-main.png')} alt="" width="240" height="240" />
+
+	<h1>Lokapal</h1>
 
 	<p class="lede">
-		A perspective within Systemics that seeks to reconcile the inventive aspect of Systemic
-		Intervention. Read the treatise, click a term to glance at its definition, or trace Core EIC
-		equations in the Dex.
+		This is the official website of the philosopher Lokapal (Ricardo Pintos). I am currently
+		developing Conciliatorics, a perspective within Systemics that seeks to reconcile the inventive
+		aspects of Systemic Intervention.
 	</p>
 
-	<nav class="toc" aria-label="Treatise">
-		{#each parts as part (part.title)}
-			<section>
-				<h2>{part.title}</h2>
-				<ol>
-					{#each part.chapters as chapter (chapter.slug)}
-						<li>
-							<a href={resolve('/[slug]', { slug: chapter.slug })}>{chapter.title}</a>
-						</li>
-					{/each}
-				</ol>
-			</section>
+	<nav class="gates" aria-label="Sections" {@attach flock.attachGates}>
+		{#each sections as section (section.href)}
+			<a href={resolve(section.href)} onpointerdown={scare} onclick={scare}>
+				<span class="label">{section.label}</span>
+				<span class="blurb">{section.blurb}</span>
+			</a>
 		{/each}
 	</nav>
 </main>
@@ -56,45 +39,80 @@
 <style>
 	.home {
 		width: min(var(--content), 100%);
-		margin: 1.5rem auto 0;
+		margin: 2rem auto 0;
+		text-align: center;
 	}
 
-	.hero {
+	.emblem {
 		display: block;
-		width: 100%;
+		width: 7.5rem;
+		height: 7.5rem;
+		margin: 0 auto 1.35rem;
+		border-radius: 50%;
+		object-fit: cover;
 		border: 1px solid var(--border);
-		background: #f4efe4;
+	}
+
+	h1 {
+		margin: 0 0 0.7rem;
+		font-size: 2.15rem;
+		line-height: 1.2;
 	}
 
 	.lede {
-		margin: 1.25rem 0 2rem;
+		margin: 0 auto 2rem;
+		max-width: 38rem;
 		color: var(--text-muted);
+		text-align: center;
 	}
 
-	h2 {
-		margin: 1.6rem 0 0.45rem;
-		font-size: 1.05rem;
-		color: var(--text-muted);
+	.gates {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2.1rem 0.75rem;
+		padding-top: 1.85rem;
+		text-align: left;
 		font-family: var(--font-ui);
-		font-weight: 600;
-		letter-spacing: 0.02em;
 	}
 
-	ol {
-		margin: 0;
-		padding-left: 1.2rem;
-	}
-
-	li {
-		margin: 0.2rem 0;
-	}
-
-	a {
+	.gates a {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		min-height: 4.5rem;
+		padding: 0.85rem 1rem;
+		border: 1px solid var(--border);
+		border-radius: 0.75rem;
 		color: var(--text);
-		text-decoration-color: var(--border);
+		text-decoration: none;
+		transition:
+			border-color 180ms ease,
+			color 180ms ease;
 	}
 
-	a:hover {
+	.gates a:hover {
+		border-color: var(--accent);
 		color: var(--accent);
+	}
+
+	.label {
+		font-weight: 650;
+	}
+
+	.blurb {
+		color: var(--text-muted);
+		font-size: 0.9rem;
+		line-height: 1.4;
+		transition: color 180ms ease;
+	}
+
+	.gates a:hover .blurb {
+		color: var(--accent);
+	}
+
+	@media (max-width: 36rem) {
+		.gates {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>

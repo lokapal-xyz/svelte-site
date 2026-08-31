@@ -1,17 +1,26 @@
 <script lang="ts">
+	import { asset, resolve } from '$app/paths';
 	import { page } from '$app/state';
-	import { resolve } from '$app/paths';
+	import { sectionIsActive, sections } from '$lib/nav';
 
-	const onTreatise = $derived(page.url.pathname === '/' || /^\/\d/.test(page.url.pathname));
-	const onDex = $derived(page.url.pathname === '/dex' || page.url.pathname.startsWith('/dex/'));
+	const onHome = $derived(page.url.pathname === '/');
 </script>
 
 <header class="site-header">
 	<div class="inner">
-		<a class="mark" href={resolve('/')}>Conciliatorics</a>
+		<a class="mark" href={resolve('/')} aria-current={onHome ? 'page' : undefined}>
+			<img src={asset('/icon-transparent.png')} alt="" width="32" height="32" />
+			Lokapal
+		</a>
 		<nav aria-label="Site">
-			<a href={resolve('/')} aria-current={onTreatise ? 'page' : undefined}>Treatise</a>
-			<a href={resolve('/dex')} aria-current={onDex ? 'page' : undefined}>EIC-Dex</a>
+			{#each sections as section (section.href)}
+				<a
+					href={resolve(section.href)}
+					aria-current={sectionIsActive(page.url.pathname, section.href) ? 'page' : undefined}
+				>
+					{section.label}
+				</a>
+			{/each}
 		</nav>
 	</div>
 </header>
@@ -28,16 +37,19 @@
 	.inner {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: baseline;
+		align-items: center;
 		justify-content: space-between;
 		gap: 0.75rem 1.5rem;
 		width: min(var(--page), calc(100% - 2rem));
 		margin: 0 auto;
-		padding: 1.15rem 0 1rem;
+		padding: 0.85rem 0 0.8rem;
 		font-family: var(--font-ui);
 	}
 
 	.mark {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
 		color: var(--text);
 		font-size: 1.05rem;
 		font-weight: 650;
@@ -45,9 +57,16 @@
 		text-decoration: none;
 	}
 
+	.mark img {
+		display: block;
+		width: 1.7rem;
+		height: 1.7rem;
+	}
+
 	nav {
 		display: flex;
-		gap: 1.1rem;
+		flex-wrap: wrap;
+		gap: 0.55rem 1rem;
 	}
 
 	nav a {

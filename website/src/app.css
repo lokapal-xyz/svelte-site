@@ -38,7 +38,8 @@ body {
 	opacity: 1;
 }
 
-html.unloading .page-body {
+html.unloading .page-body,
+html.unloading .flock {
 	visibility: hidden;
 	opacity: 0;
 }
@@ -90,25 +91,36 @@ button {
 .chapter .kicker,
 .chapter h1,
 .chapter h1 + p,
+.home .emblem,
+.home h1,
 .home .lede,
+.treatise h1,
+.treatise .lede,
+.section h1,
+.section .lede,
+.section .byline,
 .dex h1,
 .dex .lede,
 .entry .kicker,
-.entry h1 {
+.entry h1,
+.error h1,
+.error .lede {
 	animation: enter 700ms ease both;
 }
 
-.home .hero {
-	animation: enter-fade 700ms ease 200ms both;
-}
-
 .chapter > :not(.kicker):not(h1):not(.chapter-nav),
-.home .toc,
+.treatise .toc,
+.section .body,
 .dex label,
 .dex ul,
 .entry .definition,
-.entry dl {
+.entry dl,
+.error .gate {
 	animation: enter 700ms ease 400ms both;
+}
+
+.home .gates {
+	animation: enter-fade 700ms ease 400ms both;
 }
 
 .chapter h1 + p {
@@ -125,9 +137,17 @@ button {
 	.chapter h1 + p,
 	.chapter > :not(.kicker):not(h1):not(.chapter-nav),
 	.chapter-nav,
-	.home .hero,
+	.home .emblem,
+	.home h1,
 	.home .lede,
-	.home .toc,
+	.home .gates,
+	.treatise h1,
+	.treatise .lede,
+	.treatise .toc,
+	.section h1,
+	.section .lede,
+	.section .byline,
+	.section .body,
 	.dex h1,
 	.dex .lede,
 	.dex label,
@@ -135,9 +155,39 @@ button {
 	.entry .kicker,
 	.entry h1,
 	.entry .definition,
-	.entry dl {
+	.entry dl,
+	.error h1,
+	.error .lede,
+	.error .gate {
 		animation: none;
 	}
+}
+
+.section {
+	width: min(var(--content), 100%);
+	margin: 1.5rem auto 0;
+}
+
+.section h1 {
+	margin: 0 0 0.5rem;
+	font-size: 2.15rem;
+	line-height: 1.25;
+	font-weight: 650;
+}
+
+.section .lede {
+	margin: 0 0 1.25rem;
+	color: var(--text-muted);
+}
+
+.section .body p,
+.section .body li {
+	margin: 0.85rem 0;
+}
+
+.section .body ul,
+.section .body ol {
+	padding-left: 1.25rem;
 }
 
 .chapter {

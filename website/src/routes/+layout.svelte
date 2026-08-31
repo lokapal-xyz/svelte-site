@@ -1,8 +1,10 @@
 <script lang="ts">
 	import '../app.css';
 	import { afterNavigate } from '$app/navigation';
+	import { asset } from '$app/paths';
 	import { page } from '$app/state';
-	import favicon from '$lib/assets/favicon.svg';
+	import { FlockController, setFlock } from '$lib/birds/flock.svelte';
+	import BirdFlock from '$lib/components/BirdFlock.svelte';
 	import SiteHeader from '$lib/components/SiteHeader.svelte';
 	import TermPanel from '$lib/components/TermPanel.svelte';
 	import { TermPanelState, setTermPanel } from '$lib/term-panel.svelte';
@@ -12,6 +14,7 @@
 
 	const panel = new TermPanelState();
 	setTermPanel(panel);
+	setFlock(new FlockController());
 
 	afterNavigate((navigation) => {
 		panel.close();
@@ -67,7 +70,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href={asset('/favicon.ico')} />
 	<meta name="color-scheme" content="dark" />
 </svelte:head>
 
@@ -88,4 +91,5 @@
 	{/key}
 </div>
 
+<BirdFlock />
 <TermPanel glossary={data.glossary} dexIds={data.dexIds} />
