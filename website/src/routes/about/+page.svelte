@@ -25,7 +25,7 @@
 		<ul>
 			<li>
 				<a href={resolve('/start')}>Start here</a>
-				— a future walkthrough of the load-bearing ideas, for a first reading that does not begin at chapter
+				— a short walkthrough of the load-bearing ideas, for a first reading that does not begin at chapter
 				one.
 			</li>
 			<li>

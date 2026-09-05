@@ -68,6 +68,28 @@ button {
 	padding-bottom: 4rem;
 }
 
+body:has(.walk) {
+	display: flex;
+	flex-direction: column;
+	height: 100svh;
+	overflow: hidden;
+}
+
+body:has(.walk) .page {
+	flex: 1 1 auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 0.4rem;
+}
+
+body:has(.walk) .page-body {
+	flex: 1 1 auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+}
+
 @keyframes enter {
 	from {
 		opacity: 0;
@@ -104,7 +126,8 @@ button {
 .entry .kicker,
 .entry h1,
 .error h1,
-.error .lede {
+.error .lede,
+.walk {
 	animation: enter 700ms ease both;
 }
 
@@ -158,7 +181,8 @@ button {
 	.entry dl,
 	.error h1,
 	.error .lede,
-	.error .gate {
+	.error .gate,
+	.walk {
 		animation: none;
 	}
 }
