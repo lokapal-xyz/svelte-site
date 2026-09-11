@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import ChapterNav from '$lib/components/ChapterNav.svelte';
 	import { getChapterComponent } from '$lib/treatise/modules';
 	import type { PageProps } from './$types';
@@ -17,7 +18,9 @@
 </svelte:head>
 
 <article class="chapter">
-	<p class="kicker">{data.chapter.partTitle}</p>
+	<nav class="kicker" aria-label="Breadcrumb">
+		<a href={resolve('/treatise')}>Treatise</a><span class="sep" aria-hidden="true">›</span>{data.chapter.partTitle}
+	</nav>
 	{#if Content}
 		<Content />
 	{/if}

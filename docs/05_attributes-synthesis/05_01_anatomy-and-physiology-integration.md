@@ -2,12 +2,10 @@
 
 *On unending crossroads.*
 
-To conclude our EIC exploration, we now integrate Interstitial Anatomy and Physiology. We should remember that the journey between Attributes Proliferation to Attributes Synthesis is just a conceptual one. We are constructing a roadmap to illustrate, step by step, aspects of complex system behavior. Therefore, Attributes Synthesis is not an endpoint or final goal—it represents the outermost layer of interstitiality, constructed upon all previous layers.
-
-Let's refresh the Attributes Synthesis definition and introducing its components:
+We now integrate Interstitial Anatomy and Interstitial Physiology. The road from Attributes Dynamics to this point has been conceptual: a map of how complex systems are structured and how they live. Attributes Synthesis is not an endpoint. It is the outermost layer of interstitiality, built on every layer beneath it.
 
 - **ATTRIBUTES SYNTHESIS**: EIC step that integrates the exploration of attributes structure and status.
 
 ![Diagram showing the components of Attributes Synthesis](../../diagrams/png/attributes-synthesis.png)
 
-These synthesis types—Organic, Instrumental, and Mixed—reflect the core physiological modes previously explored. Their use here indicates how systems ultimately integrate structure and function. You could reformat these synthesis from the anatomy labels, but we think that is more intuitive to separate systemic structures in this way. This classification also anticipates the final bifurcation that emerges specifically within Mixed Synthesis. 
+The synthesis types — Organic, Instrumental, and Mixed — are the physiological modes already named. Here they show how a system integrates structure and function: physiology animating anatomy. We could have labeled these by the anatomy methods instead. Sorting them by physiology is the more intuitive cut, and it is the one that lets Mixed Synthesis split — a bifurcation we will reach once the simpler two are in place.

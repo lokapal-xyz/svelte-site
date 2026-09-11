@@ -2,13 +2,15 @@
 
 *On heed and periphery.*
 
-Let's start this section by refreshing the Attributes Structure definition and introducing its components:
+Attributes Structure is the stretch of EIC that builds toward Interstitial Anatomy. We get there by applying operators to the pairs of the primary jurisdiction. The first of those operators, used *inside* a pair, is **accentuation**.
 
 - **ATTRIBUTES STRUCTURE**: EIC step that explores the interstitial anatomy components of Behavior Dynamics.
 
 ![Diagram showing the components of Attributes Structure](../../diagrams/png/attributes-structure.png)
 
-As you can see, our goal is to build up the main concept of Attributes Structure: **Interstitial Anatomy**. But for that, we need additional concepts in order to reach that point. We'll develop new EIC concepts by implementing *attribute operators* to *attribute pairs*. Let's start by taking the attribute pairs of the primary jurisdiction and applying the **accentuation** operator.
+- **ATTRIBUTE ACCENTUATION**: Temporary focus on one member of an attribute pair, without dismissing the other side.
+
+The Stillness–Movement pair begins in symmetry: **Stillness ≡ Movement**. A garden at rest and a garden at work are not two gardens. Focusing on the still one does not break that symmetry, so long as the working one is not dismissed. Accentuation marks the focus: **Stillness ← Movement**.
 
 | **ACCENTUATION** | **SYMBOLIC FORM** |
 |----|---|
@@ -17,10 +19,8 @@ As you can see, our goal is to build up the main concept of Attributes Structure
 | Simultaneity ← Successiveness = Pro-Simultaneity | Si ← Su = pSi |
 | Successiveness ← Simultaneity = Pro-Successiveness | Su ← Si = pSu |
 
-The **Stillness-Movement** attribute pair begins in a state of symmetry: **Stillness ≡ Movement**. By temporarily focusing on one of the attributes we are not necessarily breaking the symmetry, as long as we don't dismiss the other side of the attribute pair. We use the accentuation operator to indicate this focus shift: **Stillness ← Movement**.
+Using the full pair every time soon becomes impractical. Naming only "Stillness" is worse: the complement disappears from the page and, soon after, from the analysis. The "pro-" prefix keeps the pair in view: **Stillness ← Movement = Pro-Stillness**.
 
-As we move toward more complex relationships, using the full attribute pair every time becomes impractical. So, we need a new term to signal this type of focus. But using an attribute term alone (e.g., "Stillness") can easily lead to forgetting its complement. We use for this purpose the "pro-" prefix: **Stillness ← Movement = Pro-Stillness**.
+In EIC, "pro" does not imply preference, and it does not mean we are against the other side (there is no "Anti-Movement" here). Focusing on the still garden is not a vote against the working one. The other side remains available. The prefix is a concise tool for building further concepts while staying inside Attributes Regulation.
 
-Using "pro-" allows us to start moving away from the symmetry state without breaking the attribute pair. In EIC, "pro" does not imply preference, and most certainly does not mean that we are against the other aspect of the attribute pair (e.g., "Anti-Movement"). The prefix is just used as a concise tool to build more concepts while maintaining our opening anchor (Attributes Regulation).
-
-The symbolic representation `Q ← M = pQ` helps us to quickly visualize these interactions, and they'll become handy when reaching complex configurations. With our new set of concepts, we can progress to the next section, in which we'll start to bridge abstract concepts to practical methods.
+The form `Q ← M = pQ` will carry that focus into denser configurations. Next we join these accentuations to one another.

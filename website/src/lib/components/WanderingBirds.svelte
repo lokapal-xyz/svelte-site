@@ -9,7 +9,7 @@
 	{#each walkers.birds as bird (bird.id)}
 		<button
 			type="button"
-			class={['bird', bird.phase]}
+			class={['bird', bird.phase === 'walk' ? 'walking' : bird.phase]}
 			tabindex="-1"
 			style:--x="{bird.x}px"
 			style:--y="{bird.y}px"
@@ -74,7 +74,7 @@
 		transform: scaleX(-1);
 	}
 
-	.walk .lift {
+	.walking .lift {
 		animation: walk-bob 320ms ease-in-out infinite;
 	}
 
@@ -89,7 +89,7 @@
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		.walk .lift {
+		.walking .lift {
 			animation: none;
 		}
 

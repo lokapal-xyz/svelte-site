@@ -49,6 +49,18 @@
 	}
 
 	function onWindowKey(event: KeyboardEvent) {
+		if (
+			(event.key === 'Enter' || event.key === ' ') &&
+			event.target instanceof HTMLElement &&
+			event.target.classList.contains('glossary-token') &&
+			event.target.dataset.glossaryId
+		) {
+			event.preventDefault();
+			const rect = event.target.getBoundingClientRect();
+			panel.open(event.target.dataset.glossaryId, rect.left + rect.width / 2, rect.top);
+			return;
+		}
+
 		if (!panel.openId) return;
 		if (keepPanel(event.target)) return;
 		panel.close();

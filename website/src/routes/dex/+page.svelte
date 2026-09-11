@@ -1,4 +1,6 @@
 <script lang="ts">
+	import DexLink from '$lib/components/DexLink.svelte';
+	import { groupByFamily, groupByKicker, kickerSlug, labelOf } from '$lib/library/dex';
 	import { resolve } from '$app/paths';
 	import type { PageProps } from './$types';
 
@@ -6,28 +8,26 @@
 
 	let query = $state('');
 
-	const rows = $derived.by(() => {
+	const matchedIds = $derived.by(() => {
 		const needle = query.trim().toLowerCase();
-		return data.dexIds
-			.map((id) => {
-				const entry = data.dex[id];
-				const term = data.glossary[id];
-				return {
-					id,
-					name: term?.term ?? id,
-					symbol: entry?.symbol ?? term?.symbol ?? '',
-					equation: entry?.equation ?? ''
-				};
-			})
-			.filter((row) => {
-				if (!needle) return true;
-				return (
-					row.name.toLowerCase().includes(needle) ||
-					row.symbol.toLowerCase().includes(needle) ||
-					row.id.includes(needle)
-				);
-			});
+		return data.dexIds.filter((id) => {
+			if (!needle) return true;
+			const entry = data.dex[id];
+			const label = labelOf(id, data.glossary, data.dex);
+			const family = data.families.find((row) => row.id === entry?.family);
+			return (
+				label.name.toLowerCase().includes(needle) ||
+				label.symbol.toLowerCase().includes(needle) ||
+				id.includes(needle) ||
+				(entry?.equation?.toLowerCase().includes(needle) ?? false) ||
+				(entry?.notes?.toLowerCase().includes(needle) ?? false) ||
+				(family?.title.toLowerCase().includes(needle) ?? false)
+			);
+		});
 	});
+
+	const blocks = $derived(groupByKicker(groupByFamily(data.families, data.dex, matchedIds)));
+	const searching = $derived(query.trim().length > 0);
 </script>
 
 <svelte:head>
@@ -37,29 +37,59 @@
 <main class="dex">
 	<h1>EIC-Dex</h1>
 	<p class="lede">
-		Core EIC equation graph. Search by name or symbol, then open an entry to trace it back to
-		terminal primitives.
+		The Core EIC equation graph — Parts 2–5. Walk a family to see how a concept is formed, what it
+		bottoms out on, and what later concepts use it. Definitions stay in the treatise; this page is
+		the connexions.
 	</p>
 
 	<label>
 		<span class="sr">Search</span>
-		<input type="search" bind:value={query} placeholder="Search name or symbol" />
+		<input type="search" bind:value={query} placeholder="Search name, symbol, or equation" />
 	</label>
 
-	<ul>
-		{#each rows as row (row.id)}
-			<li>
-				<a href={resolve('/dex/[id]', { id: row.id })}>
-					<span class="name">{row.name}</span>
-					{#if row.symbol}
-						<span class="symbol">{row.symbol}</span>
-					{/if}
-				</a>
-			</li>
+	{#if searching}
+		<p class="count">
+			{matchedIds.length}
+			{matchedIds.length === 1 ? 'matching entry' : 'matching entries'}
+		</p>
+	{/if}
+
+	<div class="index">
+		{#each blocks as block (block.kicker)}
+			<section class="kicker-block">
+				<h2 id={kickerSlug(block.kicker)}>{block.kicker}</h2>
+				{#each block.families as family (family.id)}
+					<section class="family" id={family.id}>
+						<h3>{family.title}</h3>
+						{#if family.blurb && !searching}
+							<p class="blurb">{family.blurb}</p>
+						{/if}
+						{#if family.id === 'operators'}
+							<div class="legend">
+								{#each family.ids as id (id)}
+									{@const label = labelOf(id, data.glossary, data.dex)}
+									<a href={resolve('/dex/[id]', { id })}>
+										<span class="glyph">{label.symbol || label.name}</span>
+										<span class="op-name">{label.name}</span>
+									</a>
+								{/each}
+							</div>
+						{:else}
+							<ul>
+								{#each family.ids as id (id)}
+									<li>
+										<DexLink label={labelOf(id, data.glossary, data.dex)} variant="row" />
+									</li>
+								{/each}
+							</ul>
+						{/if}
+					</section>
+				{/each}
+			</section>
 		{:else}
-			<li class="empty">No matching entries.</li>
+			<p class="empty">No matching entries.</p>
 		{/each}
-	</ul>
+	</div>
 </main>
 
 <style>
@@ -95,9 +125,61 @@
 		width: 100%;
 		padding: 0.55rem 0.7rem;
 		border: 1px solid var(--border);
-		background: var(--bg-raised);
+		background-color: var(--bg-inset);
 		color: var(--text);
 		font-family: var(--font-ui);
+		appearance: none;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	input:focus-visible {
+		border-color: var(--accent);
+		outline: 2px solid var(--accent);
+		outline-offset: 2px;
+	}
+
+	.count,
+	.empty {
+		margin: 0 0 1rem;
+		color: var(--text-muted);
+		font-family: var(--font-ui);
+		font-size: 0.9rem;
+	}
+
+	.kicker-block {
+		margin-top: 2rem;
+	}
+
+	h2 {
+		margin: 0 0 0.85rem;
+		color: var(--text-muted);
+		font-family: var(--font-ui);
+		font-size: 0.8rem;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		scroll-margin-top: 5rem;
+	}
+
+	.family {
+		margin: 0 0 1.6rem;
+		scroll-margin-top: 5rem;
+	}
+
+	h3 {
+		margin: 0 0 0.35rem;
+		font-size: 1.25rem;
+		line-height: 1.3;
+	}
+
+	.blurb {
+		margin: 0 0 0.65rem;
+		color: var(--text-muted);
+		font-size: 0.95rem;
+		line-height: 1.55;
 	}
 
 	ul {
@@ -110,26 +192,39 @@
 		border-bottom: 1px solid var(--border);
 	}
 
-	a {
+	.legend {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+		gap: 0.5rem;
+	}
+
+	.legend a {
 		display: flex;
-		justify-content: space-between;
-		gap: 1rem;
-		padding: 0.55rem 0.15rem;
+		align-items: center;
+		gap: 0.65rem;
+		padding: 0.55rem 0.7rem;
+		border: 1px solid var(--border);
+		border-radius: 0.55rem;
 		color: var(--text);
 		text-decoration: none;
 	}
 
-	a:hover {
-		color: var(--accent);
+	.legend a:hover {
+		border-color: var(--token);
+		color: var(--link-hover);
 	}
 
-	.symbol {
+	.glyph {
 		color: var(--token);
 		font-family: ui-monospace, 'Cascadia Code', monospace;
+		font-size: 1.25rem;
+		line-height: 1;
+		min-width: 1.4rem;
+		text-align: center;
 	}
 
-	.empty {
-		padding: 0.8rem 0;
-		color: var(--text-muted);
+	.op-name {
+		font-family: var(--font-ui);
+		font-size: 0.9rem;
 	}
 </style>

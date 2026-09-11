@@ -117,7 +117,7 @@
 				</button>
 				{#if inDex && panel.openId}
 					<a class="term-panel-keep" href={resolve('/dex/[id]', { id: panel.openId })}
-						>View in EIC-Dex →</a
+						>Trace in EIC-Dex →</a
 					>
 				{/if}
 			</div>

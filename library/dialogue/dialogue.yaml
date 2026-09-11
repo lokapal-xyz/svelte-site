@@ -1,0 +1,417 @@
+# =============================================================================
+# IN DIALOGUE — LITERATURE CONTACTS
+# A growing catalog of conversations between Conciliatorics and well-known
+# academic perspectives. Not treatise content. Not a second glossary. Not Cases.
+#
+# JOB. Meet the literature without dissolving into it and without walling
+# Conciliatorics off. Each conversation is a shared problem in two vocabularies:
+# what a recognizable perspective says, and Conciliatorics' view of that.
+# The section is a buffet. It is never complete.
+#
+# MANNER (how a field is written, not how many plates it has)
+#   light-touch   Systemics' founding policy: coexist, do not consolidate.
+#   positioning   EIC already is the philosophy parcel; keep placing it.
+#   bulk          Home literature of the applied niche (government systems).
+#                 A conversation earns its place only if Conciliatorics can
+#                 say something the field's own vocabulary does not already.
+#   contact       Other well-known traditions, met at the same humble pitch.
+#
+# SCHEMA
+#   fields          stations on the hub, including empty plates
+#   joints          Conciliatorics concepts used as a second index
+#   conversations   one row per plate; body is conversations/{id}.md
+#   id              filename stem, URL slug under /dialogue/{id}
+#   field           fields.id
+#   interlocutors   name + sort_name (lookup by person or tradition)
+#   joints          joints.id
+#   chapters        treatise slugs for the foot handoff
+#   related         other conversation ids
+#   sources         readable citations, not a journal apparatus
+# =============================================================================
+
+fields:
+
+  - id: systems-thought
+    title: Systems thought
+    manner: light-touch
+    blurb: >
+      Light-touch on purpose. Systemics contains other systems perspectives
+      without forcing them to merge.
+
+  - id: philosophy
+    title: Philosophy
+    manner: positioning
+    blurb: >
+      EIC's field association already is Philosophy. The work is to keep
+      positioning it against the discipline it belongs to, not to import a canon.
+
+  - id: political-science
+    title: Political science
+    manner: bulk
+    blurb: >
+      Government systems is the applied niche. A conversation earns its place
+      only if it lets us say something the field's own vocabulary does not
+      already say as well.
+
+  - id: sociology
+    title: Sociology
+    manner: contact
+    blurb: >
+      How groups are named is not the same as how mixed systems long. Neighbor
+      to the political and the physiological.
+
+  - id: economics
+    title: Economics
+    manner: contact
+    blurb: >
+      Replacement, allocation, and the health of a larger function — without
+      turning EIC into a market theory.
+
+  - id: buddhist-thought
+    title: Buddhist thought
+    manner: contact
+    blurb: >
+      Well-known dharmic teaching, met as a contact, not absorbed as a source
+      of EIC's terms.
+
+  - id: confucian-thought
+    title: Confucian thought
+    manner: contact
+    blurb: >
+      Rites, names, and the life of custom — met as a contact, not absorbed as
+      a source of EIC's terms.
+
+joints:
+
+  - id: systemics
+    label: Systemics
+    chapter: 01_01_systemics
+
+  - id: inventive-ossification
+    label: Inventive Ossification
+    chapter: 01_06_inventive-ossification
+
+  - id: inventive-conciliation
+    label: Inventive Conciliation
+    chapter: 01_07_inventive-conciliation
+
+  - id: attribute-position
+    label: Attribute Position
+    chapter: 02_03_attribute-position
+
+  - id: interstitial-physiology
+    label: Interstitial Physiology
+    chapter: 04_03_interstitial-physiology
+
+  - id: status-dichotomies
+    label: Status Dichotomies
+    chapter: 04_02_status-dichotomies
+
+  - id: incompatibility-axiom
+    label: Incompatibility Axiom
+    chapter: 04_04_dichotomies-compatibility
+
+  - id: mixed-synthesis
+    label: Mixed Synthesis
+    chapter: 05_03_mixed-synthesis
+
+  - id: conciliation-pathway
+    label: Conciliation Pathway
+    chapter: 05_04_conciliation-pathway
+
+  - id: status-reciprocity
+    label: Status Reciprocity
+    chapter: 05_05_status-reciprocity
+
+  - id: inventive-intervention
+    label: Inventive Intervention
+    chapter: 01_03_systemic-intervention
+
+  - id: attribute-operators
+    label: Attribute Operators
+    chapter: 02_04_attribute-operators
+
+  - id: discernment
+    label: Discernment
+    chapter: 03_04_discernment
+
+conversations:
+
+  - id: gst-container
+    title: A container, not a unification
+    lede: >
+      General systems theory wanted a shared science of systems. Systemics
+      wants a shelf that does not force the books to become one book.
+    field: systems-thought
+    interlocutors:
+      - name: Ludwig von Bertalanffy
+        sort_name: Bertalanffy, Ludwig von
+    joints: [systemics]
+    chapters: [01_01_systemics]
+    related: [weber-iron-cage, metaphysics-after-the-sciences, meadows-leverage]
+    sources:
+      - "Bertalanffy, Ludwig von. General System Theory: Foundations, Development, Applications. George Braziller, 1968."
+
+  - id: metaphysics-after-the-sciences
+    title: Staying with what is interstitial
+    lede: >
+      After the sciences took the ceramic, metaphysics often kept claiming
+      Reality. EIC keeps the philosophical instinct, and a narrower job.
+    field: philosophy
+    interlocutors:
+      - name: Immanuel Kant
+        sort_name: Kant, Immanuel
+    joints: [attribute-position]
+    chapters: [02_03_attribute-position]
+    related: [gst-container, anicca-imperdurability, hegel-and-the-pair]
+    sources:
+      - "Kant, Immanuel. Critique of Pure Reason. 1781; 2nd ed. 1787."
+
+  - id: weber-iron-cage
+    title: When the tool becomes the end
+    lede: >
+      Rationalization can harden until the means no longer serve the life they
+      were built for. Ossification is that reversal, named across four parcels.
+    field: political-science
+    interlocutors:
+      - name: Max Weber
+        sort_name: Weber, Max
+    joints: [inventive-ossification, inventive-conciliation]
+    chapters: [01_06_inventive-ossification, 01_07_inventive-conciliation]
+    related: [gst-container, madison-ambition, confucian-rites]
+    sources:
+      - "Weber, Max. The Protestant Ethic and the Spirit of Capitalism. 1905."
+      - "Weber, Max. Economy and Society. Ed. Guenther Roth and Claus Wittich. University of California Press, 1978."
+
+  - id: madison-ambition
+    title: Ambition against ambition
+    lede: >
+      Madison designs against ambitious officeholders. Conciliatorics treats
+      the ended term as a physiological requirement, even if the officeholders
+      were angels.
+    field: political-science
+    interlocutors:
+      - name: James Madison
+        sort_name: Madison, James
+    joints: [mixed-synthesis, conciliation-pathway]
+    chapters: [05_03_mixed-synthesis, 05_04_conciliation-pathway]
+    related: [linz-and-dahl, ostrom-polycentricity, weber-iron-cage, rawls-overlapping-consensus]
+    sources:
+      - "Madison, James. Federalist No. 51. 1788."
+
+  - id: ostrom-polycentricity
+    title: Many centers, none eternal
+    lede: >
+      Ostrom showed that commons need not choose Leviathan or the market.
+      Status Reciprocity reads that polycentric craft as conciliation wearing
+      an ordinary name.
+    field: political-science
+    interlocutors:
+      - name: Elinor Ostrom
+        sort_name: Ostrom, Elinor
+    joints: [status-reciprocity, conciliation-pathway]
+    chapters: [05_05_status-reciprocity, 05_04_conciliation-pathway]
+    related: [madison-ambition, schumpeter-creative-destruction, hayek-knowledge]
+    sources:
+      - "Ostrom, Elinor. Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press, 1990."
+      - "Ostrom, Elinor. Understanding Institutional Diversity. Princeton University Press, 2005."
+
+  - id: linz-and-dahl
+    title: Measuring the regime, naming the physiology
+    lede: >
+      Dahl asks how democratic a regime is. Linz asks which constitutional
+      form is safer. Conciliatorics asks whether the arrangement is unifying
+      or conciliating — a related question, not the same measurement.
+    field: political-science
+    interlocutors:
+      - name: Robert Dahl
+        sort_name: Dahl, Robert
+      - name: Juan Linz
+        sort_name: Linz, Juan
+    joints: [mixed-synthesis, incompatibility-axiom]
+    chapters: [05_03_mixed-synthesis, 04_04_dichotomies-compatibility]
+    related: [madison-ambition, ostrom-polycentricity, huntington-political-order]
+    sources:
+      - "Dahl, Robert A. Polyarchy: Participation and Opposition. Yale University Press, 1971."
+      - "Linz, Juan J. “The Perils of Presidentialism.” Journal of Democracy 1, no. 1 (1990): 51–69."
+
+  - id: tonnies-gemeinschaft
+    title: Two longings at once
+    lede: >
+      Tönnies split community from society, often as a historical drift.
+      Mixed physiology is not a drift. It is both longings, together.
+    field: sociology
+    interlocutors:
+      - name: Ferdinand Tönnies
+        sort_name: Tönnies, Ferdinand
+    joints: [interstitial-physiology, incompatibility-axiom]
+    chapters: [04_03_interstitial-physiology, 04_04_dichotomies-compatibility]
+    related: [anicca-imperdurability, schumpeter-creative-destruction]
+    sources:
+      - "Tönnies, Ferdinand. Gemeinschaft und Gesellschaft. 1887. English: Community and Society."
+
+  - id: schumpeter-creative-destruction
+    title: Replacement as health
+    lede: >
+      Creative destruction treats replacement as the life of a market, not
+      its failure. The Conciliation Pathway makes a similar claim for mixed
+      systems, far beyond the firm.
+    field: economics
+    interlocutors:
+      - name: Joseph Schumpeter
+        sort_name: Schumpeter, Joseph
+    joints: [status-dichotomies, conciliation-pathway]
+    chapters: [04_02_status-dichotomies, 05_04_conciliation-pathway]
+    related: [ostrom-polycentricity, anicca-imperdurability, tonnies-gemeinschaft]
+    sources:
+      - "Schumpeter, Joseph A. Capitalism, Socialism and Democracy. Harper & Brothers, 1942."
+
+  - id: anicca-imperdurability
+    title: Impermanence as the desirable pole
+    lede: >
+      Early Buddhist teaching names anicca as a mark of conditioned things.
+      Conciliatorics names imperdurability as a desirable pole — for mixed
+      systems, not as a path of liberation.
+    field: buddhist-thought
+    interlocutors:
+      - name: Early Buddhist teaching
+        sort_name: Buddhist teaching, Early
+    joints: [status-dichotomies, incompatibility-axiom, conciliation-pathway]
+    chapters:
+      - 04_02_status-dichotomies
+      - 04_04_dichotomies-compatibility
+      - 05_04_conciliation-pathway
+    related: [schumpeter-creative-destruction, metaphysics-after-the-sciences, tonnies-gemeinschaft]
+    sources:
+      - "Anattalakkhana Sutta (SN 22.59) and related Nikāya treatments of anicca, dukkha, and anattā."
+      - "Rahula, Walpola. What the Buddha Taught. 1959."
+
+  - id: hegel-and-the-pair
+    title: The pair is not sublated
+    lede: >
+      Hegel's dialectic treats opposition as a motion that is taken up into a
+      higher form. EIC treats the pair as the unit that has to remain.
+    field: philosophy
+    interlocutors:
+      - name: G. W. F. Hegel
+        sort_name: Hegel, G. W. F.
+    joints: [attribute-operators]
+    chapters: [02_04_attribute-operators]
+    related: [metaphysics-after-the-sciences, nagel-objectivity]
+    sources:
+      - "Hegel, G. W. F. Phenomenology of Spirit. 1807."
+      - "Hegel, G. W. F. Science of Logic. 1812–1816; 2nd ed. 1832."
+
+  - id: nagel-objectivity
+    title: Two cuts, not one spectrum
+    lede: >
+      Nagel keeps objectivity and the view from somewhere both in play. Discernment
+      keeps both cuts, then grows a family that the single spectrum cannot hold.
+    field: philosophy
+    interlocutors:
+      - name: Thomas Nagel
+        sort_name: Nagel, Thomas
+    joints: [discernment]
+    chapters: [03_04_discernment]
+    related: [metaphysics-after-the-sciences, hegel-and-the-pair]
+    sources:
+      - "Nagel, Thomas. The View from Nowhere. Oxford University Press, 1986."
+      - "Nagel, Thomas. “What Is It Like to Be a Bat?” Philosophical Review 83, no. 4 (1974): 435–450."
+
+  - id: meadows-leverage
+    title: Work the medium first
+    lede: >
+      Meadows ranked places to intervene. Inventive Intervention names a prior
+      cut: work the medium before you try to boss the whole.
+    field: systems-thought
+    interlocutors:
+      - name: Donella Meadows
+        sort_name: Meadows, Donella
+    joints: [inventive-intervention]
+    chapters: [01_03_systemic-intervention]
+    related: [gst-container, weber-iron-cage]
+    sources:
+      - "Meadows, Donella. “Leverage Points: Places to Intervene in a System.” Sustainability Institute, 1999."
+      - "Meadows, Donella. Thinking in Systems: A Primer. Chelsea Green, 2008."
+
+  - id: confucian-rites
+    title: Names and rites, without a lasting cage
+    lede: >
+      Confucian teaching treats correct names and living rites as how a people
+      holds together. Conciliatorics can grant that, and still refuse an
+      unamendable custom.
+    field: confucian-thought
+    interlocutors:
+      - name: Confucius
+        sort_name: Confucius
+    joints: [inventive-ossification, discernment]
+    chapters: [01_06_inventive-ossification, 03_04_discernment]
+    related: [weber-iron-cage, anicca-imperdurability, tonnies-gemeinschaft]
+    sources:
+      - "The Analects of Confucius, especially 12.11 and 13.3 (zhengming, the rectification of names)."
+      - "Confucius. The Analects. Trans. D. C. Lau. Penguin, 1979."
+
+  - id: north-institutions
+    title: The rules of the game
+    lede: >
+      North calls institutions the rules of the game. Conciliatorics can use
+      that, then ask whether those rules are unifying or conciliating.
+    field: political-science
+    interlocutors:
+      - name: Douglass North
+        sort_name: North, Douglass
+    joints: [status-reciprocity, inventive-ossification]
+    chapters: [05_05_status-reciprocity, 01_06_inventive-ossification]
+    related: [ostrom-polycentricity, hayek-knowledge, weber-iron-cage]
+    sources:
+      - "North, Douglass C. Institutions, Institutional Change and Economic Performance. Cambridge University Press, 1990."
+
+  - id: rawls-overlapping-consensus
+    title: Disagreement without a winner
+    lede: >
+      Rawls's overlapping consensus lets a polity live with rival comprehensive
+      doctrines. The Parcels Council lets inventive parcels disagree without
+      one of them becoming the whole.
+    field: political-science
+    interlocutors:
+      - name: John Rawls
+        sort_name: Rawls, John
+    joints: [inventive-conciliation]
+    chapters: [01_07_inventive-conciliation]
+    related: [madison-ambition, linz-and-dahl, weber-iron-cage]
+    sources:
+      - "Rawls, John. A Theory of Justice. Harvard University Press, 1971."
+      - "Rawls, John. Political Liberalism. Columbia University Press, 1993."
+
+  - id: hayek-knowledge
+    title: No center holds the knowledge
+    lede: >
+      Hayek argued that the knowledge a society needs is dispersed, and that
+      no center can gather it. Status Reciprocity reads that limit as a reason
+      conciliation wears the name decentralization.
+    field: economics
+    interlocutors:
+      - name: F. A. Hayek
+        sort_name: Hayek, F. A.
+    joints: [status-reciprocity]
+    chapters: [05_05_status-reciprocity]
+    related: [ostrom-polycentricity, schumpeter-creative-destruction, north-institutions]
+    sources:
+      - "Hayek, F. A. “The Use of Knowledge in Society.” American Economic Review 35, no. 4 (1945): 519–530."
+
+  - id: huntington-political-order
+    title: How much government, not only which form
+    lede: >
+      Huntington ranked countries by the degree of government, not only by
+      type. Conciliatorics also refuses to stop at “how democratic” — and
+      then parts with him on what it means for institutions to last.
+    field: political-science
+    interlocutors:
+      - name: Samuel Huntington
+        sort_name: Huntington, Samuel
+    joints: [mixed-synthesis, inventive-ossification]
+    chapters: [05_03_mixed-synthesis, 01_06_inventive-ossification]
+    related: [linz-and-dahl, weber-iron-cage, madison-ambition]
+    sources:
+      - "Huntington, Samuel P. Political Order in Changing Societies. Yale University Press, 1968."
+

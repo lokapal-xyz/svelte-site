@@ -2,33 +2,30 @@
 
 *On actions.*
 
-Our last item in Instertitial Anatomy has a special backstory. The next concepts were the first that the author managed to organized as a proper set. They are the stepping stone for Conciliatorics, created long before there was a name for this project. When this item was synthesized, the rest of the concepts began falling into place. What we now refer to as the **Operation** aspect of interstitial anatomy, before it was called the **Compass**.
+The last method of Interstitial Anatomy has a special backstory. These concepts were the first the author managed to organize as a proper set — the stepping stone for Conciliatorics, in place long before the project had a name. Once this item was synthesized, the rest began to fall in around it. What we now call **Operation** was first called the **Compass**.
 
-This name comes from the shape of the diagram that represents these concepts, but also for their utility. The EIC compass enhances our flight in the systemic winds, and assigns a cardinal direction for each operation mode.
-
-Let's introduce the diagram and discuss its components.
+The name comes from the shape of the diagram, and from the use. The compass assigns a cardinal direction to each mode of acting inside a system.
 
 ![Diagram showing the interactions between Operation's components](../../diagrams/png/operationFull.png)
 
-The root levels are the horizontal **Identity Axis** and the vertical **Participation Axis**. Our identity is elastic; it may seem as rock solid to us at any given point, but it was developed by the influence of our experiences. The identity **fronterization** gives boundaries to our sense of self, while the identity **permeability** allows us to adapt to the world's flow. 
+The root levels are the horizontal **Identity Axis** and the vertical **Participation Axis**. Identity is elastic. It can feel rock-solid at a given moment and still have been formed by what has already happened to it. **Fronterization** gives that identity a boundary; **permeability** lets it take in the world's flow. A chamber that cannot close is not a chamber. A chamber that cannot open is a tomb.
 
-We usually associate the notion of participation with active engagement. But in order to engage accurately, we must first be receptive to our environment. **Proceptivity** and **receptivity** engage back and forth to calibrate our participation in a complex system. In many contexts you see these qualities describe as *masculine* and *feminine*. While that framework is valid, we really enjoy the *proceptive* and *receptive* participation scheme; it encourages a neutral tone and allows a greater conceptual development.
+Participation is usually pictured as active engagement. Accurate engagement, though, has to receive before it pushes. **Proceptivity** and **receptivity** calibrate each other. In many contexts these are described as *masculine* and *feminine*. That framing is valid. We prefer proceptive and receptive: the tone stays neutral, and the pair can still grow.
 
-We have now a set of four simple cardinal directions:
+Four cardinals:
 
 - **North**: Proceptivity (Pr)
 - **South**: Receptivity (Re)
 - **East**: Fronterization (Fr)
 - **West**: Permeability (Pe)
 
-From these cardinal points we can expand our compass to cover more complex systemic operations. Combining fronterization and proceptivity we get the **individual** (i) hemisphere. Individuality ties to a defined entity exerting itself into the world. This contrasts with the **community** (c) hemisphere, which entails being permeable and receptive. Therefore, our communal participation aspect is located at the south-west direction.
+The hemispheres are concatenations of those cardinals. **Individual** (i) is proceptivity with fronterization: a defined entity exerting itself — north-east. **Community** (c) is receptivity with permeability: south-west. **Orientation** (o) sharpens as we take in the environment and refine what we intend — south-east. **Navigation** (n) is the jump into the world: proceptive, and permeable to what was not on the map — north-west.
 
-**Orientation** (o) sharpens as we become more attuned to environmental input, while also refining our intentions. So it follows that this hemisphere is placed at the south-east. But despite being properly oriented we need to eventually jump into the world by being proceptive in our **navigation** (n) and permeable to the unexpected. With this last hemisphere located at the north-west direction we complete our operational compass.
-
-The operation diagram is much simpler that the previous one. So, not only we'll also share a symbolic version, but we encourage that the reader tries to engage with it. The cardinal points initials (N, S, E and W) blend well with our own compass symbols (Pr, Re, Fr and Pe). Eventually, they'll become intertwined and enhance their assimilation.
-
+A soloist at full voice is individual. A choir taking the same breath is community. A chart of the river is orientation. Entering the current is navigation.
 
 ![Diagram showing the interactions between Operation's components in symbolic form](../../diagrams/png/operation.png)
+
+The cardinal initials (N, S, E, W) sit easily on Pr, Re, Fr, and Pe. Used together they are easier to hold than either set alone.
 
 | **OPERATION AREA** | **INTERACTION** |
 |---|---|
@@ -39,4 +36,4 @@ The operation diagram is much simpler that the previous one. So, not only we'll 
 | South-East Hemisphere | **Orientation** = Receptivity ^ Fronterization |
 | North-West Hemisphere | **Navigation** = Proceptivity ^ Permeability |
 
-With this we conclude the last interstitial anatomy component. We hope that you found these conceptual structures helpful so far. But now our framework needs to **become alive**. As we know, the anatomy of a biological system may be interesting, but is its **physiology** that raises the highest wonder.
+That is the last component of Interstitial Anatomy. Anatomy, even at this grain, is still a structure. What remains is for the structure to become alive. The physiology of these methods is Attributes Status.

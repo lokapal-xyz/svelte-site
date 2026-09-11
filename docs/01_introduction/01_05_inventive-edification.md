@@ -2,7 +2,7 @@
 
 *On peaks and legacy.*
 
-While self-contained inventive interventions can be useful, the most impactful ones are those that contribute to **Inventive Edification**—a process typically reserved for highly intelligent species. More fundamental forms of intervention remain accessible to a broader range of organisms.
+Self-contained inventive interventions can be useful. The most impactful ones are those that contribute to **Inventive Edification** — a process typically reserved for highly intelligent species. More fundamental forms of intervention remain accessible to a broader range of organisms.
 
 - **INVENTIVE EDIFICATION**: Continuous and expansive development of inventive parcels.
 
@@ -11,7 +11,11 @@ While self-contained inventive interventions can be useful, the most impactful o
 | **Contemplation** | Edified Intrinsic Contemplation | Edified Interstitial Contemplation |
 | **Transformation** | Edified Intrinsic Transformation | Edified Interstitial Transformation |
 
-These edifications are the product of the progressive improvements of multiple interveners. They begin to resemble the complexities of human culture and industry. To help readers make clearer connections with familiar references, we will provide a set of **field associations** for each inventive edification.
+These edifications are the product of progressive improvements by many interveners. They begin to resemble the complexities of human culture and industry: not a single inventive act, but a lineage of acts that keeps developing the parcel itself.
+
+## Field associations
+
+To give the four edifications a familiar face — not to replace them — we offer a set of **field associations**:
 
 | **INVENTIVE EDIFICATION** | **SYMBOL** | **FIELD** |
 |------|:------:|-----|
@@ -20,13 +24,14 @@ These edifications are the product of the progressive improvements of multiple i
 | Edified Interstitial Contemplation | `)cS(` | Philosophy |
 | Edified Interstitial Transformation | `)tS(` | The Arts |
 
-Remember that these field associations are only intended to offer clearer references. They are not the main topics of discussion here, as each field's terminology comes with its own complexities, which might cause confusion in the context of Conciliatorics. The purpose is simply to provide a practical and familiar context. For example, if someone is unsure about what "edified intrinsic transformation" means, they can start by considering it *as related to* technology.
+These associations are a way in. They are not the main topics of this treatise, and they are not a claim that the fields *are* the parcels. Each field already carries its own terminology; importing it wholesale would confuse the analysis. If "edified intrinsic transformation" is still abstract, it is enough to begin by considering it *as related to* technology — and then to return to the parcel, which is what we are actually talking about.
 
-Additionally, we offer a set of symbols to provide a shorter representation. Here’s the breakdown of each symbol:
+## Symbols
+
+The symbols are a shorter representation of the same four. Their parts are not decorative:
 
 - Parentheses indicate position: `( )` for intrinsicality, `) (` for interstitiality.
 - The lowercase `c` and `t` represent **Contemplation** and **Transformation**.
 - The uppercase `S` refers to the Behavior Dynamics components.
 
-The lower and uppercase formatting is not arbitrary; it emphasizes the subordination of inventive edification to the Behavior Dynamics components. In other words, the systemic components (uppercase S) take precedence over any form of inventive edification (lowercase c and t). This symbolic representation will expand in meaning in the next section.
-
+The lower- and uppercase formatting is not arbitrary. It marks a subordination: inventive edification (lowercase `c` and `t`) remains under the systemic components (uppercase `S`). Sciences, technology, philosophy, and the arts are meant to serve the members, the medium, and the system they inhabit — not the other way around. That order of priority is the whole point of the notation. It will expand in meaning in the next section.

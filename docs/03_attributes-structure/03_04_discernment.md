@@ -2,34 +2,26 @@
 
 *On knowing.*
 
-We reached the first EIC compartment that ties directly with everyday life. The reader is free to implement Interstitial Anatomy frameworks at their own discretion. Although, we encourage everyone to continue reading until the EIC synthesis is completed to maximize their utility. The following terminology explanation may seem a burden, but the reader is not required to remember the entire progression. The final set of concepts labeled **Discernment Children** is enough for practical use.
-
----
-
-Interstitial discernment is a behavior performed by a member. This discernment can relate to that member's identity in different ways — either **bounded** (dependent on their perspective) or **non-bounded** (detached from their presence). We'll adapt this dynamic to more familiar terminology:
+Discernment is a behavior performed by a member. It can relate to that member's identity in two ways: **bounded** (dependent on their perspective) or **non-bounded** (detached from their <plain>presence</plain>). In more familiar terms:
 
 - **Non-bounded Discernment**: Objectivity
 - **Bounded Discernment**: Subjectivity
 
-Discernments can **assert** facts and perspectives on the world, or can **arrange** aspects of a phenomenon to enhance its comprehension. For these variations we also have practical terms:
+A reading of a river's height from a gauge is non-bounded: it does not depend on who is looking. A reading of the same river as "our border" is bounded: it depends on the polities that claim it. Both are discernment. They are not the same cut.
+
+Discernments can also **assert** facts and perspectives, or **arrange** aspects of a phenomenon so that it can be grasped:
 
 - **Assertive Discernment**: Assertion
 - **Arranging Discernment**: Arrangement
 
-The previous four aspects heavily influence the way we discern the world. Therefore, we are going to establish them as **discernment ascendancies**. 
+These four aspects heavily influence how we discern. We hold them as **discernment ascendancies**.
 
 | **DISCERNMENT ASCENDANCY** | **Objectivity** | **Subjectivity** |
 |---|---|---|
-| **Assertion** | Veracity | Appreciation | 
+| **Assertion** | Veracity | Appreciation |
 | **Arrangement** | Congruence | Evaluation |
 
-The intersection between ascendancies creates a set of four **discernment parentage**:
-- Objective Assertion. 
-- Objective Arrangement.
-- Subjective Assertion.
-- Subjective Arrangement.
-
-This terminology might feel too abstract at first, so we also introduce more familiar names under the **discernment parent** label. Parents are not a different set from parentage, just a simpler way to name the ascendancies intersections.
+The intersections of the ascendancies are the **discernment parentage** — Objective Assertion, Objective Arrangement, Subjective Assertion, Subjective Arrangement. **Discernment parents** are not a second set. They are the same intersections under shorter names.
 
 | **DISCERNMENT PARENTAGE** | **DISCERNMENT PARENT** |
 |---|---|
@@ -38,9 +30,7 @@ This terminology might feel too abstract at first, so we also introduce more fam
 | Subjective Assertion | Appreciation |
 | Subjective Arrangement | Evaluation |
 
-The last set of concepts (and the most relevant for practical use) is originated by the authority balance between discernment parents. Accordingly, we'll label them **discernment children**. And we'll use accentuation and concatenation operators to represent the parents' relationship in this way:
-- **Accentuation**: One parent has more authority over the other.
-- **Concatenation**: Both parents hold equal authority.
+The working set — and the one most useful in practice — comes from the authority balance between parents. These are the **discernment children**. Accentuation means one parent has more authority; concatenation means both hold equal authority.
 
 | **DISCERNMENT AUTHORITY** | **DISCERNMENT CHILD** |
 |---|---|
@@ -51,6 +41,8 @@ The last set of concepts (and the most relevant for practical use) is originated
 | Evaluation ← Appreciation | Standard |
 | Appreciation ^ Evaluation | Criterion |
 
-Now we can freely explore a systemic phenomenon under the discernment children framework. Each discernment child has its own jurisdiction, guided by its ascendancy. This allows us to expand our systemic awareness while maintaining internal coherence. You can examine the following **discernment family tree** for a better grasp of each concept under this section.
+A lesion that is there even though it does not fit the model is a **property**: veracity has authority over congruence. A map that still organizes a noisy set of readings is a **formation**: congruence has authority over veracity. A finding that is both accurate and well-formed is an **interaction**. On the subjective side, "I want this mug" is a **preference**; "this is what counts as a mug here" is a **standard**; a jury's shared sense of what the case requires is a **criterion**.
+
+Each child has its own jurisdiction, guided by its ascendancy. That is how the method can widen what we know without collapsing every reading into one. The **discernment family tree** holds the whole progression in view:
 
 ![Diagram showing Discernment's internal components](../../diagrams/png/discernment-family-tree.png)

@@ -42,7 +42,7 @@
 
 <svelte:window onkeydown={onWindowKey} />
 
-<header class="site-header" {@attach measure}>
+<header class="site-header grain-surface" {@attach measure}>
 	<div class="inner">
 		<a
 			class="mark"
@@ -75,7 +75,12 @@
 			<button type="button" class="scrim" tabindex="-1" aria-hidden="true" onclick={() => close()}
 			></button>
 		{/if}
-		<nav id="site-nav" class={{ open, instant }} aria-label="Site" inert={overlay.current && !open}>
+		<nav
+			id="site-nav"
+			class={{ open, instant, 'grain-surface': overlay.current }}
+			aria-label="Site"
+			inert={overlay.current && !open}
+		>
 			{#each sections as section (section.href)}
 				<a
 					href={resolve(section.href)}
@@ -96,7 +101,7 @@
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		background: var(--bg);
+		background-color: var(--bg);
 		border-bottom: 1px solid var(--border);
 	}
 
@@ -240,7 +245,7 @@
 			flex-wrap: nowrap;
 			gap: 0;
 			padding: 0.35rem 0 0.7rem;
-			background: var(--bg);
+			background-color: var(--bg);
 			border-bottom: 1px solid var(--border);
 			visibility: hidden;
 			pointer-events: none;

@@ -4,118 +4,218 @@
 #
 # WHAT THIS FILE IS. Every entry here has a stated operator equation somewhere
 # in the treatise — either as the thing being derived, or as an input to one.
-# This file only carries what glossary.yaml does not: the equation, which
-# operator forms it, its immediate inputs (depends_on), and its fully expanded
-# terminal primitives (roots). Everything else — term, definition, jurisdiction,
-# notes, related terms — lives in glossary.yaml and is joined by `id`. This is
-# deliberate, not an oversight: `symbol` and `equation` are the two fields the
-# author expects to change rarely and only on considered, structural revision,
-# unlike prose fields (term wording, definitions, notes), which change often.
-# That's also why this file is hand-authored once rather than generated at
-# build time.
+# This file carries what glossary.yaml does not: the equation, which operator
+# forms it, its immediate inputs (depends_on), its fully expanded terminal
+# primitives (roots), and the family it belongs to in the Dex UI. Display names
+# and definitions still live in glossary.yaml and are joined by `id`.
 #
-# SCOPE. Only EIC (Parts 2-5) — Part 1 and EIT (Part 6) are out of bounds
-# by the treatise's own jurisdiction logic, not by omission.
-# Within EIC, only concepts that participate in a stated equation (as an output
-# or as another entry's input) get a row here. Purely descriptive EIC terms
-# with no equation and no role in one (e.g. Attribute Jurisdiction, Compass,
-# Status Decay, Core EIC, Edge EIC, Conciliation Pathway, Status Reciprocity)
-# are fully served by glossary.yaml alone and are not duplicated here.
+# SCOPE. Only Core EIC (Parts 2-5). Part 1 and EIT (Part 6) are out of bounds
+# by the treatise's own jurisdiction logic. Edge EIC — Operational Status and
+# the Sub/Supra/Hypo/Hyper modulators in 05_07 — stays out until that branch
+# is explicitly unfrozen. Purely descriptive EIC terms with no equation stay
+# in glossary.yaml alone.
 #
-# CORE vs EDGE. This ledger covers Core EIC (Attributes Dynamics through the
-# close of Attributes Synthesis). Edge EIC — currently Operational Status and
-# the Sub/Supra/Hypo/Hyper modulators in 05_07 — is intentionally omitted:
-# those concepts are younger, more likely to be revised, and must not enter a
-# file whose id list is meant to freeze. Revisit only after Edge EIC stabilizes.
-# The website's EIC-Dex page still joins glossary.yaml for display names and
-# definitions; this file is only the equation-graph overlay.
+# KIND is inferred by the website loader, not stored here:
+#   operators:  listed under `operators:`
+#   root:       no `equation` and no `operator`
+#   derived:    has an `equation`
+#
+# `notes` are reader-facing. They explain a graph surprise (local primitives,
+# unstated equations, apexes, the synthesis-longing split). Author caveats
+# about how to read this file stay in this header, not in `notes`.
 #
 # SCHEMA
-#   id           same id as the glossary.yaml entry (join key)
-#   symbol       notational symbol, duplicated here since it's stable content
-#   equation     the origin equation, duplicated here for the same reason
-#   operator     the OUTERMOST operator that forms this equation:
-#                accentuation (←) | concatenation (^) | modulation (→)
-#                Only these three ever produce a new named concept in this
-#                graph — symmetry (≡) and asymmetry (≢) appear only as internal
-#                status qualifiers inside a compound equation (e.g. Status
-#                Dichotomies' "(b ≡ B)" clause), never as the top-level operator.
-#                Omitted entirely for root entries (nothing to classify).
+#   families     catalog for the Dex index (id, title, kicker, chapter, blurb)
+#   id           same id as the glossary.yaml entry (join key). Frozen.
+#   family       families.id
+#   symbol       notational symbol, duplicated here since it's stable
+#   equation     the origin equation
+#   operator     OUTERMOST operator: accentuation | concatenation | modulation
+#                Symmetry (≡) and asymmetry (≢) never produce a named concept.
+#                Omitted for roots and for the operator rows themselves.
 #   depends_on   immediate inputs, by id
-#   roots        the fully expanded set of terminal primitives this concept
-#                reduces to (transitive closure of depends_on). For a root
-#                entry itself, roots is just [its own id].
-#   notes        only present where the root/derived classification needs
-#                explaining (see the two caveats below)
+#   roots        transitive closure of depends_on. A root's roots is [its id].
+#   notes        reader-facing graph notes, not author-file pointers
 #
-# READING "ROOTS" CORRECTLY — two caveats that matter more than they look:
-#
-#   1. Not every root is one of the four Primary Jurisdiction attributes
-#      (Q/M/Si/Su). Resolution introduces its own local primitives (Friction,
-#      Conflict, Chaos, Order) that the treatise never derives from Q/M/Si/Su.
-#      Same for Operation (Proceptivity, Receptivity, Fronterization,
-#      Permeability) and for Attributes Status's longings (I≢L, C≡L) — the
-#      "L" subscript marks them as motivational, not structural, and their
-#      own origin equation is explicitly "—" (none) in the treatise. So
-#      `viability`'s roots are {friction, conflict, chaos, order} — NOT
-#      {stillness, movement, simultaneity, successiveness} — even though
-#      Viability sits inside Resolution, which itself does trace to Q/M/Si/Su
-#      at the iR level. Trace each chain on its own terms; don't assume one
-#      universal bottom.
-#
-#   2. Some concepts that read as obviously composite are still roots here,
-#      because the treatise presents them via table position, not a stated
-#      operator equation. Veracity, Congruence, Appreciation, and Evaluation
-#      look exactly like "Objectivity/Subjectivity concatenated with
-#      Assertion/Arrangement" — but no such equation is ever written down
-#      (glossary.yaml already flags this on the veracity entry). Same for
-#      Assessment/Awareness/Relevance/Concentration and Judgement/Attention ×
-#      Top-Down/Bottom-Up. This ledger encodes only what's actually stated,
-#      not what could be reasonably inferred — inferring it would be adding
-#      connective tissue the author hasn't put there.
-#
-# A THIRD FINDING WORTH FLAGGING, not a caveat so much as a fact this ledger
-# makes newly visible: Organic, Instrumental, and (raw) Mixed Synthesis all
-# have a longing (I≢L and/or C≡L) in their roots, because their own equations
-# explicitly modulate via the longing. Unification and Conciliation Synthesis
-# do NOT — they modulate via the dichotomy outcome directly (C≢^I≢ and I≡^C≡
-# respectively), which traces only to Q/M/Si/Su, never touching the longings
-# at all. Five Synthesis types look like siblings in the symbols glossary;
-# only three of the five actually carry a motivational primitive in their roots.
+# READING ROOTS
+#   1. Not every root is Q/M/Si/Su. Resolution, Operation, and the longings
+#      introduce their own local primitives.
+#   2. Some nodes look composite (Veracity, Assessment, …) and are still
+#      terminals, because no operator equation was stated. Do not infer one.
+#   3. Organic, Instrumental, and Mixed Synthesis carry a longing in their
+#      roots. Unification and Conciliation do not.
 # =============================================================================
+
+families:
+
+  - id: operators
+    title: Attribute Operators
+    kicker: Attributes Regulation
+    chapter: 02_04_attribute-operators
+    blurb: >
+      Five operators. Symmetry and asymmetry qualify a status inside an equation.
+      Only accentuation, concatenation, and modulation produce a new named concept.
+
+  - id: primary
+    title: Primary Jurisdiction
+    kicker: Attributes Regulation
+    chapter: 02_05_attribute-jurisdiction
+    blurb: >
+      Stillness, Movement, Simultaneity, Successiveness. The Structure and Status
+      chains start here. Resolution, Operation, and the longings do not.
+
+  - id: accentuations
+    title: Structure Accentuations
+    kicker: Attributes Structure
+    chapter: 03_01_attribute-accentuation
+    blurb: >
+      A temporary focus on one pole of a primary pair, without dismissing the other.
+      The "pro-" prefix keeps the complement in view.
+
+  - id: quadrants
+    title: Structure Quadrants
+    kicker: Attributes Structure
+    chapter: 03_02_structure-quadrants
+    blurb: >
+      Concatenations of the four accentuations. Potential states — Discernibility,
+      Observability, Resolutivity, Operativity — before they become concrete methods.
+
+  - id: anatomy
+    title: Interstitial Anatomy
+    kicker: Attributes Structure
+    chapter: 03_03_interstitial-anatomy
+    blurb: >
+      Accentuations of the quadrants: Discernment, Observation, Resolution, Operation.
+      Concrete methods rather than potential states.
+
+  - id: discernment
+    title: Discernment
+    kicker: Attributes Structure
+    chapter: 03_04_discernment
+    blurb: >
+      Local architecture. Veracity, Congruence, Appreciation, and Evaluation read as
+      intersections, but no operator equation is stated for them — they are terminals here.
+
+  - id: observation
+    title: Observation
+    kicker: Attributes Structure
+    chapter: 03_05_observation
+    blurb: >
+      Local architecture. Assessment, Awareness, Relevance, and Concentration are
+      terminals the same way; Presence is their last concatenation.
+
+  - id: resolution
+    title: Resolution
+    kicker: Attributes Structure
+    chapter: 03_06_resolution
+    blurb: >
+      Local primitives — Friction, Conflict, Chaos, Order — that the treatise never
+      derives from the primary attributes. Viability is the apex of this family.
+
+  - id: operation
+    title: Operation
+    kicker: Attributes Structure
+    chapter: 03_07_operation
+    blurb: >
+      Local primitives — Proceptivity, Receptivity, Fronterization, Permeability —
+      arranged as a compass. Identity and participation are the axes.
+
+  - id: concatenations
+    title: Attribute Concatenation
+    kicker: Attributes Status
+    chapter: 04_01_attribute-concatenation
+    blurb: >
+      Crossed primary pairs: Consistency, Impermanence, Balance, Imbalance.
+      Unlike Resolution and Operation, this chain does trace back to Q, M, Si, and Su.
+
+  - id: dichotomies
+    title: Status Dichotomies
+    kicker: Attributes Status
+    chapter: 04_02_status-dichotomies
+    blurb: >
+      Accentuations of Consistency or Impermanence, concatenated with a symmetrical
+      or asymmetrical Balance/Imbalance status. The first value judgements in the graph.
+
+  - id: physiology
+    title: Interstitial Physiology
+    kicker: Attributes Status
+    chapter: 04_03_interstitial-physiology
+    blurb: >
+      Motivational primitives (the longings) modulate the dichotomies. Organic,
+      Instrumental, and Mixed physiology. The longings' origin equation is unstated.
+
+  - id: synthesis
+    title: Attributes Synthesis
+    kicker: Attributes Synthesis
+    chapter: 05_01_anatomy-and-physiology-integration
+    blurb: >
+      Physiology modulates the full anatomy set. Organic, Instrumental, and Mixed
+      Synthesis carry a longing in their roots; Unification and Conciliation do not —
+      they modulate via a dichotomy outcome directly.
 
 operators:
 
   - id: symmetry
+    family: operators
     symbol: "≡"
+    notes: >
+      A status qualifier inside a compound equation — for example the (b ≡ B)
+      clause inside Functionality. It never produces a new named concept as the
+      outermost operator.
+
   - id: asymmetry
+    family: operators
     symbol: "≢"
+    notes: >
+      A status qualifier inside a compound equation — for example the (b ≢ B)
+      clause inside Dysfunctionality. It never produces a new named concept as
+      the outermost operator.
+
   - id: concatenation
+    family: operators
     symbol: "^"
+    notes: >
+      Two elements in each other's presence. The operator that produces most
+      named concepts in this graph.
+
   - id: accentuation
+    family: operators
     symbol: "←"
+    notes: >
+      A temporary focus on one element of a pair or compound, without dismissing
+      the rest. Produces the "pro-" accentuations and the four anatomy methods.
+
   - id: modulation
+    family: operators
     symbol: "→"
+    notes: >
+      One element alters the internal dynamic of another. Reserved in this graph
+      for physiology (a longing modulating a dichotomy) and for synthesis
+      (physiology modulating anatomy).
 
 entries:
 
   # ---------------------------------------------------------------------------
-  # PRIMARY JURISDICTION — true roots of the whole EIC equation graph
+  # PRIMARY JURISDICTION
   # ---------------------------------------------------------------------------
 
   - id: stillness
+    family: primary
     symbol: Q
     roots: [stillness]
 
   - id: movement
+    family: primary
     symbol: M
     roots: [movement]
 
   - id: simultaneity
+    family: primary
     symbol: Si
     roots: [simultaneity]
 
   - id: successiveness
+    family: primary
     symbol: Su
     roots: [successiveness]
 
@@ -124,6 +224,7 @@ entries:
   # ---------------------------------------------------------------------------
 
   - id: pro-stillness
+    family: accentuations
     symbol: pQ
     equation: "Q ← M"
     operator: accentuation
@@ -131,6 +232,7 @@ entries:
     roots: [stillness, movement]
 
   - id: pro-movement
+    family: accentuations
     symbol: pM
     equation: "M ← Q"
     operator: accentuation
@@ -138,6 +240,7 @@ entries:
     roots: [stillness, movement]
 
   - id: pro-simultaneity
+    family: accentuations
     symbol: pSi
     equation: "Si ← Su"
     operator: accentuation
@@ -145,6 +248,7 @@ entries:
     roots: [simultaneity, successiveness]
 
   - id: pro-successiveness
+    family: accentuations
     symbol: pSu
     equation: "Su ← Si"
     operator: accentuation
@@ -156,6 +260,7 @@ entries:
   # ---------------------------------------------------------------------------
 
   - id: discernibility
+    family: quadrants
     symbol: D
     equation: "pQ ^ pSu"
     operator: concatenation
@@ -163,6 +268,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: observability
+    family: quadrants
     symbol: O
     equation: "pM ^ pSu"
     operator: concatenation
@@ -170,6 +276,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: resolutivity
+    family: quadrants
     symbol: R
     equation: "pQ ^ pSi"
     operator: concatenation
@@ -177,6 +284,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: operativity
+    family: quadrants
     symbol: E
     equation: "pM ^ pSi"
     operator: concatenation
@@ -184,10 +292,11 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   # ---------------------------------------------------------------------------
-  # ATTRIBUTES STRUCTURE — Interstitial Anatomy (top-level quadrant accentuations)
+  # ATTRIBUTES STRUCTURE — Interstitial Anatomy
   # ---------------------------------------------------------------------------
 
   - id: discernment
+    family: anatomy
     symbol: iD
     equation: "{D ← (O ≡ R ≡ E)}"
     operator: accentuation
@@ -195,6 +304,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: observation
+    family: anatomy
     symbol: iO
     equation: "{O ← (D ≡ R ≡ E)}"
     operator: accentuation
@@ -202,6 +312,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: resolution
+    family: anatomy
     symbol: iR
     equation: "{R ← (D ≡ O ≡ E)}"
     operator: accentuation
@@ -209,6 +320,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: operation
+    family: anatomy
     symbol: iE
     equation: "{E ← (D ≡ O ≡ R)}"
     operator: accentuation
@@ -216,141 +328,175 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   # ---------------------------------------------------------------------------
-  # DISCERNMENT — internal architecture (local primitives, not derived from
-  # Q/M/Si/Su — see caveat 1). Veracity/Congruence/Appreciation/Evaluation are
-  # roots per caveat 2, despite reading as composite.
+  # DISCERNMENT — local architecture
   # ---------------------------------------------------------------------------
 
   - id: veracity
+    family: discernment
     roots: [veracity]
     notes: >
-      Reads as Objectivity ^ Assertion (Objective Assertion) in the prose's
-      ascendancy table, but no operator equation is stated for that
-      intersection — treated as a root. See caveat 2.
+      Reads as Objectivity concatenated with Assertion (Objective Assertion) in
+      Discernment's ascendancy table. The treatise never writes that operator
+      equation, so this Dex treats Veracity as a terminal.
 
   - id: congruence
+    family: discernment
     roots: [congruence]
     notes: >
-      Reads as Objectivity ^ Arrangement (Objective Arrangement); no stated
-      equation. See caveat 2.
+      Reads as Objectivity concatenated with Arrangement (Objective Arrangement).
+      No operator equation is stated, so this Dex treats Congruence as a terminal.
 
   - id: appreciation
+    family: discernment
     roots: [appreciation]
     notes: >
-      Reads as Subjectivity ^ Assertion (Subjective Assertion); no stated
-      equation. See caveat 2.
+      Reads as Subjectivity concatenated with Assertion (Subjective Assertion).
+      No operator equation is stated, so this Dex treats Appreciation as a terminal.
 
   - id: evaluation
+    family: discernment
     roots: [evaluation]
     notes: >
-      Reads as Subjectivity ^ Arrangement (Subjective Arrangement); no stated
-      equation. See caveat 2.
+      Reads as Subjectivity concatenated with Arrangement (Subjective Arrangement).
+      No operator equation is stated, so this Dex treats Evaluation as a terminal.
 
   - id: property
+    family: discernment
     equation: "Veracity ← Congruence"
     operator: accentuation
     depends_on: [veracity, congruence]
     roots: [veracity, congruence]
 
   - id: formation
+    family: discernment
     equation: "Congruence ← Veracity"
     operator: accentuation
     depends_on: [congruence, veracity]
     roots: [veracity, congruence]
 
   - id: interaction
+    family: discernment
     equation: "Veracity ^ Congruence"
     operator: concatenation
     depends_on: [veracity, congruence]
     roots: [veracity, congruence]
 
   - id: preference
+    family: discernment
     equation: "Appreciation ← Evaluation"
     operator: accentuation
     depends_on: [appreciation, evaluation]
     roots: [appreciation, evaluation]
 
   - id: standard
+    family: discernment
     equation: "Evaluation ← Appreciation"
     operator: accentuation
     depends_on: [evaluation, appreciation]
     roots: [appreciation, evaluation]
 
   - id: criterion
+    family: discernment
     equation: "Appreciation ^ Evaluation"
     operator: concatenation
     depends_on: [appreciation, evaluation]
     roots: [appreciation, evaluation]
 
   # ---------------------------------------------------------------------------
-  # OBSERVATION — internal architecture. Assessment/Awareness/Relevance/
-  # Concentration are roots per caveat 2, despite reading as composite.
+  # OBSERVATION — local architecture
   # ---------------------------------------------------------------------------
 
   - id: assessment
+    family: observation
     roots: [assessment]
     notes: >
-      Reads as Judgement combined with a top-down perspective in the prose's
-      observation-forms table, but no operator equation is stated for that
-      intersection — treated as a root. See caveat 2.
+      Reads as Judgement combined with a top-down perspective in the observation
+      forms table. No operator equation is stated, so this Dex treats Assessment
+      as a terminal.
 
   - id: awareness
+    family: observation
     roots: [awareness]
     notes: >
-      Reads as Attention combined with a top-down perspective; no stated
-      equation. See caveat 2.
+      Reads as Attention combined with a top-down perspective. No operator
+      equation is stated, so this Dex treats Awareness as a terminal.
 
   - id: relevance
+    family: observation
     roots: [relevance]
     notes: >
-      Reads as Judgement combined with a bottom-up perspective; no stated
-      equation. See caveat 2.
+      Reads as Judgement combined with a bottom-up perspective. No operator
+      equation is stated, so this Dex treats Relevance as a terminal.
 
   - id: concentration
+    family: observation
     roots: [concentration]
     notes: >
-      Reads as Attention combined with a bottom-up perspective; no stated
-      equation. See caveat 2.
+      Reads as Attention combined with a bottom-up perspective. No operator
+      equation is stated, so this Dex treats Concentration as a terminal.
 
   - id: acceptance
+    family: observation
     equation: "Assessment ^ Awareness"
     operator: concatenation
     depends_on: [assessment, awareness]
     roots: [assessment, awareness]
 
   - id: alertness
+    family: observation
     equation: "Relevance ^ Concentration"
     operator: concatenation
     depends_on: [relevance, concentration]
     roots: [relevance, concentration]
 
   - id: presence
+    family: observation
     equation: "Acceptance ^ Alertness"
     operator: concatenation
     depends_on: [acceptance, alertness]
     roots: [assessment, awareness, relevance, concentration]
+    notes: >
+      Last concatenation of Observation. The treatise treats presence as a
+      resting point, not a destination — and no later Dex concept depends on it.
 
   # ---------------------------------------------------------------------------
-  # RESOLUTION — internal architecture (local primitives — see caveat 1)
+  # RESOLUTION — local primitives
   # ---------------------------------------------------------------------------
 
   - id: friction
+    family: resolution
     symbol: f
     roots: [friction]
+    notes: >
+      Local primitive of Resolution: structural challenge. The treatise never
+      derives it from Stillness, Movement, Simultaneity, or Successiveness.
 
   - id: conflict
+    family: resolution
     symbol: k
     roots: [conflict]
+    notes: >
+      Local primitive of Resolution: behavioral challenge. The treatise never
+      derives it from the primary attributes.
 
   - id: chaos
+    family: resolution
     symbol: Ch
     roots: [chaos]
+    notes: >
+      Local primitive of Resolution. Chaos here is not wrongness; it is one
+      pole of a challenge duality, and it does not trace to Q, M, Si, or Su.
 
   - id: order
+    family: resolution
     symbol: Or
     roots: [order]
+    notes: >
+      Local primitive of Resolution. Order here is not rightness; it is one
+      pole of a challenge duality, and it does not trace to Q, M, Si, or Su.
 
   - id: potential
+    family: resolution
     symbol: "π"
     equation: "f ^ Ch"
     operator: concatenation
@@ -358,6 +504,7 @@ entries:
     roots: [friction, chaos]
 
   - id: stability
+    family: resolution
     symbol: "ε"
     equation: "f ^ Or"
     operator: concatenation
@@ -365,6 +512,7 @@ entries:
     roots: [friction, order]
 
   - id: suffering
+    family: resolution
     symbol: "ſ"
     equation: "k ^ Ch"
     operator: concatenation
@@ -372,6 +520,7 @@ entries:
     roots: [conflict, chaos]
 
   - id: satisfaction
+    family: resolution
     symbol: "Ʒ"
     equation: "k ^ Or"
     operator: concatenation
@@ -379,6 +528,7 @@ entries:
     roots: [conflict, order]
 
   - id: temperance
+    family: resolution
     symbol: "τ"
     equation: "π ^ ε"
     operator: concatenation
@@ -386,6 +536,7 @@ entries:
     roots: [friction, chaos, order]
 
   - id: sacrifice
+    family: resolution
     symbol: "ẞ"
     equation: "ſ ^ Ʒ"
     operator: concatenation
@@ -393,33 +544,55 @@ entries:
     roots: [conflict, chaos, order]
 
   - id: viability
+    family: resolution
     symbol: V
     equation: "τ ^ ẞ"
     operator: concatenation
     depends_on: [temperance, sacrifice]
     roots: [friction, conflict, chaos, order]
+    notes: >
+      Apex of Resolution. Its roots are the four local primitives, not the
+      primary attributes — even though Resolution as iR traces to Q, M, Si,
+      and Su at the anatomy level. No later Dex concept depends on Viability.
 
   # ---------------------------------------------------------------------------
-  # OPERATION — internal architecture (local primitives — see caveat 1)
+  # OPERATION — local primitives
   # ---------------------------------------------------------------------------
 
   - id: proceptivity
+    family: operation
     symbol: Pr
     roots: [proceptivity]
+    notes: >
+      Local primitive of Operation (north). Active engagement. Not derived from
+      the primary attributes.
 
   - id: receptivity
+    family: operation
     symbol: Re
     roots: [receptivity]
+    notes: >
+      Local primitive of Operation (south). Environmental intake. Not derived
+      from the primary attributes.
 
   - id: fronterization
+    family: operation
     symbol: Fr
     roots: [fronterization]
+    notes: >
+      Local primitive of Operation (east). Identity boundary. Not derived from
+      the primary attributes.
 
   - id: permeability
+    family: operation
     symbol: Pe
     roots: [permeability]
+    notes: >
+      Local primitive of Operation (west). Identity adaptation. Not derived
+      from the primary attributes.
 
   - id: individual
+    family: operation
     symbol: i
     equation: "Pr ^ Fr"
     operator: concatenation
@@ -427,6 +600,7 @@ entries:
     roots: [proceptivity, fronterization]
 
   - id: community
+    family: operation
     symbol: c
     equation: "Re ^ Pe"
     operator: concatenation
@@ -434,6 +608,7 @@ entries:
     roots: [receptivity, permeability]
 
   - id: orientation
+    family: operation
     symbol: o
     equation: "Re ^ Fr"
     operator: concatenation
@@ -441,6 +616,7 @@ entries:
     roots: [fronterization, receptivity]
 
   - id: navigation
+    family: operation
     symbol: n
     equation: "Pr ^ Pe"
     operator: concatenation
@@ -448,23 +624,31 @@ entries:
     roots: [proceptivity, permeability]
 
   - id: identity-axis
+    family: operation
     equation: "Pe ^ Fr"
     operator: concatenation
     depends_on: [permeability, fronterization]
     roots: [permeability, fronterization]
+    notes: >
+      Horizontal axis of the Operation compass. Named in the treatise; no later
+      Dex concept takes it as an input.
 
   - id: participation-axis
+    family: operation
     equation: "Pr ^ Re"
     operator: concatenation
     depends_on: [proceptivity, receptivity]
     roots: [proceptivity, receptivity]
+    notes: >
+      Vertical axis of the Operation compass. Named in the treatise; no later
+      Dex concept takes it as an input.
 
   # ---------------------------------------------------------------------------
-  # ATTRIBUTES STATUS — Attribute Concatenation (crosses Primary Jurisdiction
-  # pairs; unlike Resolution/Operation, this DOES trace back to Q/M/Si/Su)
+  # ATTRIBUTES STATUS — Attribute Concatenation
   # ---------------------------------------------------------------------------
 
   - id: consistency
+    family: concatenations
     symbol: C
     equation: "Q ^ Si"
     operator: concatenation
@@ -472,6 +656,7 @@ entries:
     roots: [stillness, simultaneity]
 
   - id: impermanence
+    family: concatenations
     symbol: I
     equation: "M ^ Su"
     operator: concatenation
@@ -479,6 +664,7 @@ entries:
     roots: [movement, successiveness]
 
   - id: balance
+    family: concatenations
     symbol: B
     equation: "Q ^ Su"
     operator: concatenation
@@ -486,6 +672,7 @@ entries:
     roots: [stillness, successiveness]
 
   - id: imbalance
+    family: concatenations
     symbol: b
     equation: "M ^ Si"
     operator: concatenation
@@ -497,6 +684,7 @@ entries:
   # ---------------------------------------------------------------------------
 
   - id: functionality
+    family: dichotomies
     symbol: "C≡"
     equation: "(C ← I) ^ (b ≡ B)"
     operator: concatenation
@@ -504,6 +692,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: dysfunctionality
+    family: dichotomies
     symbol: "C≢"
     equation: "(C ← I) ^ (b ≢ B)"
     operator: concatenation
@@ -511,6 +700,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: imperdurability
+    family: dichotomies
     symbol: "I≡"
     equation: "(I ← C) ^ (b ≡ B)"
     operator: concatenation
@@ -518,6 +708,7 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   - id: perdurability
+    family: dichotomies
     symbol: "I≢"
     equation: "(I ← C) ^ (b ≢ B)"
     operator: concatenation
@@ -525,21 +716,30 @@ entries:
     roots: [stillness, movement, simultaneity, successiveness]
 
   # ---------------------------------------------------------------------------
-  # ATTRIBUTES STATUS — Interstitial Physiology (introduces the longing
-  # primitives — motivational, not structural; see caveat 1)
+  # ATTRIBUTES STATUS — Interstitial Physiology
   # ---------------------------------------------------------------------------
 
   - id: perdurability-longing
+    family: physiology
     symbol: "I≢L"
     roots: [perdurability-longing]
-    notes: "Motivational primitive. Origin equation is explicitly \"—\" (none) in the treatise."
+    notes: >
+      Motivational primitive, not a structural one. The treatise marks its
+      origin equation as none ("—"). It modulates the Imperdurability /
+      Perdurability dichotomy into Organic Physiology, and does not trace to
+      Stillness, Movement, Simultaneity, or Successiveness.
 
   - id: functionality-longing
+    family: physiology
     symbol: "C≡L"
     roots: [functionality-longing]
-    notes: "Motivational primitive. Origin equation is explicitly \"—\" (none) in the treatise."
+    notes: >
+      Motivational primitive, not a structural one. The treatise marks its
+      origin equation as none ("—"). It modulates the Functionality /
+      Dysfunctionality dichotomy into Instrumental Physiology.
 
   - id: organic-physiology
+    family: physiology
     symbol: oP
     equation: "I≢L → (I≡ ^ I≢)"
     operator: modulation
@@ -547,6 +747,7 @@ entries:
     roots: [perdurability-longing, stillness, movement, simultaneity, successiveness]
 
   - id: instrumental-physiology
+    family: physiology
     symbol: iP
     equation: "C≡L → (C≡ ^ C≢)"
     operator: modulation
@@ -554,6 +755,7 @@ entries:
     roots: [functionality-longing, stillness, movement, simultaneity, successiveness]
 
   - id: mixed-physiology
+    family: physiology
     symbol: mP
     equation: "oP ^ iP"
     operator: concatenation
@@ -561,42 +763,63 @@ entries:
     roots: [perdurability-longing, functionality-longing, stillness, movement, simultaneity, successiveness]
 
   # ---------------------------------------------------------------------------
-  # ATTRIBUTES SYNTHESIS — modulates physiology onto the full anatomy set.
-  # See the "third finding" above: only oΣ/iΣ/mΣ carry a longing in their
-  # roots; uΣ/cΣ modulate via the dichotomy outcome and do not.
+  # ATTRIBUTES SYNTHESIS
   # ---------------------------------------------------------------------------
 
   - id: organic-synthesis
+    family: synthesis
     symbol: "oΣ"
     equation: "[I≢L → (I≡ ^ I≢)] → {iD ≡ iO ≡ iR ≡ iE}"
     operator: modulation
     depends_on: [organic-physiology, discernment, observation, resolution, operation]
     roots: [perdurability-longing, stillness, movement, simultaneity, successiveness]
+    notes: >
+      Carries the perdurability longing in its roots. Unification and Conciliation
+      Synthesis, by contrast, modulate a dichotomy outcome and never touch a longing.
 
   - id: instrumental-synthesis
+    family: synthesis
     symbol: "iΣ"
     equation: "[C≡L → (C≡ ^ C≢)] → {iD ≡ iO ≡ iR ≡ iE}"
     operator: modulation
     depends_on: [instrumental-physiology, discernment, observation, resolution, operation]
     roots: [functionality-longing, stillness, movement, simultaneity, successiveness]
+    notes: >
+      Carries the functionality longing in its roots. Unification and Conciliation
+      Synthesis do not carry a longing at all.
 
   - id: mixed-synthesis
+    family: synthesis
     symbol: "mΣ"
     equation: "{[I≢L → (I≡ ^ I≢)] ^ [C≡L → (C≡ ^ C≢)]} → {iD ≡ iO ≡ iR ≡ iE}"
     operator: modulation
     depends_on: [organic-physiology, instrumental-physiology, discernment, observation, resolution, operation]
     roots: [perdurability-longing, functionality-longing, stillness, movement, simultaneity, successiveness]
+    notes: >
+      Raw mixed form: both longings at once. Carries both longings in its roots.
+      The two concrete mixed forms (Unification, Conciliation) drop the longings
+      and modulate a dichotomy outcome instead.
 
   - id: unification-synthesis
+    family: synthesis
     symbol: "uΣ"
     equation: "(C≢ ^ I≢) → {iD ≡ iO ≡ iR ≡ iE}"
     operator: modulation
     depends_on: [dysfunctionality, perdurability, discernment, observation, resolution, operation]
     roots: [stillness, movement, simultaneity, successiveness]
+    notes: >
+      Modulates via the dichotomy outcome (C≢ ^ I≢), not via a longing. Roots are
+      only the four primary attributes — unlike Organic, Instrumental, and Mixed
+      Synthesis.
 
   - id: conciliation-synthesis
+    family: synthesis
     symbol: "cΣ"
     equation: "(I≡ ^ C≡) → {iD ≡ iO ≡ iR ≡ iE}"
     operator: modulation
     depends_on: [imperdurability, functionality, discernment, observation, resolution, operation]
     roots: [stillness, movement, simultaneity, successiveness]
+    notes: >
+      Modulates via the dichotomy outcome (I≡ ^ C≡), not via a longing. Roots are
+      only the four primary attributes. Ethically the preferred mixed form in the
+      treatise; the Dex's job here is the ancestry, not that judgement.

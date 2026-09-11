@@ -146,7 +146,15 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 ## Part 3: Attributes Structure
 
-- **ATTRIBUTE ACCENTUATION**: Temporary focus on one member of an attribute pair.
+- **ATTRIBUTE ACCENTUATION**: Temporary focus on one member of an attribute pair, without dismissing the other side.
+
+- **PRO-STILLNESS**: `pQ` — accentuation of Stillness within the Stillness/Movement pair (`Q ← M`).
+
+- **PRO-MOVEMENT**: `pM` — accentuation of Movement within the Stillness/Movement pair (`M ← Q`).
+
+- **PRO-SIMULTANEITY**: `pSi` — accentuation of Simultaneity within the Simultaneity/Successiveness pair (`Si ← Su`).
+
+- **PRO-SUCCESSIVENESS**: `pSu` — accentuation of Successiveness within the Simultaneity/Successiveness pair (`Su ← Si`).
 
 - **STRUCTURE QUADRANT**: Concatenation of two attribute accentuations, creating a potential interstitial state.
 
@@ -275,6 +283,10 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **STATUS DICHOTOMIES**: Concatenation between reinforcing and canceling attribute pairs.
 
+- **AVAILABLE STATUS**: Imbalance ≡ Balance — both sides of the canceling pair remain available.
+
+- **DETRIMENTAL STATUS**: Imbalance ≢ Balance — the required availability of balance and imbalance is broken.
+
 - **FUNCTIONALITY**: Consistency accentuated over Impermanence, under a symmetrical (available) Balance/Imbalance status. Desirable.
 
 - **DYSFUNCTIONALITY**: Consistency accentuated over Impermanence, under an asymmetrical (detrimental) status. Harmful.
@@ -335,7 +347,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **EDGE EIC**: Additional EIC development extending beyond Core EIC into specific, still-evolving methods. Individual Edge EIC concepts don't need to cover every Core EIC component symmetrically, and can grow independently of one another.
 
-- **OPERATIONAL STATUS**: The first developed Edge EIC concept — functional/dysfunctional gradation, via Sub/Supra/Hypo/Hyper modulators, applied to the Operation compass's four cardinal directions. Currently developed for Operation only; source prose is an author-marked draft.
+- **OPERATIONAL STATUS**: The first developed Edge EIC concept — functional/dysfunctional gradation, via Sub/Supra/Hypo/Hyper modulators, applied to the Operation compass's four cardinal directions. Currently developed for Operation only.
 
 - **SUB / SUPRA**: Functional accentuation modulators — reduced (Sub) or heightened (Supra) emphasis on an Operation direction — that preserve complementarity with its pair, paralleling Symmetry.
 
@@ -351,5 +363,5 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **YAML LIBRARY**: A structured, growing set of schematic entries—sharing a consistent set of fields and cross-referenced by stable identifiers—that accumulates instances of some kind (definitions, symbols, cases, relationships) into something that stays organized as it grows.
 
-- **YAML GLOSSARY**: The first built instance of a YAML Library; holds every defined term and symbol in the treatise as a single set of structured, cross-referenced records, replacing the separate definitions and symbols glossaries.
+- **YAML GLOSSARY**: The first built instance of a YAML Library; holds every defined term and symbol as a single set of structured, cross-referenced records. The schematic working source; these Part 7 lists remain the old-school reference.
 

@@ -2,13 +2,15 @@
 
 *On mapping the unseen.*
 
-Our discussion on Edified Interstitial Contemplation (or **EIC** for short) starts with the introduction of **Attribute** as our main topic of systemic analysis.
+Part 1 left us at the parcel with the highest risk of ossification: Edified Interstitial Contemplation, or **EIC**. Its associated field is Philosophy. Its job, inside Conciliatorics, is contemplative work on interstitial qualities of Behavior Dynamics — not a new cosmology, and not a license to start from scratch.
+
+The material of that work is the **Attribute**.
 
 - **ATTRIBUTE**: Specific quality of a system, member or a medium. In this framework, an attribute is not merely a passive trait but a dynamic component that interacts with behavior, structure, and purpose.
 
-Many philosophical frameworks start from scratch with their conceptual foundations. But we already have the building blocks of Behavior Dynamics, which provide us with a congruent structure and tie our framework to the other inventive parcels. That way, any analytical development of EIC can be traced back to the foundational elements of scientific, technological, and artistic explorations.
+Many philosophical frameworks invent a new foundation for every such quality. We already have Behavior Dynamics. That starting model keeps EIC congruent with the other inventive parcels, so that an analytical development here can still be traced back to the same members, medium, and system that the sciences, technology, and the arts also engage.
 
-From here, we need a structure that allows us to explore multiple aspects of the Behavior Dynamics elements, yet can be integrated into a coherent framework. We'll label this model **Attributes Dynamics**. Note that this model is not to be carelessly altered—any revisions must account for their impact on the broader conceptual ecosystem.
+What we still need is a structure that lets us explore those qualities without the exploration falling apart. We'll label this model **Attributes Dynamics**. It is not to be carelessly altered — any revision must account for its impact on the rest of the conceptual ecosystem.
 
 - **ATTRIBUTES DYNAMICS**: An EIC model designed to promote analytical exploration and integration of attributes.
 - **ATTRIBUTES REGULATION**: EIC step that provides the rule set for the attributes structure and status exploration.
@@ -16,8 +18,8 @@ From here, we need a structure that allows us to explore multiple aspects of the
 - **ATTRIBUTES STATUS**: EIC step that studies the interstitial physiology processes of Behavior Dynamics.
 - **ATTRIBUTES SYNTHESIS**: EIC step that integrates the exploration of attributes structure and status.
 
-
 ![Diagram showing the interactions between the internal components of Attributes Dynamics](../../diagrams/png/attributes-dynamics.png)
 
-Attributes structure and status have the largest potential for conceptual exploration and implementation, while attributes regulation and synthesis serve as containers to maintain congruence within EIC and with the rest of the inventive parcels. Let's start with the presentation of the first stage of Attributes Dynamics.
+Attributes Structure and Attributes Status have the largest <plain>potential</plain> for conceptual exploration and implementation. Attributes Regulation and Attributes Synthesis serve as containers: they keep that exploration congruent within EIC and with the rest of the inventive parcels.
 
+We begin with Attributes Regulation.

@@ -144,7 +144,7 @@
 		{/key}
 	</div>
 
-	<div class="controls">
+	<div class="controls grain-surface">
 		<p class="count" aria-live="polite">{index + 1} / {PANELS.length}</p>
 		<div class="nav">
 			<button
@@ -321,7 +321,7 @@
 		gap: 0.3rem;
 		flex: 0 0 auto;
 		padding: 0.75rem 0 0.35rem;
-		background: var(--bg);
+		background-color: var(--bg);
 		font-family: var(--font-ui);
 	}
 
@@ -396,6 +396,25 @@
 	}
 
 	@media (max-width: 36rem) {
+		.walk {
+			padding: 0.55rem 0 0;
+		}
+
+		.panel {
+			margin-top: auto;
+			margin-bottom: 0;
+			padding-bottom: 0.15rem;
+		}
+
+		.prose p:last-child {
+			margin-bottom: 0.2rem;
+		}
+
+		.controls {
+			gap: 0.06rem;
+			padding: 0.16rem 0 max(0.4rem, env(safe-area-inset-bottom, 0px));
+		}
+
 		.actions {
 			grid-template-columns: 1fr;
 		}

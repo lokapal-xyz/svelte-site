@@ -1,5 +1,5 @@
 import { listChapters } from '$lib/server/chapters';
-import { loadDexById, loadGlossaryById } from '$lib/server/library';
+import { loadDexById, loadDexFamilies, loadGlossaryById } from '$lib/server/library';
 
 export function load() {
 	const glossary = loadGlossaryById();
@@ -8,6 +8,7 @@ export function load() {
 		glossary,
 		dex,
 		dexIds: Object.keys(dex),
+		families: loadDexFamilies(),
 		chapters: listChapters()
 	};
 }

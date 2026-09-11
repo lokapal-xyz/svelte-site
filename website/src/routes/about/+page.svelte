@@ -38,7 +38,8 @@
 			</li>
 			<li>
 				<a href={resolve('/dialogue')}>In dialogue</a>
-				— contact with academic literature, especially political science, without dissolving into it.
+				— contact with academic literature: a buffet of conversations, especially political science, without
+				dissolving into it.
 			</li>
 			<li>
 				<a href={resolve('/cases')}>Cases</a>

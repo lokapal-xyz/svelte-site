@@ -2,7 +2,7 @@
 
 *On lapse and downfall.*
 
-Inventive Edification, when progressing in healthy alignment with Behavior Dynamics, can significantly enhance the experiences of system members. However, this progression can become dysfunctional when the relationship between intervention and Behavior Dynamics is corrupted. When this happens, what was once a dynamic form of edification begins to **ossify**.
+Inventive Edification, when it stays in healthy alignment with Behavior Dynamics, can significantly enhance the experiences of system members. That progression becomes dysfunctional when the relationship between the intervention and Behavior Dynamics is corrupted. What was a dynamic edification begins to **ossify**.
 
 - **INVENTIVE OSSIFICATION**: The manifestation of dysfunctional processes in inventive edification.
 
@@ -11,11 +11,13 @@ Inventive Edification, when progressing in healthy alignment with Behavior Dynam
 | **Contemplation**         | Ossified Intrinsic Contemplation   | Ossified Interstitial Contemplation   |
 | **Transformation**        | Ossified Intrinsic Transformation  | Ossified Interstitial Transformation  |
 
-Ossification emerges when interveners begin prioritizing the edification itself over the system it was meant to serve. In these cases, what was originally a tool for systemic enhancement becomes an autonomous end, warping the original relationship with Behavior Dynamics. To symbolize this reversal, we use uppercase letters for Contemplation and Transformation, while Behavior Dynamics are reduced to a lowercase "s"—a subtle but meaningful inversion of priority.
+Ossification emerges when interveners begin prioritizing the edification itself over the system it was meant to serve. A tool for systemic enhancement becomes an autonomous end. The original relationship with Behavior Dynamics warps.
 
-Furthermore, the necessary interplay between intrinsicality and interstitiality becomes rigid and exclusionary. A healthy tension turns into dogmatic separation: an excessive focus on one position suppresses the insights and value of the other. We symbolize this rigidity by replacing the circular fluidity of *parentheses* with the squared stiffness of *brackets*:
+The symbols record that reversal. Contemplation and Transformation rise to uppercase; Behavior Dynamics shrinks to a lowercase `s`. The order of priority has inverted.
 
-At this stage, the field associations also become corrupted. Instead of open environments for developing ideas and practices, they calcify into **ideologies**. The interveners most devoted to these ossified parcels begin to demand systemic subordination to their framework. All aspects of Behavior Dynamics must now pass through their ideological filter.
+The interplay between intrinsicality and interstitiality rigidifies as well. A healthy tension becomes dogmatic separation: an excessive focus on one position suppresses the other. We mark that stiffness by replacing the circular fluidity of *parentheses* with the squared corners of *brackets*.
+
+The field associations corrupt with them. Open environments for developing ideas and practices calcify into **ideologies**. The interveners most devoted to an ossified parcel begin to demand systemic subordination to their framework. All aspects of Behavior Dynamics must now pass through their ideological filter.
 
 | **INVENTIVE OSSIFICATION**          | **SYMBOL** | **IDEOLOGY** |
 |-------------------------------------|:------:|----------------|
@@ -24,11 +26,12 @@ At this stage, the field associations also become corrupted. Instead of open env
 | Ossified Interstitial Contemplation | `]Cs[` | Philosophism   |
 | Ossified Interstitial Transformation| `]Ts[` | Aestheticism   |
 
-This ossification can lead to lasting conflict on several fronts:
+This ossification can lead to lasting conflict on several fronts at once:
 
 - **Between interveners**, over what values or principles should dominate within an ossified domain.
-- **Between ossified parcels**, each competing to subordinate the others and become the system’s main framework.
+- **Between ossified parcels**, each competing to subordinate the others and become the system's main framework.
 - **Between preservers and challengers**, as some interveners defend the ossification, while others resist the ossified treatment of a once-dynamic inventive parcel.
 
-For those unwilling to accept ossification as a permanent condition, there remains a possible path forward. These interveners must undertake the difficult work of **reconciling** the ossified state with the edification’s original purpose.
+A scientific community can fight internally over which method is the only method, while also demanding that technology, philosophy, and the arts justify themselves in scientific terms, while also policing those of its own members who would loosen the ideology. The three fronts do not wait their turn.
 
+For those unwilling to accept ossification as a permanent condition, a path remains. These interveners have to reconcile the ossified state with the edification's original purpose.

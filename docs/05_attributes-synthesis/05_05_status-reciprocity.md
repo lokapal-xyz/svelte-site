@@ -2,24 +2,25 @@
 
 *On bringing the hidden into the surface.*
 
-At this point, we need to bridge unification and conciliation synthesis to concepts that would be more familiar to us. This is easy enough because each interstitial form of mixed synthesis has an intrinsic attributes' correlation. We'll call this relationship **Status Reciprocity**: 
+Unification and conciliation are interstitial. They have intrinsic correlates — names a system already wears on the outside. That pairing is **Status Reciprocity**:
 
 - Unification leads to **Centralization**.
 - Conciliation leads to **Decentralization**.
+
+- **STATUS RECIPROCITY**: Correlation between interstitial and intrinsic attributes, modulated by mixed synthesis.
 
 | **STATUS RECIPROCITY** | **Dysfunctional Status** | **Functional Status** |
 |----|---|---|
 | **Interstitial Attributes** | Unification | Conciliation |
 | **Intrinsic Attributes** | Centralization | Decentralization |
 
-From now on, every time that we see a *centralized system* we can assume that it has a unification synthesis status underneath. The same is true between *decentralized systems* and conciliation synthesis. This status reciprocity gives us a methodology to apply our EIC knowledge systematically. We can tackle this type of questions:
+From here, a *centralized system* can be read as unifying underneath: lasting by gathering authority, even at the cost of function. A *decentralized system* can be read as conciliating: staying functional by rotating, splitting, or replacing its parts. The questions become usable:
 
-- What are the highest dangers that blocks decentralization?
-- How could a centralized system become decentralized?
-- What are the trade-off of each intrinsic status?
-- Are there philosophical frameworks that may enhance decentralization objectives?
+- What are the highest dangers that block decentralization here?
+- How could this centralized system become decentralized?
+- What does each intrinsic status cost?
+- Which frameworks would actually help a turn toward decentralization, rather than decorate it?
 
-We can also focus on specific decentralized systems that are in need of continuous maintenance, and may aspire to iterated imperdurable functionality. An example of these types of systems are **blockchain implementations**. Smart contracts, decentralized applications (dApps), and DAOs are often designed with a decentralization philosophy that is uncommon in other types of digital systems. Their versatility also contributes to a diverse range of implementation frameworks, which allows for direct exploration of Conciliatorics principles.
+Some decentralized systems already try to live by iterated imperdurable functionality. **Blockchain implementations** — smart contracts, decentralized applications, DAOs — are designed around a decentralization philosophy that is uncommon in other digital systems. Their variety of frameworks makes them a live surface for Conciliatorics, not because the treatise is a blockchain treatise, but because the cut is already in the design.
 
-But EIC can expand into many fields. Real world governance may be an interesting environment for analysis and even theoretical contribution. Local organizations could benefit from taking into account iterated imperdurability as a guiding principle. Conciliatorics may also provide design heuristics, evaluation criteria, and community practices to support long-term decentralization efforts. The implementation possibilities are endless, and their exploration will in return promote a stronger theoretical foundation. 
-
+The same cut belongs to government, and to local organizations that have to last without pretending a given arrangement is eternal. Design heuristics, tests of a turn, shared practices: all of that can be drawn from Status Reciprocity, and the drawing will, in return, pressure the theory to stay honest. The implementations are not a side hobby. They are how the interstitial names get tested against intrinsic ones.

@@ -2,18 +2,18 @@
 
 *On what's right and wrong.*
 
-We can't handle the new attribute pairs in the same way we did with Structure Quadrants. Instead of having four equivalent elements, we have two distinctive pairs. Consistency and impermanence are unique enough to be the target of accentuation, but Balance and Imbalance are status conditions and should always be available. So, we can have the elements of the first pair **separated**, but the second pair is **indivisible**—not in the sense of being conceptually fused, but in the sense that the potential of both must always be preserved.
+We cannot handle these pairs as we handled the Structure Quadrants. There we had four equivalent elements. Here we have two distinctive pairs. Consistency and Impermanence are unique enough to be accentuated. Balance and Imbalance are status conditions, and both must remain available. The first pair can be **separated**. The second is **indivisible** — not fused into one concept, but such that the <plain>potential</plain> of both sides must always be preserved.
 
-The issue of higher instability in second order attribute pairs was raised before. This brings out a question:
+That instability raises a question: *what happens if the required availability of balance and imbalance is broken?*
 
-- *What would happen if the required availability of balance and imbalance is broken*? 
-
-If their relation is no longer symmetrical, it would result on a **detrimental interstitial status**. Knowing this, we can try to represent a state in which those elements are in symmetry and another state in which they are not. Luckily for us, we already have an operator that represent this last state, but we didn't have a use for until now: the **Asymmetry** (≢) operator.
+If their relation is no longer symmetrical, the result is a **detrimental interstitial status**. We already have an operator for that state; until now it had no work. Asymmetry (`≢`) marks it.
 
 - **Available Status**: Imbalance ≡ Balance
 - **Detrimental Status**: Imbalance ≢ Balance
 
-Now that we have these interstitial status, we can concatenate them to the accentuations of Consistency and Impermanence. This concatenation creates **status dichotomies**:
+Concatenate those statuses with the accentuations of Consistency and Impermanence, and we get **status dichotomies**:
+
+- **STATUS DICHOTOMIES**: Concatenation between the reinforcing (Consistency/Impermanence) and canceling (Balance/Imbalance) pairs.
 
 | **STATUS DICHOTOMIES** | **SYMBOLIC REPRESENTATION** |
 | --- | --- |
@@ -22,8 +22,10 @@ Now that we have these interstitial status, we can concatenate them to the accen
 | (Impermanence ← Consistency) ^ (Imbalance ≡ Balance) = **Imperdurability** | (I ← C) ^ (b ≡ B) = **I≡** |
 | (Impermanence ← Consistency) ^ (Imbalance ≢ Balance) = **Perdurability** | (I ← C) ^ (b ≢ B) = **I≢** |
 
-**Symbolic Note**: In each status dichotomy symbol, the letter represents the primary accentuated attribute (e.g. `C` for Consistency, `I` for Impermanence), while the symbol to the right (≡ or ≢) reflects the interstitial status (symmetrical or asymmetrical). These are not equations, but concise tokens: `{C≡}` signals a functional state of Consistency within a symmetrical balance. These tokens will allow us to express more complex philosophical equations.
+**Symbolic Note**: In each token, the letter is the accentuated attribute (`C` for Consistency, `I` for Impermanence), and the mark to its right (`≡` or `≢`) is the interstitial status. These are not equations. `{C≡}` signals a functional state of Consistency under a symmetrical balance. The tokens will carry denser equations later.
 
-These are so far the first Conciliatorics' elements that have a clear value judgement attached to them. **Functionality**, being the interstitial child of a symmetrical status, is desirable—as opposed to **dysfunctionality**, which is harmful. While the previous aspect is fairly intuitive, the desirable connotation of **imperdurability** will be strange to many of us. Even more odd is presenting **perdurability** as detrimental, which usually has a positive association rooted in our biological instincts to perdure.
+These are the first Conciliatorics elements with a clear value judgement attached. **Functionality**, the child of a symmetrical status, is desirable; **dysfunctionality** is harmful. That much is intuitive. The desirable connotation of **imperdurability** is not. Still stranger is presenting **perdurability** as detrimental — against a biological instinct that treats lasting as the good.
 
-This counterintuitive association will be the focus of our next topic, since this desire for functionality and perdurability is the root of our biggest obstacles for systemic reconciliation.
+A fruit that ripens and falls is imperdurable, and the tree remains a tree. A fruit that never falls, and rots on the branch, has perdurability of a kind, and it is the wrong kind. The instinct to last is not being insulted here. It is being asked to notice what it costs.
+
+That counterintuitive pairing — functionality with imperdurability as the desirable poles — is the root of the obstacles that follow.

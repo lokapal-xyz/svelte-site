@@ -4,6 +4,7 @@ import type { ChapterMeta } from '$lib/library/types';
 import { DOCS_PATH } from './paths';
 
 const PART_TITLES: Record<string, string> = {
+	'00_front': 'Front matter',
 	'01_introduction': 'Part 1 — Introduction',
 	'02_edified_interstitial_contemplation': 'Part 2 — Edified Interstitial Contemplation',
 	'03_attributes-structure': 'Part 3 — Attributes Structure',

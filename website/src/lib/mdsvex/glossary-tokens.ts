@@ -20,6 +20,11 @@ const SKIP_PARENTS = new Set([
 	'heading'
 ]);
 
+const PLAIN_OPEN = /^<plain(?:\s[^>]*)?>$/i;
+const PLAIN_CLOSE = /^<\/plain\s*>$/i;
+const PLAIN_COMPLETE = /^<plain(?:\s[^>]*)?>([\s\S]*?)<\/plain\s*>$/i;
+const PLAIN_IN_TEXT = /<plain(?:\s[^>]*)?>([\s\S]*?)<\/plain\s*>/gi;
+
 type MdNode = {
 	type: string;
 	value?: string;
@@ -68,12 +73,17 @@ function loadMatchers(): Matcher[] {
 }
 
 function tokenHtml(id: string, text: string): string {
-	return `<button type="button" class="glossary-token" data-glossary-id="${escapeHtml(id)}">${escapeHtml(text)}</button>`;
+	return `<span class="glossary-token" data-glossary-id="${escapeHtml(id)}" role="button" tabindex="0">${escapeHtml(text)}</span>`;
+}
+
+function isHtml(node: MdNode): node is MdNode & { value: string } {
+	return node.type === 'html' && typeof node.value === 'string';
 }
 
 function splitText(value: string, matchers: Matcher[], regex: RegExp): MdNode[] {
 	const nodes: MdNode[] = [];
 	let lastIndex = 0;
+	regex.lastIndex = 0;
 
 	for (const match of value.matchAll(regex)) {
 		const index = match.index ?? 0;
@@ -106,23 +116,71 @@ function splitText(value: string, matchers: Matcher[], regex: RegExp): MdNode[] 
 	return nodes.length > 0 ? nodes : [{ type: 'text', value }];
 }
 
+/** Tokenize text, but emit `<plain>…</plain>` inner content as ordinary text. */
+function splitTextProtectingPlain(value: string, matchers: Matcher[], regex: RegExp): MdNode[] {
+	const nodes: MdNode[] = [];
+	let lastIndex = 0;
+
+	for (const match of value.matchAll(new RegExp(PLAIN_IN_TEXT.source, 'gi'))) {
+		const index = match.index ?? 0;
+		if (index > lastIndex) {
+			nodes.push(...splitText(value.slice(lastIndex, index), matchers, regex));
+		}
+		nodes.push({ type: 'text', value: match[1] });
+		lastIndex = index + match[0].length;
+	}
+
+	if (lastIndex < value.length) {
+		nodes.push(...splitText(value.slice(lastIndex), matchers, regex));
+	}
+
+	return nodes.length > 0 ? nodes : [{ type: 'text', value }];
+}
+
 function visit(node: MdNode, matchers: Matcher[], regex: RegExp) {
 	if (!node.children || SKIP_PARENTS.has(node.type)) return;
 
+	const next: MdNode[] = [];
+
 	for (let i = 0; i < node.children.length; i += 1) {
 		const child = node.children[i];
-		if (child.type === 'text' && child.value) {
-			regex.lastIndex = 0;
-			if (!regex.test(child.value)) continue;
-			regex.lastIndex = 0;
-			const pieces = splitText(child.value, matchers, regex);
-			if (pieces.length === 1 && pieces[0].type === 'text') continue;
-			node.children.splice(i, 1, ...pieces);
-			i += pieces.length - 1;
-		} else {
-			visit(child, matchers, regex);
+
+		if (isHtml(child)) {
+			const complete = child.value.trim().match(PLAIN_COMPLETE);
+			if (complete) {
+				next.push({ type: 'text', value: complete[1] });
+				continue;
+			}
+
+			if (PLAIN_OPEN.test(child.value.trim())) {
+				const inner: MdNode[] = [];
+				let closeAt = -1;
+				for (let j = i + 1; j < node.children.length; j += 1) {
+					const candidate = node.children[j];
+					if (isHtml(candidate) && PLAIN_CLOSE.test(candidate.value.trim())) {
+						closeAt = j;
+						break;
+					}
+					inner.push(candidate);
+				}
+				if (closeAt !== -1) {
+					next.push(...inner);
+					i = closeAt;
+					continue;
+				}
+			}
 		}
+
+		if (child.type === 'text' && child.value) {
+			next.push(...splitTextProtectingPlain(child.value, matchers, regex));
+			continue;
+		}
+
+		visit(child, matchers, regex);
+		next.push(child);
 	}
+
+	node.children = next;
 }
 
 /** Wrap glossary terms (by display name) and the five operator symbols, keyed by glossary id. */

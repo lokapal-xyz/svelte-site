@@ -2,7 +2,7 @@
 
 *On untouchable bodies.*
 
-The **structure quadrants** form a set similar to an attribute pair: `{D ≡ O ≡ R ≡ E}`. Each of these four components holds equal weight. Shifting focus to one requires maintaining awareness of its relationship with the other three. So, we can use the **accentuation** operator again—this time applied to the Structure Quadrants instead of attributes.
+The structure quadrants form a set similar to an attribute pair: `{D ≡ O ≡ R ≡ E}`. Each of the four holds equal weight. Shifting focus to one requires keeping its relation to the other three. So we use **accentuation** again — this time on the quadrants, not on the primary attributes.
 
 | **QUADRANT ACCENTUATION** | **SYMBOLIC FORM** |
 |----|---|
@@ -11,19 +11,20 @@ The **structure quadrants** form a set similar to an attribute pair: `{D ≡ O �
 | Accent on Resolutivity = **Resolution** | `{R ← (D ≡ O ≡ E)}` = iR |
 | Accent on Operativity = **Operation** | `{E ← (D ≡ O ≡ R)}` = iE |
 
-These accentuations form a new set called **Interstitial Anatomy**: `{iD ≡ iO ≡ iR ≡ iE}`. We'll explain the meaning of this naming structure. 
-- The ability to discern (Discernibility) is a **potential state**—one of four sides of an *abstract interstitial design* (Structure Quadrants). 
-- A member discerning over a systemic element (Discernment) is a **concrete action**—performed by an agent with a *specific interstitial method* (Interstitial Anatomy). 
+These accentuations form a new set: `{iD ≡ iO ≡ iR ≡ iE}`.
 
-When implementing Conciliatorics analysis, the interstitial anatomy methods are more frequently used. So, it helps that the term assigned to the concrete action is shorter than its potential state counterpart.
+- **INTERSTITIAL ANATOMY**: Set of concrete interstitial actions, composed of structure-quadrant accentuations.
 
-While we are discussing these issues within the Conciliatorics context, we can simply use the term **discernment**. However, since this word has broader meanings in general conversation, we recommend using the more specific term **interstitial discernment** when working outside the Conciliatorics domain. Think of "interstitial" as a surname—within the family, “John” is enough, but outside, you might need to say “John Smith” to avoid confusion.
+The naming marks a cut we have been approaching since the quadrants. Discernibility is a **<plain>potential</plain> state** — one of four sides of an abstract interstitial design (the Structure Quadrants). A member discerning over a systemic element is a **concrete action** — performed by an agent with a specific interstitial method (Interstitial Anatomy). The capacity to know is not yet someone knowing. The same cut holds for the other three: observability is not observation, resolutivity is not resolution, operativity is not operation.
+
+In analysis, the methods are used more often than the capacities. It helps that the term for the concrete action is the shorter one.
+
+Inside Conciliatorics, **discernment** is enough. Outside it, the word has broader lives, so **interstitial discernment** is the safer name — "interstitial" as a surname. Within the family, John is enough; elsewhere, you may need John Smith. The same is true of observation, resolution, and operation.
 
 To recap:
-- **Discernibility**: potential state. Component of Structure Quadrants: `{D ≡ O ≡ R ≡ E}`
+
+- **Discernibility**: <plain>potential</plain> state. Component of Structure Quadrants: `{D ≡ O ≡ R ≡ E}`
 - **Discernment**: concrete action. Component of Interstitial Anatomy: `{iD ≡ iO ≡ iR ≡ iE}`
 - **Interstitial Discernment (iD)**: appropriate term outside Conciliatorics.
 
-**NOTICE**: The same is true for the rest of the quadrants accentuations (Observation, Resolution, Operation).
-
-Now we can move forward with a detailed exploration of each element of Interstitial Anatomy.
+We can now take each method in turn.

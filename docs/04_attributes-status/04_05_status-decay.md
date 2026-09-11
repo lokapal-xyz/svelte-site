@@ -2,7 +2,9 @@
 
 *On elusive acceptance.*
 
-Despite our desire for continuous functionality or perdurability, no system can sustain its optimal status forever. **Decay** will deteriorate even a healthy system, and it will lead eventually to an **end state**. 
+No system holds its optimal status forever, however much it longs to. **Decay** deteriorates even a healthy system, and it leads to an **end state**.
+
+- **STATUS DECAY**: Interstitial process of physiological deterioration, leading eventually to an end state.
 
 **For Organic Systems**:
 - Healthy state: Perdurable (maintains existence over time)
@@ -19,6 +21,6 @@ Despite our desire for continuous functionality or perdurability, no system can 
 - Intermediate decay: Physiological Crisis (decline in conciliation)
 - End state: Dissolved System (conciliation lost)
 
-This decay process takes many forms depending on the system. For Organic and Instrumental systems, the cycle from health to end is relatively straightforward. Mixed systems, however, are especially vulnerable to status decay, making full-health states difficult to achieve—and even harder to preserve. Yet only mixed systems retain a pathway to transcend their own end state—a potential unavailable to the purely organic or instrumental. 
+A body sickens and dies. A tool cracks and is destroyed. A polity enters crisis and dissolves. Organic and instrumental cycles, from health to end, are relatively straightforward. Mixed systems are more vulnerable: full health is harder to reach, and harder to keep. They are also the only ones that retain a path beyond their own end state — a <plain>potential</plain> the purely organic and the purely instrumental do not have.
 
-We'll explore this **conciliation pathway** in our final theoretical chapter.
+That path is the **conciliation pathway**. It belongs to the last theoretical stretch of EIC.

@@ -3,15 +3,20 @@
 	--bg: #171719;
 	--bg-raised: #222226;
 	--bg-panel: #2a2a30;
+	--bg-inset: color-mix(in srgb, var(--bg-raised) 38%, transparent);
 	--text: #e6e6e6;
 	--text-muted: #a3a3a8;
 	--token: #c4a574;
+	--token-hover: #e0c394;
+	--link: var(--token);
+	--link-hover: var(--token-hover);
 	--accent: #7aa2d4;
 	--border: #3a3a40;
 	--font-body: 'Iowan Old Style', Palatino, 'TeX Gyre Pagella', 'Noto Serif', Georgia, serif;
 	--font-ui: system-ui, Inter, 'Segoe UI', sans-serif;
 	--content: 48rem;
 	--page: 80rem;
+	--diagram-label: 1.15rem;
 }
 
 *,
@@ -22,13 +27,17 @@
 
 html {
 	font-size: clamp(1.0625rem, 0.35vw + 0.9rem, 1.25rem);
+	overflow-x: clip;
+	background-color: var(--bg);
+	background-image: url('/nnnoise.svg');
+	background-repeat: repeat;
+	background-attachment: fixed;
 }
 
-html,
 body {
 	margin: 0;
 	min-height: 100%;
-	background: var(--bg);
+	background: transparent;
 	color: var(--text);
 	font-family: var(--font-body);
 	line-height: 1.7;
@@ -45,12 +54,12 @@ html.unloading .flock {
 }
 
 a {
-	color: var(--accent);
+	color: var(--link);
 	text-underline-offset: 0.15em;
 }
 
 a:hover {
-	color: #9bbce0;
+	color: var(--link-hover);
 }
 
 img {
@@ -63,19 +72,27 @@ button {
 }
 
 .page {
-	width: min(var(--page), calc(100% - 2rem));
+	width: min(var(--page), calc(100vw - 2rem));
+	max-width: 100%;
 	margin: 0 auto;
-	padding-bottom: 4rem;
+	padding-bottom: 2rem;
 }
 
-body:has(.walk) {
+.grain-surface {
+	background-color: var(--bg);
+	background-image: url('/nnnoise.svg');
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+body:has(main.walk) {
 	display: flex;
 	flex-direction: column;
 	height: 100svh;
 	overflow: hidden;
 }
 
-body:has(.walk) .page {
+body:has(main.walk) .page {
 	flex: 1 1 auto;
 	min-height: 0;
 	display: flex;
@@ -83,7 +100,13 @@ body:has(.walk) .page {
 	padding-bottom: 0.4rem;
 }
 
-body:has(.walk) .page-body {
+@media (max-width: 36rem) {
+	body:has(main.walk) .page {
+		padding-bottom: 0.2rem;
+	}
+}
+
+body:has(main.walk) .page-body {
 	flex: 1 1 auto;
 	min-height: 0;
 	display: flex;
@@ -123,11 +146,18 @@ body:has(.walk) .page-body {
 .section .byline,
 .dex h1,
 .dex .lede,
+.dialogue h1,
+.dialogue .lede,
+.conversation .kicker,
+.conversation h1,
+.conversation .lede,
+.conversation .who,
 .entry .kicker,
 .entry h1,
+.entry .kind,
 .error h1,
 .error .lede,
-.walk {
+main.walk {
 	animation: enter 700ms ease both;
 }
 
@@ -135,9 +165,17 @@ body:has(.walk) .page-body {
 .treatise .toc,
 .section .body,
 .dex label,
-.dex ul,
+.dex .index,
+.dialogue .how,
+.dialogue .search,
+.dialogue .filter,
+.dialogue .index,
+.conversation .body,
 .entry .definition,
-.entry dl,
+.entry .notes,
+.entry .graph,
+.entry .treatise,
+.conversation .foot,
 .error .gate {
 	animation: enter 700ms ease 400ms both;
 }
@@ -174,15 +212,30 @@ body:has(.walk) .page-body {
 	.dex h1,
 	.dex .lede,
 	.dex label,
-	.dex ul,
+	.dex .index,
+	.dialogue h1,
+	.dialogue .lede,
+	.dialogue .how,
+	.dialogue .search,
+	.dialogue .filter,
+	.dialogue .index,
+	.conversation .kicker,
+	.conversation h1,
+	.conversation .lede,
+	.conversation .who,
+	.conversation .body,
+	.conversation .foot,
 	.entry .kicker,
 	.entry h1,
+	.entry .kind,
 	.entry .definition,
-	.entry dl,
+	.entry .notes,
+	.entry .graph,
+	.entry .treatise,
 	.error h1,
 	.error .lede,
 	.error .gate,
-	.walk {
+	main.walk {
 		animation: none;
 	}
 }
@@ -216,6 +269,7 @@ body:has(.walk) .page-body {
 
 .chapter {
 	width: min(var(--content), 100%);
+	min-width: 0;
 	margin: 1.5rem auto 0;
 }
 
@@ -226,6 +280,74 @@ body:has(.walk) .page-body {
 	font-size: 0.8rem;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
+}
+
+.chapter .kicker a {
+	color: var(--link);
+}
+
+.chapter .kicker a:hover {
+	color: var(--link-hover);
+}
+
+.chapter .kicker .sep,
+.conversation .kicker .sep {
+	margin: 0 0.4em;
+}
+
+.conversation {
+	width: min(var(--content), 100%);
+	min-width: 0;
+	margin: 1.5rem auto 0;
+}
+
+.conversation .kicker {
+	margin: 0 0 0.35rem;
+	color: var(--text-muted);
+	font-family: var(--font-ui);
+	font-size: 0.8rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.conversation .kicker a {
+	color: var(--link);
+}
+
+.conversation .kicker a:hover {
+	color: var(--link-hover);
+}
+
+.conversation h1 {
+	margin: 0 0 0.5rem;
+	font-size: 2.15rem;
+	line-height: 1.2;
+	font-weight: 650;
+}
+
+.conversation .lede {
+	margin: 0 0 0.5rem;
+	color: var(--text-muted);
+}
+
+.conversation .body :where(h2, h3, h4) {
+	line-height: 1.25;
+	font-weight: 650;
+}
+
+.conversation .body h2 {
+	margin: 2rem 0 0.75rem;
+	font-size: 1.4rem;
+}
+
+.conversation .body p,
+.conversation .body li {
+	margin: 0.85rem 0;
+}
+
+.conversation .body ul,
+.conversation .body ol {
+	padding-left: 1.25rem;
 }
 
 .chapter :where(h1, h2, h3, h4) {
@@ -266,9 +388,21 @@ body:has(.walk) .page-body {
 	border-top: 1px solid var(--border);
 }
 
+.table-wrap {
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+	margin: 1.25rem 0;
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: thin;
+	scrollbar-color: var(--border) transparent;
+}
+
 .chapter table {
 	width: 100%;
-	margin: 1.25rem 0;
+	margin: 0;
 	border-collapse: collapse;
 	font-size: 0.95rem;
 }
@@ -281,6 +415,19 @@ body:has(.walk) .page-body {
 	vertical-align: top;
 }
 
+@media (max-width: 40rem) {
+	.chapter table {
+		width: max-content;
+		min-width: 100%;
+		font-size: 0.88rem;
+	}
+
+	.chapter th,
+	.chapter td {
+		white-space: nowrap;
+	}
+}
+
 .chapter pre,
 .chapter code {
 	font-family: ui-monospace, 'Cascadia Code', monospace;
@@ -291,24 +438,32 @@ body:has(.walk) .page-body {
 	overflow: auto;
 	padding: 0.85rem 1rem;
 	border: 1px solid var(--border);
-	background: var(--bg-raised);
+	background-color: var(--bg-inset);
 }
 
 .glossary-token {
+	display: inline;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	background: none;
 	color: var(--token);
+	font: inherit;
+	text-align: left;
 	text-decoration: underline dotted;
 	text-decoration-thickness: 1px;
 	text-underline-offset: 0.22em;
+	white-space: normal;
 	cursor: pointer;
 }
 
 .glossary-token:hover,
 .glossary-token:focus-visible {
-	color: #e0c394;
+	color: var(--token-hover);
+}
+
+.treatise-diagram-slot {
+	width: 100%;
 }
 
 .treatise-diagram {
@@ -318,10 +473,21 @@ body:has(.walk) .page-body {
 
 .treatise-diagram svg {
 	display: block;
-	width: 100%;
+	width: min(100%, calc(var(--diagram-vw, 44) / var(--diagram-em, 13) * var(--diagram-label)));
 	height: auto;
 	max-width: 44rem;
 	margin-inline: auto;
+	font-family: var(--font-body);
+}
+
+.treatise-diagram svg :is(text, tspan) {
+	font-family: var(--font-body);
+}
+
+@media (max-width: 40rem) {
+	.treatise-diagram-slot--wide .treatise-diagram {
+		display: none;
+	}
 }
 
 .treatise-diagram [data-id] {

@@ -5,6 +5,7 @@ Hub at `/` with six sections (Start here, Treatise, EIC-Dex, In dialogue, Cases,
 
 Treatise pages come from `../docs/**/*.md` (mdsvex). Glossary and Dex data are loaded at
 build time from `../library/glossary/glossary.yaml` and `../library/eic-dex/eic-dex.yaml`.
+In Dialogue loads `../library/dialogue/dialogue.yaml` plus `conversations/*.md` (tokens on).
 Diagrams are inlined from `../diagrams/svg/`. Product lock: `../design-refs/design-decisions.md`
 (local; not in git).
 

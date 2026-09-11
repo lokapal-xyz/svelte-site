@@ -2,14 +2,13 @@
 
 *On deciding.*
 
-Next on our list is an EIC structure that tackles the way systemic challenges can be **resolved**. We'll begin by showing the final diagram with every Resolution component. As each concept is introduced, we encourage the reader to refer back to the diagram and observe how these elements interact.
-
+Resolution is the method of settling a systemic challenge. We begin with the full diagram. The pieces below are the same ones it already holds.
 
 ![Diagram showing the interactions between Resolution's components](../../diagrams/png/resolutionFull.png)
 
-The *squared corners* are our starting point. **Chaos** vs **Order** is a main duality in complex systems, and both elements create challenges for us to resolve. It’s worth noting that chaos does not imply wrongness, just as order does not necessarily imply rightness. The presence of both can be challenging depending on the context. The same is true for any following element discussed here.
+The squared corners are the starting dualities. **Chaos** and **Order** are a main pair in complex systems, and both create challenges. Chaos does not imply wrongness; order does not imply rightness. A riot and a freeze can both be unlivable. The same is true of every element that follows: none of them is a moral verdict on its own.
 
-The other main **challenge duality** is **friction** and **conflict**. They may seem too similar, but here we relate friction to structural challenges, and conflict to behavioral challenges. Both elements are present in challenging scenarios, and they intersect with chaos and order to form specific qualities. Let's start reviewing them from the top of the diagram:
+The other challenge duality is **friction** and **conflict**. They are easy to collapse. Here, friction is structural — a load that does not sit, a form that will not file, a joint that binds. Conflict is behavioral — members at odds. Both are present in a real challenge, and they concatenate with chaos and order:
 
 | **INTERACTION** | **RESULT** |
 |---|---|
@@ -18,23 +17,23 @@ The other main **challenge duality** is **friction** and **conflict**. They may 
 | Conflict ^ Chaos | Suffering |
 | Conflict ^ Order | Satisfaction |
 
-Each of these pairings fight for our energy, demanding to be prioritized. It is unlikely that we can resolve a challenge by dismissing one over the other, so our goal we'll be to balance them instead. This balancing dynamic must reconcile each aspect according to the context, since no fixed proportion fits every challenge. 
+Unused capacity in a disordered process is **potential**. A locked joint, a settled procedure, is **stability**. Conflict without a shape is **suffering**. Conflict that has found a shape — a verdict, a treaty, a scored piece — is **satisfaction**. Each pairing pulls for priority. Dismissing one to keep another is not a resolution. The work is to hold them in a proportion the situation can actually bear. No fixed ratio fits every challenge.
 
 | **INTERACTION** | **RESULT** |
 |---|---|
 | Potential ^ Stability | Temperance |
 | Suffering ^ Satisfaction | Sacrifice |
 
-**Temperance** is the engagement of our potential with a stable support. It allows us to explore the world without losing our foundations. **Sacrifice** is the conscious choice of accepting a present suffering to enjoy a future satisfaction. It allows us to combine our current priorities with tomorrow's needs to maximize the experience of each temporal version of ourselves. These integrations may take many forms, but we can summarize them like this:
+**Temperance** is potential with a stable support: exploring without losing the foundations. **Sacrifice** is the choice of a present suffering for a future satisfaction: this season's pruning for the next harvest. In short:
 
 - **Temperance**: forward-facing, dynamic regulation.
 - **Sacrifice**: temporally-aware, delayed gratification.
 
-Our final synthesis is the combination of temperance and sacrifice, giving rise to **viability**. At the end of the day, we must reconcile our interest, priorities and desires with the limitations of the world. And that entails an understanding of what is viable on each context, instead of blaming the world for its constant challenges. With a tempered and sacrificial mindset **we can endure** any adversity.
+Their combination is **viability**. Interests, priorities, and desires have to be reconciled with what the world will actually carry. That is an understanding of what this context can bear. A tempered and sacrificial stance is how a challenge is lived through rather than merely named.
 
 ---
 
-Before moving on, we offer a symbolic version of the main diagram and a table of references:
+A symbolic version of the same diagram, and a table of references:
 
 ![Diagram showing the interactions between Resolution's components in symbolic form](../../diagrams/png/resolution.png)
 
@@ -48,7 +47,4 @@ Before moving on, we offer a symbolic version of the main diagram and a table of
 | Suffering ^ Satisfaction = Sacrifice | ſ ^ Ʒ = ẞ |
 | Temperance ^ Sacrifice = Viability | τ ^ ẞ = V |
 
-The reader may use both the textual and symbolic versions, or choose the one that helps them grasp these interactions better. Many symbols employed here are nods to two of the most influential philosophical traditions.
-
-- The pi (π), epsilon (ε) and tau (τ) symbols are of course allusions to Greek philosophy and culture.
-- The "long s" (ſ), "tailed z" (Ʒ) and eszett (ẞ) symbols are references to German philosophy and culture, being the letter ẞ usually associated with the German language. The long s and tailed z letters are the orthographical origins of the eszett. 
+The two versions are the same structure in two representation types. Many of the symbols nod to two philosophical traditions: pi (π), epsilon (ε), and tau (τ) toward Greek; long s (ſ), tailed z (Ʒ), and eszett (ẞ) toward German — the long s and tailed z being the orthographical origins of the eszett.

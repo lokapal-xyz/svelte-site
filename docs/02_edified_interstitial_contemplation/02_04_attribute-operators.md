@@ -2,34 +2,35 @@
 
 *On connecting the dots.*
 
-Systems can reach high levels of complexity through the interplay of diverse interactions. But that doesn't mean that the systemic building blocks are simple. Our reductionist impulse seeks basic pieces to build sophisticated mechanisms, often leading us to "find" rudimentary starting points. In our perspective, these systemic initial components need to be extremely special in order to be able to build complex configurations—so much so that our systems of thought and language can't represent them in isolation. 
+Systems can reach high levels of complexity through the interplay of diverse <plain>interactions</plain>. That does not mean the building blocks are simple. A reductionist impulse looks for rudimentary starting points, and often "finds" them by stripping a quality of everything that made it able to combine. In our perspective, the initial components have to be special enough to build complex configurations — so much so that thought and language cannot represent them honestly in isolation.
 
-Rather than working with isolated attributes, we use **attribute pairs** as the fundamental systemic unit. This approach immediately accounts for relational dynamics, allowing us to capture complexity without oversimplifying. Each attribute pair inherently contains:
+A hinge has two leaves. Describing only one of them does not give you a simpler hinge. It gives you a door that cannot move. Rather than working with isolated attributes, we use <plain>**attribute pairs**</plain> as the fundamental systemic unit.
 
-1. Side A of the paired set.
-2. Side B of the paired set.
-3. The dynamic relationship between Side A and Side B.
+- **ATTRIBUTE PAIR**: The fundamental systemic unit in EIC, used instead of isolated attributes. Inherently contains Side A, Side B, and the dynamic relationship between them.
 
-This allows us to establish foundational elements without stripping them of their proper sophistication. It also allows us to study the relationship as a vital component. Attribute pairs that are closely interrelated need to be regarded with equal importance. When an attribute pair is held this way, we say the paired set is in a state of **symmetry**. If one of the attributes is prioritized, the attribute pair is in a state of **asymmetry**. Symmetry implies balanced interdependence; asymmetry indicates directional prioritization.
+Each pair is already three things at once: one side, the other side, and the relation that holds them. That relation is not an afterthought. Attribute pairs that are closely interrelated need to be regarded with equal importance. When they are held that way, the paired set is in a state of **symmetry**. If one of the attributes is prioritized, the pair is in a state of **asymmetry**. Symmetry is balanced interdependence; asymmetry is directional prioritization.
 
-We are going to use the following symbols:
+- **SYMMETRY**: `≡` ("Identical to" symbol. Unicode: U+2261)
 
-- **SYMMETRY**: `≡` ("Identical to" symbol. Unicode: U+2261)  
 - **ASYMMETRY**: `≢` ("Not identical to" symbol. Unicode: U+2262)
 
-When we are dealing with the interactions between different attribute pairs, or with attributes of different paired sets, we can label these interactions as **concatenations**.
+A scale in balance is symmetry: both pans matter, and the reading is the relation. A scale with a thumb on one pan is still a scale, but the relation has been tilted. The pair has not disappeared. It has been prioritized.
+
+The remaining operators do not replace the pair. They let pairs combine, lean, and act on one another.
+
+When we are dealing with relations between different attribute pairs, or with attributes of different paired sets, we call those relations **concatenations**.
 
 - **CONCATENATION**: `^` ("Caret" symbol. Unicode: U+005E)
 
-When we want to focus on one attribute of a paired set, or to focus on one element of a compounded interaction, we can implement an **accentuation**.
+When we want to focus on one attribute of a paired set, or on one element of a compounded <plain>interaction</plain>, without dismissing the other side, we implement an **accentuation**.
 
-- **ACCENTUATION**: `←` ("Leftwards arrow" symbol. Unicode: U+2190) 
+- **ACCENTUATION**: `←` ("Leftwards arrow" symbol. Unicode: U+2190)
 
-When we are dealing with a concrete effect of one attribute element or compound over another, we can describe it as a **modulation**.
+When we are dealing with a concrete effect of one attribute element or compound over another, we describe it as a **modulation**.
 
 - **MODULATION**: `→` ("Rightwards arrow" symbol. Unicode: U+2192)
 
-The complete set of operators is the following:
+The complete set is the following:
 
 | **ATTRIBUTE OPERATOR** | **MEANING** |
 |:----------------------:|------------|
@@ -39,9 +40,4 @@ The complete set of operators is the following:
 | `←` | Accentuation |
 | `→` | Modulation |
 
-One more note on how these symbols combine: a letter's position inside an expression is part of its meaning, not incidental to it. A prefix attached to a term occupies a different symbolic role than that same letter used as a standalone or core symbol elsewhere — position disambiguates them. Two prefixes sharing a letter, or two core symbols sharing a letter, would be a real collision; a prefix and a core symbol sharing one generally isn't. We'll still flag it explicitly whenever a given case is ambiguous enough that position alone doesn't settle it.
-
-Before moving on, we need to comment on the way we can represent these foundational building blocks. Their sophistication not only affects the terminology we should use, but also the communication systems we implement. You can already see that we encourage symbolic and graphic representations for many concepts until now. This not only helps us to better comprehend each concept, but also reflects the limitations of our common systems of communication. 
-
-Written language, symbolic representations, and graphical mediums all carry referential baggage. Words especially carry meaning from common speech and academic discussion that burden our approach to foundational elements. This baggage is even more impactful in any Systemics conversation, due to the distance between our intuitive conditioning and the complex nature of systems. So, we are going to use discursive, graphic, and symbolic representation not only to enhance comprehension but also to address the intricacies of systemic complexity. This way, the weaknesses of one representation system can be complemented by the others.
-
+One more note on how the symbols combine: a letter's position inside an expression is part of its meaning, not incidental to it. A prefix attached to a term occupies a different symbolic role than that same letter used as a standalone or core symbol elsewhere — position disambiguates them. Two prefixes sharing a letter, or two core symbols sharing a letter, would be a real collision; a prefix and a core symbol sharing one generally isn't. We'll still flag it explicitly whenever a given case is ambiguous enough that position alone doesn't settle it.

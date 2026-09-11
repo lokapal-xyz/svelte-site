@@ -14,7 +14,7 @@
 	<main class="error missing">
 		<div class="copy">
 			<h1>This page isn't here</h1>
-			<p class="lede">That address isn't a section, a chapter, or a Dex entry.</p>
+			<p class="lede">That address isn't a section, a chapter, a Dex entry, or a conversation.</p>
 			<a class="gate" href={resolve('/')}>
 				<span class="label">Home</span>
 				<span class="blurb">Back to the six sections.</span>

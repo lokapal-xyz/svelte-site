@@ -2,25 +2,29 @@
 
 *On tangled borders.*
 
-The last foundational concept we want to establish before opening the analytical gates is the idea that each attribute pair and their compounded interactions **must have clear boundaries**. To maintain awareness of these boundaries, we assign **jurisdictions** to each Conciliatorics element.
+The last part of the rule set is the idea that each attribute pair, and each compounded <plain>interaction</plain> of pairs, **must have clear boundaries**. To keep those boundaries in view, we assign **jurisdictions** to Conciliatorics elements.
 
 - **SYSTEMIC JURISDICTION**: The bounded environment that contains Conciliatorics components.
 
-This concept retroactively enhances the terminology of previous chapters. For example, the four members of the Parcels Council each operate within their own *systemic jurisdiction*, whose boundaries are defined by the complementarity between their inventive approach and inventive position. We now extend this terminology to the components of Attributes Dynamics as well:
+This terminology reaches backward as well as forward. The four inventive parcels each operate within their own *systemic jurisdiction*, whose boundaries are defined by the complementarity between their inventive approach and inventive position. A parcel that forgets those boundaries is already on the way to ossification. We now extend the same discipline to the components of Attributes Dynamics:
 
 - **ATTRIBUTE JURISDICTION**: The bounded environment that contains Attributes Dynamics components.
 
-The process of *inventive ossification* tends to erode these boundaries, as the proper scope of an inventive parcel begins to overreach into other jurisdictions.
+Inventive ossification tends to erode these boundaries. The proper scope of a parcel, or of a concept inside EIC, begins to overreach into others.
 
 - **JURISDICTIONAL OVERREACH**: The process by which one jurisdiction breaks boundaries to exert control over others.
 
-But ossification and overreach are not the only systemic dynamics that can degrade jurisdictional clarity. Healthy jurisdictional boundaries must aim for proper **differentiation**. Boundary deterioration may also manifest through **dissociation** or **dissolution**.
+A finance ministry that starts writing security protocols is overreaching. So is a philosophical framework that starts telling the sciences what their ceramic is allowed to be.
 
-- **JURISDICTIONAL DIFFERENTIATION**: The process and systemic state in which boundaries are properly maintained. The jurisdiction is aware of its distinct role while cultivating healthy interactions—this promotes **systemic diplomacy**.
+Overreach is not the only way boundaries fail. Healthy jurisdictional boundaries aim for proper **differentiation**. They can also deteriorate by **dissociation** or **dissolution**.
+
+- **JURISDICTIONAL DIFFERENTIATION**: The process and systemic state in which boundaries are properly maintained. The jurisdiction is aware of its distinct role while cultivating healthy <plain>interactions</plain> — this promotes **systemic diplomacy**.
 - **JURISDICTIONAL DISSOCIATION**: The process and systemic state in which boundaries fracture. The jurisdiction isolates itself, forming a **systemic silo**.
 - **JURISDICTIONAL DISSOLUTION**: The process and systemic state in which boundaries merge. The jurisdiction fuses into others, forming a **systemic amalgam**.
 
-With our jurisdictional framework defined, we can now establish a clear starting point for exploring the next EIC concepts:
+A standards body that will not speak to the engineers who implement the standard has dissociated: the boundary is intact as a wall, and useless as a border. Two offices merged until a decision has no owner have dissolved: there is no longer a jurisdiction to be honest about. A court that knows it is not a legislature, and still has to work with one, is closer to differentiation — a distinct role, in contact.
+
+With that framework in place, we can name a starting environment for the next EIC concepts:
 
 1. We begin with the **spatial** and **temporal** attribute pair.
 2. The spatial attribute expands into the **stillness** and **movement** attribute pair.
@@ -31,4 +35,4 @@ With our jurisdictional framework defined, we can now establish a clear starting
 
 ![Diagram showing the components of the Primary Jurisdiction](../../diagrams/png/primary-jurisdiction.png)
 
-With our primary jurisdiction in place, we can now expand our scope toward more complex EIC configurations. We can always trace back to these root concepts to verify the internal coherence of our exploration. And we must remember that our ultimate goal is to reach analytical synthesis. This journey is bounded by two guiding anchors: an opening anchor (Attributes Regulation) and a closing anchor (Attributes Synthesis), ensuring we do not wander aimlessly through our Conciliatorics path.
+A garden is already spatial and temporal at once: plots and paths, and the hour they are in. Held as rest and motion, the same garden is still or working. Held as sequence and co-occurrence, planting follows harvest, or many hands work the same bed at once. We do not need more than that yet. These pairs are the root we can walk back to when a later configuration has to prove it still belongs.

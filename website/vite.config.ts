@@ -5,6 +5,7 @@ import { mdsvex } from 'mdsvex';
 import { defineConfig } from 'vite';
 import { glossaryTokens } from './src/lib/mdsvex/glossary-tokens.ts';
 import { inlineDiagrams } from './src/lib/mdsvex/inline-diagrams.ts';
+import { wrapTables } from './src/lib/mdsvex/wrap-tables.ts';
 
 const repoRoot = resolve(import.meta.dirname, '..');
 
@@ -25,7 +26,7 @@ export default defineConfig({
 			preprocess: [
 				mdsvex({
 					extensions: ['.svx', '.md'],
-					remarkPlugins: [glossaryTokens, inlineDiagrams]
+					remarkPlugins: [glossaryTokens, inlineDiagrams, wrapTables]
 				})
 			],
 			extensions: ['.svelte', '.svx', '.md']
