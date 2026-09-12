@@ -21,12 +21,12 @@ Each **article** can be invoked on its own whenever the situation calls for it, 
 
 Because these are articles and not steps, developing one further is a matter of adding subsections beneath it — Article 2.1, Article 2.2, and so on — not renumbering the articles around it.
 
-![Diagram showing the cycle between Ossified Intrinsic Contemplation, Inventive Conciliation and Edified Intrinsic Contemplation](../../diagrams/png/inventive-conciliation.png)
+![Diagram showing the cycle between Ossified Intrinsic Contemplation, Inventive Conciliation and Edified Intrinsic Contemplation](../../diagrams/svg/inventive-conciliation.svg)
 
 Even when reconciliation is achieved, it is never final. Edification can ossify again at any moment. Inventive conciliation is less a rare event than a continuous task woven into systemic practice. Political intrigue, personal ambition, and identitarian blindness will always raise the risk of ossification.
 
 The complete arrangement of the components involved in inventive intervention can be visualized like this:
 
-![Diagram showing the full progression Inventive Systemic Intervention](../../diagrams/png/inventive-systemic-intervention.png)
+![Diagram showing the full progression Inventive Systemic Intervention](../../diagrams/svg/inventive-systemic-intervention.svg)
 
 This concludes the high-level concepts of Conciliatorics. The four parcels remain available; each can be developed in its own depth. In the chapters that follow, we turn to **Edified Interstitial Contemplation** and its associated field, Philosophy. We consider this inventive parcel to carry the highest risk of ossification — and therefore the greatest <plain>potential</plain> for Conciliatorics to be implemented.

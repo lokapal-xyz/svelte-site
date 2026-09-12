@@ -33,6 +33,6 @@ With that framework in place, we can name a starting environment for the next EI
 
 - **PRIMARY JURISDICTION**: The initial environment of attribute pairs within Attributes Dynamics.
 
-![Diagram showing the components of the Primary Jurisdiction](../../diagrams/png/primary-jurisdiction.png)
+![Diagram showing the components of the Primary Jurisdiction](../../diagrams/svg/primary-jurisdiction.svg)
 
 A garden is already spatial and temporal at once: plots and paths, and the hour they are in. Held as rest and motion, the same garden is still or working. Held as sequence and co-occurrence, planting follows harvest, or many hands work the same bed at once. We do not need more than that yet. These pairs are the root we can walk back to when a later configuration has to prove it still belongs.

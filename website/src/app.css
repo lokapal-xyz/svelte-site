@@ -497,3 +497,63 @@ main.walk {
 .treatise-diagram [data-id]:hover {
 	filter: brightness(1.25);
 }
+
+/* Quiet rooftop eave: token-colored wire + irregular beads on section
+   gates only (landing, About, 404, Start-here closing CTAs). Not a general
+   button treatment. Does not blink. */
+:is(.home .gates a, .error .gate, .section .gate, .walk .actions .gate) {
+	position: relative;
+	overflow: visible;
+}
+
+:is(.home .gates a, .error .gate, .section .gate, .walk .actions .gate)::before {
+	content: '';
+	position: absolute;
+	left: 0.22rem;
+	right: 0.22rem;
+	top: -0.25rem;
+	height: 0.625rem;
+	pointer-events: none;
+	background: url('/eave.svg') repeat-x var(--eave-x, 0) 0 / 5rem 0.625rem;
+	opacity: 0.88;
+	transition: opacity 180ms ease;
+}
+
+:is(.home .gates a, .error .gate, .section .gate, .walk .actions .gate):hover::before {
+	opacity: 1;
+}
+
+.home .gates a:nth-child(1)::before {
+	--eave-x: 0;
+}
+.home .gates a:nth-child(2)::before {
+	--eave-x: 1.35rem;
+}
+.home .gates a:nth-child(3)::before {
+	--eave-x: 3.1rem;
+}
+.home .gates a:nth-child(4)::before {
+	--eave-x: 0.55rem;
+}
+.home .gates a:nth-child(5)::before {
+	--eave-x: 4.2rem;
+}
+.home .gates a:nth-child(6)::before {
+	--eave-x: 2.25rem;
+}
+
+.section .gate::before {
+	--eave-x: 1.8rem;
+}
+
+.error .gate::before {
+	--eave-x: 3.4rem;
+}
+
+.walk .actions .gate:nth-child(1)::before {
+	--eave-x: 2.7rem;
+}
+
+.walk .actions .gate:nth-child(2)::before {
+	--eave-x: 0.9rem;
+}

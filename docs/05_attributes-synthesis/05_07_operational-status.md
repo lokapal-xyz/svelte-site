@@ -15,7 +15,7 @@ The cardinals, as already set:
 - **East**: Fronterization (Fr)
 - **West**: Permeability (Pe)
 
-![Diagram showing the interactions between Operation's components in symbolic form](../../diagrams/png/operation.png)
+![Diagram showing the interactions between Operation's components in symbolic form](../../diagrams/svg/operation.svg)
 
 Members accentuate one direction over its complement. Taken too far, that emphasis stops being complementary and becomes oppositional. Two sets of modulators mark the difference:
 

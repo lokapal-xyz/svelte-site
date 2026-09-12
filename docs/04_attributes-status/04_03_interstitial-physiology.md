@@ -33,7 +33,7 @@ These <plain>interactions</plain> are also of a new kind. The longings *modulate
 
 Most complex systems are one or the other. Some long equally for both. **Humanity** is the nearest case we have; nothing in the model forbids others — a human–A.I. integration, a species we have not met. That simultaneous longing is **Mixed Physiology**.
 
-![Diagram showing the formation of Interstitial Physiology types](../../diagrams/png/interstitial-physiology-types.png)
+![Diagram showing the formation of Interstitial Physiology types](../../diagrams/svg/interstitial-physiology-types.svg)
 
 | **PHYSIOLOGY TYPES** | **SYMBOLIC REPRESENTATION** |
 |---|---|

@@ -10,7 +10,7 @@ So we begin the EIC journey with a concrete analytical regulation — not to shr
 
 - **ATTRIBUTES REGULATION**: EIC step that provides the rule set to explore the attributes structure and status.
 
-![Diagram showing the internal components of Attributes Regulation](../../diagrams/png/attributes-regulation.png)
+![Diagram showing the internal components of Attributes Regulation](../../diagrams/svg/attributes-regulation.svg)
 
 That rule set has three parts, and they are the three chapters that follow:
 

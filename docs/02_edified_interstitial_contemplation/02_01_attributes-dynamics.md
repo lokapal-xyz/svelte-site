@@ -18,7 +18,7 @@ What we still need is a structure that lets us explore those qualities without t
 - **ATTRIBUTES STATUS**: EIC step that studies the interstitial physiology processes of Behavior Dynamics.
 - **ATTRIBUTES SYNTHESIS**: EIC step that integrates the exploration of attributes structure and status.
 
-![Diagram showing the interactions between the internal components of Attributes Dynamics](../../diagrams/png/attributes-dynamics.png)
+![Diagram showing the interactions between the internal components of Attributes Dynamics](../../diagrams/svg/attributes-dynamics.svg)
 
 Attributes Structure and Attributes Status have the largest <plain>potential</plain> for conceptual exploration and implementation. Attributes Regulation and Attributes Synthesis serve as containers: they keep that exploration congruent within EIC and with the rest of the inventive parcels.
 

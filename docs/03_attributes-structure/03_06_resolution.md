@@ -4,7 +4,7 @@
 
 Resolution is the method of settling a systemic challenge. We begin with the full diagram. The pieces below are the same ones it already holds.
 
-![Diagram showing the interactions between Resolution's components](../../diagrams/png/resolutionFull.png)
+![Diagram showing the interactions between Resolution's components](../../diagrams/svg/resolutionFull.svg)
 
 The squared corners are the starting dualities. **Chaos** and **Order** are a main pair in complex systems, and both create challenges. Chaos does not imply wrongness; order does not imply rightness. A riot and a freeze can both be unlivable. The same is true of every element that follows: none of them is a moral verdict on its own.
 
@@ -35,7 +35,7 @@ Their combination is **viability**. Interests, priorities, and desires have to b
 
 A symbolic version of the same diagram, and a table of references:
 
-![Diagram showing the interactions between Resolution's components in symbolic form](../../diagrams/png/resolution.png)
+![Diagram showing the interactions between Resolution's components in symbolic form](../../diagrams/svg/resolution.svg)
 
 | **INTERACTIONS** | **SYMBOLIC REFERENCE** |
 | --- | --- |

@@ -14,7 +14,7 @@ We are going to offer a model labeled **Behavior Dynamics**. It contains one mai
 
 - **MEDIUM**: Components of a system transformed by its members to express their behavior.
 
-![Diagram showing the interactions between the System, Member, Medium and Behavior elements](../../diagrams/png/behavior-dynamics.png)
+![Diagram showing the interactions between the System, Member, Medium and Behavior elements](../../diagrams/svg/behavior-dynamics.svg)
 
 These four are simultaneous and interrelated. You do not first have a system and then add members to it, or first have a medium and then wait for behavior to appear. The arrangement is an intellectual device for exploring their interaction, not a claim about which one is more real.
 

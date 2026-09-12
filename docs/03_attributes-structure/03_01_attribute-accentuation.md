@@ -6,7 +6,7 @@ Attributes Structure is the stretch of EIC that builds toward Interstitial Anato
 
 - **ATTRIBUTES STRUCTURE**: EIC step that explores the interstitial anatomy components of Behavior Dynamics.
 
-![Diagram showing the components of Attributes Structure](../../diagrams/png/attributes-structure.png)
+![Diagram showing the components of Attributes Structure](../../diagrams/svg/attributes-structure.svg)
 
 - **ATTRIBUTE ACCENTUATION**: Temporary focus on one member of an attribute pair, without dismissing the other side.
 

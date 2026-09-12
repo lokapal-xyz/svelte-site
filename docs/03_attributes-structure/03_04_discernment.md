@@ -45,4 +45,4 @@ A lesion that is there even though it does not fit the model is a **property**: 
 
 Each child has its own jurisdiction, guided by its ascendancy. That is how the method can widen what we know without collapsing every reading into one. The **discernment family tree** holds the whole progression in view:
 
-![Diagram showing Discernment's internal components](../../diagrams/png/discernment-family-tree.png)
+![Diagram showing Discernment's internal components](../../diagrams/svg/discernment-family-tree.svg)

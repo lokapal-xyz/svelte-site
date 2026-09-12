@@ -32,4 +32,4 @@ A last integration remains. Acceptance and alertness together are **presence**: 
 
 Presence is constantly disrupted by inner and outer stimuli. It is not a final destination. It is a *resting point* — a state we can return to, not a state we are required to occupy without break. When it breaks, observation can drift, or we can come back. An **observation breathing cycle** is the right picture for that motion:
 
-![Diagram showing Observation's components](../../diagrams/png/observation-breathing-cycle.png)
+![Diagram showing Observation's components](../../diagrams/svg/observation-breathing-cycle.svg)

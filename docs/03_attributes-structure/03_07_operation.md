@@ -6,7 +6,7 @@ The last method of Interstitial Anatomy has a special backstory. These concepts 
 
 The name comes from the shape of the diagram, and from the use. The compass assigns a cardinal direction to each mode of acting inside a system.
 
-![Diagram showing the interactions between Operation's components](../../diagrams/png/operationFull.png)
+![Diagram showing the interactions between Operation's components](../../diagrams/svg/operationFull.svg)
 
 The root levels are the horizontal **Identity Axis** and the vertical **Participation Axis**. Identity is elastic. It can feel rock-solid at a given moment and still have been formed by what has already happened to it. **Fronterization** gives that identity a boundary; **permeability** lets it take in the world's flow. A chamber that cannot close is not a chamber. A chamber that cannot open is a tomb.
 
@@ -23,7 +23,7 @@ The hemispheres are concatenations of those cardinals. **Individual** (i) is pro
 
 A soloist at full voice is individual. A choir taking the same breath is community. A chart of the river is orientation. Entering the current is navigation.
 
-![Diagram showing the interactions between Operation's components in symbolic form](../../diagrams/png/operation.png)
+![Diagram showing the interactions between Operation's components in symbolic form](../../diagrams/svg/operation.svg)
 
 The cardinal initials (N, S, E, W) sit easily on Pr, Re, Fr, and Pe. Used together they are easier to hold than either set alone.
 

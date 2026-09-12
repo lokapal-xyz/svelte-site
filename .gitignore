@@ -3,7 +3,8 @@
 # content (docs/, diagrams/), the YAML libraries (library/), and the
 # website (website/ — its SvelteKit app needs to be trackable for
 # git push -> Vercel to build from). Everything else (design-refs/,
-# misc/, .claude/, etc.) stays local-only.
+# including raster snapshots in design-refs/png/, misc/, .claude/, etc.)
+# stays local-only.
 /*
 
 !docs/

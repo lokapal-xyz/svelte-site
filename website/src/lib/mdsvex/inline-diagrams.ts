@@ -19,7 +19,7 @@ function escapeHtml(value: string): string {
 }
 
 function diagramName(url: string | undefined): string | null {
-	const match = url?.match(/diagrams\/png\/([^/]+)\.png$/);
+	const match = url?.match(/diagrams\/svg\/([^/]+)\.svg$/);
 	return match ? match[1] : null;
 }
 
@@ -109,7 +109,7 @@ function visit(node: MdNode) {
 	}
 }
 
-/** Replace treatise PNG diagram images with the matching inline SVG. */
+/** Replace treatise SVG diagram images with the matching inline SVG markup. */
 export function inlineDiagrams() {
 	return (tree: MdNode) => {
 		visit(tree);

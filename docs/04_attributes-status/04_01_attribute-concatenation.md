@@ -6,7 +6,7 @@ Anatomy is a structure. Status is where that structure starts to live.
 
 - **ATTRIBUTES STATUS**: EIC step that studies the interstitial physiology processes of Behavior Dynamics.
 
-![Diagram showing the components of Attributes Status](../../diagrams/png/attribute-status.png)
+![Diagram showing the components of Attributes Status](../../diagrams/svg/attribute-status.svg)
 
 As in Attributes Structure, we apply operators to the primary pairs. This time the operator is not accentuation *inside* a pair. It is concatenation *between* attributes of different pairs.
 

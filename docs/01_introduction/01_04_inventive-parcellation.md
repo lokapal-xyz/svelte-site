@@ -24,7 +24,7 @@ The next cut is where that emphasis sits.
 
 - **INTERSTITIALITY**: Inventive position with emphasis on the *systemic*. Relates to *intangible outcomes* and *relational properties*.
 
-![Diagram showing both levels of Inventive Parcellation's bifurcation](../../diagrams/png/inventive-parcellation.png)
+![Diagram showing both levels of Inventive Parcellation's bifurcation](../../diagrams/svg/inventive-parcellation.svg)
 
 Contemplation and Transformation are the more familiar of the two pairs. Their difference is whether the intervener is building knowledge of a given arrangement of Behavior Dynamics, or facilitating a change that reorganizes those elements.
 
