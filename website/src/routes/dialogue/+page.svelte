@@ -67,10 +67,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>In dialogue — Lokapal</title>
-</svelte:head>
-
 {#snippet conversationLinks(rows: DialogueConversation[], withWho: boolean)}
 	<ul>
 		{#each rows as row (row.id)}
@@ -301,6 +297,10 @@
 		scroll-margin-top: 5rem;
 	}
 
+	.group + .group {
+		margin-top: 2rem;
+	}
+
 	.manner {
 		margin: 0 0 0.15rem;
 		color: var(--text-muted);
@@ -312,10 +312,13 @@
 	}
 
 	h2 {
-		margin: 0 0 0.35rem;
-		font-size: 1.25rem;
+		margin: 0 0 0.45rem;
+		color: var(--text-muted);
+		font-family: var(--font-ui);
+		font-size: 1.05rem;
+		font-weight: 600;
+		letter-spacing: 0.02em;
 		line-height: 1.3;
-		font-weight: 650;
 	}
 
 	.blurb {

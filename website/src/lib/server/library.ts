@@ -1,7 +1,7 @@
-import { readFileSync } from 'node:fs';
 import { parse } from 'yaml';
 import type { DexEntry, DexFamily, DexKind, GlossaryTerm } from '$lib/library/types';
-import { EIC_DEX_PATH, GLOSSARY_PATH } from './paths';
+import dexSource from '../../../../library/eic-dex/eic-dex.yaml?raw';
+import glossarySource from '../../../../library/glossary/glossary.yaml?raw';
 
 type RawGlossary = {
 	terms?: Record<string, unknown>[];
@@ -113,7 +113,7 @@ let dexByIdCache: Record<string, DexEntry> | undefined;
 
 export function loadGlossary(): GlossaryTerm[] {
 	if (glossaryCache) return glossaryCache;
-	const raw = parse(readFileSync(GLOSSARY_PATH, 'utf8')) as RawGlossary;
+	const raw = parse(glossarySource) as RawGlossary;
 	const terms: GlossaryTerm[] = [];
 	for (const row of raw.terms ?? []) {
 		const term = normalizeGlossaryTerm(row);
@@ -132,7 +132,7 @@ export function loadGlossaryById(): Record<string, GlossaryTerm> {
 }
 
 function loadRawDex(): RawDex {
-	return parse(readFileSync(EIC_DEX_PATH, 'utf8')) as RawDex;
+	return parse(dexSource) as RawDex;
 }
 
 export function loadDexFamilies(): DexFamily[] {

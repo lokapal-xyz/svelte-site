@@ -81,6 +81,34 @@ fields:
       Rites, names, and the life of custom — met as a contact, not absorbed as
       a source of EIC's terms.
 
+  - id: daoist-thought
+    title: Daoist thought
+    manner: contact
+    blurb: >
+      Complementary pairs and non-forcing action, met without turning EIC into
+      a commentary on the Laozi.
+
+  - id: islamic-thought
+    title: Islamic thought
+    manner: contact
+    blurb: >
+      Historical and political teaching from the Arabic-Islamic corpus, met as
+      a contact, not as a second metaphysics.
+
+  - id: ecology
+    title: Ecology
+    manner: contact
+    blurb: >
+      Living systems, cycles, and what a landscape can bear — without folding
+      Conciliatorics into environmental science.
+
+  - id: psychology
+    title: Psychology
+    manner: contact
+    blurb: >
+      Attention, identity, and how members watch and group — not a theory of
+      the mind imported wholesale.
+
 joints:
 
   - id: systemics
@@ -134,6 +162,34 @@ joints:
   - id: discernment
     label: Discernment
     chapter: 03_04_discernment
+
+  - id: inventive-parcellation
+    label: Inventive Parcellation
+    chapter: 01_04_inventive-parcellation
+
+  - id: behavior-dynamics
+    label: Behavior Dynamics
+    chapter: 01_02_behavior-dynamics
+
+  - id: representation-types
+    label: Representation Types
+    chapter: 02_06_representation-types
+
+  - id: observation
+    label: Observation
+    chapter: 03_05_observation
+
+  - id: resolution
+    label: Resolution
+    chapter: 03_06_resolution
+
+  - id: operation
+    label: Operation
+    chapter: 03_07_operation
+
+  - id: attribute-jurisdiction
+    label: Attribute Jurisdiction
+    chapter: 02_05_attribute-jurisdiction
 
 conversations:
 
@@ -414,4 +470,757 @@ conversations:
     related: [linz-and-dahl, weber-iron-cage, madison-ambition]
     sources:
       - "Huntington, Samuel P. Political Order in Changing Societies. Yale University Press, 1968."
+
+  - id: plato-philosopher-king
+    title: Guardians who must not change
+    lede: >
+      Plato's kallipolis is designed to last by putting the wisest in charge
+      and keeping the form from drifting. Philosophism and unification are
+      the names Conciliatorics has for that hope.
+    field: philosophy
+    interlocutors:
+      - name: Plato
+        sort_name: Plato
+    joints: [inventive-ossification, mixed-synthesis]
+    chapters: [01_06_inventive-ossification, 05_03_mixed-synthesis]
+    related: [aristotle-polity, hobbes-leviathan, metaphysics-after-the-sciences]
+    sources:
+      - "Plato. Republic."
+
+  - id: aristotle-mesotes
+    title: The mean is still a pair
+    lede: >
+      Aristotle's mean is not a mushy middle. It is a right place between
+      two vices. EIC's pair is not a mean, and it does not retire the sides.
+    field: philosophy
+    interlocutors:
+      - name: Aristotle
+        sort_name: Aristotle
+    joints: [attribute-operators]
+    chapters: [02_04_attribute-operators]
+    related: [hegel-and-the-pair, berlin-two-liberties, aristotle-polity]
+    sources:
+      - "Aristotle. Nicomachean Ethics."
+
+  - id: marx-ideology
+    title: When the parcel claims the base
+    lede: >
+      Marx treated ideology as a reversal: ideas presenting themselves as
+      the ground of life. Ossification is a cousin of that reversal, named
+      across four parcels rather than one.
+    field: philosophy
+    interlocutors:
+      - name: Karl Marx
+        sort_name: Marx, Karl
+    joints: [inventive-ossification, inventive-parcellation]
+    chapters: [01_06_inventive-ossification, 01_04_inventive-parcellation]
+    related: [weber-iron-cage, gramscis-hegemony, habermas-lifeworld]
+    sources:
+      - "Marx, Karl, and Friedrich Engels. The German Ideology. 1846."
+      - "Marx, Karl. Preface to A Contribution to the Critique of Political Economy. 1859."
+
+  - id: kuhn-paradigm
+    title: Normal science, ossified science
+    lede: >
+      Kuhn's normal science is puzzle-solving inside a paradigm. Conciliatorics
+      can hear ossification there — and will not turn every paradigm into an
+      ideology.
+    field: philosophy
+    interlocutors:
+      - name: Thomas Kuhn
+        sort_name: Kuhn, Thomas
+    joints: [inventive-ossification]
+    chapters: [01_06_inventive-ossification]
+    related: [weber-iron-cage, meadows-leverage, dewey-inquiry]
+    sources:
+      - "Kuhn, Thomas S. The Structure of Scientific Revolutions. University of Chicago Press, 1962."
+
+  - id: habermas-lifeworld
+    title: When system colonizes lifeworld
+    lede: >
+      Habermas's colonization thesis is a story of money and administration
+      overrunning the lifeworld. Organic and instrumental longings, named
+      together, are Conciliatorics' nearby cut.
+    field: philosophy
+    interlocutors:
+      - name: Jürgen Habermas
+        sort_name: Habermas, Jürgen
+    joints: [inventive-ossification, interstitial-physiology]
+    chapters: [01_06_inventive-ossification, 04_03_interstitial-physiology]
+    related: [weber-iron-cage, marx-ideology, tonnies-gemeinschaft]
+    sources:
+      - "Habermas, Jürgen. The Theory of Communicative Action. 1981. English: Beacon Press, 1984–1987."
+
+  - id: arendt-natality
+    title: Natality and the ended term
+    lede: >
+      Arendt's natality is the capacity to begin. The Conciliation Pathway is
+      how a mixed case begins again without pretending this form is the last.
+    field: philosophy
+    interlocutors:
+      - name: Hannah Arendt
+        sort_name: Arendt, Hannah
+    joints: [conciliation-pathway, mixed-synthesis]
+    chapters: [05_04_conciliation-pathway, 05_03_mixed-synthesis]
+    related: [madison-ambition, fukuyama-end-of-history, mill-experiments]
+    sources:
+      - "Arendt, Hannah. The Human Condition. University of Chicago Press, 1958."
+      - "Arendt, Hannah. The Origins of Totalitarianism. 1951."
+
+  - id: wittgenstein-language-games
+    title: No master tongue
+    lede: >
+      Wittgenstein's later work treats meaning as use across language games.
+      Representation Types is EIC's refusal to let prose be Philosophy's only
+      native tongue.
+    field: philosophy
+    interlocutors:
+      - name: Ludwig Wittgenstein
+        sort_name: Wittgenstein, Ludwig
+    joints: [representation-types, attribute-jurisdiction]
+    chapters: [02_06_representation-types, 02_05_attribute-jurisdiction]
+    related: [metaphysics-after-the-sciences, nagel-objectivity]
+    sources:
+      - "Wittgenstein, Ludwig. Philosophical Investigations. 1953."
+
+  - id: foucault-discipline
+    title: When discipline becomes the end
+    lede: >
+      Foucault tracked how disciplines and governmental practices make subjects.
+      Ossification is not his genealogy, but it names a nearby reversal: the
+      tool that starts to run the life.
+    field: philosophy
+    interlocutors:
+      - name: Michel Foucault
+        sort_name: Foucault, Michel
+    joints: [inventive-ossification, operation]
+    chapters: [01_06_inventive-ossification, 03_07_operation]
+    related: [weber-iron-cage, scott-high-modernism, tajfel-identity]
+    sources:
+      - "Foucault, Michel. Discipline and Punish. 1975. English: Pantheon, 1977."
+      - "Foucault, Michel. “Governmentality.” In The Foucault Effect, 1991."
+
+  - id: mouffe-agonism
+    title: Agonism without a final count
+    lede: >
+      Mouffe wants conflict that does not become annihilation, and does not
+      pretend consensus has arrived. The Parcels Council also treats
+      disagreement as native, not as a defect.
+    field: philosophy
+    interlocutors:
+      - name: Chantal Mouffe
+        sort_name: Mouffe, Chantal
+    joints: [inventive-conciliation]
+    chapters: [01_07_inventive-conciliation]
+    related: [rawls-overlapping-consensus, berlin-two-liberties, schmitt-friend-enemy]
+    sources:
+      - "Mouffe, Chantal. The Democratic Paradox. Verso, 2000."
+      - "Mouffe, Chantal. Agonistics: Thinking the World Politically. Verso, 2013."
+
+  - id: berlin-two-liberties
+    title: Two liberties that do not fuse
+    lede: >
+      Berlin split negative and positive liberty and refused to let one eat
+      the other. An attribute pair is built for that refusal.
+    field: philosophy
+    interlocutors:
+      - name: Isaiah Berlin
+        sort_name: Berlin, Isaiah
+    joints: [attribute-operators]
+    chapters: [02_04_attribute-operators]
+    related: [hegel-and-the-pair, mill-experiments, pettit-nondomination]
+    sources:
+      - "Berlin, Isaiah. “Two Concepts of Liberty.” 1958. In Four Essays on Liberty, 1969."
+
+  - id: dewey-inquiry
+    title: Inquiry that stays fallible
+    lede: >
+      Dewey's inquiry does not close the world. Inventive Conciliation is
+      likewise not a final state — edification can ossify again at any moment.
+    field: philosophy
+    interlocutors:
+      - name: John Dewey
+        sort_name: Dewey, John
+    joints: [inventive-conciliation, observation]
+    chapters: [01_07_inventive-conciliation, 03_05_observation]
+    related: [kuhn-paradigm, james-attention, mill-experiments]
+    sources:
+      - "Dewey, John. Logic: The Theory of Inquiry. 1938."
+      - "Dewey, John. The Public and Its Problems. 1927."
+
+  - id: aristotle-polity
+    title: The mixed constitution
+    lede: >
+      Aristotle's polity mixes oligarchic and democratic elements so that a
+      city can last by not being only one thing. Mixed Synthesis hears that,
+      then asks whether mixing is unification or conciliation.
+    field: political-science
+    interlocutors:
+      - name: Aristotle
+        sort_name: Aristotle
+    joints: [mixed-synthesis]
+    chapters: [05_03_mixed-synthesis]
+    related: [aristotle-mesotes, madison-ambition, lijphart-consociationalism]
+    sources:
+      - "Aristotle. Politics."
+
+  - id: hobbes-leviathan
+    title: A mortal god
+    lede: >
+      Hobbes's Leviathan gathers authority so that civil war ends. Unification
+      Synthesis is that gathering named as an interstitial state, including
+      its cost to function.
+    field: political-science
+    interlocutors:
+      - name: Thomas Hobbes
+        sort_name: Hobbes, Thomas
+    joints: [mixed-synthesis]
+    chapters: [05_03_mixed-synthesis]
+    related: [rousseau-general-will, plato-philosopher-king, madison-ambition]
+    sources:
+      - "Hobbes, Thomas. Leviathan. 1651."
+
+  - id: rousseau-general-will
+    title: One will for many members
+    lede: >
+      Rousseau's general will is supposed to be each and all. Conciliatorics
+      asks whether that "each" is still allowed to end, or whether the one
+      will has to last.
+    field: political-science
+    interlocutors:
+      - name: Jean-Jacques Rousseau
+        sort_name: Rousseau, Jean-Jacques
+    joints: [mixed-synthesis, operation]
+    chapters: [05_03_mixed-synthesis, 03_07_operation]
+    related: [hobbes-leviathan, mill-experiments, tocqueville-associations]
+    sources:
+      - "Rousseau, Jean-Jacques. The Social Contract. 1762."
+
+  - id: tocqueville-associations
+    title: The art of associating
+    lede: >
+      Tocqueville saw voluntary associations as democracy's school against
+      a soft center. Status Reciprocity reads that craft as conciliation's
+      ordinary face.
+    field: political-science
+    interlocutors:
+      - name: Alexis de Tocqueville
+        sort_name: Tocqueville, Alexis de
+    joints: [status-reciprocity, operation]
+    chapters: [05_05_status-reciprocity, 03_07_operation]
+    related: [ostrom-polycentricity, putnam-bowling, mill-experiments]
+    sources:
+      - "Tocqueville, Alexis de. Democracy in America. 1835–1840."
+
+  - id: mill-experiments
+    title: Experiments in living
+    lede: >
+      Mill wanted individuality as experiments the species can learn from.
+      The Conciliation Pathway is that experimental stance named as iterated
+      function, not only as a liberty of persons.
+    field: political-science
+    interlocutors:
+      - name: John Stuart Mill
+        sort_name: Mill, John Stuart
+    joints: [conciliation-pathway]
+    chapters: [05_04_conciliation-pathway]
+    related: [berlin-two-liberties, madison-ambition, dewey-inquiry]
+    sources:
+      - "Mill, John Stuart. On Liberty. 1859."
+
+  - id: michels-oligarchy
+    title: The iron law inside the organization
+    lede: >
+      Michels watched socialist parties produce oligarchies. Ossification
+      names the same reversal from the parcel side: the organization that
+      was a means becomes the end.
+    field: political-science
+    interlocutors:
+      - name: Robert Michels
+        sort_name: Michels, Robert
+    joints: [inventive-ossification]
+    chapters: [01_06_inventive-ossification]
+    related: [weber-iron-cage, schumpeter-elite-democracy, marx-ideology]
+    sources:
+      - "Michels, Robert. Political Parties. 1911. English: 1915."
+
+  - id: lijphart-consociationalism
+    title: Sharing power without merging it
+    lede: >
+      Lijphart's consociational democracy keeps segmental groups in a shared
+      government without asking them to become one people first. Conciliation
+      is nearby, and is not a consociational recipe.
+    field: political-science
+    interlocutors:
+      - name: Arend Lijphart
+        sort_name: Lijphart, Arend
+    joints: [mixed-synthesis, inventive-conciliation]
+    chapters: [05_03_mixed-synthesis, 01_07_inventive-conciliation]
+    related: [aristotle-polity, rawls-overlapping-consensus, mouffe-agonism]
+    sources:
+      - "Lijphart, Arend. Democracy in Plural Societies. Yale University Press, 1977."
+      - "Lijphart, Arend. Patterns of Democracy. Yale University Press, 1999."
+
+  - id: hirschman-exit-voice
+    title: Exit, voice, and the compass
+    lede: >
+      Hirschman split exit from voice, with loyalty as a third. Operation's
+      compass is a different map of acting, and the two can still speak.
+    field: political-science
+    interlocutors:
+      - name: Albert O. Hirschman
+        sort_name: Hirschman, Albert O.
+    joints: [operation]
+    chapters: [03_07_operation]
+    related: [tajfel-identity, mill-experiments, ostrom-polycentricity]
+    sources:
+      - "Hirschman, Albert O. Exit, Voice, and Loyalty. Harvard University Press, 1970."
+
+  - id: scott-high-modernism
+    title: Seeing like a state
+    lede: >
+      Scott's high modernism is a state that must see in order to improve,
+      and simplifies until the seeing is the harm. Discernment has a name
+      for a reading that freezes; ossification has a name for the tool that
+      takes over.
+    field: political-science
+    interlocutors:
+      - name: James C. Scott
+        sort_name: Scott, James C.
+    joints: [inventive-ossification, discernment]
+    chapters: [01_06_inventive-ossification, 03_04_discernment]
+    related: [foucault-discipline, meadows-leverage, weber-iron-cage]
+    sources:
+      - "Scott, James C. Seeing Like a State. Yale University Press, 1998."
+
+  - id: acemoglu-robinson
+    title: Extractive and inclusive
+    lede: >
+      Acemoglu and Robinson split extractive from inclusive institutions.
+      Unification and conciliation are a related cut, not a translation of
+      theirs.
+    field: political-science
+    interlocutors:
+      - name: Daron Acemoglu
+        sort_name: Acemoglu, Daron
+      - name: James A. Robinson
+        sort_name: Robinson, James A.
+    joints: [mixed-synthesis, status-reciprocity]
+    chapters: [05_03_mixed-synthesis, 05_05_status-reciprocity]
+    related: [north-institutions, ostrom-polycentricity, fukuyama-end-of-history]
+    sources:
+      - "Acemoglu, Daron, and James A. Robinson. Why Nations Fail. Crown, 2012."
+
+  - id: fukuyama-end-of-history
+    title: The last form of government
+    lede: >
+      Fukuyama's end of history is liberal democracy as the last ideological
+      form. The Incompatibility Axiom is written against exactly that hope
+      of a last, working forever.
+    field: political-science
+    interlocutors:
+      - name: Francis Fukuyama
+        sort_name: Fukuyama, Francis
+    joints: [incompatibility-axiom, mixed-synthesis]
+    chapters: [04_04_dichotomies-compatibility, 05_03_mixed-synthesis]
+    related: [huntington-political-order, arendt-natality, madison-ambition]
+    sources:
+      - "Fukuyama, Francis. The End of History and the Last Man. Free Press, 1992."
+
+  - id: odonnell-delegative
+    title: Delegative democracy
+    lede: >
+      O'Donnell named democracies where the winner governs as if the term
+      were a blank check. The treatise's presidential term is the opposite
+      reading of an ended mandate.
+    field: political-science
+    interlocutors:
+      - name: Guillermo O'Donnell
+        sort_name: O'Donnell, Guillermo
+    joints: [mixed-synthesis]
+    chapters: [05_03_mixed-synthesis]
+    related: [linz-and-dahl, madison-ambition, fukuyama-end-of-history]
+    sources:
+      - "O'Donnell, Guillermo. “Delegative Democracy.” Journal of Democracy 5, no. 1 (1994): 55–69."
+
+  - id: galtung-violence
+    title: Two violences, two loads
+    lede: >
+      Galtung split personal from structural violence. Resolution splits
+      conflict from friction. The handshake is the refusal to use one word
+      for both; the parting is what “structural” is allowed to mean.
+    field: political-science
+    interlocutors:
+      - name: Johan Galtung
+        sort_name: Galtung, Johan
+    joints: [resolution]
+    chapters: [03_06_resolution]
+    related: [clausewitz-friction, weber-iron-cage, marx-ideology]
+    sources:
+      - "Galtung, Johan. “Violence, Peace, and Peace Research.” Journal of Peace Research 6, no. 3 (1969): 167–191."
+
+  - id: clausewitz-friction
+    title: Friction on the ground
+    lede: >
+      Clausewitz's friction is everything that makes real war unlike the
+      plan. EIC's friction is a structural load in a challenge pair. Same
+      word; different job.
+    field: political-science
+    interlocutors:
+      - name: Carl von Clausewitz
+        sort_name: Clausewitz, Carl von
+    joints: [resolution]
+    chapters: [03_06_resolution]
+    related: [galtung-violence, meadows-leverage, scott-high-modernism]
+    sources:
+      - "Clausewitz, Carl von. On War. 1832."
+
+  - id: schmitt-friend-enemy
+    title: The friend-enemy cut
+    lede: >
+      Schmitt made the friend-enemy distinction the criterion of the
+      political. Operation's identity axis can close a border; it is not
+      required to make an enemy.
+    field: political-science
+    interlocutors:
+      - name: Carl Schmitt
+        sort_name: Schmitt, Carl
+    joints: [operation]
+    chapters: [03_07_operation]
+    related: [mouffe-agonism, tajfel-identity, hobbes-leviathan]
+    sources:
+      - "Schmitt, Carl. The Concept of the Political. 1932. English: University of Chicago Press, 1996."
+
+  - id: gramscis-hegemony
+    title: Hegemony as a filter
+    lede: >
+      Gramsci's hegemony is consent organized so that one group's outlook
+      feels like common sense. Ossification is a nearby reversal: a parcel
+      that demands to be the filter.
+    field: political-science
+    interlocutors:
+      - name: Antonio Gramsci
+        sort_name: Gramsci, Antonio
+    joints: [inventive-ossification]
+    chapters: [01_06_inventive-ossification]
+    related: [marx-ideology, weber-iron-cage, habermas-lifeworld]
+    sources:
+      - "Gramsci, Antonio. Selections from the Prison Notebooks. Ed. Quintin Hoare and Geoffrey Nowell Smith. 1971."
+
+  - id: montesquieu-spirit
+    title: The spirit of the laws
+    lede: >
+      Montesquieu tied laws to climate, manners, and the distribution of
+      powers. Madison took the last of those; Conciliatorics takes the
+      warning that a form must fit what it can bear.
+    field: political-science
+    interlocutors:
+      - name: Montesquieu
+        sort_name: Montesquieu
+    joints: [mixed-synthesis, resolution]
+    chapters: [05_03_mixed-synthesis, 03_06_resolution]
+    related: [madison-ambition, aristotle-polity, tocqueville-associations]
+    sources:
+      - "Montesquieu. The Spirit of the Laws. 1748."
+
+  - id: pettit-nondomination
+    title: Freedom as non-domination
+    lede: >
+      Pettit's republican freedom is not being under an arbitrary will.
+      Permeability and fronterization are how EIC names a boundary that
+      can close without becoming a tomb.
+    field: political-science
+    interlocutors:
+      - name: Philip Pettit
+        sort_name: Pettit, Philip
+    joints: [operation, status-reciprocity]
+    chapters: [03_07_operation, 05_05_status-reciprocity]
+    related: [berlin-two-liberties, mill-experiments, madison-ambition]
+    sources:
+      - "Pettit, Philip. Republicanism: A Theory of Freedom and Government. Oxford University Press, 1997."
+
+  - id: tilly-coercion-capital
+    title: War, capital, and the medium
+    lede: >
+      Tilly's states made war and war made states, by concentrating coercion
+      and capital. Inventive Intervention still asks: what medium is being
+      worked, before the effects are claimed.
+    field: political-science
+    interlocutors:
+      - name: Charles Tilly
+        sort_name: Tilly, Charles
+    joints: [inventive-intervention]
+    chapters: [01_03_systemic-intervention]
+    related: [weber-iron-cage, scott-high-modernism, north-institutions]
+    sources:
+      - "Tilly, Charles. Coercion, Capital, and European States, AD 990–1992. Blackwell, 1990."
+      - "Tilly, Charles. “War Making and State Making as Organized Crime.” 1985."
+
+  - id: putnam-bowling
+    title: Bowling, and the choir
+    lede: >
+      Putnam tracked the thinning of American civic association. Operation
+      already has a name for the south-west: community as receptivity with
+      permeability — a choir's shared breath, which can fail.
+    field: political-science
+    interlocutors:
+      - name: Robert Putnam
+        sort_name: Putnam, Robert
+    joints: [operation]
+    chapters: [03_07_operation]
+    related: [tocqueville-associations, tajfel-identity, ostrom-polycentricity]
+    sources:
+      - "Putnam, Robert D. Bowling Alone. Simon & Schuster, 2000."
+
+  - id: schumpeter-elite-democracy
+    title: Competitive elitism
+    lede: >
+      Schumpeter's other famous claim is democracy as a method for competing
+      elites. Mixed Synthesis can hear the ended contest; it will not reduce
+      conciliation to a market for votes.
+    field: political-science
+    interlocutors:
+      - name: Joseph Schumpeter
+        sort_name: Schumpeter, Joseph
+    joints: [mixed-synthesis]
+    chapters: [05_03_mixed-synthesis]
+    related: [schumpeter-creative-destruction, linz-and-dahl, michels-oligarchy]
+    sources:
+      - "Schumpeter, Joseph A. Capitalism, Socialism and Democracy. Harper & Brothers, 1942."
+
+  - id: durkheim-solidarity
+    title: Mechanical, organic, and mixed
+    lede: >
+      Durkheim split mechanical from organic solidarity, often as a historical
+      shift. Mixed physiology is not a shift. It is both longings at once.
+    field: sociology
+    interlocutors:
+      - name: Émile Durkheim
+        sort_name: Durkheim, Émile
+    joints: [interstitial-physiology]
+    chapters: [04_03_interstitial-physiology]
+    related: [tonnies-gemeinschaft, habermas-lifeworld, khaldun-asabiyyah]
+    sources:
+      - "Durkheim, Émile. The Division of Labour in Society. 1893."
+
+  - id: bourdieu-field
+    title: A field is not a jurisdiction
+    lede: >
+      Bourdieu's field is a space of positions and stakes. Jurisdiction in
+      EIC is a bounded environment with a duty not to overreach. They rhyme;
+      they are not the same map.
+    field: sociology
+    interlocutors:
+      - name: Pierre Bourdieu
+        sort_name: Bourdieu, Pierre
+    joints: [attribute-jurisdiction]
+    chapters: [02_05_attribute-jurisdiction]
+    related: [weber-iron-cage, marx-ideology, foucault-discipline]
+    sources:
+      - "Bourdieu, Pierre. The Field of Cultural Production. Columbia University Press, 1993."
+      - "Bourdieu, Pierre. Outline of a Theory of Practice. 1972. English: 1977."
+
+  - id: giddens-structuration
+    title: No first entity
+    lede: >
+      Giddens refused to start with either structure or agency. Behavior
+      Dynamics refuses to start with system, member, or medium. Two ways of
+      saying the arrangement is not a queue.
+    field: sociology
+    interlocutors:
+      - name: Anthony Giddens
+        sort_name: Giddens, Anthony
+    joints: [behavior-dynamics]
+    chapters: [01_02_behavior-dynamics]
+    related: [gst-container, bourdieu-field, meadows-leverage]
+    sources:
+      - "Giddens, Anthony. The Constitution of Society. Polity, 1984."
+
+  - id: bauman-liquid
+    title: Liquidity is not the desirable pole
+    lede: >
+      Bauman's liquid modernity is a world that will not solidify. Imperdurability
+      in EIC is a desirable pole of mixed function — not a mood of late capitalism,
+      and not a complaint.
+    field: sociology
+    interlocutors:
+      - name: Zygmunt Bauman
+        sort_name: Bauman, Zygmunt
+    joints: [status-dichotomies, conciliation-pathway]
+    chapters: [04_02_status-dichotomies, 05_04_conciliation-pathway]
+    related: [schumpeter-creative-destruction, anicca-imperdurability, keynes-long-run]
+    sources:
+      - "Bauman, Zygmunt. Liquid Modernity. Polity, 2000."
+
+  - id: hardin-commons
+    title: A tragedy that is not a law
+    lede: >
+      Hardin made the tragedy of the commons feel like a law of nature. Ostrom
+      already answered him with cases. Conciliatorics adds only the interstitial
+      question: which cut is this commons living under.
+    field: economics
+    interlocutors:
+      - name: Garrett Hardin
+        sort_name: Hardin, Garrett
+    joints: [status-reciprocity]
+    chapters: [05_05_status-reciprocity]
+    related: [ostrom-polycentricity, holling-panarchy, north-institutions]
+    sources:
+      - "Hardin, Garrett. “The Tragedy of the Commons.” Science 162, no. 3859 (1968): 1243–1248."
+
+  - id: keynes-long-run
+    title: In the long run
+    lede: >
+      Keynes's joke about the long run is a refusal to treat lasting as the
+      good of policy. Imperdurability is that refusal made into a pole, not
+      a witticism.
+    field: economics
+    interlocutors:
+      - name: John Maynard Keynes
+        sort_name: Keynes, John Maynard
+    joints: [status-dichotomies, conciliation-pathway]
+    chapters: [04_02_status-dichotomies, 05_04_conciliation-pathway]
+    related: [schumpeter-creative-destruction, hayek-knowledge, mill-experiments]
+    sources:
+      - "Keynes, John Maynard. A Tract on Monetary Reform. 1923."
+      - "Keynes, John Maynard. The General Theory of Employment, Interest and Money. 1936."
+
+  - id: polanyi-embeddedness
+    title: Embedded, not dissolved
+    lede: >
+      Polanyi treated land, labor, and money as fictitious commodities, and
+      the market as disembedding them. Mixed physiology is a nearby claim:
+      living longing and made longing, together, not Gesellschaft winning.
+    field: economics
+    interlocutors:
+      - name: Karl Polanyi
+        sort_name: Polanyi, Karl
+    joints: [interstitial-physiology]
+    chapters: [04_03_interstitial-physiology]
+    related: [tonnies-gemeinschaft, marx-ideology, hayek-knowledge]
+    sources:
+      - "Polanyi, Karl. The Great Transformation. Farrar & Rinehart, 1944."
+
+  - id: rodrik-trilemma
+    title: Three goods, two at a time
+    lede: >
+      Rodrik's political trilemma says democracy, national sovereignty, and
+      hyperglobalization cannot be had together. The Incompatibility Axiom
+      is a different pair of goods; the form of the claim will be familiar.
+    field: economics
+    interlocutors:
+      - name: Dani Rodrik
+        sort_name: Rodrik, Dani
+    joints: [incompatibility-axiom]
+    chapters: [04_04_dichotomies-compatibility]
+    related: [fukuyama-end-of-history, hayek-knowledge, lijphart-consociationalism]
+    sources:
+      - "Rodrik, Dani. The Globalization Paradox. W. W. Norton, 2011."
+
+  - id: holling-panarchy
+    title: Nested cycles, permitted deaths
+    lede: >
+      Holling's adaptive cycle and panarchy treat release and reorganization
+      as how living systems stay viable across scales. The Conciliation Pathway
+      is that shape named for mixed cases, not only for forests.
+    field: ecology
+    interlocutors:
+      - name: C. S. Holling
+        sort_name: Holling, C. S.
+    joints: [conciliation-pathway, resolution]
+    chapters: [05_04_conciliation-pathway, 03_06_resolution]
+    related: [schumpeter-creative-destruction, meadows-leverage, ostrom-polycentricity]
+    sources:
+      - "Holling, C. S. “Resilience and Stability of Ecological Systems.” Annual Review of Ecology and Systematics 4 (1973): 1–23."
+      - "Gunderson, Lance H., and C. S. Holling, eds. Panarchy. Island Press, 2002."
+
+  - id: leopold-land
+    title: The land as relation
+    lede: >
+      Leopold's land ethic enlarges the community to soils, waters, plants,
+      and animals. That is an interstitial move: the quality holds between,
+      not only in a thing.
+    field: ecology
+    interlocutors:
+      - name: Aldo Leopold
+        sort_name: Leopold, Aldo
+    joints: [attribute-position]
+    chapters: [02_03_attribute-position]
+    related: [holling-panarchy, metaphysics-after-the-sciences, dao-pairs]
+    sources:
+      - "Leopold, Aldo. A Sand County Almanac. Oxford University Press, 1949."
+
+  - id: james-attention
+    title: Attention without a verdict
+    lede: >
+      James made attention a central fact of psychology. Observation names
+      a non-bounded watch — attention — against a watch that has already
+      hardened into judgement.
+    field: psychology
+    interlocutors:
+      - name: William James
+        sort_name: James, William
+    joints: [observation]
+    chapters: [03_05_observation]
+    related: [dewey-inquiry, nagel-objectivity, tajfel-identity]
+    sources:
+      - "James, William. The Principles of Psychology. 1890."
+
+  - id: tajfel-identity
+    title: Us and them, still a pair
+    lede: >
+      Tajfel showed how little it takes to make an in-group. Operation's
+      identity axis can fronterize; permeability is the other side that
+      has to remain available.
+    field: psychology
+    interlocutors:
+      - name: Henri Tajfel
+        sort_name: Tajfel, Henri
+    joints: [operation]
+    chapters: [03_07_operation]
+    related: [schmitt-friend-enemy, putnam-bowling, hirschman-exit-voice]
+    sources:
+      - "Tajfel, Henri. Human Groups and Social Categories. Cambridge University Press, 1981."
+      - "Tajfel, Henri, and John Turner. “An Integrative Theory of Intergroup Conflict.” 1979."
+
+  - id: dao-pairs
+    title: Yin and yang, both required
+    lede: >
+      Daoist pairing treats opposites as generating, not as a contest to
+      be won. An attribute pair is built that way: both sides, and the
+      relation, or you do not have the unit.
+    field: daoist-thought
+    interlocutors:
+      - name: Laozi
+        sort_name: Laozi
+      - name: Zhuangzi
+        sort_name: Zhuangzi
+    joints: [attribute-operators, operation]
+    chapters: [02_04_attribute-operators, 03_07_operation]
+    related: [hegel-and-the-pair, berlin-two-liberties, confucian-rites]
+    sources:
+      - "Laozi. Daodejing."
+      - "Zhuangzi. Zhuangzi."
+
+  - id: khaldun-asabiyyah
+    title: Asabiyyah and the dynastic turn
+    lede: >
+      Ibn Khaldun watched group feeling found a dynasty and then thin as
+      luxury set in. Organic longing, ossification, and iterated succession
+      are nearby names for that cycle, not a translation of asabiyyah.
+    field: islamic-thought
+    interlocutors:
+      - name: Ibn Khaldun
+        sort_name: Ibn Khaldun
+    joints: [interstitial-physiology, inventive-ossification, conciliation-pathway]
+    chapters:
+      - 04_03_interstitial-physiology
+      - 01_06_inventive-ossification
+      - 05_04_conciliation-pathway
+    related: [durkheim-solidarity, weber-iron-cage, schumpeter-creative-destruction]
+    sources:
+      - "Ibn Khaldun. The Muqaddimah. 1377. Trans. Franz Rosenthal."
+
+
+
 

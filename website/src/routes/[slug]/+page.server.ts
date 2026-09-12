@@ -8,5 +8,12 @@ export const entries: EntryGenerator = () =>
 export const load: PageServerLoad = ({ params }) => {
 	const chapter = getChapter(params.slug);
 	if (!chapter) error(404, 'Chapter not found');
-	return { chapter };
+	return {
+		chapter,
+		seo: {
+			title: `${chapter.title} — Conciliatorics`,
+			description: chapter.description,
+			type: 'article' as const
+		}
+	};
 };

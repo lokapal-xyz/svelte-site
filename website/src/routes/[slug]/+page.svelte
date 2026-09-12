@@ -13,13 +13,10 @@
 	);
 </script>
 
-<svelte:head>
-	<title>{data.chapter.title} — Conciliatorics</title>
-</svelte:head>
-
 <article class="chapter">
 	<nav class="kicker" aria-label="Breadcrumb">
-		<a href={resolve('/treatise')}>Treatise</a><span class="sep" aria-hidden="true">›</span>{data.chapter.partTitle}
+		<a href={resolve('/treatise')}>Treatise</a><span class="sep" aria-hidden="true">›</span>{data
+			.chapter.partTitle}
 	</nav>
 	{#if Content}
 		<Content />

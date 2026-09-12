@@ -5,12 +5,15 @@
 	import { page } from '$app/state';
 	import { FlockController, setFlock } from '$lib/birds/flock.svelte';
 	import BirdFlock from '$lib/components/BirdFlock.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import SiteHeader from '$lib/components/SiteHeader.svelte';
 	import TermPanel from '$lib/components/TermPanel.svelte';
+	import { resolveSeo } from '$lib/seo';
 	import { TermPanelState, setTermPanel } from '$lib/term-panel.svelte';
 	import type { LayoutProps } from './$types';
 
 	let { data, children }: LayoutProps = $props();
+	const seo = $derived(resolveSeo(page.status, page.url.pathname, page.data.seo, data.preview));
 
 	const panel = new TermPanelState();
 	setTermPanel(panel);
@@ -80,6 +83,8 @@
 		window.scrollTo(0, 0);
 	}
 </script>
+
+<Seo {seo} />
 
 <svelte:head>
 	<link rel="icon" href={asset('/favicon.ico')} />

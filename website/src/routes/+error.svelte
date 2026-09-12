@@ -6,10 +6,6 @@
 	const missing = $derived(page.status === 404);
 </script>
 
-<svelte:head>
-	<title>{missing ? "This page isn't here" : page.status} — Lokapal</title>
-</svelte:head>
-
 {#if missing}
 	<main class="error missing">
 		<div class="copy">

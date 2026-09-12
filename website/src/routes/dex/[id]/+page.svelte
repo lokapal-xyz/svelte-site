@@ -28,10 +28,6 @@
 	const apex = $derived(entry.kind !== 'operator' && entry.used_by.length === 0);
 </script>
 
-<svelte:head>
-	<title>{label.name} — EIC-Dex</title>
-</svelte:head>
-
 <main class="entry">
 	<p class="kicker">
 		<a href={resolve('/dex')}>EIC-Dex</a>

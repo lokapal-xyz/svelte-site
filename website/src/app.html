@@ -8,13 +8,37 @@
 			try {
 				history.scrollRestoration = 'manual';
 			} catch {}
+			var skipHide = false;
 			function hidePageBody() {
+				if (skipHide) return;
 				document.documentElement.classList.add('unloading');
 			}
+			function showPageBody() {
+				document.documentElement.classList.remove('unloading');
+			}
+			addEventListener(
+				'click',
+				function (e) {
+					var t = e.target;
+					if (!t || !t.closest) return;
+					var a = t.closest('a');
+					if (!a) return;
+					var href = a.getAttribute('href') || '';
+					if (/^(mailto|tel|sms):/i.test(href)) {
+						skipHide = true;
+						setTimeout(function () {
+							skipHide = false;
+						}, 0);
+					}
+				},
+				true
+			);
 			addEventListener('beforeunload', hidePageBody);
 			addEventListener('pagehide', hidePageBody);
-			addEventListener('pageshow', function () {
-				document.documentElement.classList.remove('unloading');
+			addEventListener('pageshow', showPageBody);
+			addEventListener('focus', showPageBody);
+			document.addEventListener('visibilitychange', function () {
+				if (document.visibilityState === 'visible') showPageBody();
 			});
 		</script>
 		<style>

@@ -9,6 +9,7 @@ export function load() {
 		dex,
 		dexIds: Object.keys(dex),
 		families: loadDexFamilies(),
-		chapters: listChapters()
+		chapters: listChapters(),
+		preview: process.env.VERCEL_ENV === 'preview' || process.env.VERCEL_ENV === 'development'
 	};
 }

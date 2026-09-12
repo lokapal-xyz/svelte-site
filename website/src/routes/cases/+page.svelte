@@ -1,7 +1,3 @@
-<svelte:head>
-	<title>Cases — Lokapal</title>
-</svelte:head>
-
 <main class="section">
 	<h1>Cases</h1>
 	<p class="lede">

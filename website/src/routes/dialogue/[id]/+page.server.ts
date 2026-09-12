@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import { clampDescription } from '$lib/seo';
 import {
 	getDialogueConversation,
 	loadDialogueConversations,
@@ -16,5 +17,14 @@ export const load: PageServerLoad = ({ params }) => {
 	const related = conversation.related
 		.map((id) => getDialogueConversation(id))
 		.filter((row) => row != null);
-	return { conversation, field, related };
+	return {
+		conversation,
+		field,
+		related,
+		seo: {
+			title: `${conversation.title} — In dialogue`,
+			description: clampDescription(conversation.lede),
+			type: 'article' as const
+		}
+	};
 };

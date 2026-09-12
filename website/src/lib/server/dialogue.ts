@@ -1,5 +1,3 @@
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
 import { parse } from 'yaml';
 import type {
 	DialogueConversation,
@@ -8,8 +6,21 @@ import type {
 	DialogueJoint,
 	DialogueManner
 } from '$lib/library/types';
+import dialogueSource from '../../../../library/dialogue/dialogue.yaml?raw';
 import { listChapters } from './chapters';
-import { DIALOGUE_CONVERSATIONS_DIR, DIALOGUE_PATH } from './paths';
+
+const conversationFiles = import.meta.glob('../../../../library/dialogue/conversations/*.md', {
+	query: '?raw',
+	import: 'default',
+	eager: true
+}) as Record<string, string>;
+
+function conversationFileId(path: string): string {
+	const file = path.replace(/\\/g, '/').split('/').pop() ?? '';
+	return file.endsWith('.md') ? file.slice(0, -3) : file;
+}
+
+const conversationFileIds = new Set(Object.keys(conversationFiles).map(conversationFileId));
 
 type RawDialogue = {
 	fields?: Record<string, unknown>[];
@@ -107,7 +118,7 @@ let jointsCache: DialogueJoint[] | undefined;
 let conversationsCache: DialogueConversation[] | undefined;
 
 function loadRaw(): RawDialogue {
-	return parse(readFileSync(DIALOGUE_PATH, 'utf8')) as RawDialogue;
+	return parse(dialogueSource) as RawDialogue;
 }
 
 export function loadDialogueFields(): DialogueField[] {
@@ -163,9 +174,10 @@ export function loadDialogueConversations(): DialogueConversation[] {
 				);
 			}
 		}
-		const body = join(DIALOGUE_CONVERSATIONS_DIR, `${conversation.id}.md`);
-		if (!existsSync(body)) {
-			throw new Error(`Dialogue conversation "${conversation.id}" is missing ${body}`);
+		if (!conversationFileIds.has(conversation.id)) {
+			throw new Error(
+				`Dialogue conversation "${conversation.id}" is missing conversations/${conversation.id}.md`
+			);
 		}
 		seen.add(conversation.id);
 		conversations.push(conversation);
@@ -181,13 +193,9 @@ export function loadDialogueConversations(): DialogueConversation[] {
 		}
 	}
 
-	if (existsSync(DIALOGUE_CONVERSATIONS_DIR)) {
-		for (const file of readdirSync(DIALOGUE_CONVERSATIONS_DIR)) {
-			if (!file.endsWith('.md')) continue;
-			const id = file.slice(0, -3);
-			if (!seen.has(id)) {
-				throw new Error(`Dialogue markdown "${file}" has no conversation row in dialogue.yaml`);
-			}
+	for (const id of conversationFileIds) {
+		if (id && !seen.has(id)) {
+			throw new Error(`Dialogue markdown "${id}.md" has no conversation row in dialogue.yaml`);
 		}
 	}
 

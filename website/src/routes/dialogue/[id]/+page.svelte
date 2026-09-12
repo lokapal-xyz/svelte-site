@@ -15,10 +15,6 @@
 	);
 </script>
 
-<svelte:head>
-	<title>{data.conversation.title} — In dialogue</title>
-</svelte:head>
-
 <main class="conversation">
 	<nav class="kicker" aria-label="Breadcrumb">
 		<a href={resolve('/dialogue')}>In dialogue</a>

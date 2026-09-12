@@ -6,7 +6,10 @@ declare global {
 	namespace App {
 		// interface Error {}
 		// interface Locals {}
-		// interface PageData {}
+		interface PageData {
+			seo?: import('$lib/seo').Seo;
+			preview?: boolean;
+		}
 		interface PageState {
 			entry?: number;
 		}
@@ -17,6 +20,11 @@ declare global {
 declare module '*.md' {
 	const component: Component;
 	export default component;
+}
+
+declare module '*.yaml?raw' {
+	const src: string;
+	export default src;
 }
 
 export {};

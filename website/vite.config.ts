@@ -6,6 +6,7 @@ import { defineConfig } from 'vite';
 import { glossaryTokens } from './src/lib/mdsvex/glossary-tokens.ts';
 import { inlineDiagrams } from './src/lib/mdsvex/inline-diagrams.ts';
 import { wrapTables } from './src/lib/mdsvex/wrap-tables.ts';
+import { SITE_ORIGIN } from './src/lib/site.ts';
 
 const repoRoot = resolve(import.meta.dirname, '..');
 
@@ -23,6 +24,9 @@ export default defineConfig({
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
 			adapter: adapter(),
+			prerender: {
+				origin: SITE_ORIGIN
+			},
 			preprocess: [
 				mdsvex({
 					extensions: ['.svx', '.md'],

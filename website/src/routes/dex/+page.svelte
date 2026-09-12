@@ -30,10 +30,6 @@
 	const searching = $derived(query.trim().length > 0);
 </script>
 
-<svelte:head>
-	<title>EIC-Dex — Conciliatorics</title>
-</svelte:head>
-
 <main class="dex">
 	<h1>EIC-Dex</h1>
 	<p class="lede">

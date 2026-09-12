@@ -32,11 +32,18 @@
 	}
 
 	const measure: Attachment<HTMLElement> = (node) => {
-		const set = () => node.style.setProperty('--header-h', `${node.offsetHeight}px`);
+		const set = () => {
+			const height = `${node.offsetHeight}px`;
+			node.style.setProperty('--header-h', height);
+			document.documentElement.style.setProperty('--header-h', height);
+		};
 		set();
 		const observer = new ResizeObserver(set);
 		observer.observe(node);
-		return () => observer.disconnect();
+		return () => {
+			observer.disconnect();
+			document.documentElement.style.removeProperty('--header-h');
+		};
 	};
 </script>
 

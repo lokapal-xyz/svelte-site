@@ -40,6 +40,7 @@ export type ChapterMeta = {
 	title: string;
 	partDir: string;
 	partTitle: string;
+	description: string;
 };
 
 export type DialogueManner = 'light-touch' | 'positioning' | 'bulk' | 'contact';

@@ -18,10 +18,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Treatise — Lokapal</title>
-</svelte:head>
-
 <main class="treatise">
 	<h1>Treatise</h1>
 	<p class="lede">
