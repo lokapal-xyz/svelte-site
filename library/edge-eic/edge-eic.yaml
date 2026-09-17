@@ -1,0 +1,20 @@
+# =============================================================================
+# EDGE EIC — TRUNKS
+# Allowed Core joints a leaf may grow from. Hub grouping follows this order.
+# Leaf metadata (title, status, lede, chapters) lives in leaves/{id}.md front
+# matter — change status there, not here.
+# =============================================================================
+
+trunks:
+
+  - id: operation
+    title: Operation
+    chapter: 03_07_operation
+
+  - id: observation
+    title: Observation
+    chapter: 03_05_observation
+
+  - id: mixed-synthesis
+    title: Mixed Synthesis
+    chapter: 05_03_mixed-synthesis

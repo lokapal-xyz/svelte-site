@@ -74,3 +74,20 @@ export type DialogueConversation = {
 	related: string[];
 	sources: string[];
 };
+
+export type EdgeStatus = 'seedling' | 'budding' | 'bloom';
+
+export type EdgeTrunk = {
+	id: string;
+	title: string;
+	chapter: string;
+};
+
+export type EdgeLeaf = {
+	id: string;
+	title: string;
+	status: EdgeStatus;
+	trunk: string;
+	lede: string;
+	chapters: string[];
+};

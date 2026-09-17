@@ -11,4 +11,6 @@
 !diagrams/
 !library/
 !website/
+!book/
 !.gitignore
+!README.md

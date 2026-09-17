@@ -14,7 +14,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **BEHAVIOR DYNAMICS**: A model containing one main systemic phenomenon (**Behavior**) and three main systemic entities (**System**, **Member**, **Medium**).
 
-- **BEHAVIOR**: The transformation of a medium by system members.
+- **BEHAVIOR**: The <plain>transformation</plain> of a medium by system members.
 
 - **SYSTEM**: An environment where interrelated members express behavior.
 
@@ -38,7 +38,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **INVENTIVE POSITION**: Focus of inventive intervention.
 
-- **CONTEMPLATION**: Inventive approach with emphasis on the *intervener*. Relates to *knowledge building* and *judgement*.
+- **CONTEMPLATION**: Inventive approach with emphasis on the *intervener*. Relates to *knowledge building* and *<plain>judgement</plain>*.
 
 - **TRANSFORMATION**: Inventive approach with emphasis on the *system*. Relates to *concrete change* and *performance*.
 
@@ -104,11 +104,11 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **ASYMMETRY**: `≢` — directional prioritization within an attribute pair; broken symmetry.
 
-- **CONCATENATION**: `^` — interaction between different attribute pairs, or between attributes of different paired sets.
+- **CONCATENATION**: `^` — <plain>interaction</plain> between different <plain>attribute</plain> pairs, or between attributes of different paired sets.
 
-- **ACCENTUATION**: `←` — focus on one attribute of a paired set, or on one element of a compounded interaction, without dismissing the other side.
+- **ACCENTUATION**: `←` — focus on one <plain>attribute</plain> of a paired set, or on one element of a compounded <plain>interaction</plain>, without dismissing the other side.
 
-- **MODULATION**: `→` — the concrete effect of one attribute element or compound over another; alters internal dynamics rather than heightening or combining.
+- **MODULATION**: `→` — the concrete effect of one <plain>attribute</plain> element or compound over another; alters internal dynamics rather than heightening or combining.
 
 - **SYSTEMIC JURISDICTION**: The bounded environment that contains Conciliatorics components.
 
@@ -122,7 +122,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **JURISDICTIONAL DISSOLUTION**: The process and systemic state in which boundaries merge. The jurisdiction fuses into others, forming a **systemic amalgam**.
 
-- **PRIMARY JURISDICTION**: The initial environment of attribute pairs within Attributes Dynamics.
+- **PRIMARY JURISDICTION**: The initial environment of <plain>attribute</plain> pairs within Attributes Dynamics.
 
 - **STILLNESS**: `Q` — primary attribute; spatial pole of rest.
 
@@ -134,7 +134,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 ---
 
-- **DISCURSIVE REPRESENTATION**: Representation through written or spoken language. The traditional medium of philosophical discourse, carrying argument, nuance, and context.
+- **DISCURSIVE REPRESENTATION**: Representation through written or spoken language. The traditional <plain>medium</plain> of philosophical discourse, carrying argument, nuance, and context.
 
 - **SYMBOLIC REPRESENTATION**: Representation through compact notation—operators, letters, and equations—that holds dense relationships in a single, precise, reusable form.
 
@@ -156,30 +156,30 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **PRO-SUCCESSIVENESS**: `pSu` — accentuation of Successiveness within the Simultaneity/Successiveness pair (`Su ← Si`).
 
-- **STRUCTURE QUADRANT**: Concatenation of two attribute accentuations, creating a potential interstitial state.
+- **STRUCTURE QUADRANT**: Concatenation of two <plain>attribute</plain> accentuations, creating a <plain>potential</plain> interstitial state.
 
 - **INTERSTITIAL ANATOMY**: Set of concrete interstitial actions, composed of structure quadrants accentuations.
 
-| **ANATOMY TERMS** | **Potential State** | **Concrete Action** | **General Context Term** |
+| **ANATOMY TERMS** | **<plain>Potential</plain> State** | **Concrete Action** | **General Context Term** |
 |---|---|---|---|
-| **To Discern** | Discernibility | Discernment | Interstitial Discernment |
-| **To Observe** | Observability | Observation | Interstitial Observation  |
-| **To Resolve** | Resolutivity | Resolution | Interstitial Resolution  |
-| **To Operate** | Operativity | Operation | Interstitial Operation  |
+| **To Discern** | Discernibility | Discernment | Interstitial <plain>Discernment</plain> |
+| **To Observe** | Observability | Observation | Interstitial <plain>Observation</plain>  |
+| **To Resolve** | Resolutivity | Resolution | Interstitial <plain>Resolution</plain>  |
+| **To Operate** | Operativity | Operation | Interstitial <plain>Operation</plain>  |
 
 ---
 
-- **BOUNDED DISCERNMENT/OBSERVATION**: Quadrant depending on member's perspective.
+- **BOUNDED DISCERNMENT/OBSERVATION**: Quadrant depending on <plain>member's</plain> perspective.
 
-- **NON-BOUNDED DISCERNMENT/OBSERVATION**: Quadrant detached from member's presence.
+- **NON-BOUNDED DISCERNMENT/OBSERVATION**: Quadrant detached from <plain>member's presence</plain>.
 
 - **OBJECTIVITY**: Non-bounded discernment.
 
 - **SUBJECTIVITY**: Bounded discernment.
 
-- **ASSERTION**: Assertive discernment—discernment that states facts and perspectives about the world.
+- **ASSERTION**: Assertive discernment—it states facts and perspectives about the world.
 
-- **ARRANGEMENT**: Arranging discernment—discernment that organizes aspects of a phenomenon to enhance its comprehension.
+- **ARRANGEMENT**: Arranging discernment—it organizes aspects of a phenomenon to enhance its comprehension.
 
 - **DISCERNMENT ASCENDANCY**: One of four aspects—Veracity, Congruence, Appreciation, Evaluation—formed by intersecting objectivity/subjectivity with assertion/arrangement, each heavily influencing how discernment operates.
 
@@ -191,7 +191,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **EVALUATION**: Discernment ascendancy formed by Subjective Arrangement.
 
-- **DISCERNMENT CHILDREN**: The practical terms produced by the authority balance between discernment parents (Veracity, Congruence, Appreciation, Evaluation): Property, Formation, Interaction, Preference, Standard, and Criterion.
+- **DISCERNMENT CHILDREN**: The practical terms produced by the authority <plain>balance</plain> between discernment parents (Veracity, Congruence, Appreciation, Evaluation): Property, Formation, Interaction, Preference, Standard, and Criterion.
 
 - **PROPERTY**: Discernment child formed when Veracity has authority over Congruence.
 
@@ -249,9 +249,9 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 ---
 
-- **IDENTITY AXIS**: Horizontal axis of the Operation compass; the concatenation of Fronterization and Permeability.
+- **IDENTITY AXIS**: Horizontal axis of the Operation compass; the spectrum between Fronterization and Permeability.
 
-- **PARTICIPATION AXIS**: Vertical axis of the Operation compass; the concatenation of Proceptivity and Receptivity.
+- **PARTICIPATION AXIS**: Vertical axis of the Operation compass; the spectrum between Proceptivity and Receptivity.
 
 - **PROCEPTIVITY**: Cardinal North of the Operation compass; active engagement in systemic participation.
 
@@ -261,13 +261,13 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **PERMEABILITY**: Cardinal West of the Operation compass; the capacity of identity to adapt to the world's flow.
 
-- **INDIVIDUAL**: North-East hemisphere of the Operation compass; Proceptivity concatenated with Fronterization.
+- **INDIVIDUAL**: North-East hemisphere of the Operation compass; Proceptivity combined with Fronterization.
 
-- **COMMUNITY**: South-West hemisphere of the Operation compass; Receptivity concatenated with Permeability.
+- **COMMUNITY**: South-West hemisphere of the Operation compass; Receptivity combined with Permeability.
 
-- **ORIENTATION**: South-East hemisphere of the Operation compass; Receptivity concatenated with Fronterization.
+- **ORIENTATION**: South-East hemisphere of the Operation compass; Receptivity combined with Fronterization.
 
-- **NAVIGATION**: North-West hemisphere of the Operation compass; Proceptivity concatenated with Permeability.
+- **NAVIGATION**: North-West hemisphere of the Operation compass; Proceptivity combined with Permeability.
 
 - **COMPASS**: The original, informal name for Operation—still used, especially alongside the diagram, but not interchangeable with "Operation" when referring to the full Interstitial Anatomy context (i.e., alongside Discernment, Observation, and Resolution).
 
@@ -275,7 +275,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 ## Part 4: Attributes Status
 
-- **ATTRIBUTE CONCATENATION**: Crossed interaction between attribute pairs from the primary jurisdiction.
+- **ATTRIBUTE CONCATENATION**: Crossed <plain>interaction between attribute pairs</plain> from the primary jurisdiction.
 
 - **CONSISTENCY / IMPERMANENCE**: Reinforcing attribute pair produced by attribute concatenation — Consistency is Stillness concatenated with Simultaneity; Impermanence is Movement concatenated with Successiveness. More unstable than primary-jurisdiction pairs: any accentuation carries a greater risk of breaking the pair.
 
@@ -305,11 +305,11 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 ---
 
-- **ORGANIC PHYSIOLOGY**: Interaction between "perdurability longing" and "imperdurability / perdurability dichotomy".
+- **ORGANIC PHYSIOLOGY**: <plain>Interaction</plain> between "perdurability longing" and "imperdurability / perdurability dichotomy".
 
-- **INSTRUMENTAL PHYSIOLOGY**: Interaction between "functionality longing" and "functional / dysfunctional dichotomy".
+- **INSTRUMENTAL PHYSIOLOGY**: <plain>Interaction</plain> between "functionality longing" and "functional / dysfunctional dichotomy".
 
-- **MIXED PHYSIOLOGY**: Simultaneous interaction between both interstitial longings and status dichotomies.
+- **MIXED PHYSIOLOGY**: Simultaneous <plain>interaction</plain> between both interstitial longings and status dichotomies.
 
 ---
 
@@ -333,33 +333,33 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **CONCILIATION SYNTHESIS**: Modulation of interstitial anatomy by imperdurable functionality physiology. 
 
-- **CONCILIATION PATHWAY**: Iterated Imperdurable Functionality.
+- **CONCILIATION PATHWAY**: Iterated Imperdurable <plain>Functionality</plain>.
 
 - **STATUS RECIPROCITY**: Correlation between interstitial and intrinsic attributes, modulated by mixed synthesis.
 
-- **CENTRALIZATION**: Intrinsic-attribute correlate of Unification Synthesis; the dysfunctional-status pole of Status Reciprocity.
+- **CENTRALIZATION**: Intrinsic <plain>attribute</plain> correlate of Unification Synthesis; the dysfunctional-status pole of Status Reciprocity.
 
-- **DECENTRALIZATION**: Intrinsic-attribute correlate of Conciliation Synthesis; the functional-status pole of Status Reciprocity.
+- **DECENTRALIZATION**: Intrinsic <plain>attribute</plain> correlate of Conciliation Synthesis; the functional-status pole of Status Reciprocity.
 
 ---
 
 - **CORE EIC**: The foundational, integrated development of EIC, running from Attributes Dynamics through the close of Attributes Synthesis.
 
-- **EDGE EIC**: Additional EIC development extending beyond Core EIC into specific, still-evolving methods. Individual Edge EIC concepts don't need to cover every Core EIC component symmetrically, and can grow independently of one another.
+- **EDGE EIC**: Additional EIC development extending beyond Core EIC into specific, still-evolving methods. <plain>Individual</plain> Edge EIC concepts don't need to cover every Core EIC component symmetrically, and can grow independently of one another.
 
 - **OPERATIONAL STATUS**: The first developed Edge EIC concept — functional/dysfunctional gradation, via Sub/Supra/Hypo/Hyper modulators, applied to the Operation compass's four cardinal directions. Currently developed for Operation only.
 
-- **SUB / SUPRA**: Functional accentuation modulators — reduced (Sub) or heightened (Supra) emphasis on an Operation direction — that preserve complementarity with its pair, paralleling Symmetry.
+- **SUB / SUPRA**: Functional <plain>accentuation</plain> modulators — reduced (Sub) or heightened (Supra) emphasis on an Operation direction — that preserve complementarity with its pair, paralleling Symmetry.
 
-- **HYPO / HYPER**: Dysfunctional accentuation modulators — reduced (Hypo) or heightened (Hyper) emphasis on an Operation direction — whose emphasis has broken complementarity with its pair, paralleling Asymmetry. Not an "Anti-" framing: they mark a dysfunctional degree of the same direction, not opposition to it.
+- **HYPO / HYPER**: Dysfunctional <plain>accentuation</plain> modulators — reduced (Hypo) or heightened (Hyper) emphasis on an Operation direction — whose emphasis has broken complementarity with its pair, paralleling Asymmetry. Not an "Anti-" framing: they mark a dysfunctional degree of the same direction, not opposition to it.
 
 ---
 
 ## Part 6: Edified Intrinsic Transformation
 
-- **SYSTEMIC DIPLOMACY**: A jurisdiction's awareness of its own distinct role, cultivating healthy interaction with neighboring jurisdictions rather than isolating itself (dissociation) or merging into them (dissolution).
+- **SYSTEMIC DIPLOMACY**: A jurisdiction's <plain>awareness</plain> of its own distinct role, cultivating healthy <plain>interaction</plain> with neighboring jurisdictions rather than isolating itself (dissociation) or merging into them (dissolution).
 
-- **AI ASSISTANCE**: The use of AI systems to support work with Conciliatorics — maintaining terminological and notational consistency, structuring applied case readings, translating a concept or case between representation types, and traversing an accumulated case library for patterns across cases. Interpretive judgement — deciding which jurisdiction, pair, and attributes a real case falls under — remains Contemplation, and is not something AI assistance performs or automates away.
+- **AI ASSISTANCE**: The use of AI systems to support work with Conciliatorics — maintaining terminological and notational <plain>consistency</plain>, structuring applied case readings, translating a concept or case between representation types, and traversing an accumulated case library for patterns across cases. Interpretive <plain>judgement</plain> — deciding which jurisdiction, pair, and attributes a real case falls under — remains Contemplation, and is not something AI assistance performs or automates away.
 
 - **YAML LIBRARY**: A structured, growing set of schematic entries—sharing a consistent set of fields and cross-referenced by stable identifiers—that accumulates instances of some kind (definitions, symbols, cases, relationships) into something that stays organized as it grows.
 

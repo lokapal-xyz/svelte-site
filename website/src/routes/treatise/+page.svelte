@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { asset, resolve } from '$app/paths';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -23,6 +23,9 @@
 	<p class="lede">
 		The full text of Conciliatorics. Click a term to glance at its definition. If that term is in
 		the Dex, the panel offers a way into the equation graph.
+	</p>
+	<p class="download">
+		<a href={asset('/conciliatorics.pdf')} data-sveltekit-reload>Download the treatise as a PDF</a>
 	</p>
 
 	<nav class="toc" aria-label="Treatise">
@@ -53,8 +56,22 @@
 	}
 
 	.lede {
-		margin: 0 0 2rem;
+		margin: 0 0 0.7rem;
 		color: var(--text-muted);
+	}
+
+	.download {
+		margin: 0 0 2rem;
+		font-size: 0.95rem;
+	}
+
+	.download a {
+		color: var(--link);
+		text-decoration-color: currentColor;
+	}
+
+	.download a:hover {
+		color: var(--link-hover);
 	}
 
 	h2 {

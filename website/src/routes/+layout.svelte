@@ -65,6 +65,7 @@
 		}
 
 		if (!panel.openId) return;
+		if (event.key === 'Tab') return;
 		if (keepPanel(event.target)) return;
 		panel.close();
 	}

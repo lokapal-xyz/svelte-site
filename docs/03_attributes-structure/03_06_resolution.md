@@ -6,25 +6,25 @@ Resolution is the method of settling a systemic challenge. We begin with the ful
 
 ![Diagram showing the interactions between Resolution's components](../../diagrams/svg/resolutionFull.svg)
 
-The squared corners are the starting dualities. **Chaos** and **Order** are a main pair in complex systems, and both create challenges. Chaos does not imply wrongness; order does not imply rightness. A riot and a freeze can both be unlivable. The same is true of every element that follows: none of them is a moral verdict on its own.
+The squared corners are the starting dualities. **Chaos** and **Order** are a main pair in complex systems, and both create challenges. <plain>Chaos</plain> does not imply wrongness; <plain>order</plain> does not imply rightness. A riot and a freeze can both be unlivable. The same is true of every element that follows: none of them is a moral verdict on its own.
 
-The other challenge duality is **friction** and **conflict**. They are easy to collapse. Here, friction is structural — a load that does not sit, a form that will not file, a joint that binds. Conflict is behavioral — members at odds. Both are present in a real challenge, and they concatenate with chaos and order:
+The other challenge duality is **friction** and **conflict**. They are easy to collapse. Here, <plain>friction</plain> is structural — a load that does not sit, a form that will not file, a joint that binds. <plain>Conflict</plain> is behavioral — members at odds. Both are present in a real challenge, and they concatenate with <plain>chaos and order</plain>:
 
-| **INTERACTION** | **RESULT** |
+| **<plain>INTERACTION</plain>** | **RESULT** |
 |---|---|
 | Friction ^ Chaos | Potential |
 | Friction ^ Order | Stability |
 | Conflict ^ Chaos | Suffering |
 | Conflict ^ Order | Satisfaction |
 
-Unused capacity in a disordered process is **potential**. A locked joint, a settled procedure, is **stability**. Conflict without a shape is **suffering**. Conflict that has found a shape — a verdict, a treaty, a scored piece — is **satisfaction**. Each pairing pulls for priority. Dismissing one to keep another is not a resolution. The work is to hold them in a proportion the situation can actually bear. No fixed ratio fits every challenge.
+Unused capacity in a disordered process is **potential**. A locked joint, a settled procedure, is **stability**. <plain>Conflict</plain> without a shape is **suffering**. <plain>Conflict</plain> that has found a shape — a verdict, a treaty, a scored piece — is **satisfaction**. Each pairing pulls for priority. Dismissing one to keep another is not a <plain>resolution</plain>. The work is to hold them in a proportion the situation can actually bear. No fixed ratio fits every challenge.
 
-| **INTERACTION** | **RESULT** |
+| **<plain>INTERACTION</plain>** | **RESULT** |
 |---|---|
 | Potential ^ Stability | Temperance |
 | Suffering ^ Satisfaction | Sacrifice |
 
-**Temperance** is potential with a stable support: exploring without losing the foundations. **Sacrifice** is the choice of a present suffering for a future satisfaction: this season's pruning for the next harvest. In short:
+**Temperance** is <plain>potential</plain> with a stable support: exploring without losing the foundations. **Sacrifice** is the choice of a present <plain>suffering for a future satisfaction</plain>: this season's pruning for the next harvest. In short:
 
 - **Temperance**: forward-facing, dynamic regulation.
 - **Sacrifice**: temporally-aware, delayed gratification.
@@ -39,12 +39,12 @@ A symbolic version of the same diagram, and a table of references:
 
 | **INTERACTIONS** | **SYMBOLIC REFERENCE** |
 | --- | --- |
-| Friction ^ Chaos = Potential | f ^ Ch = π |
-| Friction ^ Order = Stability | f ^ Or = ε |
-| Conflict ^ Chaos = Suffering | k ^ Ch = ſ |
-| Conflict ^ Order = Satisfaction | k ^ Or = Ʒ |
-| Potential ^ Stability = Temperance | π ^ ε = τ |
-| Suffering ^ Satisfaction = Sacrifice | ſ ^ Ʒ = ẞ |
-| Temperance ^ Sacrifice = Viability | τ ^ ẞ = V |
+| Friction ^ Chaos = Potential | f <plain>^</plain> Ch = π |
+| Friction ^ Order = Stability | f <plain>^</plain> Or = ε |
+| Conflict ^ Chaos = Suffering | k <plain>^</plain> Ch = ſ |
+| Conflict ^ Order = Satisfaction | k <plain>^</plain> Or = Ʒ |
+| Potential ^ Stability = Temperance | π <plain>^</plain> ε = τ |
+| Suffering ^ Satisfaction = Sacrifice | ſ <plain>^</plain> Ʒ = ẞ |
+| Temperance ^ Sacrifice = Viability | τ <plain>^</plain> ẞ = V |
 
 The two versions are the same structure in two representation types. Many of the symbols nod to two philosophical traditions: pi (π), epsilon (ε), and tau (τ) toward Greek; long s (ſ), tailed z (Ʒ), and eszett (ẞ) toward German — the long s and tailed z being the orthographical origins of the eszett.

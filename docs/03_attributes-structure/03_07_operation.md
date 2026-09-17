@@ -4,7 +4,7 @@
 
 The last method of Interstitial Anatomy has a special backstory. These concepts were the first the author managed to organize as a proper set — the stepping stone for Conciliatorics, in place long before the project had a name. Once this item was synthesized, the rest began to fall in around it. What we now call **Operation** was first called the **Compass**.
 
-The name comes from the shape of the diagram, and from the use. The compass assigns a cardinal direction to each mode of acting inside a system.
+The name comes from the shape of the diagram, and from the use. The <plain>compass</plain> assigns a cardinal direction to each mode of acting inside a <plain>system</plain>.
 
 ![Diagram showing the interactions between Operation's components](../../diagrams/svg/operationFull.svg)
 
@@ -27,7 +27,7 @@ A soloist at full voice is individual. A choir taking the same breath is communi
 
 The cardinal initials (N, S, E, W) sit easily on Pr, Re, Fr, and Pe. Used together they are easier to hold than either set alone.
 
-| **OPERATION AREA** | **INTERACTION** |
+| **<plain>OPERATION AREA</plain>** | **<plain>INTERACTION</plain>** |
 |---|---|
 | Horizontal Axis | **Identity** = Permeability ^ Fronterization |
 | Vertical Axis | **Participation** = Proceptivity ^ Receptivity |
@@ -36,4 +36,4 @@ The cardinal initials (N, S, E, W) sit easily on Pr, Re, Fr, and Pe. Used togeth
 | South-East Hemisphere | **Orientation** = Receptivity ^ Fronterization |
 | North-West Hemisphere | **Navigation** = Proceptivity ^ Permeability |
 
-That is the last component of Interstitial Anatomy. Anatomy, even at this grain, is still a structure. What remains is for the structure to become alive. The physiology of these methods is Attributes Status.
+That is the last component of Interstitial Anatomy. Anatomy, even at this grain, is still a structure. What remains is for the structure to become alive. The physiology of these methods is <plain>Attributes Status</plain>.

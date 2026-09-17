@@ -8,9 +8,7 @@ export type Lens = {
 	text: string;
 };
 
-export type PanelAction =
-	| { kind: 'primary'; href: '/treatise'; label: string; blurb: string }
-	| { kind: 'soon'; label: string; blurb: string };
+export type PanelAction = { kind: 'primary'; href: '/treatise'; label: string; blurb: string };
 
 export type Panel = {
 	id: string;
@@ -196,7 +194,6 @@ export const PANELS: Panel[] = [
 		title: 'The treatise',
 		paragraphs: [
 			'The treatise is the integrated development of what these panels have indicated: the operators, the diagrams, the vocabulary, and the rest of the joints.',
-			'A slower video series, one stretch per idea, is being prepared. It is not available yet.',
 			'Core EIC — from the opening of Attributes Dynamics through Status Reciprocity — is complete as a structure. What grows past that floor, Edge EIC and Edified Intrinsic Transformation (EIT) among them, is how you can tell the work is still being built rather than closed.'
 		],
 		actions: [
@@ -205,11 +202,6 @@ export const PANELS: Panel[] = [
 				href: '/treatise',
 				label: 'Start reading the treatise',
 				blurb: 'The full text, with clickable terms.'
-			},
-			{
-				kind: 'soon',
-				label: 'Video series',
-				blurb: 'Coming Soon'
 			}
 		]
 	}

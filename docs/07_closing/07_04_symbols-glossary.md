@@ -62,10 +62,10 @@ This is a guide to the symbolic language of *Conciliatorics*, including visual s
 
 | **Symbol** | **Name**       | **Origin Equation**  | **Jurisdiction**       |
 |------------|----------------|--------------------|------------------------|
-| `D`        | Discernibility | pQ ^ pSu          | Attributes Structure  |
-| `O`        | Observability  | pM ^ pSu          | Attributes Structure  |
-| `R`       | Resolutivity    | pQ ^ pSi        | Attributes Structure  |
-| `E`       | Operativity | pM ^ pSi        | Attributes Structure  |
+| `D`        | Discernibility | pQ `^` pSu          | Attributes Structure  |
+| `O`        | Observability  | pM `^` pSu          | Attributes Structure  |
+| `R`       | Resolutivity    | pQ `^` pSi        | Attributes Structure  |
+| `E`       | Operativity | pM `^` pSi        | Attributes Structure  |
 
 - **Structure Quadrants Set**: `{D ≡ O ≡ R ≡ E}`
 
@@ -97,13 +97,13 @@ This is a guide to the symbolic language of *Conciliatorics*, including visual s
 
 | **Symbol** | **Name**       | **Origin Equation**  | **Jurisdiction**       |
 |------------|----------------|------------------|------------------------|
-| `π`       | Potential | f ^ Ch | Interstitial Anatomy  |
-| `ε`       | Stability  | f ^ Or | Interstitial Anatomy |
-| `ſ`       | Suffering   | k ^ Ch | Interstitial Anatomy  |
-| `Ʒ`       | Satisfaction    | k ^ Or | Interstitial Anatomy  |
-| `τ`       | Temperance    | π ^ ε |Interstitial Anatomy  |
-| `ẞ`       | Sacrifice    | ſ ^ Ʒ | Interstitial Anatomy  |
-| `V`       | Viability    | τ ^ ẞ | Interstitial Anatomy  |
+| `π`       | Potential | f `^` Ch | Interstitial Anatomy  |
+| `ε`       | Stability  | f `^` Or | Interstitial Anatomy |
+| `ſ`       | Suffering   | k `^` Ch | Interstitial Anatomy  |
+| `Ʒ`       | Satisfaction    | k `^` Or | Interstitial Anatomy  |
+| `τ`       | Temperance    | π `^` ε |Interstitial Anatomy  |
+| `ẞ`       | Sacrifice    | ſ `^` Ʒ | Interstitial Anatomy  |
+| `V`       | Viability    | τ `^` ẞ | Interstitial Anatomy  |
 
 ---
 
@@ -120,10 +120,10 @@ This is a guide to the symbolic language of *Conciliatorics*, including visual s
 
 | **Symbol** | **Name**       | **Origin Equation**  | **Jurisdiction**       |
 |------------|----------------|--------------------|------------------------|
-| `i`       | Individual | Pr ^ Fr | Interstitial Anatomy  |
-| `c`       | Community  | Re ^ Pe | Interstitial Anatomy |
-| `o`       | Orientation   | Fr ^ Re | Interstitial Anatomy  |
-| `n`       | Navigation    | Pr ^ Pe | Interstitial Anatomy  |
+| `i`       | Individual | Pr `^` Fr | Interstitial Anatomy  |
+| `c`       | Community  | Re `^` Pe | Interstitial Anatomy |
+| `o`       | Orientation   | Fr `^` Re | Interstitial Anatomy  |
+| `n`       | Navigation    | Pr `^` Pe | Interstitial Anatomy  |
 
 ---
 
@@ -131,10 +131,10 @@ This is a guide to the symbolic language of *Conciliatorics*, including visual s
 
 | **Symbol** | **Name**       | **Origin Equation**  | **Notes** | **Jurisdiction**  |
 |------------|----------------|------------|--------|------------------------|
-| `C`       | Consistency | Q ^ Si | Reinforcing pair | Attributes Status  |
-| `I`       | Impermanence  | M ^ Su |  Reinforcing pair | Attributes Status  |
-| `B`       | Balance   | Q ^ Su | Canceling pair  |  Attributes Status  |
-| `b`       | Imbalance    | M ^ Si |  Canceling pair |  Attributes Status  |
+| `C`       | Consistency | Q `^` Si | Reinforcing pair | Attributes Status  |
+| `I`       | Impermanence  | M `^` Su |  Reinforcing pair | Attributes Status  |
+| `B`       | Balance   | Q `^` Su | Canceling pair  |  Attributes Status  |
+| `b`       | Imbalance    | M `^` Si |  Canceling pair |  Attributes Status  |
 
 ---
 
@@ -142,10 +142,10 @@ This is a guide to the symbolic language of *Conciliatorics*, including visual s
 
 | **Symbol** | **Name**      | **Origin Equation**  | **Dichotomy** | **Jurisdiction**    |
 |------------|--------------------|--------------|---------|-----------------|
-| `C≡` | Functionality | (C ← I) ^ (b ≡ B)  | C≡ ^ C≢ | Attributes Status |
-| `C≢` | Dysfunctionality | (C ← I) ^ (b ≢ B) | C≡ ^ C≢ | Attributes Status |
-| `I≡` | Imperdurability | (I ← C) ^ (b ≡ B) | I≡ ^ I≢ | Attributes Status |
-| `I≢` | Perdurability  | (I ← C) ^ (b ≢ B) | I≡ ^ I≢ | Attributes Status |
+| `C≡` | Functionality | <plain>(C ← I) ^ (b ≡ B)</plain>  | <plain>C≡ ^ C≢</plain> | Attributes Status |
+| `C≢` | Dysfunctionality | <plain>(C ← I) ^ (b ≢ B)</plain> | <plain>C≡ ^ C≢</plain> | Attributes Status |
+| `I≡` | Imperdurability | <plain>(I ← C) ^ (b ≡ B)</plain> | <plain>I≡ ^ I≢</plain> | Attributes Status |
+| `I≢` | Perdurability  | <plain>(I ← C) ^ (b ≢ B)</plain> | <plain>I≡ ^ I≢</plain> | Attributes Status |
 
 ---
 
@@ -155,9 +155,9 @@ This is a guide to the symbolic language of *Conciliatorics*, including visual s
 |------------|----------------|--------------------|------------------------|
 | `I≢L`       | Perdurability Longing | — | Attributes Status  |
 | `C≡L`       | Functionality Longing  | — | Attributes Status  |
-| `oP`       | Organic Physiology   | I≢L → (I≡ ^ I≢) | Attributes Status  |
-| `iP`       | Instrumental Physiology | C≡L → (C≡ ^ C≢) | Attributes Status  |
-| `mP`    | Mixed Physiology | oP ^ iP | Attributes Status  |
+| `oP`       | Organic Physiology   | <plain>I≢L → (I≡ ^ I≢)</plain> | Attributes Status  |
+| `iP`       | Instrumental Physiology | <plain>C≡L → (C≡ ^ C≢)</plain> | Attributes Status  |
+| `mP`    | Mixed Physiology | oP `^` iP | Attributes Status  |
 
 ---
 
@@ -182,11 +182,11 @@ This is a guide to the symbolic language of *Conciliatorics*, including visual s
 | `h`        | Hypo     | h / H    | Operational Status |
 | `H`        | Hyper    | h / H    | Operational Status |
 
-**Note**: `S` here is a prefix marking heightened emphasis on an Operation direction — a different symbolic role from the core `S` for System used in the Inventive Edification / Inventive Ossification symbols above (e.g. `(cS)`, `[Cs]`). Position within an expression disambiguates the two (see Attribute Operators); this is a deliberate reuse, not an unflagged collision.
+**Note**: `S` here is a prefix marking heightened emphasis on an Operation direction — a different symbolic role from the core `S` for System used in the Inventive Edification / Inventive Ossification symbols above (e.g. `(cS)`, `[Cs]`). Position within an expression disambiguates the two (see <plain>Attribute</plain> Operators); this is a deliberate reuse, not an unflagged collision.
 
 Applied to the four Operation directions:
 
-| **Operation Status** | Receptivity | Proceptivity | Fronterization | Permeability |
+| **Operational Status** | Receptivity | Proceptivity | Fronterization | Permeability |
 |---|---|---|---|---|
 | Sub   | `sRe` | `sPr` | `sFr` | `sPe` |
 | Supra | `SRe` | `SPr` | `SFr` | `SPe` |

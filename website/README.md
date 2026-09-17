@@ -1,13 +1,20 @@
 # Lokapal website
 
-SvelteKit app for [lokapal.xyz](https://www.lokapal.xyz). Vercel Root Directory = `website`.
-Hub at `/` with six sections (Start here, Treatise, EIC-Dex, In dialogue, Cases, About).
+SvelteKit app for [lokapal.xyz](https://www.lokapal.xyz). Source:
+[github.com/lokapal-xyz/svelte-site](https://github.com/lokapal-xyz/svelte-site). Vercel Root
+Directory = `website`. Hub at `/` with six sections (Start here, Treatise, EIC-Dex, Edge EIC,
+In dialogue, About).
 
 Treatise pages come from `../docs/**/*.md` (mdsvex). Glossary and Dex data are loaded at
 build time from `../library/glossary/glossary.yaml` and `../library/eic-dex/eic-dex.yaml`.
 In Dialogue loads `../library/dialogue/dialogue.yaml` plus `conversations/*.md` (tokens on).
-Diagrams are inlined from `../diagrams/svg/`. Product lock: `../design-refs/design-decisions.md`
-(local; not in git).
+Edge EIC loads `../library/edge-eic/edge-eic.yaml` plus `leaves/*.md` (front matter + body,
+tokens on). Diagrams are inlined from `../diagrams/svg/`. Product lock:
+`../design-refs/design-decisions.md` (local; not in git).
+
+License (all rights reserved; quotation with attribution welcome) and a cite line live on
+`/about`. A free PDF of the treatise is generated locally (`python3 book/build.py`) into
+`static/conciliatorics.pdf` and linked from `/treatise` and `/about`.
 
 ```sh
 pnpm install

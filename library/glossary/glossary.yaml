@@ -346,6 +346,15 @@ terms:
     part: 02_attributes-dynamics
     definition: The concrete effect of one attribute element or compound over another; alters internal dynamics.
 
+  - id: attribute-operators
+    term: Attribute Operators
+    part: 02_attributes-dynamics
+    definition: >
+      How attributes are allowed to relate. EIC does not work with isolated qualities; it
+      works with attribute pairs and five operators: symmetry, asymmetry, concatenation,
+      accentuation, and modulation.
+    related: [attribute-pair, symmetry, asymmetry, concatenation, accentuation, modulation]
+
   - id: systemic-jurisdiction
     term: Systemic Jurisdiction
     part: 02_attributes-dynamics
@@ -1182,13 +1191,13 @@ terms:
     notes: "Simplified form example: Instrumental Observation = C≡L → iO."
 
   - id: mixed-synthesis
-    term: Mixed Synthesis (Raw form)
+    term: Mixed Synthesis
     symbol: "mΣ"
     part: 05_attributes-synthesis
     jurisdiction: Attributes Synthesis
     equation: "{[I≢L → (I≡ ^ I≢)] ^ [C≡L → (C≡ ^ C≢)]} → {iD ≡ iO ≡ iR ≡ iE}"
     definition: >
-      Modulation of interstitial anatomy by mixed physiology. Represents an interstitial
+      Modulation of interstitial anatomy by mixed physiology. The raw form is an interstitial
       potential awaiting a dominant longing before bifurcating into Unification or
       Conciliation Synthesis.
     related: [unification-synthesis, conciliation-synthesis]

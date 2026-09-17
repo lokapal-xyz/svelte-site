@@ -123,19 +123,10 @@
 					{#if panel.actions}
 						<div class="actions">
 							{#each panel.actions as action (action.label)}
-								{#if action.kind === 'primary'}
-									<a class="gate primary" href={resolve(action.href)}>
-										<span class="label">{action.label}</span>
-										<span class="blurb">{action.blurb}</span>
-									</a>
-								{:else}
-									<div class="gate soon">
-										<span class="label">{action.label}</span>
-										<span class="blurb">
-											<span class="badge">{action.blurb}</span>
-										</span>
-									</div>
-								{/if}
+								<a class="gate primary" href={resolve(action.href)}>
+									<span class="label">{action.label}</span>
+									<span class="blurb">{action.blurb}</span>
+								</a>
 							{/each}
 						</div>
 					{/if}
@@ -258,9 +249,6 @@
 	}
 
 	.actions {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 0.75rem;
 		margin-top: 1.15rem;
 		font-family: var(--font-ui);
 	}
@@ -270,6 +258,10 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 0.2rem;
+		box-sizing: border-box;
+		width: fit-content;
+		min-width: 14rem;
+		max-width: 100%;
 		min-height: 4.5rem;
 		padding: 0.85rem 1rem;
 		border: 1px solid var(--border);
@@ -286,10 +278,6 @@
 		color: var(--accent);
 	}
 
-	.gate.soon {
-		opacity: 0.72;
-	}
-
 	.label {
 		font-weight: 650;
 	}
@@ -302,16 +290,6 @@
 
 	.gate.primary:hover .blurb {
 		color: var(--accent);
-	}
-
-	.badge {
-		display: inline-block;
-		margin-right: 0.35rem;
-		color: var(--token);
-		font-size: 0.72rem;
-		font-weight: 650;
-		letter-spacing: 0.04em;
-		text-transform: uppercase;
 	}
 
 	.controls {
@@ -413,10 +391,6 @@
 		.controls {
 			gap: 0.06rem;
 			padding: 0.16rem 0 max(0.4rem, env(safe-area-inset-bottom, 0px));
-		}
-
-		.actions {
-			grid-template-columns: 1fr;
 		}
 
 		h1 {

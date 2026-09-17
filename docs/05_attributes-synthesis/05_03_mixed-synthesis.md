@@ -9,34 +9,34 @@ The same integration — physiology modulating anatomy — holds for mixed synth
 
 When one longing takes charge, two concrete states follow from the predispositions already named:
 
-- **Functionality Longing predisposes Imperdurability**: C≡L → (I≡ ^ I≢) = I≡.
-- **Perdurability Longing predisposes Dysfunctionality**: I≢L → (C≡ ^ C≢) = C≢.
+- **Functionality Longing predisposes Imperdurability**: <plain>C≡L → (I≡ ^ I≢) = I≡.</plain>
+- **Perdurability Longing predisposes Dysfunctionality**: <plain>I≢L → (C≡ ^ C≢) = C≢.</plain>
 
 So the two possible interstitial states are:
 
-- Imperdurable Functionality.
-- Perdurable Dysfunctionality.
+- Imperdurable <plain>Functionality</plain>.
+- Perdurable <plain>Dysfunctionality</plain>.
 
 The dilemma is then:
 
-- *Would you prefer a system that functions well and does not last? Or a system that lasts and works badly?*
+- *Would you prefer a <plain>system</plain> that functions well and does not last? Or a <plain>system</plain> that lasts and works badly?*
 
 In the abstract, that question can run for a long time. EIC is not allowed to stay abstract. Every development here has to be testable against the other inventive edifications. The two states already exist as structures in the world:
 
-1. A perdurable system that accepts dysfunctionality: C≢ ^ I≢.
-2. A functional system that accepts imperdurability: I≡ ^ C≡.
+1. A perdurable <plain>system that accepts dysfunctionality: C≢ ^ I≢.</plain>
+2. A functional <plain>system that accepts imperdurability: I≡ ^ C≡.</plain>
 
 For the first, return to the **empire**. Lesser nations have little say in what the emperor decides. Political representation is dysfunctional. For the emperor that dysfunction is not the problem, so long as the empire remains one. Forced **unification** keeps it perdurable, at the cost of function.
 
-For the second, a **presidential term**. Most nations refuse perpetual tenure at the top. Histories differ, but the reticence is shared: even a popular holder, whose governance still looks functional, is blocked from remaining. The system **reconciles** representation with what a society needs by accepting that the term will end.
+For the second, a **presidential term**. Most nations refuse perpetual tenure at the top. Histories differ, but the reticence is shared: even a popular holder, whose governance still looks functional, is blocked from remaining. The <plain>system</plain> **reconciles** representation with what a society needs by accepting that the term will end.
 
-The first choice is **Unification Synthesis**. The second is **Conciliation Synthesis**. Unification centralizes authority so the system may last, even at the cost of representation. Conciliation favors responsive representation, and takes the time-limit as part of renewal.
+The first choice is **Unification Synthesis**. The second is **Conciliation Synthesis**. Unification centralizes authority so the <plain>system</plain> may last, even at the cost of representation. Conciliation favors responsive representation, and takes the time-limit as part of renewal.
 
 | **MIXED SYNTHESIS** | **SYMBOLIC REPRESENTATION** |
 |---|---|
-| Unification Synthesis | (C≢ ^ I≢) → `{iD ≡ iO ≡ iR ≡ iE}` = uΣ |
-| Conciliation Synthesis | (I≡ ^ C≡) → `{iD ≡ iO ≡ iR ≡ iE}` = cΣ |
+| Unification Synthesis | <plain>(C≢ ^ I≢) →</plain> `{iD ≡ iO ≡ iR ≡ iE}` = uΣ |
+| Conciliation Synthesis | <plain>(I≡ ^ C≡) →</plain> `{iD ≡ iO ≡ iR ≡ iE}` = cΣ |
 
-The same cut shows up outside government. A company that will not replace its founder, even as the work has outgrown them, is unifying in order to last. A protocol that versions, forks, or sunsets a release so the next one can work is conciliating. A family that treats a custom as unamendable, versus one that lets a generation revise the custom and remain a family, is the same dilemma at a smaller scale.
+The same cut shows up outside government. A company that will not replace its founder, even as the work has outgrown them, is unifying in <plain>order</plain> to last. A protocol that versions, forks, or sunsets a release so the next one can work is conciliating. A family that treats a custom as unamendable, versus one that lets a generation revise the custom and remain a family, is the same dilemma at a smaller scale.
 
-Ethically, conciliation synthesis is the preferable model. The remaining problem is practical: *how do we live with its imperdurability?*
+Ethically, <plain>conciliation synthesis</plain> is the preferable model. The remaining problem is practical: *how do we live with its <plain>imperdurability</plain>?*

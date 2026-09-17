@@ -40,10 +40,10 @@ export const hubSeo: Record<string, Seo> = {
 		description:
 			'The treatise is self-contained. It still has to meet the literature it sits next to — without dissolving into it, and without walling itself off.'
 	},
-	'/cases': {
-		title: 'Cases — Lokapal',
+	'/edge': {
+		title: 'Edge EIC — Lokapal',
 		description:
-			'Government systems, applied with care — social organization at the national, supranational, and subnational level.'
+			'Further EIC, still in play. Core EIC is the floor; these leaves grow from one point on that trunk at a time.'
 	},
 	'/about': {
 		title: 'About — Lokapal',
@@ -55,7 +55,8 @@ export function errorSeo(status: number): Seo {
 	if (status === 404) {
 		return {
 			title: "This page isn't here — Lokapal",
-			description: "That address isn't a section, a chapter, a Dex entry, or a conversation.",
+			description:
+				"That address isn't a section, a chapter, a Dex entry, a conversation, or an Edge leaf.",
 			noindex: true
 		};
 	}
@@ -97,7 +98,7 @@ export function clampDescription(text: string, max = 200): string {
 }
 
 function pageName(title: string): string {
-	return title.replace(/\s+—\s+(Lokapal|Conciliatorics|EIC-Dex|In dialogue)$/, '');
+	return title.replace(/\s+—\s+(Lokapal|Conciliatorics|EIC-Dex|In dialogue|Edge EIC)$/, '');
 }
 
 type JsonLd = Record<string, unknown>;
@@ -158,7 +159,10 @@ export function jsonLd(pathname: string, seo: Seo): JsonLd {
 			isPartOf: { '@id': BOOK_ID },
 			author: { '@id': PERSON_ID }
 		});
-	} else if (pathname.startsWith('/dialogue/') && pathname !== '/dialogue/') {
+	} else if (
+		(pathname.startsWith('/dialogue/') && pathname !== '/dialogue/') ||
+		(pathname.startsWith('/edge/') && pathname !== '/edge/')
+	) {
 		graph.push({
 			'@type': 'Article',
 			headline: pageName(seo.title),

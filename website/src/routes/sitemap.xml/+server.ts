@@ -1,4 +1,5 @@
 import { loadDialogueConversations } from '$lib/server/dialogue';
+import { loadEdgeLeaves } from '$lib/server/edge';
 import { listChapters } from '$lib/server/chapters';
 import { loadDexById } from '$lib/server/library';
 import { SITE_ORIGIN } from '$lib/site';
@@ -17,11 +18,12 @@ export function GET() {
 		'/treatise',
 		'/dex',
 		'/dialogue',
-		'/cases',
+		'/edge',
 		'/about',
 		...listChapters().map((chapter) => `/${chapter.slug}`),
 		...Object.keys(loadDexById()).map((id) => `/dex/${encodeURIComponent(id)}`),
-		...loadDialogueConversations().map((row) => `/dialogue/${encodeURIComponent(row.id)}`)
+		...loadDialogueConversations().map((row) => `/dialogue/${encodeURIComponent(row.id)}`),
+		...loadEdgeLeaves().map((row) => `/edge/${encodeURIComponent(row.id)}`)
 	];
 
 	const body = `<?xml version="1.0" encoding="UTF-8"?>

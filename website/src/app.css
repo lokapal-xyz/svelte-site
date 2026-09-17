@@ -148,10 +148,16 @@ body:has(main.walk) .page-body {
 .dex .lede,
 .dialogue h1,
 .dialogue .lede,
+.edge h1,
+.edge .lede,
 .conversation .kicker,
 .conversation h1,
 .conversation .lede,
 .conversation .who,
+.leaf .kicker,
+.leaf h1,
+.leaf .lede,
+.leaf .status,
 .entry .kicker,
 .entry h1,
 .entry .kind,
@@ -162,6 +168,7 @@ main.walk {
 }
 
 .chapter > :not(.kicker):not(h1):not(.chapter-nav),
+.treatise .download,
 .treatise .toc,
 .section .body,
 .dex label,
@@ -170,12 +177,17 @@ main.walk {
 .dialogue .search,
 .dialogue .filter,
 .dialogue .index,
+.edge .how,
+.edge .key,
+.edge .index,
 .conversation .body,
+.leaf .body,
 .entry .definition,
 .entry .notes,
 .entry .graph,
 .entry .treatise,
 .conversation .foot,
+.leaf .foot,
 .error .gate {
 	animation: enter 700ms ease 400ms both;
 }
@@ -204,6 +216,7 @@ main.walk {
 	.home .gates,
 	.treatise h1,
 	.treatise .lede,
+	.treatise .download,
 	.treatise .toc,
 	.section h1,
 	.section .lede,
@@ -219,12 +232,23 @@ main.walk {
 	.dialogue .search,
 	.dialogue .filter,
 	.dialogue .index,
+	.edge h1,
+	.edge .lede,
+	.edge .how,
+	.edge .key,
+	.edge .index,
 	.conversation .kicker,
 	.conversation h1,
 	.conversation .lede,
 	.conversation .who,
 	.conversation .body,
 	.conversation .foot,
+	.leaf .kicker,
+	.leaf h1,
+	.leaf .lede,
+	.leaf .status,
+	.leaf .body,
+	.leaf .foot,
 	.entry .kicker,
 	.entry h1,
 	.entry .kind,
@@ -291,7 +315,8 @@ main.walk {
 }
 
 .chapter .kicker .sep,
-.conversation .kicker .sep {
+.conversation .kicker .sep,
+.leaf .kicker .sep {
 	margin: 0 0.4em;
 }
 
@@ -350,6 +375,74 @@ main.walk {
 	padding-left: 1.25rem;
 }
 
+.leaf {
+	width: min(var(--content), 100%);
+	min-width: 0;
+	margin: 1.5rem auto 0;
+}
+
+.leaf .kicker {
+	margin: 0 0 0.35rem;
+	color: var(--text-muted);
+	font-family: var(--font-ui);
+	font-size: 0.8rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.leaf .kicker a {
+	color: var(--link);
+}
+
+.leaf .kicker a:hover {
+	color: var(--link-hover);
+}
+
+.leaf h1 {
+	margin: 0 0 0.35rem;
+	font-size: 2.15rem;
+	line-height: 1.2;
+	font-weight: 650;
+}
+
+.leaf .lede {
+	margin: 0 0 1.25rem;
+	color: var(--text-muted);
+}
+
+.leaf .body :where(h2, h3, h4) {
+	line-height: 1.25;
+	font-weight: 650;
+}
+
+.leaf .body h2 {
+	margin: 2rem 0 0.75rem;
+	font-size: 1.4rem;
+}
+
+.leaf .body p,
+.leaf .body li {
+	margin: 0.85rem 0;
+}
+
+.leaf .body ul,
+.leaf .body ol {
+	padding-left: 1.25rem;
+}
+
+.leaf .body blockquote {
+	margin: 1.25rem 0;
+	padding: 0.15rem 0 0.15rem 1rem;
+	border-left: 3px solid var(--border);
+	color: var(--text-muted);
+}
+
+.leaf .body hr {
+	margin: 2rem 0;
+	border: 0;
+	border-top: 1px solid var(--border);
+}
+
 .chapter :where(h1, h2, h3, h4) {
 	line-height: 1.25;
 	font-weight: 650;
@@ -400,7 +493,8 @@ main.walk {
 	scrollbar-color: var(--border) transparent;
 }
 
-.chapter table {
+.chapter table,
+.leaf .body table {
 	width: 100%;
 	margin: 0;
 	border-collapse: collapse;
@@ -408,7 +502,9 @@ main.walk {
 }
 
 .chapter th,
-.chapter td {
+.chapter td,
+.leaf .body th,
+.leaf .body td {
 	padding: 0.45rem 0.55rem;
 	border: 1px solid var(--border);
 	text-align: left;
@@ -416,25 +512,31 @@ main.walk {
 }
 
 @media (max-width: 40rem) {
-	.chapter table {
+	.chapter table,
+	.leaf .body table {
 		width: max-content;
 		min-width: 100%;
 		font-size: 0.88rem;
 	}
 
 	.chapter th,
-	.chapter td {
+	.chapter td,
+	.leaf .body th,
+	.leaf .body td {
 		white-space: nowrap;
 	}
 }
 
 .chapter pre,
-.chapter code {
+.chapter code,
+.leaf .body pre,
+.leaf .body code {
 	font-family: ui-monospace, 'Cascadia Code', monospace;
 	font-size: 0.9em;
 }
 
-.chapter pre {
+.chapter pre,
+.leaf .body pre {
 	overflow: auto;
 	padding: 0.85rem 1rem;
 	border: 1px solid var(--border);
@@ -499,7 +601,7 @@ main.walk {
 }
 
 /* Quiet rooftop eave: token-colored wire + irregular beads on section
-   gates only (landing, About, 404, Start-here closing CTAs). Not a general
+   gates only (landing, About, 404, Start-here closing CTA). Not a general
    button treatment. Does not blink. */
 :is(.home .gates a, .error .gate, .section .gate, .walk .actions .gate) {
 	position: relative;
@@ -546,14 +648,14 @@ main.walk {
 	--eave-x: 1.8rem;
 }
 
+.section .gates .gate:nth-child(2)::before {
+	--eave-x: 3.4rem;
+}
+
 .error .gate::before {
 	--eave-x: 3.4rem;
 }
 
-.walk .actions .gate:nth-child(1)::before {
+.walk .actions .gate::before {
 	--eave-x: 2.7rem;
-}
-
-.walk .actions .gate:nth-child(2)::before {
-	--eave-x: 0.9rem;
 }

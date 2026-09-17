@@ -2,7 +2,7 @@
 
 *On doorways.*
 
-This book is the treatise of Conciliatorics. It is a working version, not a closed one: the core of the philosophical parcel is in place; other parcels, and further developments of this one, remain open on purpose. The argument begins in the next chapter. What follows here is only how to enter.
+This book is the treatise of Conciliatorics. It is a living document, not a closed one: the core of the philosophical parcel is in place; other parcels, and further developments of this one, remain open on purpose. The argument begins in the next chapter. What follows here is only how to enter.
 
 The text will not travel in prose alone. Compact notation, diagrams, and structured records will appear beside the discursive line, each doing a job the others cannot. None of that is ornament. A willing reader is assumed — someone already curious enough to step in. The book does not recruit.
 
