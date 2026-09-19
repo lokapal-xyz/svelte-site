@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import ChapterNav from '$lib/components/ChapterNav.svelte';
+	import PartEnd from '$lib/components/PartEnd.svelte';
 	import { getChapterComponent } from '$lib/treatise/modules';
 	import type { PageProps } from './$types';
 
@@ -11,6 +12,7 @@
 	const next = $derived(
 		index >= 0 && index < data.chapters.length - 1 ? data.chapters[index + 1] : null
 	);
+	const partEnds = $derived(!next || next.partDir !== data.chapter.partDir);
 </script>
 
 <article class="chapter">
@@ -20,6 +22,9 @@
 	</nav>
 	{#if Content}
 		<Content />
+	{/if}
+	{#if partEnds}
+		<PartEnd partTitle={data.chapter.partTitle} />
 	{/if}
 	<ChapterNav {prev} {next} />
 </article>

@@ -167,7 +167,7 @@ main.walk {
 	animation: enter 700ms ease both;
 }
 
-.chapter > :not(.kicker):not(h1):not(.chapter-nav),
+.chapter > :not(.kicker):not(h1):not(.chapter-nav):not(.part-end),
 .treatise .download,
 .treatise .toc,
 .section .body,
@@ -200,7 +200,8 @@ main.walk {
 	animation-delay: 0ms;
 }
 
-.chapter-nav {
+.chapter-nav,
+.part-end {
 	animation: enter 700ms ease 600ms both;
 }
 
@@ -208,8 +209,9 @@ main.walk {
 	.chapter .kicker,
 	.chapter h1,
 	.chapter h1 + p,
-	.chapter > :not(.kicker):not(h1):not(.chapter-nav),
+	.chapter > :not(.kicker):not(h1):not(.chapter-nav):not(.part-end),
 	.chapter-nav,
+	.part-end,
 	.home .emblem,
 	.home h1,
 	.home .lede,
