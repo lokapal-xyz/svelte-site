@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import io
 import os
 import shutil
@@ -12,6 +13,7 @@ import subprocess
 import sys
 import tarfile
 import urllib.request
+import zipfile
 from datetime import date
 from pathlib import Path
 
@@ -28,6 +30,31 @@ DEFAULT_OUT = WEBSITE_STATIC / "conciliatorics.pdf"
 TYPST_VERSION = "0.15.1"
 TYPST_ARCHIVE = "typst-x86_64-unknown-linux-musl.tar.xz"
 TYPST_URL = f"https://github.com/typst/typst/releases/download/v{TYPST_VERSION}/{TYPST_ARCHIVE}"
+
+# Colophon faces. Cached in book/.tools/fonts, which is not committed.
+PAGELLA_URL = (
+    "https://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella/"
+    "tg_pagella-otf-2_609-31_03_2026.zip"
+)
+PAGELLA_SHA256 = "1fa1284bf30aefa1885ec5ce6c26b24d160104b331b1978a85a2a8b3c781737d"
+PAGELLA_FILES = (
+    "texgyrepagella-regular.otf",
+    "texgyrepagella-italic.otf",
+    "texgyrepagella-bold.otf",
+    "texgyrepagella-bolditalic.otf",
+)
+LIBERTINE_URL = (
+    "https://downloads.sourceforge.net/project/linuxlibertine/linuxlibertine/"
+    "5.3.0/LinLibertineOTF_5.3.0_2012_07_02.tgz"
+)
+LIBERTINE_SHA256 = "3eb84d13e59d390a3f0b15f93bbb590de693dd5f29c4e8083317dbbadf6fb985"
+LIBERTINE_FILES = (
+    "LinLibertine_R.otf",
+    "LinLibertine_RI.otf",
+    "LinLibertine_RB.otf",
+    "LinLibertine_RBI.otf",
+    "LinLibertine_M.otf",
+)
 
 TITLE = "Conciliatorics"
 AUTHOR = "Lokapal"
@@ -90,6 +117,67 @@ def ensure_typst(tools: Path) -> Path:
         binary.write_bytes(extracted.read())
     binary.chmod(binary.stat().st_mode | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
     return binary
+
+
+def fetch_bytes(url: str, sha256: str, label: str) -> bytes:
+    print(f"Downloading {label}…")
+    request = urllib.request.Request(url, headers={"User-Agent": "curl/8.5.0"})
+    try:
+        with urllib.request.urlopen(request, timeout=120) as response:
+            data = response.read()
+    except OSError as exc:
+        raise SystemExit(f"Could not download {label}: {exc}") from exc
+    if hashlib.sha256(data).hexdigest() != sha256:
+        raise SystemExit(f"Checksum mismatch for {label}")
+    return data
+
+
+def keep_font(name: str) -> bool:
+    base = Path(name).name
+    if base.startswith("texgyrepagella-") and base.endswith(".otf"):
+        return True
+    if base.startswith("LinLibertine_") and base.endswith(".otf"):
+        return True
+    return base in {"OFL-1.1.txt", "LICENCE.txt", "GPL.txt"}
+
+
+def unpack_zip_fonts(data: bytes, dest: Path) -> None:
+    with zipfile.ZipFile(io.BytesIO(data)) as archive:
+        for info in archive.infolist():
+            if info.is_dir() or not keep_font(info.filename):
+                continue
+            (dest / Path(info.filename).name).write_bytes(archive.read(info))
+
+
+def unpack_tar_fonts(data: bytes, dest: Path) -> None:
+    with tarfile.open(fileobj=io.BytesIO(data), mode="r:gz") as archive:
+        for member in archive.getmembers():
+            if not member.isfile() or not keep_font(member.name):
+                continue
+            extracted = archive.extractfile(member)
+            if extracted is None:
+                raise SystemExit(f"Could not read {member.name} from font archive")
+            (dest / Path(member.name).name).write_bytes(extracted.read())
+
+
+def ensure_fonts(tools: Path) -> Path:
+    fonts = tools / "fonts"
+    ready = all((fonts / name).is_file() for name in (*PAGELLA_FILES, *LIBERTINE_FILES))
+    if ready:
+        return fonts
+    fonts.mkdir(parents=True, exist_ok=True)
+    if any(not (fonts / name).is_file() for name in PAGELLA_FILES):
+        unpack_zip_fonts(fetch_bytes(PAGELLA_URL, PAGELLA_SHA256, "TeX Gyre Pagella"), fonts)
+    if any(not (fonts / name).is_file() for name in LIBERTINE_FILES):
+        unpack_tar_fonts(fetch_bytes(LIBERTINE_URL, LIBERTINE_SHA256, "Linux Libertine"), fonts)
+    missing = [
+        name
+        for name in (*PAGELLA_FILES, *LIBERTINE_FILES)
+        if not (fonts / name).is_file()
+    ]
+    if missing:
+        raise SystemExit("Font archive did not contain: " + ", ".join(missing))
+    return fonts
 
 
 def list_chapters() -> list[tuple[str, Path]]:
@@ -168,8 +256,10 @@ def export_grain(dest: Path) -> None:
     image.save(dest)
 
 
-def compile_typst(typst: Path, main: Path, out: Path) -> None:
+def compile_typst(typst: Path, main: Path, out: Path, fonts: Path) -> None:
     cmd = [str(typst), "compile", "--root", str(BOOK)]
+    if fonts.is_dir():
+        cmd.extend(["--font-path", str(fonts)])
     for font in FONT_PATHS:
         if Path(font).exists():
             cmd.extend(["--font-path", font])
@@ -218,8 +308,9 @@ def main() -> None:
     write_main(build / "main.typ", generated, git)
 
     typst = ensure_typst(BOOK / ".tools")
+    fonts = ensure_fonts(BOOK / ".tools")
     print(f"Compiling with {typst}…")
-    compile_typst(typst, build / "main.typ", out)
+    compile_typst(typst, build / "main.typ", out, fonts)
     size = out.stat().st_size
     print(f"Wrote {out} ({size / 1024:.0f} KB)")
 
