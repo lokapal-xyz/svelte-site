@@ -5,6 +5,7 @@ import { mdsvex } from 'mdsvex';
 import { defineConfig } from 'vite';
 import { glossaryTokens } from './src/lib/mdsvex/glossary-tokens.ts';
 import { inlineDiagrams } from './src/lib/mdsvex/inline-diagrams.ts';
+import { moduleScript } from './src/lib/mdsvex/module-script.ts';
 import { wrapTables } from './src/lib/mdsvex/wrap-tables.ts';
 import { SITE_ORIGIN } from './src/lib/site.ts';
 
@@ -31,7 +32,8 @@ export default defineConfig({
 				mdsvex({
 					extensions: ['.svx', '.md'],
 					remarkPlugins: [glossaryTokens, inlineDiagrams, wrapTables]
-				})
+				}),
+				moduleScript()
 			],
 			extensions: ['.svelte', '.svx', '.md']
 		})

@@ -5,12 +5,12 @@ export type Section = {
 };
 
 export const sections: Section[] = [
-	{ href: '/start', label: 'Start here', blurb: 'A short walkthrough of the main ideas.' },
-	{ href: '/treatise', label: 'Treatise', blurb: 'The full text, with clickable terms.' },
+	{ href: '/start', label: 'Start here', blurb: 'A short walkthrough of Conciliatorics.' },
+	{ href: '/treatise', label: 'Treatise', blurb: 'The full text, with explainer panels.' },
 	{ href: '/dex', label: 'EIC-Dex', blurb: 'Trace Core EIC through the equation graph.' },
 	{ href: '/edge', label: 'Edge EIC', blurb: 'The EIC foliage, one leaf at a time.' },
 	{ href: '/dialogue', label: 'In dialogue', blurb: 'Contact with academic literature.' },
-	{ href: '/about', label: 'About', blurb: 'The project, and how to reach me.' }
+	{ href: '/about', label: 'About', blurb: 'The main project, and how to reach me.' }
 ];
 
 export function sectionIsActive(pathname: string, href: Section['href']): boolean {

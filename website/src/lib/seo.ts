@@ -28,12 +28,12 @@ export const hubSeo: Record<string, Seo> = {
 	},
 	'/treatise': {
 		title: 'Treatise — Lokapal',
-		description: 'The full text of Conciliatorics, with clickable terms and inlined diagrams.'
+		description: 'The full text of Conciliatorics, with explainer panels and inlined diagrams.'
 	},
 	'/dex': {
 		title: 'EIC-Dex — Lokapal',
 		description:
-			'The Core EIC equation graph — Parts 2–5. Walk a family to see how a concept is formed, what it bottoms out on, and what later concepts use it.'
+			'The Core EIC equation graph. Walk a family to see how a concept is formed, what it bottoms out on, and what later concepts use it.'
 	},
 	'/dialogue': {
 		title: 'In dialogue — Lokapal',
@@ -47,7 +47,7 @@ export const hubSeo: Record<string, Seo> = {
 	},
 	'/about': {
 		title: 'About — Lokapal',
-		description: 'Lokapal (Ricardo Pintos). Conciliatorics, a perspective within Systemics.'
+		description: 'Lokapal (Ricardo Pintos). Conciliatorics — a perspective within Systemics.'
 	}
 };
 

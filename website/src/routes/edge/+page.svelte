@@ -12,12 +12,12 @@
 <main class="edge">
 	<h1>Edge EIC</h1>
 	<p class="lede">
-		Core EIC is the floor — Attributes Dynamics through Status Reciprocity. Edge EIC grows from one
+		Core EIC is the main work — Attributes Dynamics through Status Reciprocity. Edge EIC grows from one
 		point on that trunk at a time, without waiting for a matching development elsewhere. These
 		leaves are younger than the core. They may be revised, renamed, or reworked.
 	</p>
 	<p class="how">
-		This is not a second treatise. Each leaf is further EIC method. Bloom is still Edge, not Core.
+		This is not a second treatise. Each leaf is further EIC method on the edge of Conciliatorics.
 	</p>
 
 	<ul class="key" aria-label="Status marks">

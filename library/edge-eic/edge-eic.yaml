@@ -18,3 +18,7 @@ trunks:
   - id: mixed-synthesis
     title: Mixed Synthesis
     chapter: 05_03_mixed-synthesis
+
+  - id: status-reciprocity
+    title: Status Reciprocity
+    chapter: 05_05_status-reciprocity

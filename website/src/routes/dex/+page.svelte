@@ -33,9 +33,8 @@
 <main class="dex">
 	<h1>EIC-Dex</h1>
 	<p class="lede">
-		The Core EIC equation graph — Parts 2–5. Walk a family to see how a concept is formed, what it
-		bottoms out on, and what later concepts use it. Definitions stay in the treatise; this page is
-		the connexions.
+		The Core EIC equation graph. Walk a family to see how a concept is formed, what it
+		bottoms out on, and what later concepts use it. Definitions stay in the treatise.
 	</p>
 
 	<label>

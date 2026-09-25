@@ -16,7 +16,8 @@
 
 	<h1 class="sr">Lokapal</h1>
 
-	<p class="lede">Conciliatorics, a perspective within Systemics.</p>
+	<p class="lede">Lokapal | Writing about systems.</p>
+	<p class="lede">Conciliatorics | A perspective within Systemics.</p>
 
 	<nav class="gates" aria-label="Sections" {@attach flock.attachGates}>
 		{#each sections as section (section.href)}

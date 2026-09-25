@@ -201,7 +201,7 @@ export const PANELS: Panel[] = [
 				kind: 'primary',
 				href: '/treatise',
 				label: 'Start reading the treatise',
-				blurb: 'The full text, with clickable terms.'
+				blurb: 'The full text, with explainer panels.'
 			}
 		]
 	}

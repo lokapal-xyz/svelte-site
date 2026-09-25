@@ -101,7 +101,7 @@
 
 	<h1>About</h1>
 	<p class="lede">
-		This site is the public home of Conciliatorics, a perspective within Systemics.
+		I'm a systems philosopher. This site is the public home of Conciliatorics, a perspective within Systemics.
 	</p>
 
 	<div class="body">
@@ -113,7 +113,7 @@
 		<nav class="gates" aria-label="The treatise">
 			<a class="gate" href={resolve('/start')}>
 				<span class="label">Start here</span>
-				<span class="blurb">A short walkthrough of the main ideas.</span>
+				<span class="blurb">A short walkthrough of Conciliatorics.</span>
 			</a>
 			<a class="gate" href={asset('/conciliatorics.pdf')} data-sveltekit-reload>
 				<span class="label">Treatise PDF</span>

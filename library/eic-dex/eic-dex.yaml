@@ -62,14 +62,14 @@ families:
     chapter: 02_05_attribute-jurisdiction
     blurb: >
       Stillness, Movement, Simultaneity, Successiveness. The Structure and Status
-      chains start here. Resolution, Operation, and the longings do not.
+      chains start here.
 
   - id: accentuations
     title: Structure Accentuations
     kicker: Attributes Structure
     chapter: 03_01_attribute-accentuation
     blurb: >
-      A temporary focus on one pole of a primary pair, without dismissing the other.
+      A temporary focus on one pole of a primary pair.
       The "pro-" prefix keeps the complement in view.
 
   - id: quadrants
@@ -94,7 +94,7 @@ families:
     chapter: 03_04_discernment
     blurb: >
       Local architecture. Veracity, Congruence, Appreciation, and Evaluation read as
-      intersections, but no operator equation is stated for them — they are terminals here.
+      intersections.
 
   - id: observation
     title: Observation
@@ -102,15 +102,14 @@ families:
     chapter: 03_05_observation
     blurb: >
       Local architecture. Assessment, Awareness, Relevance, and Concentration are
-      terminals the same way; Presence is their last concatenation.
+      terminals the same way.
 
   - id: resolution
     title: Resolution
     kicker: Attributes Structure
     chapter: 03_06_resolution
     blurb: >
-      Local primitives — Friction, Conflict, Chaos, Order — that the treatise never
-      derives from the primary attributes. Viability is the apex of this family.
+      Local primitives — Friction, Conflict, Chaos, Order — with Viability as the apex of this family.
 
   - id: operation
     title: Operation
@@ -118,7 +117,7 @@ families:
     chapter: 03_07_operation
     blurb: >
       Local primitives — Proceptivity, Receptivity, Fronterization, Permeability —
-      arranged as a compass. Identity and participation are the axes.
+      arranged as a compass.
 
   - id: concatenations
     title: Attribute Concatenation
@@ -126,7 +125,6 @@ families:
     chapter: 04_01_attribute-concatenation
     blurb: >
       Crossed primary pairs: Consistency, Impermanence, Balance, Imbalance.
-      Unlike Resolution and Operation, this chain does trace back to Q, M, Si, and Su.
 
   - id: dichotomies
     title: Status Dichotomies
@@ -134,7 +132,7 @@ families:
     chapter: 04_02_status-dichotomies
     blurb: >
       Accentuations of Consistency or Impermanence, concatenated with a symmetrical
-      or asymmetrical Balance/Imbalance status. The first value judgements in the graph.
+      or asymmetrical Balance/Imbalance status.
 
   - id: physiology
     title: Interstitial Physiology
@@ -142,7 +140,7 @@ families:
     chapter: 04_03_interstitial-physiology
     blurb: >
       Motivational primitives (the longings) modulate the dichotomies. Organic,
-      Instrumental, and Mixed physiology. The longings' origin equation is unstated.
+      Instrumental, and Mixed physiology.
 
   - id: synthesis
     title: Attributes Synthesis
@@ -150,8 +148,7 @@ families:
     chapter: 05_01_anatomy-and-physiology-integration
     blurb: >
       Physiology modulates the full anatomy set. Organic, Instrumental, and Mixed
-      Synthesis carry a longing in their roots; Unification and Conciliation do not —
-      they modulate via a dichotomy outcome directly.
+      Synthesis carry a longing in their roots.
 
 operators:
 
