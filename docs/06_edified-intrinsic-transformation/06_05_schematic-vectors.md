@@ -1,0 +1,23 @@
+# Schematic Vectors
+
+*On the direction of keeping.*
+
+Schematic Representation is named in Part 2, then left unused through the anatomy, the physiology, and the synthesis. Edified Intrinsic Transformation is where the fourth type becomes the working form. This parcel has to keep records, not only compose them. The other three representations stay in force: they are how an argument is made, how an equation is held, and how a structure is seen at a glance. The focus decides which way material may move once a record exists, without ranking the other three below the record. An AI is not a fit traveler on every one of those ways.
+
+- **SCHEMATIC VECTORS**: The three directions relative to a schematic record — supply, probe, and expound — together with the rule of which directions an AI may travel.
+
+For these definitions, and nowhere else, *non-schema* means anything that is not already the record. Unkept material counts: a statute, a policy, a situation nobody has yet placed. So do discursive, symbolic, and graphic representations, when they are not themselves the stored entry. The word states a direction. It is not a new representation type, and it does not rank the four.
+
+- **SUPPLY VECTOR**: Non-schema to schema. An intervener commits a placement into a schematic record — this jurisdiction, this pair, this side. Closed to AI.
+- **PROBE VECTOR**: Schema to schema. A supplied record is tested against its own fields, against the equations, or against other supplied records. Open to AI.
+- **EXPOUND VECTOR**: Schema to non-schema. A supplied record is set forth as prose, notation, or a diagram. Open to AI.
+
+Supply is closed because the placement is Contemplation. Deciding that a given policy is a matter of Permeability and Fronterization, and characterizing where it sits on each, is a judgement the intervener stands behind and may later revise. It may be bounded or non-bounded. Either way it is a commitment the status equations can take as material: a longing predisposes a pole, and the Incompatibility Axiom forbids a pair. An AI that fills those cells has authored the reading. A probability over the options is not a milder form of that result. It names no intervener, and a predisposition cannot take it as a subject. Writing the record directly, with no other representation in between, is still supply. What is closed is authorship of the judgement in the fields, not the format the material happened to arrive in.
+
+Probe is the use of a library after someone has supplied it. A mandatory pair left half-filled, a symbol used two ways, a count of accepted readings that share a jurisdiction, a record that affirms both Functionality and Perdurability: the object of the test is the record. Comparative and statistical results describe judgements already made. They are not a new placement. If a probe writes a case, it has become supply, and it closes. The derivation engine named under AI Assistance, should one ever be built, is a probe. It would test a completed reading against equations the intervener already accepts. It would not decide the reading.
+
+Expound runs outward only. The compact record stays the source of truth. Notation and a diagram are projected from the fields and from the glossary, so the way out does not invent an operator or a cardinal. Prose may be drafted, because prose is where an argument is followed, and a reader can tell when a sentence has leaned on a word the record did not contain. Recovering fields from the rendering would be supply, arrived at by another door.
+
+The closed vector is easy to miss when a tool's output already has the shape of a record. Jev, a model released in 2026 by TypeSafe AI, is the case in view. The caller passes it a block of text, or a piece of structured state, and a set of questions whose allowed answers were declared ahead of time. Jev returns, for each question, a selected option, a rating, or a probability, in a single pass, and it returns no prose. Declaring the allowed answers can look like the careful half of supply: a person stating the options. The selection among them is the judgement. For a placement, that selection is not clerical work performed after the judgement was made. Jev does not start from a record an intervener has supplied, so it is not probing one record against another, and it writes nothing, so it is not expounding. It supplies. That the result is fast, or that a malformed sentence cannot appear in it, does not change the vector.
+
+The rule stops there. It does not fill a case library, and it does not promise the checks that library will want. It says which way a tool may face the records on the day they exist.

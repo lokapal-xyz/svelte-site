@@ -481,10 +481,11 @@ terms:
       library — of definitions, symbols, or worked case studies — without collapsing into
       disorder as it grows. Also the representation type most directly legible to AI systems,
       which makes it the natural interface for AI assistance with the material.
-    related: [representation-type, ai-assistance, yaml-library]
+    related: [representation-type, ai-assistance, yaml-library, schematic-vectors]
     notes: >
       Storage/accumulation is the primary rationale for this representation type; its
       AI-legibility is a secondary, compounding benefit rather than the reason it exists.
+      What an AI may do with that legibility is bounded by schematic-vectors.
 
   # ---------------------------------------------------------------------------
   # PART 3 — ATTRIBUTES STRUCTURE (interstitial anatomy)
@@ -1376,12 +1377,16 @@ terms:
     notes: >
       Interpretive judgment — deciding which jurisdiction, pair, and attributes a real-world
       case falls under — remains Contemplation, and is not performed by an AI or automated
-      away; assistance operates only on judgment a human has already supplied. A derivation
-      engine (a program that mechanically checks/derives conclusions from a completed schematic
-      reading) is named as a possible future direction, not a built or promised capability.
+      away; assistance operates only on judgment a human has already supplied. The analyst
+      writes that placement into the record. Setting a record forth in another representation
+      does not run back into the record. Which directions an AI may travel is developed under
+      schematic-vectors. A derivation engine (a program that mechanically checks/derives
+      conclusions from a completed schematic reading) is named as a possible future direction,
+      not a built or promised capability; if built, it would be a probe, not a placement.
       Originally introduced in Attributes Synthesis (Part 5); relocated to Part 6 once EIT
       became its own developed parcel.
-    related: [schematic-representation, contemplation, yaml-library, systemic-diplomacy]
+    related: [schematic-representation, contemplation, yaml-library, systemic-diplomacy,
+              schematic-vectors]
 
   - id: yaml-library
     term: YAML Library
@@ -1418,4 +1423,57 @@ terms:
       original (pre-Sigma) Conciliation Synthesis symbol — an error invisible from within
       either chapter alone. Intended as a template for future YAML Library instances (see
       yaml-library) rather than a singular, closed artifact.
-    related: [yaml-library, schematic-representation, ai-assistance]
+    related: [yaml-library, schematic-representation, ai-assistance, schematic-vectors]
+
+  - id: schematic-vectors
+    term: Schematic Vectors
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      The three directions relative to a schematic record — Supply Vector,
+      Probe Vector, and Expound Vector — together with the rule of which directions an AI
+      may travel. Supply is closed to AI. Probe and Expound are open.
+    notes: >
+      Inside these definitions only, "non-schema" means anything that is not already the
+      record: unkept material, or a discursive, symbolic, or graphic representation that is
+      not itself the stored entry. It is a directional convenience, not a fifth representation
+      type, and not a ranking of the four.
+    related: [supply-vector, probe-vector, expound-vector, schematic-representation,
+              ai-assistance]
+
+  - id: supply-vector
+    term: Supply Vector
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      Non-schema to schema. An intervener commits a placement into a schematic record —
+      a jurisdiction, a pair, a side. Closed to AI, because the placement is Contemplation.
+    notes: >
+      A probability over options is not a placement: it names no intervener, and a status
+      equation cannot take it as material. Writing the record directly, with no other
+      representation in between, is still supply. What is closed is authorship of the
+      judgement in the fields.
+    related: [schematic-vectors, contemplation, judgement, schematic-representation]
+
+  - id: probe-vector
+    term: Probe Vector
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      Schema to schema. A supplied record is tested against its own fields, against the
+      equations, or against other supplied records. Open to AI.
+    notes: >
+      The object of a probe is the record, not the situation. Comparative and statistical
+      results describe judgements already made; they are not a new placement. A probe that
+      writes a case has become supply. A derivation engine, if one is ever built, would be
+      a probe.
+    related: [schematic-vectors, ai-assistance, incompatibility-axiom, supply-vector]
+
+  - id: expound-vector
+    term: Expound Vector
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      Schema to non-schema. A supplied record is set forth as prose, notation, or a diagram.
+      Open to AI. The record remains the source of truth.
+    notes: >
+      Outward only. Notation and diagrams are projected from the fields and the glossary;
+      prose may be drafted. Recovering fields from the rendering would be supply.
+    related: [schematic-vectors, schematic-representation, discursive-representation,
+              symbolic-representation, graphic-representation, supply-vector]

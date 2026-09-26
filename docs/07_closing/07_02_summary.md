@@ -122,6 +122,7 @@ EIT exists so EIC is not only tested against invented examples. The intended EIC
 
 Developed so far:
 
-- **AI Assistance** — <plain>consistency</plain> checks, schematic case records, translation between representations, pattern search. <plain>Judgement</plain> (which pair a real case falls under) stays Contemplation; AI does not cross that line
+- **AI Assistance** — <plain>consistency</plain> checks, pattern search across records already written, and setting a record forth in the other representations. <plain>Judgement</plain> (which pair a real case falls under) stays Contemplation; the analyst writes the placement
 - **YAML Library** — the schematic pattern, YAML chosen so both humans and AIs can read it natively
 - **YAML Glossary** — first built instance of that library; template for later instances (case library, diagram metadata, knowledge graph, operator grammar — those last ones are named, not built)
+- **Schematic Vectors** — supply (into the record; closed to AI), probe (testing records against records or equations; open), expound (out into the other representations; open, and not a route back)
