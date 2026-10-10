@@ -28,7 +28,7 @@ export const PANELS: Panel[] = [
 		title: 'A perspective inside Systemics',
 		paragraphs: [
 			'The analytical study of systems has many homes — mathematics, cybernetics, ecology, philosophy among them — and no settled agreement about whether they should be forced into one science. Conciliatorics does not try to settle that. It assumes a meta-discipline, Systemics, that can contain those perspectives without demanding they merge.',
-			"Inside that container, Conciliatorics is a perspective that seeks to reconcile the inventive aspects of systemic intervention: the work of a member who tries to influence a system's behavior by first working on its medium.",
+			'Inside that container, Conciliatorics is a perspective that aims to reconcile the ways we approach systems.',
 			'What follows is a map of the load-bearing joints of that perspective. It is not a summary of the treatise, and it is not a sequence of independent insights. Each idea is a signpost in one analytical synthesis. The treatise remains the argument.'
 		]
 	},

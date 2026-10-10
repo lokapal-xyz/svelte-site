@@ -8,7 +8,7 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **SYSTEMICS**: A meta-discipline that groups different perspectives on the study of systems.
 
-- **CONCILIATORICS**: A perspective within Systemics that seeks to reconcile the inventive aspect of Systemic Intervention.
+- **CONCILIATORICS**: A perspective within Systemics that aims to reconcile the ways we approach systems.
 
 ---
 
@@ -359,17 +359,17 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **SYSTEMIC DIPLOMACY**: A jurisdiction's <plain>awareness</plain> of its own distinct role, cultivating healthy <plain>interaction</plain> with neighboring jurisdictions rather than isolating itself (dissociation) or merging into them (dissolution).
 
-- **AI ASSISTANCE**: The use of AI systems to support work with Conciliatorics — maintaining terminological and notational <plain>consistency</plain>, traversing an accumulated case library for patterns across cases, and setting a schematic record forth in the other representation types. Interpretive <plain>judgement</plain> — deciding which jurisdiction, pair, and attributes a real case falls under — remains Contemplation. The analyst writes that placement. The outward account does not run back into the record.
+- **AI ASSISTANCE**: The use of AI systems to support work with Conciliatorics. What that support can do is graded by readiness. The interpretive step remains Contemplation, and remains with the intervener.
+
+- **SCHEMATIC VECTORS**: The three directions relative to a schematic record — supply, probe, and expound — together with the rule of which directions an AI tool may travel. Supply is closed to AI tools. Probe and expound are open.
+
+- **SUPPLY VECTOR**: Non-schema to schema. The user commits a placement into a schematic record. Closed to AI tools, because the fields are a commitment the user stands behind.
+
+- **PROBE VECTOR**: Schema to schema. A supplied record is tested against its own fields, against the equations, or against other supplied records. Open to AI tools. The object of the test is a record already committed. A probe that writes a case has become supply.
+
+- **EXPOUND VECTOR**: Schema to non-schema. A supplied record is set forth as prose, notation, or a diagram. Open to AI tools. The record stays the source of truth, and the rendering is not a route back.
 
 - **YAML LIBRARY**: A structured, growing set of schematic entries—sharing a consistent set of fields and cross-referenced by stable identifiers—that accumulates instances of some kind (definitions, symbols, cases, relationships) into something that stays organized as it grows.
 
 - **YAML GLOSSARY**: The first built instance of a YAML Library; holds every defined term and symbol as a single set of structured, cross-referenced records. The schematic working source; these Part 7 lists remain the old-school reference.
-
-- **SCHEMATIC VECTORS**: The three directions relative to a schematic record — supply, probe, and expound — together with the rule of which directions an AI may travel. Supply is closed to AI. Probe and expound are open.
-
-- **SUPPLY VECTOR**: Non-schema to schema. An intervener commits a placement into a schematic record. Closed to AI, because the placement is Contemplation. A probability over options is not a placement.
-
-- **PROBE VECTOR**: Schema to schema. A supplied record is tested against its own fields, against the equations, or against other supplied records. Open to AI. The object of the test is the record. A probe that writes a case has become supply.
-
-- **EXPOUND VECTOR**: Schema to non-schema. A supplied record is set forth as prose, notation, or a diagram. Open to AI. The record stays the source of truth, and the rendering is not a route back.
 

@@ -19,7 +19,9 @@ With that in mind, we define the following:
 
 This <plain>meta-discipline</plain> prepares the foundation for our main topic: <plain>Conciliatorics</plain>.
 
-- **CONCILIATORICS**: A perspective within <plain>Systemics</plain> that seeks to reconcile the inventive aspects of <plain>Systemic Intervention</plain>.
+- **CONCILIATORICS**: A perspective within <plain>Systemics</plain> that aims to reconcile the ways we approach systems.
+
+Those ways are how we interact with systems. Reconciling the ways we theorize about systems is a different task.
 
 <plain>Conciliatorics</plain> is the container perspective: any concept used here has its proper analytical context. <plain>Systemics</plain> is the <plain>meta-discipline</plain>: concepts and ideas implemented here can coexist with other systems perspectives without the need for conceptual consolidation. We are not trying to absorb cybernetics, ecology, or mathematics into one vocabulary.
 

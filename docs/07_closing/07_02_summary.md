@@ -6,7 +6,7 @@ A map of the joints, after the road. Not a substitute for the chapters, and not 
 
 ## What this is
 
-**Conciliatorics** is a perspective inside **Systemics**: it tries to reconcile the inventive side of intervening in systems. The starting model is **Behavior Dynamics** — one phenomenon (**Behavior**: members transforming a <plain>medium</plain>) and three entities (**System**, **Member**, **Medium**).
+**Conciliatorics** is a perspective inside **Systemics**: it aims to reconcile the ways we approach systems. The starting model is **Behavior Dynamics** — one phenomenon (**Behavior**: members transforming a <plain>medium</plain>) and three entities (**System**, **Member**, **Medium**).
 
 From there the treatise builds a four-parcel grid (method × focus):
 
@@ -122,7 +122,7 @@ EIT exists so EIC is not only tested against invented examples. The intended EIC
 
 Developed so far:
 
-- **AI Assistance** — <plain>consistency</plain> checks, pattern search across records already written, and setting a record forth in the other representations. <plain>Judgement</plain> (which pair a real case falls under) stays Contemplation; the analyst writes the placement
+- **AI Assistance** — graded by readiness (validated <plain>consistency</plain> work, derived case-record checks, theoretical derivation). Interpretive <plain>judgement</plain> stays with the intervener, and a later stage of readiness does not lift that limit
+- **Schematic Vectors** — supply (into the record; the user commits the placement; closed to AI tools), probe (testing records already committed; open), expound (out into the other representations; open, and not a route back)
 - **YAML Library** — the schematic pattern, YAML chosen so both humans and AIs can read it natively
 - **YAML Glossary** — first built instance of that library; template for later instances (case library, diagram metadata, knowledge graph, operator grammar — those last ones are named, not built)
-- **Schematic Vectors** — supply (into the record; closed to AI), probe (testing records against records or equations; open), expound (out into the other representations; open, and not a route back)
