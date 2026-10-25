@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="47.448772mm" height="65.02758mm"
+     viewBox="0 0 47.448772 65.02758"
+     version="1.1"
+     role="img"
+     aria-label="Resolution diagram">
+  <title>Resolution</title>
+
+  <rect x="0" y="0" width="47.45" height="65.03" fill="#171719" stroke="none"/>
+
+  <g id="layer1" transform="translate(-2.7307356,-2.7307356)">
+    <path d="M 10.188,30.994 V 24.642" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="10.188,22.522 11.238,24.722 9.138,24.722" fill="#cfcfcf" stroke="none"/>
+    <path d="M 43.711,31.073 V 24.721" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="43.711,22.601 44.761,24.801 42.661,24.801" fill="#cfcfcf" stroke="none"/>
+    <path d="M 26.928,48.236 V 43.172" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="26.928,41.052 27.978,43.252 25.878,43.252" fill="#cfcfcf" stroke="none"/>
+    <path d="M 14.593,18.469 H 20.171" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="22.291,18.469 20.091,19.519 20.091,17.419" fill="#cfcfcf" stroke="none"/>
+    <path d="M 39.215,18.5 H 33.69" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="31.57,18.5 33.77,17.45 33.77,19.55" fill="#cfcfcf" stroke="none"/>
+    <path d="M 39.215,52.316 H 33.69" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="31.57,52.316 33.77,51.266 33.77,53.366" fill="#cfcfcf" stroke="none"/>
+    <path d="M 14.593,52.309 H 20.171" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="22.291,52.309 20.091,53.359 20.091,51.259" fill="#cfcfcf" stroke="none"/>
+    <path d="M 10.188,39.35 V 45.734" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="10.188,47.854 9.138,45.654 11.238,45.654" fill="#cfcfcf" stroke="none"/>
+    <path d="M 26.949,22.379 V 27.417" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="26.949,29.537 25.899,27.337 27.999,27.337" fill="#cfcfcf" stroke="none"/>
+    <path d="M 43.668,39.271 V 45.655" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="43.668,47.775 42.618,45.575 44.718,45.575" fill="#cfcfcf" stroke="none"/>
+    <path d="M 23.835,62.545 L 14.246,58.814" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="12.27,58.045 14.701,57.864 13.94,59.821" fill="#cfcfcf" stroke="none"/>
+    <path d="M 30.149,62.527 L 39.178,58.391" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="41.105,57.508 39.542,59.379 38.668,57.47" fill="#cfcfcf" stroke="none"/>
+    <path d="M 23.723,8.181 L 14.913,13.472" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="13.096,14.564 14.441,12.531 15.523,14.331" fill="#cfcfcf" stroke="none"/>
+    <path d="M 30.149,8.181 L 39.245,13.157" fill="none" stroke="#cfcfcf" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="round"/>
+    <polygon points="41.105,14.174 38.671,14.039 39.679,12.197" fill="#cfcfcf" stroke="none"/>
+
+    <rect x="23.7225" y="4.9684105" width="6.4263797" height="6.4260001"
+          fill="none" stroke="#ffffff" stroke-width="0.6"/>
+    <rect x="23.723" y="59.313908" width="6.4263797" height="6.4260001"
+          fill="none" stroke="#ffffff" stroke-width="0.6"/>
+    <rect x="6.0154662" y="30.994177" width="8.3444557" height="8.3556948"
+          fill="none" stroke="#ffffff" stroke-width="0.6"/>
+    <rect x="39.538845" y="30.994177" width="8.3444557" height="8.3556948"
+          fill="none" stroke="#ffffff" stroke-width="0.6"/>
+    <ellipse cx="26.720545" cy="35.171738" rx="4.1825752" ry="4.1855378"
+             fill="none" stroke="#ffffff" stroke-width="0.6"/>
+
+    <g data-id="friction">
+    <text x="26.084219" y="10.009316"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444444" stroke="none">f</text>
+    </g>
+    <g data-id="potential">
+    <text x="8.6578341" y="19.757666"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="6.35" stroke="none">π</text>
+    </g>
+    <g data-id="temperance">
+    <text x="25.95985" y="19.757666"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="6.35" stroke="none">τ</text>
+    </g>
+    <g data-id="stability">
+    <text x="42.515396" y="19.803486"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="6.35" stroke="none">ε</text>
+    </g>
+    <g data-id="chaos">
+    <text x="6.9398913" y="36.999996"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Ch</text>
+    </g>
+    <g data-id="viability">
+    <text x="24.845459" y="37.193703"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">V</text>
+    </g>
+    <g data-id="order">
+    <text x="40.738537" y="36.92765"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">Or</text>
+    </g>
+    <g data-id="suffering">
+    <text x="10.049431" y="54.213692"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444444" stroke="none">ſ</text>
+    </g>
+    <g data-id="sacrifice">
+    <text x="25.396259" y="54.213558"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">ß</text>
+    </g>
+    <g data-id="satisfaction">
+    <text x="41.947643" y="53.299156"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444" stroke="none">ʒ</text>
+    </g>
+    <g data-id="conflict">
+    <text x="25.515774" y="64.37899"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="5.64444444" stroke="none">k</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 9 493.72 158"
+     width="493.72" height="158"
+     role="img"
+     aria-label="BEHAVIOR DYNAMICS flowchart">
+  <title>BEHAVIOR DYNAMICS</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="9" width="493.72" height="158" fill="#171719" stroke="none"/>
+
+  <text x="246.86" y="25"
+        fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+        font-size="14" font-weight="700" text-anchor="middle">BEHAVIOR DYNAMICS</text>
+
+  <path d="M95.0258 98.6221L122.4931 89.0161Q146.8438 80.5 172.6406 80.5L198.4375 80.5"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M293.1875 80.5L318.9844 80.5Q344.7812 80.5 369.1601 88.9351L396.5949 98.4276"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M396.5949 130.5724L370.6881 139.5362Q344.7812 148.5 317.3675 148.5L245.8125 148.5L174.2915 148.5Q146.8438 148.5 120.9348 139.4389L95.0258 130.3779"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <g id="edgelabel-AB">
+    <rect x="116.25" y="70" width="61.19" height="21" rx="4" ry="4"
+          fill="#2a2a2c" stroke="none"/>
+    <text x="146.84" y="84.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">behavior</text>
+  </g>
+
+  <g id="edgelabel-BC">
+    <rect x="314.19" y="70" width="61.19" height="21" rx="4" ry="4"
+          fill="#2a2a2c" stroke="none"/>
+    <text x="344.78" y="84.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">behavior</text>
+  </g>
+
+  <g id="edgelabel-CA">
+    <rect x="215.22" y="138" width="61.19" height="21" rx="4" ry="4"
+          fill="#2a2a2c" stroke="none"/>
+    <text x="245.81" y="152.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">behavior</text>
+  </g>
+
+  <g id="node-A">
+    <rect x="8" y="92" width="83.25" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="49.62" y="119.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">System</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="202.44" y="58" width="86.75" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="245.81" y="85.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Member</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="400.38" y="92" width="85.34" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="443.05" y="119.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Medium</text>
+  </g>
+
+</svg>

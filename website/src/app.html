@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="text-scale" content="scale" />
+		<script>
+			try {
+				history.scrollRestoration = 'manual';
+			} catch {}
+			var skipHide = false;
+			function hidePageBody() {
+				if (skipHide) return;
+				document.documentElement.classList.add('unloading');
+			}
+			function showPageBody() {
+				document.documentElement.classList.remove('unloading');
+			}
+			addEventListener(
+				'click',
+				function (e) {
+					var t = e.target;
+					if (!t || !t.closest) return;
+					var a = t.closest('a');
+					if (!a) return;
+					var href = a.getAttribute('href') || '';
+					if (/^(mailto|tel|sms):/i.test(href)) {
+						skipHide = true;
+						setTimeout(function () {
+							skipHide = false;
+						}, 0);
+					}
+				},
+				true
+			);
+			addEventListener('beforeunload', hidePageBody);
+			addEventListener('pagehide', hidePageBody);
+			addEventListener('pageshow', showPageBody);
+			addEventListener('focus', showPageBody);
+			document.addEventListener('visibilitychange', function () {
+				if (document.visibilityState === 'visible') showPageBody();
+			});
+		</script>
+		<style>
+			html.unloading .page-body,
+			html.unloading .flock {
+				visibility: hidden;
+				opacity: 0;
+			}
+			.page-body {
+				opacity: 0;
+			}
+		</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" class="dark">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

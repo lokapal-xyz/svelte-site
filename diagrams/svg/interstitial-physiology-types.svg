@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 9 737.23 293"
+     width="737.23" height="293"
+     role="img"
+     aria-label="INTERSTITIAL PHYSIOLOGY TYPES flowchart">
+  <title>INTERSTITIAL PHYSIOLOGY TYPES</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="9" width="737.23" height="293" fill="#171719" stroke="none"/>
+
+  <text x="368.62" y="25"
+        fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+        font-size="14" font-weight="700" text-anchor="middle">INTERSTITIAL PHYSIOLOGY TYPES</text>
+
+  <path d="M191.2734 91L216.7656 91L237.7656 91"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M191.7656 261L216.7656 261L237.7656 261"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M473.7656 82.773L486.2656 81.8865Q498.7656 81 511.297 81L540.3438 81"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M455.7235 124L477.2446 131.25Q498.7656 138.5 520.5554 144.897L546.1776 152.4191"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M455.7235 228L477.2446 220.75Q498.7656 213.5 520.5554 207.103L546.1776 199.5809"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M473.7656 269.227L488.2919 270.2572Q498.7656 271 509.2656 271L519.7656 271"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A" data-id="perdurability-longing">
+    <rect x="8.49" y="68.5" width="182.78" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="99.88" y="96"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Perdurability Longing</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="241.77" y="58" width="232" height="66" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="357.77" y="83"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-style="italic" text-anchor="middle">Imperdurable / Perdurable</text>
+    <text x="357.77" y="101"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-style="italic" text-anchor="middle">Dichotomy</text>
+  </g>
+
+  <g id="node-C" data-id="functionality-longing">
+    <rect x="8" y="238.5" width="183.77" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="99.88" y="266"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Functionality Longing</text>
+  </g>
+
+  <g id="node-D">
+    <rect x="241.77" y="228" width="232" height="66" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="357.77" y="253"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-style="italic" text-anchor="middle">Functional / Dysfunctional</text>
+    <text x="357.77" y="271"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-style="italic" text-anchor="middle">Dichotomy</text>
+  </g>
+
+  <g id="node-E" data-id="organic-physiology">
+    <rect x="544.34" y="58.5" width="164.31" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="626.5" y="86"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Organic Physiology</text>
+  </g>
+
+  <g id="node-F" data-id="mixed-physiology">
+    <rect x="550.02" y="153.5" width="152.97" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="626.5" y="181"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Mixed Physiology</text>
+  </g>
+
+  <g id="node-G" data-id="instrumental-physiology">
+    <rect x="523.77" y="248.5" width="205.47" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="626.5" y="276"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Instrumental Physiology</text>
+  </g>
+
+</svg>

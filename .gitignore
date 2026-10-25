@@ -1,0 +1,16 @@
+# Whitelist approach: ignore everything at the repo root by default,
+# then explicitly un-ignore what's meant to be tracked: the treatise
+# content (docs/, diagrams/), the YAML libraries (library/), and the
+# website (website/ — its SvelteKit app needs to be trackable for
+# git push -> Vercel to build from). Everything else (design-refs/,
+# including raster snapshots in design-refs/png/, misc/, .claude/, etc.)
+# stays local-only.
+/*
+
+!docs/
+!diagrams/
+!library/
+!website/
+!book/
+!.gitignore
+!README.md

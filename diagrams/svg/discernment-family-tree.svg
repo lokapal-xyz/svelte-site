@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 9 868.38 387"
+     width="868.38" height="387"
+     role="img"
+     aria-label="DISCERNMENT FAMILY TREE flowchart">
+  <title>DISCERNMENT FAMILY TREE</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="9" width="868.38" height="387" fill="#171719" stroke="none"/>
+
+  <text x="434.19" y="25"
+        fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+        font-size="14" font-weight="700" text-anchor="middle">DISCERNMENT FAMILY TREE</text>
+
+  <path d="M370.8281 93.8054L216.9285 126.3569Q209.1602 128 209.1602 135.9402L209.1602 149"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M496.6406 93.4497L656.7253 126.4044Q664.4766 128 664.4766 135.9138L664.4766 149"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M154.2383 193.5808L72.9765 220.3329Q64.875 223 64.875 231.5293L64.875 244"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M264.082 193.5808L345.3438 220.3329Q353.4453 223 353.4453 231.5293L353.4453 244"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M605.7031 195.7128L534.4994 220.2005Q526.3594 223 526.3594 231.608L526.3594 244"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M723.25 195.7128L794.4537 220.2005Q802.5938 223 802.5938 231.608L802.5938 244"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M60.1382 293L57.0381 307.7252Q54.875 318 54.875 328.5L54.875 339"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M101.11 293L124.8008 307.7107Q141.3711 318 157.2426 329.3375L173.1142 340.675"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M316.5979 293L292.5402 307.6903Q275.6562 318 259.4549 329.3523L243.2536 340.7046"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M358.1822 293L361.2822 307.7252Q363.4453 318 363.4453 328.5L363.4453 339"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M521.6225 293L518.5225 307.7252Q516.3594 318 516.3594 328.5L516.3594 339"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M562.1114 293L585.5123 307.727Q601.8359 318 617.4477 329.3256L633.0595 340.6512"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M768.185 293L745.5938 307.7725Q729.9531 318 715.0624 329.2916L700.1716 340.5831"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M807.3306 293L810.4306 307.7252Q812.5938 318 812.5938 328.5L812.5938 339"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A" data-id="discernment">
+    <rect x="370.83" y="58" width="125.81" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="433.73" y="85.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">DISCERNMENT</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="154.24" y="153" width="109.84" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="209.16" y="180.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Objectivity</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="605.7" y="153" width="117.55" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="664.48" y="180.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Subjectivity</text>
+  </g>
+
+  <g id="node-D" data-id="veracity">
+    <rect x="19.54" y="248" width="90.67" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="64.88" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Veracity</text>
+  </g>
+
+  <g id="node-E" data-id="congruence">
+    <rect x="297.2" y="248" width="112.5" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="353.45" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Congruence</text>
+  </g>
+
+  <g id="node-F" data-id="appreciation">
+    <rect x="465.98" y="248" width="120.77" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="526.36" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Appreciation</text>
+  </g>
+
+  <g id="node-G" data-id="evaluation">
+    <rect x="749.84" y="248" width="105.5" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="802.59" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Evaluation</text>
+  </g>
+
+  <g id="node-H" data-id="property">
+    <rect x="8" y="343" width="93.75" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="54.88" y="370.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Property</text>
+  </g>
+
+  <g id="node-I" data-id="interaction">
+    <rect x="151.75" y="343" width="112.23" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="207.87" y="370.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Interaction</text>
+  </g>
+
+  <g id="node-J" data-id="formation">
+    <rect x="307.45" y="343" width="112" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="363.45" y="370.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Formation</text>
+  </g>
+
+  <g id="node-K" data-id="preference">
+    <rect x="462.91" y="343" width="106.91" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="516.36" y="370.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Preference</text>
+  </g>
+
+  <g id="node-L" data-id="criterion">
+    <rect x="619.81" y="343" width="95" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="667.31" y="370.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Criterion</text>
+  </g>
+
+  <g id="node-M" data-id="standard">
+    <rect x="764.81" y="343" width="95.56" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="812.59" y="370.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Standard</text>
+  </g>
+
+</svg>

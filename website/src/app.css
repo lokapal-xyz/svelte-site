@@ -1,0 +1,583 @@
+:root {
+	color-scheme: dark;
+	--bg: #171719;
+	--bg-raised: #222226;
+	--bg-panel: #2a2a30;
+	--bg-inset: color-mix(in srgb, var(--bg-raised) 38%, transparent);
+	--text: #e6e6e6;
+	--text-muted: #a3a3a8;
+	--token: #c4a574;
+	--token-hover: #e0c394;
+	--link: var(--token);
+	--link-hover: var(--token-hover);
+	--accent: #7aa2d4;
+	--border: #3a3a40;
+	--font-body: 'Iowan Old Style', Palatino, 'TeX Gyre Pagella', 'Noto Serif', Georgia, serif;
+	--font-ui: system-ui, Inter, 'Segoe UI', sans-serif;
+	--content: 48rem;
+	--page: 80rem;
+	--diagram-label: 1.15rem;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: clamp(1.0625rem, 0.35vw + 0.9rem, 1.25rem);
+	overflow-x: clip;
+	background-color: var(--bg);
+	background-image: url('/nnnoise.svg');
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+body {
+	margin: 0;
+	min-height: 100%;
+	background: transparent;
+	color: var(--text);
+	font-family: var(--font-body);
+	line-height: 1.7;
+}
+
+.page-body {
+	opacity: 1;
+}
+
+html.unloading .page-body,
+html.unloading .flock {
+	visibility: hidden;
+	opacity: 0;
+}
+
+a {
+	color: var(--link);
+	text-underline-offset: 0.15em;
+}
+
+a:hover {
+	color: var(--link-hover);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	font: inherit;
+}
+
+.page {
+	width: min(var(--page), calc(100vw - 2rem));
+	max-width: 100%;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+
+.grain-surface {
+	background-color: var(--bg);
+	background-image: url('/nnnoise.svg');
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+body:has(main.walk) {
+	display: flex;
+	flex-direction: column;
+	height: 100svh;
+	overflow: hidden;
+}
+
+body:has(main.walk) .page {
+	flex: 1 1 auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 0.4rem;
+}
+
+@media (max-width: 36rem) {
+	body:has(main.walk) .page {
+		padding-bottom: 0.2rem;
+	}
+}
+
+body:has(main.walk) .page-body {
+	flex: 1 1 auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+@keyframes enter {
+	from {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes enter-fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.chapter .kicker,
+.chapter h1,
+.chapter h1 + p,
+.home .emblem,
+.home h1,
+.home .lede,
+.treatise h1,
+.treatise .lede,
+.section h1,
+.section .lede,
+.section .byline,
+.dex h1,
+.dex .lede,
+.edge h1,
+.edge .lede,
+.leaf .kicker,
+.leaf h1,
+.leaf .lede,
+.leaf .status,
+.entry .kicker,
+.entry h1,
+.entry .kind,
+.error h1,
+.error .lede,
+main.walk {
+	animation: enter 700ms ease both;
+}
+
+.chapter > :not(.kicker):not(h1):not(.chapter-nav):not(.part-end),
+.treatise .download,
+.treatise .toc,
+.section .body,
+.dex label,
+.dex .index,
+.edge .how,
+.edge .key,
+.edge .index,
+.leaf .body,
+.entry .definition,
+.entry .notes,
+.entry .graph,
+.entry .treatise,
+.leaf .foot,
+.error .gate {
+	animation: enter 700ms ease 400ms both;
+}
+
+.home .gates {
+	animation: enter-fade 700ms ease 400ms both;
+}
+
+.chapter h1 + p {
+	animation-delay: 0ms;
+}
+
+.chapter-nav,
+.part-end {
+	animation: enter 700ms ease 600ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.chapter .kicker,
+	.chapter h1,
+	.chapter h1 + p,
+	.chapter > :not(.kicker):not(h1):not(.chapter-nav):not(.part-end),
+	.chapter-nav,
+	.part-end,
+	.home .emblem,
+	.home h1,
+	.home .lede,
+	.home .gates,
+	.treatise h1,
+	.treatise .lede,
+	.treatise .download,
+	.treatise .toc,
+	.section h1,
+	.section .lede,
+	.section .byline,
+	.section .body,
+	.dex h1,
+	.dex .lede,
+	.dex label,
+	.dex .index,
+	.edge h1,
+	.edge .lede,
+	.edge .how,
+	.edge .key,
+	.edge .index,
+	.leaf .kicker,
+	.leaf h1,
+	.leaf .lede,
+	.leaf .status,
+	.leaf .body,
+	.leaf .foot,
+	.entry .kicker,
+	.entry h1,
+	.entry .kind,
+	.entry .definition,
+	.entry .notes,
+	.entry .graph,
+	.entry .treatise,
+	.error h1,
+	.error .lede,
+	.error .gate,
+	main.walk {
+		animation: none;
+	}
+}
+
+.section {
+	width: min(var(--content), 100%);
+	margin: 1.5rem auto 0;
+}
+
+.section h1 {
+	margin: 0 0 0.5rem;
+	font-size: 2.15rem;
+	line-height: 1.25;
+	font-weight: 650;
+}
+
+.section .lede {
+	margin: 0 0 1.25rem;
+	color: var(--text-muted);
+}
+
+.section .body p,
+.section .body li {
+	margin: 0.85rem 0;
+}
+
+.section .body ul,
+.section .body ol {
+	padding-left: 1.25rem;
+}
+
+.chapter {
+	width: min(var(--content), 100%);
+	min-width: 0;
+	margin: 1.5rem auto 0;
+}
+
+.chapter .kicker {
+	margin: 0 0 0.35rem;
+	color: var(--text-muted);
+	font-family: var(--font-ui);
+	font-size: 0.8rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.chapter .kicker a {
+	color: var(--link);
+}
+
+.chapter .kicker a:hover {
+	color: var(--link-hover);
+}
+
+.chapter .kicker .sep,
+.leaf .kicker .sep {
+	margin: 0 0.4em;
+}
+
+.leaf {
+	width: min(var(--content), 100%);
+	min-width: 0;
+	margin: 1.5rem auto 0;
+}
+
+.leaf .kicker {
+	margin: 0 0 0.35rem;
+	color: var(--text-muted);
+	font-family: var(--font-ui);
+	font-size: 0.8rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.leaf .kicker a {
+	color: var(--link);
+}
+
+.leaf .kicker a:hover {
+	color: var(--link-hover);
+}
+
+.leaf h1 {
+	margin: 0 0 0.35rem;
+	font-size: 2.15rem;
+	line-height: 1.2;
+	font-weight: 650;
+}
+
+.leaf .lede {
+	margin: 0 0 1.25rem;
+	color: var(--text-muted);
+}
+
+.leaf .body :where(h2, h3, h4) {
+	line-height: 1.25;
+	font-weight: 650;
+}
+
+.leaf .body h2 {
+	margin: 2rem 0 0.75rem;
+	font-size: 1.4rem;
+}
+
+.leaf .body p,
+.leaf .body li {
+	margin: 0.85rem 0;
+}
+
+.leaf .body ul,
+.leaf .body ol {
+	padding-left: 1.25rem;
+}
+
+.leaf .body blockquote {
+	margin: 1.25rem 0;
+	padding: 0.15rem 0 0.15rem 1rem;
+	border-left: 3px solid var(--border);
+	color: var(--text-muted);
+}
+
+.leaf .body hr {
+	margin: 2rem 0;
+	border: 0;
+	border-top: 1px solid var(--border);
+}
+
+.chapter :where(h1, h2, h3, h4) {
+	line-height: 1.25;
+	font-weight: 650;
+}
+
+.chapter h1 {
+	margin: 0 0 1rem;
+	font-size: 2.15rem;
+}
+
+.chapter h2 {
+	margin: 2rem 0 0.75rem;
+	font-size: 1.4rem;
+}
+
+.chapter p,
+.chapter li {
+	margin: 0.85rem 0;
+}
+
+.chapter ul,
+.chapter ol {
+	padding-left: 1.25rem;
+}
+
+.chapter blockquote {
+	margin: 1.25rem 0;
+	padding: 0.15rem 0 0.15rem 1rem;
+	border-left: 3px solid var(--border);
+	color: var(--text-muted);
+}
+
+.chapter hr {
+	margin: 2rem 0;
+	border: 0;
+	border-top: 1px solid var(--border);
+}
+
+.table-wrap {
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+	margin: 1.25rem 0;
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: thin;
+	scrollbar-color: var(--border) transparent;
+}
+
+.chapter table,
+.leaf .body table {
+	width: 100%;
+	margin: 0;
+	border-collapse: collapse;
+	font-size: 0.95rem;
+}
+
+.chapter th,
+.chapter td,
+.leaf .body th,
+.leaf .body td {
+	padding: 0.45rem 0.55rem;
+	border: 1px solid var(--border);
+	text-align: left;
+	vertical-align: top;
+}
+
+@media (max-width: 40rem) {
+	.chapter table,
+	.leaf .body table {
+		width: max-content;
+		min-width: 100%;
+		font-size: 0.88rem;
+	}
+
+	.chapter th,
+	.chapter td,
+	.leaf .body th,
+	.leaf .body td {
+		white-space: nowrap;
+	}
+}
+
+.chapter pre,
+.chapter code,
+.leaf .body pre,
+.leaf .body code {
+	font-family: ui-monospace, 'Cascadia Code', monospace;
+	font-size: 0.9em;
+}
+
+.chapter pre,
+.leaf .body pre {
+	overflow: auto;
+	padding: 0.85rem 1rem;
+	border: 1px solid var(--border);
+	background-color: var(--bg-inset);
+}
+
+.glossary-token {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--token);
+	font: inherit;
+	text-align: left;
+	text-decoration: underline dotted;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.22em;
+	white-space: normal;
+	cursor: pointer;
+}
+
+.glossary-token:hover,
+.glossary-token:focus-visible {
+	color: var(--token-hover);
+}
+
+.treatise-diagram-slot {
+	width: 100%;
+}
+
+.treatise-diagram {
+	margin: 2rem auto;
+	max-width: 100%;
+}
+
+.treatise-diagram svg {
+	display: block;
+	width: min(100%, calc(var(--diagram-vw, 44) / var(--diagram-em, 13) * var(--diagram-label)));
+	height: auto;
+	max-width: 44rem;
+	margin-inline: auto;
+	font-family: var(--font-body);
+}
+
+.treatise-diagram svg :is(text, tspan) {
+	font-family: var(--font-body);
+}
+
+@media (max-width: 40rem) {
+	.treatise-diagram-slot--wide .treatise-diagram {
+		display: none;
+	}
+}
+
+.treatise-diagram [data-id] {
+	cursor: pointer;
+}
+
+.treatise-diagram [data-id]:hover {
+	filter: brightness(1.25);
+}
+
+/* Quiet rooftop eave: token-colored wire + irregular beads on section
+   gates only (landing, About, 404, Start-here closing CTA). Not a general
+   button treatment. Does not blink. */
+:is(.home .gates a, .error .gate, .section .gate, .walk .actions .gate) {
+	position: relative;
+	overflow: visible;
+}
+
+:is(.home .gates a, .error .gate, .section .gate, .walk .actions .gate)::before {
+	content: '';
+	position: absolute;
+	left: 0.22rem;
+	right: 0.22rem;
+	top: -0.25rem;
+	height: 0.625rem;
+	pointer-events: none;
+	background: url('/eave.svg') repeat-x var(--eave-x, 0) 0 / 5rem 0.625rem;
+	opacity: 0.88;
+	transition: opacity 180ms ease;
+}
+
+:is(.home .gates a, .error .gate, .section .gate, .walk .actions .gate):hover::before {
+	opacity: 1;
+}
+
+.home .gates a:nth-child(1)::before {
+	--eave-x: 0;
+}
+.home .gates a:nth-child(2)::before {
+	--eave-x: 1.35rem;
+}
+.home .gates a:nth-child(3)::before {
+	--eave-x: 3.1rem;
+}
+.home .gates a:nth-child(4)::before {
+	--eave-x: 0.55rem;
+}
+.home .gates a:nth-child(5)::before {
+	--eave-x: 4.2rem;
+}
+.home .gates a:nth-child(6)::before {
+	--eave-x: 2.25rem;
+}
+
+.section .gate::before {
+	--eave-x: 1.8rem;
+}
+
+.section .gates .gate:nth-child(2)::before {
+	--eave-x: 3.4rem;
+}
+
+.error .gate::before {
+	--eave-x: 3.4rem;
+}
+
+.walk .actions .gate::before {
+	--eave-x: 2.7rem;
+}

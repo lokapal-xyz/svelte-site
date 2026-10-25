@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 351.96 462"
+     width="351.96" height="462"
+     role="img"
+     aria-label="Inventive Systemic Intervention flowchart">
+  <title>Inventive Systemic Intervention</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="351.96" height="462" fill="#171719" stroke="none"/>
+
+  <path d="M227.95703125,74L227.95703125,99L227.95703125,120"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M198.53495065789474,169L174.18440302503606,187.62163758352062Q165.84375,194 165.84375,204.5L165.84375,215"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M135.39473684210526,264L110.00711728460512,282.7599327794848Q101.5625,289 101.5625,299.5L101.5625,310"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M101.5625,359L101.5625,375.2524584808484Q101.5625,384 109.76789956539413,387.0316498151189L165.47487965988174,407.61371343777836"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M230.125,409L230.125,384L230.125,336.5L230.125,300.101413482193Q230.125,289 221.19669636425948,282.4025174884173L199.5097602186967,266.3771684649582"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M263.1428865131579,169L293.4669306847322,188.39105895700163Q302.23828125,194 302.23828125,204.41137888863216L302.23828125,241.5L302.23828125,289L302.23828125,336.5L302.23828125,373.4581663095206Q302.23828125,384 293.4346526522313,389.79882583548385L267.62437706470286,406.7996898810039"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-dasharray="2 3"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A">
+    <rect x="111.96" y="8" width="232" height="66" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="227.96" y="33"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Inventive Systemic</text>
+    <text x="227.96" y="51"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Intervention</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="134.11" y="124" width="187.69" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="227.96" y="151.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Inventive Parcellation</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="76.62" y="219" width="178.45" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="165.84" y="246.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Inventive Edification</text>
+  </g>
+
+  <g id="node-D">
+    <rect x="8" y="314" width="187.12" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="101.56" y="341.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Inventive Ossification</text>
+  </g>
+
+  <g id="node-E">
+    <rect x="136.77" y="409" width="186.7" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="230.12" y="436.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Inventive Conciliation</text>
+  </g>
+
+</svg>

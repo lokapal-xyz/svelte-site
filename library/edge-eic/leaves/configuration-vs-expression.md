@@ -1,0 +1,14 @@
+---
+id: configuration-vs-expression
+title: Configuration vs Expression
+status: seedling
+trunk: status-reciprocity
+lede: >
+  A seedling Edge leaf on configuration and expression.
+chapters:
+  - 05_03_mixed-synthesis
+---
+
+*Coming soon.*
+
+

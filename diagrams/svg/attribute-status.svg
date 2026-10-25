@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 680.03 156"
+     width="680.03" height="156"
+     role="img"
+     aria-label="Attribute Status flowchart">
+  <title>Attribute Status</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680.03" height="156" fill="#171719" stroke="none"/>
+
+  <path d="M266.6875,46.25982424141933L117.0039953520352,76.43975155893304Q109.265625,78 109.265625,85.89409595223603L109.265625,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M344.8515625,53L344.8515625,78L344.8515625,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <path d="M423.015625,46.590110373781144L567.8503594361224,76.40441107027438Q575.6015625,78 575.6015625,85.9137256061939L575.6015625,99"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A">
+    <rect x="266.69" y="8" width="156.33" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="344.85" y="35.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">Attributes Status</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="8" y="103" width="202.53" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="109.27" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Attribute Concatenation</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="260.53" y="103" width="168.64" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="344.85" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Status Dichotomies</text>
+  </g>
+
+  <g id="node-D">
+    <rect x="479.17" y="103" width="192.86" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="575.6" y="130.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Interstitial Physiology</text>
+  </g>
+
+</svg>

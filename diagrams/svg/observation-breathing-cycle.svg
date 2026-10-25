@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 9 620.52 292"
+     width="620.52" height="292"
+     role="img"
+     aria-label="OBSERVATION BREATHING CYCLE flowchart">
+  <title>OBSERVATION BREATHING CYCLE</title>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcfcf" stroke="none"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="9" width="620.52" height="292" fill="#171719" stroke="none"/>
+
+  <text x="310.26" y="25"
+        fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+        font-size="14" font-weight="700" text-anchor="middle">OBSERVATION BREATHING CYCLE</text>
+
+  <path d="M254.0909 96.0998L154.5409 125.6234Q146.5273 128 146.5273 136.3585L146.5273 149"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M359.2874 96.3266L456.5215 125.5851Q464.5469 128 464.5469 136.3809L464.5469 149"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M104.8732 200.0298L74.5489 217.8874Q65.8672 223 65.8672 233.0752L65.8672 244"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M188.1815 200.0298L218.5058 217.8874Q227.1875 223 227.1875 233.0752L227.1875 244"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M421.7745 199.9874L390.2293 218.0472Q381.5781 223 381.5781 232.9686L381.5781 244"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <path d="M507.3192 199.9874L538.8645 218.0472Q547.5156 223 547.5156 232.9686L547.5156 244"
+        fill="none"
+        stroke="#cfcfcf"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        marker-start="url(#arrow-start)"
+        marker-end="url(#arrow)"/>
+
+  <g id="node-A" data-id="presence">
+    <rect x="257.93" y="58" width="97.53" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="306.69" y="85.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" text-anchor="middle">PRESENCE</text>
+  </g>
+
+  <g id="node-B" data-id="acceptance">
+    <rect x="90.97" y="153" width="111.11" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="146.53" y="180.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Acceptance</text>
+  </g>
+
+  <g id="node-C" data-id="alertness">
+    <rect x="414.31" y="153" width="100.47" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="464.55" y="180.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Alertness</text>
+  </g>
+
+  <g id="node-D" data-id="assessment">
+    <rect x="8" y="248" width="115.73" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="65.87" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Assessment</text>
+  </g>
+
+  <g id="node-E" data-id="awareness">
+    <rect x="173.73" y="248" width="106.91" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="227.19" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Awareness</text>
+  </g>
+
+  <g id="node-F" data-id="relevance">
+    <rect x="330.64" y="248" width="101.88" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="381.58" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Relevance</text>
+  </g>
+
+  <g id="node-G" data-id="concentration">
+    <rect x="482.52" y="248" width="130" height="45" rx="12" ry="12"
+          fill="#111113" stroke="#ffffff" stroke-width="2"/>
+    <text x="547.52" y="275.5"
+          fill="#e6e6e6" font-family="Arial, Helvetica, sans-serif"
+          font-size="13" text-anchor="middle">Concentration</text>
+  </g>
+
+</svg>
