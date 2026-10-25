@@ -1,4 +1,4 @@
-import { OG_IMAGE_PATH, SAME_AS, SITE_EMAIL, SITE_NAME, SITE_ORIGIN } from './site';
+import { OG_IMAGE_PATH, PDF_PATH, SAME_AS, SITE_EMAIL, SITE_NAME, SITE_ORIGIN } from './site';
 
 export type OgType = 'website' | 'article';
 
@@ -7,6 +7,8 @@ export type Seo = {
 	description: string;
 	type?: OgType;
 	noindex?: boolean;
+	/** 1-based place in the treatise. Chapter pages only. */
+	position?: number;
 };
 
 const PERSON_ID = `${SITE_ORIGIN}/about#person`;
@@ -134,9 +136,15 @@ function bookNode(): JsonLd {
 		'@type': 'Book',
 		'@id': BOOK_ID,
 		name: 'Conciliatorics',
+		description: hubSeo['/treatise'].description,
 		inLanguage: 'en',
 		url: `${SITE_ORIGIN}/treatise`,
-		author: { '@id': PERSON_ID }
+		author: { '@id': PERSON_ID },
+		encoding: {
+			'@type': 'MediaObject',
+			contentUrl: `${SITE_ORIGIN}${PDF_PATH}`,
+			encodingFormat: 'application/pdf'
+		}
 	};
 }
 
@@ -154,6 +162,7 @@ export function jsonLd(pathname: string, seo: Seo): JsonLd {
 			name: pageName(seo.title),
 			description: seo.description,
 			url,
+			...(typeof seo.position === 'number' ? { position: seo.position } : {}),
 			inLanguage: 'en',
 			isPartOf: { '@id': BOOK_ID },
 			author: { '@id': PERSON_ID }

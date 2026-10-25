@@ -64,7 +64,7 @@ function chapterCopy(raw: string, slug: string): { title: string; description: s
 	let kicker = '';
 	const kick = lines[i]?.trim().match(/^\*(.+)\*$/);
 	if (kick && !lines[i].includes('**')) {
-		kicker = kick[1].trim();
+		kicker = stripMarkup(kick[1].trim());
 		i += 1;
 		while (i < lines.length && lines[i].trim() === '') i += 1;
 	}
@@ -124,6 +124,3 @@ export function listChapters(): ChapterMeta[] {
 	});
 }
 
-export function getChapter(slug: string): ChapterMeta | undefined {
-	return listChapters().find((chapter) => chapter.slug === slug);
-}

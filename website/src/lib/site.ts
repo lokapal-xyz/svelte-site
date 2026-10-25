@@ -14,6 +14,7 @@ export const SITE_ENS = 'https://app.ens.domains/lokapal.eth';
 export const SITE_GITHUB = 'https://github.com/lokapal-xyz';
 
 export const OG_IMAGE_PATH = '/og.png';
+export const PDF_PATH = '/conciliatorics.pdf';
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;
 export const OG_IMAGE_ALT = 'Lokapal compass emblem';

@@ -7,6 +7,7 @@
 		OG_IMAGE_WIDTH,
 		SITE_AUTHOR,
 		SITE_NAME,
+		SITE_ORIGIN,
 		THEME_COLOR,
 		TWITTER_SITE
 	} from '$lib/site';
@@ -28,6 +29,8 @@
 		<meta name="robots" content="noindex, nofollow" />
 	{/if}
 	<link rel="canonical" href={url} />
+	<link rel="icon" href="/favicon.ico" sizes="48x48" />
+	<link rel="apple-touch-icon" href="/lokapal-main.png" />
 
 	<meta property="og:type" content={type} />
 	<meta property="og:site_name" content={SITE_NAME} />
@@ -41,10 +44,11 @@
 	<meta property="og:image:height" content={String(OG_IMAGE_HEIGHT)} />
 	<meta property="og:image:alt" content={OG_IMAGE_ALT} />
 	{#if type === 'article'}
-		<meta property="article:author" content={SITE_AUTHOR} />
+		<meta property="article:author" content="{SITE_ORIGIN}/about" />
 	{/if}
 
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content={url} />
 	<meta name="twitter:site" content={TWITTER_SITE} />
 	<meta name="twitter:creator" content={TWITTER_SITE} />
 	<meta name="twitter:title" content={seo.title} />

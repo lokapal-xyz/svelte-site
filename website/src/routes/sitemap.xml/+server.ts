@@ -1,7 +1,7 @@
 import { loadEdgeLeaves } from '$lib/server/edge';
 import { listChapters } from '$lib/server/chapters';
 import { loadDexById } from '$lib/server/library';
-import { SITE_ORIGIN } from '$lib/site';
+import { PDF_PATH, SITE_ORIGIN } from '$lib/site';
 
 export const prerender = true;
 
@@ -21,7 +21,8 @@ export function GET() {
 		'/about',
 		...listChapters().map((chapter) => `/${chapter.slug}`),
 		...Object.keys(loadDexById()).map((id) => `/dex/${encodeURIComponent(id)}`),
-		...loadEdgeLeaves().map((row) => `/edge/${encodeURIComponent(row.id)}`)
+		...loadEdgeLeaves().map((row) => `/edge/${encodeURIComponent(row.id)}`),
+		PDF_PATH
 	];
 
 	const body = `<?xml version="1.0" encoding="UTF-8"?>

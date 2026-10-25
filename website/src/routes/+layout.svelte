@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.css';
 	import { afterNavigate } from '$app/navigation';
-	import { asset } from '$app/paths';
 	import { page } from '$app/state';
 	import { FlockController, setFlock } from '$lib/birds/flock.svelte';
 	import BirdFlock from '$lib/components/BirdFlock.svelte';
@@ -88,7 +87,6 @@
 <Seo {seo} />
 
 <svelte:head>
-	<link rel="icon" href={asset('/favicon.ico')} />
 	<meta name="color-scheme" content="dark" />
 </svelte:head>
 
