@@ -3,10 +3,25 @@
 	import type { Attachment } from 'svelte/attachments';
 	import { modelEntries } from '$lib/models/entries';
 
-	const playShowcase: Attachment<HTMLVideoElement> = (node) => {
-		const media = window.matchMedia('(prefers-reduced-motion: reduce)');
-		if (media.matches) return;
-		node.play().catch(() => {});
+	/** Play a recording while most of it is on screen. Several looping pictures at once is the cost to avoid. */
+	const playInView: Attachment<HTMLVideoElement> = (node) => {
+		const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+		if (motion.matches) return;
+
+		const observer = new IntersectionObserver(
+			(observed) => {
+				for (const entry of observed) {
+					if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
+						node.play().catch(() => {});
+					} else {
+						node.pause();
+					}
+				}
+			},
+			{ threshold: [0, 0.6] }
+		);
+		observer.observe(node);
+		return () => observer.disconnect();
 	};
 
 	/** `https://github.com/owner/repo` → `owner/repo`. */
@@ -24,22 +39,22 @@
 
 	<div class="body">
 		<p>
-			An agent-based model (ABM) is a computational simulation approach used to study the behavior 
-			and interactions of autonomous entities—known as "agents"—and observe how these micro-level 
-			actions create complex global patterns or macro-level phenomena. 
+			An agent-based model (ABM) is a computational simulation approach used to study the behavior
+			and interactions of autonomous entities—known as "agents"—and observe how these micro-level
+			actions create complex global patterns or macro-level phenomena.
 		</p>
 		<p>
-			Unlike traditional top-down models that look at a system as a whole using aggregate equations, 
-			ABMs use a bottom-up approach. They simulate individual participants (such as people, cars, 
-			animals, or companies) following a set of specific rules to see how the system behaves 
+			Unlike traditional top-down models that look at a system as a whole using aggregate equations,
+			ABMs use a bottom-up approach. They simulate individual participants (such as people, cars,
+			animals, or companies) following a set of specific rules to see how the system behaves
 			organically over time.
 		</p>
 		<p>
-			The models are written in Mesa so they remain easy to inspect, modify, and extend. 
-			Each major version is preserved and offered separately, so a simpler, more familiar 
-			case stays available alongside later elaborations. All entries includes a short description, 
-			a showcase recording, and a link to its GitHub repository. To interact with a model, 
-			clone that repository and run it locally.
+			The models are written in Mesa so they remain easy to inspect, modify, and extend. Each major
+			version is preserved and offered separately, so a simpler, more familiar case stays available
+			alongside later elaborations. All entries includes a short description, a showcase recording,
+			and a link to its GitHub repository. To interact with a model, clone that repository and run
+			it locally.
 		</p>
 
 		{#each modelEntries as entry (entry.id)}
@@ -71,18 +86,45 @@
 					</p>
 					<p>
 						The mapping stays close to the original Schelling micromotives so the Operational Status
-						vocabulary can be checked against a well-known benchmark. Later versions will introduce
-						multiple simultaneous criteria and dynamic changes to Fronterization.
+						vocabulary can be checked against a well-known benchmark. The next entry adds a second
+						criterion on this same rule. Dynamic changes to Fronterization come later.
 					</p>
+				{:else if entry.id === 'schelling-v02'}
+					<p>
+						This version keeps the v0.1 decision rule and adds a second fixed criterion. Every agent
+						carries two entries, type and mark. Each has its own Fronterization and its own
+						Permeability.
+					</p>
+					<ul>
+						<li>
+							Fronterization stays binary and does not change during the run. Color shows type.
+							Shape shows mark.
+						</li>
+						<li>
+							Permeability is set separately for each entry. A higher value is stricter for that
+							entry.
+						</li>
+						<li>
+							Receptivity fires when either entry falls short of its share. An agent breached on
+							both is dissatisfied once.
+						</li>
+						<li>Proceptivity moves that agent once, to a random empty cell.</li>
+					</ul>
+					<p>
+						The question is whether the grid can settle on both criteria at once, or whether a gain
+						on one keeps breaking the other. With both permeabilities at 0.40, the recording shows
+						the two segregation indexes rising together. The run stops when nobody is dissatisfied.
+					</p>
+					<p>Fronterization stays fixed for the run. Dynamic changes to it come later.</p>
 				{/if}
 
 				<video
-					{@attach playShowcase}
+					{@attach playInView}
 					controls
 					loop
 					muted
 					playsinline
-					preload="auto"
+					preload="metadata"
 					poster={asset(entry.poster)}
 					aria-label={entry.videoLabel}
 				>
