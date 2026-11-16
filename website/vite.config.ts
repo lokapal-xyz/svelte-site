@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import adapter from '@sveltejs/adapter-vercel';
 import { sveltekit } from '@sveltejs/kit/vite';
@@ -11,7 +13,17 @@ import { SITE_ORIGIN } from './src/lib/site.ts';
 
 const repoRoot = resolve(import.meta.dirname, '..');
 
+// Brave on Android can reopen a PDF it already stored and ignore Cache-Control.
+// The download links include this fingerprint, so a new file is a new address.
+const pdfVersion = createHash('sha256')
+	.update(readFileSync(resolve(import.meta.dirname, 'static/conciliatorics.pdf')))
+	.digest('hex')
+	.slice(0, 12);
+
 export default defineConfig({
+	define: {
+		__PDF_VERSION__: JSON.stringify(pdfVersion)
+	},
 	server: {
 		fs: {
 			allow: [repoRoot]

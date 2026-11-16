@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { asset, resolve } from '$app/paths';
+	import { treatisePdfHref } from '$lib/pdf';
 	import {
 		SITE_EMAIL,
 		SITE_ENS,
@@ -115,7 +116,7 @@
 				<span class="label">Start here</span>
 				<span class="blurb">A short walkthrough of Conciliatorics.</span>
 			</a>
-			<a class="gate" href={asset('/conciliatorics.pdf')} data-sveltekit-reload>
+			<a class="gate" href={treatisePdfHref(asset('/conciliatorics.pdf'))} data-sveltekit-reload>
 				<span class="label">Treatise PDF</span>
 				<span class="blurb">The full text, for print or offline reading.</span>
 			</a>

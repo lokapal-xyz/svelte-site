@@ -3,6 +3,9 @@ import type { Component } from 'svelte';
 // See https://svelte.dev/docs/kit/types#app.d.ts
 // for information about these interfaces
 declare global {
+	/** Inlined by Vite from the bytes of `static/conciliatorics.pdf`. */
+	const __PDF_VERSION__: string;
+
 	namespace App {
 		// interface Error {}
 		// interface Locals {}

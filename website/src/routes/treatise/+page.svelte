@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { asset, resolve } from '$app/paths';
+	import { treatisePdfHref } from '$lib/pdf';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -25,7 +26,9 @@
 		the Dex, the panel offers a way into the equation graph.
 	</p>
 	<p class="download">
-		<a href={asset('/conciliatorics.pdf')} data-sveltekit-reload>Download the treatise as a PDF</a>
+		<a href={treatisePdfHref(asset('/conciliatorics.pdf'))} data-sveltekit-reload
+			>Download the treatise as a PDF</a
+		>
 	</p>
 
 	<nav class="toc" aria-label="Treatise">
