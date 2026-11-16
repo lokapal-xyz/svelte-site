@@ -361,15 +361,15 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **AI ASSISTANCE**: The use of AI systems to support work with Conciliatorics. What that support can do is graded by readiness. The interpretive step remains Contemplation, and remains with the intervener.
 
-- **SCHEMATIC VECTORS**: The three directions relative to a schematic record — supply, probe, and expound — together with the rule of which directions an AI tool may travel. Supply is closed to AI tools. Probe and expound are open.
+- **COMPUTATIONAL SYSTEMICS**: The computational development of models, simulations, and multi-agent arrangements that engage the perspectives grouped under Systemics.
 
-- **SUPPLY VECTOR**: Non-schema to schema. The user commits a placement into a schematic record. Closed to AI tools, because the fields are a commitment the user stands behind.
+- **COMPUTATIONAL CONCILIATORICS**: The development of computational models and multi-agent systems according to Conciliatorics principles, such as synthesis distinctions, longings, and operational gradations.
 
-- **PROBE VECTOR**: Schema to schema. A supplied record is tested against its own fields, against the equations, or against other supplied records. Open to AI tools. The object of the test is a record already committed. A probe that writes a case has become supply.
+- **AGENT-BASED MODEL**: A computational model in which autonomous agents interact with one another and with an environment according to explicit rules, producing system-level patterns from those local interactions.
 
-- **EXPOUND VECTOR**: Schema to non-schema. A supplied record is set forth as prose, notation, or a diagram. Open to AI tools. The record stays the source of truth, and the rendering is not a route back.
+- **MODELING TARGET**: The concrete phenomenon, process, or operation that a model is built to represent and that can be observed independently of the model's internal rules.
 
-- **YAML LIBRARY**: A structured, growing set of schematic entries—sharing a consistent set of fields and cross-referenced by stable identifiers—that accumulates instances of some kind (definitions, symbols, cases, relationships) into something that stays organized as it grows.
+- **MODELING MECHANIC**: A specific rule, update procedure, constraint, or interaction pattern by which agents in a model enact the modeling target.
 
-- **YAML GLOSSARY**: The first built instance of a YAML Library; holds every defined term and symbol as a single set of structured, cross-referenced records. The schematic working source; these Part 7 lists remain the old-school reference.
+- **MULTI-AGENT SYSTEM**: A system composed of multiple interacting agents that coordinate, cooperate, or compete in order to carry out tasks or achieve goals, whether in simulation or in operational software.
 

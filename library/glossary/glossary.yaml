@@ -176,7 +176,7 @@ terms:
       The remaining two parcels, Edified Intrinsic Contemplation (Sciences) and Edified
       Interstitial Transformation (Arts), are deliberately not being developed and are not
       given working acronyms for that reason.
-    related: [systemic-diplomacy, yaml-library, ai-assistance, edified-interstitial-contemplation]
+    related: [systemic-diplomacy, computational-systemics, ai-assistance, edified-interstitial-contemplation]
 
   - id: edified-interstitial-contemplation
     term: Edified Interstitial Contemplation
@@ -481,11 +481,12 @@ terms:
       library — of definitions, symbols, or worked case studies — without collapsing into
       disorder as it grows. Also the representation type most directly legible to AI systems,
       which makes it the natural interface for AI assistance with the material.
-    related: [representation-type, ai-assistance, yaml-library, schematic-vectors]
+    related: [representation-type, ai-assistance]
     notes: >
       Storage/accumulation is the primary rationale for this representation type; its
       AI-legibility is a secondary, compounding benefit rather than the reason it exists.
-      What an AI may do with that legibility is bounded by schematic-vectors.
+      What an AI may do with that legibility is bounded by AI Assistance: the interpretive
+      step stays with the intervener.
 
   # ---------------------------------------------------------------------------
   # PART 3 — ATTRIBUTES STRUCTURE (interstitial anatomy)
@@ -1378,102 +1379,81 @@ terms:
       readiness (validated consistency work, derived case-record checks, theoretical
       derivation engine) without treating those stage names as glossary terms. The
       interpretive step remains Contemplation and stays with the intervener; a later
-      readiness stage does not lift that limit. Which directions an AI tool may travel
-      is developed under schematic-vectors. Originally introduced in Attributes
+      readiness stage does not lift that limit. Originally introduced in Attributes
       Synthesis (Part 5); relocated to Part 6 once EIT became its own developed parcel.
     related: [schematic-representation, contemplation, judgement, transformation,
-              yaml-library, systemic-diplomacy, schematic-vectors]
+              systemic-diplomacy]
 
-  - id: schematic-vectors
-    term: Schematic Vectors
+  - id: computational-systemics
+    term: Computational Systemics
     part: 06_edified-intrinsic-transformation
     definition: >
-      The three directions relative to a schematic record — Supply Vector,
-      Probe Vector, and Expound Vector — together with the rule of which directions an AI
-      tool may travel. Supply is closed to AI tools. Probe and Expound are open.
+      The computational development of models, simulations, and multi-agent arrangements
+      that engage the perspectives grouped under Systemics.
     notes: >
-      Inside these definitions only, "non-schema" means anything that is not already the
-      record: unkept material, or a discursive, symbolic, or graphic representation that is
-      not itself the stored entry. It is a directional convenience, not a fifth representation
-      type, and not a ranking of the four.
-    related: [supply-vector, probe-vector, expound-vector, schematic-representation,
-              ai-assistance]
+      When the Conciliatorics context is clear, Computational Systemics and Computational
+      Conciliatorics are interchangeable. The distinction stays so that other systems
+      frameworks can implement computational models and systems. The computational
+      arrangements illustrate and explore. They do not establish.
+    related: [computational-conciliatorics, agent-based-model, multi-agent-system,
+              edified-intrinsic-transformation]
 
-  - id: supply-vector
-    term: Supply Vector
+  - id: computational-conciliatorics
+    term: Computational Conciliatorics
     part: 06_edified-intrinsic-transformation
     definition: >
-      Non-schema to schema. The user commits a placement into a schematic record —
-      a jurisdiction, a pair, a side. Closed to AI tools, because the fields are a
-      commitment the user stands behind.
+      The development of computational models and multi-agent systems according to
+      Conciliatorics principles, such as synthesis distinctions, longings, and operational
+      gradations.
     notes: >
-      Writing the record directly, with no other representation in between, is still
-      supply. What is closed is authorship of the judgement in the fields. An AI tool
-      can offer a proposed reading; storing that proposal as the entry still leaves
-      the AI as the author of the fields.
-    related: [schematic-vectors, contemplation, judgement, schematic-representation,
-              ai-assistance]
+      The subset of Computational Systemics organized by Conciliatorics distinctions.
+      Interchangeable with Computational Systemics when that context is clear.
+    related: [computational-systemics, conciliatorics]
 
-  - id: probe-vector
-    term: Probe Vector
+  - id: agent-based-model
+    term: Agent-Based Model
     part: 06_edified-intrinsic-transformation
     definition: >
-      Schema to schema. A supplied record is tested against its own fields, against the
-      equations, or against other supplied records. Open to AI tools. The object is a
-      record the user has already committed.
+      A computational model in which autonomous agents interact with one another and with
+      an environment according to explicit rules, producing system-level patterns from
+      those local interactions.
     notes: >
-      The object of a probe is the record, not the situation. Comparative, statistical,
-      and pattern-search results describe judgements already made; they are not a new
-      placement. A probe that writes a case has become supply. A derivation engine, if
-      one is ever built, would be a probe.
-    related: [schematic-vectors, ai-assistance, incompatibility-axiom, supply-vector]
+      In this treatise the arrangement is a means. Agents act on a modeling target so the
+      differences among Instrumental, Organic, and Mixed longings can be inspected. The
+      arrangement has done its job when the run ends.
+    related: [computational-systemics, multi-agent-system, modeling-target, modeling-mechanic]
 
-  - id: expound-vector
-    term: Expound Vector
+  - id: modeling-target
+    term: Modeling target
     part: 06_edified-intrinsic-transformation
     definition: >
-      Schema to non-schema. A supplied record is set forth as prose, notation, or a diagram.
-      Open to AI tools. The record remains the source of truth. The rendering is not a
-      route back into the record.
+      The concrete phenomenon, process, or operation that a model is built to represent
+      and that can be observed independently of the model's internal rules.
     notes: >
-      Outward only. Notation and diagrams are projected from the fields and the glossary;
-      prose may be drafted. Recovering fields from the rendering would be supply.
-    related: [schematic-vectors, schematic-representation, discursive-representation,
-              symbolic-representation, graphic-representation, supply-vector]
+      The target is not a Conciliatorics concept. It stays fixed for a family of models
+      while the mechanics change.
+    related: [agent-based-model, modeling-mechanic]
 
-  - id: yaml-library
-    term: YAML Library
+  - id: modeling-mechanic
+    term: Modeling mechanic
     part: 06_edified-intrinsic-transformation
     definition: >
-      A structured, growing set of Schematic Representation entries, written in YAML, sharing
-      a consistent set of fields and cross-referenced by stable identifiers — the concrete,
-      intrinsic form Schematic Representation takes within EIT. Not a single file with one
-      fixed purpose but a repeatable pattern, instantiable for different kinds of accumulating
-      content.
+      A specific rule, update procedure, constraint, or interaction pattern by which
+      agents in a model enact the modeling target.
     notes: >
-      YAML was chosen over an alternative like JSON as an intrinsic judgment about the format
-      itself: it holds the same structural information while staying legible to a human reader
-      without a parser (native comments, indentation over braces), serving both an AI's and a
-      person's native reading at once. Known or discussed instances: a term/symbol glossary
-      (built — see yaml-glossary), a case library of real-world readings (named, not yet
-      built as its own library), diagram metadata (deliberately
-      deferred), a typed knowledge graph and a formal operator grammar (both discussed as
-      possible directions, not yet designed).
-    related: [schematic-representation, yaml-glossary, ai-assistance, schematic-vectors]
+      Mechanics may vary by track and level. The target itself remains fixed.
+    related: [modeling-target, agent-based-model]
 
-  - id: yaml-glossary
-    term: YAML Glossary
+  - id: multi-agent-system
+    term: Multi-Agent System
     part: 06_edified-intrinsic-transformation
     definition: >
-      The treatise's term-and-symbol glossary (glossary.yaml), and the first built instance of
-      a YAML Library. Replaced two separate, drifting prose glossaries (definitions and
-      symbols) with a single set of structured entries — id, term, symbol, part, jurisdiction,
-      pair, equation, definition, notes, related — serving as the treatise's single source of
-      truth for defined terms and notation.
+      A system composed of multiple interacting agents that coordinate, cooperate, or
+      compete in order to carry out tasks or achieve goals, whether in simulation or in
+      operational software.
     notes: >
-      Concrete value already demonstrated, not just organizational: laying every symbol side
-      by side surfaced the (cS)/cS collision between edified-intrinsic-contemplation and the
-      original (pre-Sigma) Conciliation Synthesis symbol — an error invisible from within
-      either chapter alone. Intended as a template for future YAML Library instances (see
-      yaml-library) rather than a singular, closed artifact.
-    related: [yaml-library, schematic-representation, ai-assistance, schematic-vectors]
+      In this treatise the arrangement is the subject. An external task is still required,
+      and the arrangement remains available after that task ends. A scarce shared
+      computational budget can express both Functionality and Perdurability.
+    related: [computational-systemics, agent-based-model, behavior-dynamics,
+              operational-status, functionality-longing, perdurability-longing]

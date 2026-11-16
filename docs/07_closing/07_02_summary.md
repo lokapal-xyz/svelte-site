@@ -123,6 +123,6 @@ EIT exists so EIC is not only tested against invented examples. The intended EIC
 Developed so far:
 
 - **AI Assistance** — graded by readiness (validated <plain>consistency</plain> work, derived case-record checks, theoretical derivation). Interpretive <plain>judgement</plain> stays with the intervener, and a later stage of readiness does not lift that limit
-- **Schematic Vectors** — supply (into the record; the user commits the placement; closed to AI tools), probe (testing records already committed; open), expound (out into the other representations; open, and not a route back)
-- **YAML Library** — the schematic pattern, YAML chosen so both humans and AIs can read it natively
-- **YAML Glossary** — first built instance of that library; template for later instances (case library, diagram metadata, knowledge graph, operator grammar — those last ones are named, not built)
+- **Computational Systemics** — models, simulations, and multi-agent arrangements kept congruent with the framework in use. Computational Conciliatorics is that work under Conciliatorics distinctions. The arrangements illustrate and explore. They do not establish
+- **Agent-Based Models** — an Agent-Based Model is a means. A Modeling target is the phenomenon the agents act on, and a Modeling mechanic is a rule by which they enact it. Instrumental, Organic, and Mixed tracks keep different success conditions. A Mixed track does not halt on a stable attractor that is both functional and perdurable
+- **Multi-Agent Systems** — a Multi-Agent System is itself the subject. Roles can be read through Behavior Dynamics and Operational Status. A scarce shared budget lets Functionality Longing and Perdurability Longing act through the same resource
