@@ -1456,4 +1456,55 @@ terms:
       and the arrangement remains available after that task ends. A scarce shared
       computational budget can express both Functionality and Perdurability.
     related: [computational-systemics, agent-based-model, behavior-dynamics,
-              operational-status, functionality-longing, perdurability-longing]
+              operational-status, functionality-longing, perdurability-longing,
+              eit-mas]
+
+  - id: eit-mas
+    term: EIT-MAS
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      A multi-agent system constructed under the Conciliatorics framework.
+    notes: >
+      Edified Intrinsic Transformation Multi-Agent System. The construction is a
+      guideline for testing the treatise. The tension between Functionality and
+      Perdurability is the condition under which action occurs. A scarce shared
+      computational resource is one medium through which both longings are realized.
+    related: [multi-agent-system, intrinsic-module, interstitial-module, realization,
+              computational-systemics]
+
+  - id: intrinsic-module
+    term: Intrinsic Module
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      A defined software component, identified by what it is and how it is built.
+    notes: >
+      The pieces one can point to: an agent, a script, a retrieval function, a
+      validator, a formatter, or a subsystem. A programming module is one kind. The
+      qualifier keeps what a system is made of distinct from what it does.
+    related: [interstitial-module, realization, eit-mas, attribute-position]
+
+  - id: interstitial-module
+    term: Interstitial Module
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      A dynamic software arrangement, identified by how it relates to the system as a
+      whole.
+    notes: >
+      A systemic function. It arises from a component's place in the system. The same
+      intrinsic module can carry a different function in another system, or none, and
+      the function can persist if that intrinsic module is rewritten.
+    related: [intrinsic-module, realization, eit-mas, operation]
+
+  - id: realization
+    term: Realization
+    part: 06_edified-intrinsic-transformation
+    definition: >
+      The relation by which one or more intrinsic modules carry out an interstitial
+      module.
+    notes: >
+      Weight does not decide it. One interstitial module may be realized by several
+      intrinsic modules, and one intrinsic module may realize several interstitial
+      modules. Replacement changes the realization. An interstitial module may be
+      realized by a subsystem that has its own interstitial modules, and a reading
+      should state which level it refers to.
+    related: [intrinsic-module, interstitial-module, eit-mas]

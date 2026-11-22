@@ -373,3 +373,11 @@ This is a curated list of core concepts, theoretical terms, and systemological l
 
 - **MULTI-AGENT SYSTEM**: A system composed of multiple interacting agents that coordinate, cooperate, or compete in order to carry out tasks or achieve goals, whether in simulation or in operational software.
 
+- **EIT-MAS**: A multi-agent system constructed under the Conciliatorics framework.
+
+- **INTRINSIC MODULE**: A defined software component, identified by what it is and how it is built.
+
+- **INTERSTITIAL MODULE**: A dynamic software <plain>arrangement</plain>, identified by how it relates to the system as a whole.
+
+- **REALIZATION**: The relation by which one or more intrinsic modules carry out an interstitial module.
+
